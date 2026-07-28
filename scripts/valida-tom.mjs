@@ -554,13 +554,17 @@ if (existsSync(consultaPath)) {
   const c = JSON.parse(readFileSync(consultaPath, 'utf8'));
   const cards = c.cards || [];
   const porFolha = {};
-  for (const card of cards) (porFolha[card.folha] ??= []).push(card);
+  // um card pode servir mais de uma folha: agrupa pelo array `folhas`, não por um
+  // campo singular. O tile "simpatia" é o piso do G8 — soma as folhas dele.
+  for (const card of cards) for (const t of card.folhas || []) (porFolha[t] ??= []).push(card);
+  let simpatia = 0;
   for (const folha of c.taxonomia || []) {
     const n = (porFolha[folha.id] || []).length;
-    if (n === 0) erros.push(`G8: folha "${folha.id}" (${folha.nome || ''}) sem nenhum card`);
-    if (folha.id === 'simpatia' && n < 8)
-      erros.push(`G8: folha "simpatia" com ${n} cards, mínimo 8 — é onde a viagem fica boa`);
+    if (n === 0) erros.push(`G8: folha "${folha.id}" (${folha.rotulo || ''}) sem nenhum card`);
+    if (folha.tile === 'simpatia') simpatia += n;
   }
+  if (simpatia < 8)
+    erros.push(`G8: tile "simpatia" com ${simpatia} cards, mínimo 8 — é onde a viagem fica boa`);
   const marcados = cards.filter((x) => x.aviso).length;
   const pctAviso = cards.length ? (marcados / cards.length) * 100 : 0;
   IT.cards = pctAviso;

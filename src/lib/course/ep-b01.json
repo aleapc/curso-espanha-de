@@ -309,7 +309,8 @@
     {
       "consulta": [
         "saude/112",
-        "apuro/112"
+        "apuro/112",
+        "dieta/acontecendo"
       ],
       "tipo": "responde",
       "voz": "Carmen",

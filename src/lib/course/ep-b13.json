@@ -437,7 +437,7 @@
       "es": "¿Tienen la carta de alérgenos?",
       "pinyin": "TJE-nen la KAR-ta de a-LER-che-noss",
       "pt": "das Papier statt der Meinung",
-      "consulta": ["dieta/o-que-tem"]
+      "consulta": ["dieta/o-que-tem", "dieta/cartao"]
     },
     {
       "tipo": "ouvir",

@@ -406,9 +406,6 @@
       "pt": "Und geblockt wird auf einer Kreditkarte, die auf die fahrende Person lautet. Eine neue dauert Wochen."
     },
     {
-      "consulta": [
-        "taxi/locadora"
-      ],
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "e07b-caucion-c",
@@ -470,9 +467,6 @@
       "pt": "Auf den Balearen ein bis vier Euro pro Person und Nacht. Zu zweit, acht Nächte, bei zwei Euro: gut fünfunddreißig."
     },
     {
-      "consulta": [
-        "quarto/checkin"
-      ],
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "e07a-tasa-e",

@@ -621,7 +621,7 @@
       "tts": "Está bien así, gracias."
     },
     {
-      "consulta": ["taxi/pagar", "pagar/pedir"],
+      "consulta": ["pagar/gorjeta", "pagar/pedir"],
       "tipo": "responde",
       "voz": "Carmen",
       "promptVoz": "Juli",

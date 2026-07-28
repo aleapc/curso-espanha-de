@@ -1,0 +1,103 @@
+{
+  "id": "c01a",
+  "nivel": "intermediario",
+  "numero": 1,
+  "parte": "1A",
+  "titulo": "„Du stehst um sechs vor dem Restaurant. Die Küche schläft.“",
+  "subtitulo": "Der echte spanische Tagesablauf — und die eine Frage an der Tür, die deinen Abend rettet",
+  "steps": [
+    { "tipo": "intro", "voz": "Juli", "audioKey": "c01a-01", "pt": "Willkommen im Kultur-Teil. Ich bin Juli, und diese Folge rettet deinen ersten Abend in Spanien — nicht mit einem Satz, sondern mit einer Uhr. Die Szene läuft jeden Abend in jeder spanischen Stadt ab: Du stehst um sechs vor dem Restaurant, die Straße ist tot, das einzige Lokal mit Licht hat eine laminierte Karte mit Fotos vom Essen, du isst schlecht und zahlst zu viel. Niemand war unhöflich zu dir. Es ist nichts schiefgegangen. Du warst vier Stunden zu früh. Willkommen im Klub der guiris — so nennen die Spanier uns Nordeuropäer, halb Spott, halb Zuneigung. Aus dem Klub kommst du nicht mehr raus. Aber du kannst der guiri sein, der die Uhrzeiten kennt, statt der, der um sechs mit knurrendem Magen vor schlafenden Küchen steht. Das mit dem Handtuch auf der Liege klären wir ein andermal." },
+
+    { "tipo": "intro", "voz": "Juli", "audioKey": "c01a-02", "pt": "Kurz aufwärmen, Hand vor Kopf. Flache Hand auf den Oberschenkel: ein Schlag pro Silbe, jeder Schlag gleich groß. Co-ci-na. Drei Schläge, drei gleiche Schläge, keine Lieblinge. Genau da liegt dein Rhythmusproblem: Deutsch hämmert auf die betonte Silbe und nuschelt den Rest weg. Spanisch bezahlt jede Silbe voll aus. Deine Vokale dagegen sind schon in Ordnung — ein spanisches o ist ein gerades o wie in 'Ofen', es rutscht nirgendwohin. Das musst du nicht üben, das kannst du. Genau ein Laut in diesem Kurs ist wirklich neu für dich, und der wartet in Teil eins B." },
+
+    { "tipo": "responde", "voz": "Emilio", "promptVoz": "Juli", "promptAudioKey": "c01a-03", "promptPt": "Du drückst die Tür einer kleinen Bar auf, halb drei nachmittags. Bevor du nach einem Tisch schaust, bevor irgendetwas anderes passiert: begrüß den Raum. Sprich jetzt.", "audioKey": "c01a-04", "es": "Buenas tardes.", "pinyin": "BUE-nas TAR-des", "pt": "Guten Tag. (beim REINGEHEN gesagt — wer stumm hereinkommt, gilt als unhöflich)" },
+
+    { "tipo": "intro", "voz": "Juli", "audioKey": "c01a-05", "pt": "So, der echte spanische Tag. Ungefähr, wohlgemerkt — das hängt kein Amt an der Grenze aus. Frühstück ist klein und früh: Kaffee und ein Toast. Kein Wurst-Käse-Brötchen-Buffet, tut mir leid. Dann die Hauptmahlzeit, la comida, etwa von zwei bis halb vier, vier. Gegen fünf oder sechs kommt la merienda — im Prinzip Kaffee und Kuchen, nur ohne Sahnetorte. Und das Abendessen, la cena, fängt um neun an. Die Küchen wachen gegen acht, halb neun auf, und die letzte Bestellung geht Richtung Mitternacht. Und jetzt denk das noch mal mit deiner Sechs-Uhr-Reservierung im Kopf. Um sechs ist die Küche nicht geschlossen. Sie schläft zwischen zwei Schichten." },
+
+    { "tipo": "ouvir", "voz": "Carmen", "audioKey": "c01a-06", "es": "La cocina abre a las ocho y media.", "pinyin": "la ko-THI-na A-bre a las O-tscho i ME-dja", "pt": "Die Küche öffnet um halb neun. (und da ist er, der neue Laut — das c in cocina ist das englische th aus 'think', nicht das deutsche th aus 'Theater')", "tts": "La cocina abre a las ocho y media." },
+
+    { "tipo": "intro", "voz": "Juli", "audioKey": "c01a-07", "pt": "Jetzt die nützlichste Frage dieser Folge — und achte darauf, was sie NICHT ist. Sie ist nicht 'habt ihr auf'. Die haben auf. Das Licht brennt, acht Leute stehen mit Bier am Tresen, und aus dieser Küche kommt die nächsten zwei Stunden kein Gramm Essen. Du fragst also nicht, ob offen ist. Du fragst, ob es Essen gibt. ¿Están sirviendo comidas? Hör zu." },
+
+    { "tipo": "ouvir", "voz": "Emilio", "audioKey": "c01a-08", "es": "¿Están sirviendo comidas?", "pinyin": "es-TAN sser-BJEN-do ko-MI-das", "pt": "Gibt es gerade etwas zu essen?", "tts": "¿Están sirviendo comidas?" },
+
+    { "tipo": "ouvir", "voz": "Carmen", "audioKey": "c01a-09", "es": "Ahora solo bebidas.", "pinyin": "a-O-ra SSO-lo be-BI-das", "pt": "👂 'Im Moment nur Getränke.' — die Antwort, die du vor acht überall bekommst.", "tts": "Ahora solo bebidas." },
+
+    { "tipo": "responde", "voz": "Emilio", "promptVoz": "Juli", "promptAudioKey": "c01a-10", "promptPt": "Viertel nach sieben. Die Bar sieht voll und vielversprechend aus, und du hast Hunger. Bevor du die Jacke ausziehst und dich breitmachst: frag, ob es Essen gibt. Sprich jetzt.", "audioKey": "c01a-11", "es": "¿Están sirviendo comidas?", "pinyin": "es-TAN sser-BJEN-do ko-MI-das", "pt": "Gibt es gerade etwas zu essen?" },
+
+    { "tipo": "intro", "voz": "Juli", "audioKey": "c01a-12", "pt": "Sie haben gesagt: nur Getränke. Geh jetzt bloß nicht wieder raus — das ist der Touristen-Reflex, und er endet damit, dass ihr vierzig Minuten um den Block lauft und euch dabei anmeckert. Frag, wann die Küche aufmacht, reservier einen Tisch für später, und trink irgendwo mit Aussicht etwas. Zwei Fragen, ein geretteter Abend." },
+
+    { "tipo": "ouvir", "voz": "Emilio", "audioKey": "c01a-13", "es": "¿A qué hora abre la cocina?", "pinyin": "a ke O-ra A-bre la ko-THI-na", "pt": "Wann macht die Küche auf?", "tts": "¿A qué hora abre la cocina?" },
+
+    { "tipo": "responde", "voz": "Emilio", "promptVoz": "Juli", "promptAudioKey": "c01a-14", "promptPt": "Man hat dir gerade gesagt: nur Getränke. Nicht abhauen — frag, wann die Küche aufmacht. Sprich jetzt.", "audioKey": "c01a-15", "es": "¿A qué hora abre la cocina?", "pinyin": "a ke O-ra A-bre la ko-THI-na", "pt": "Wann macht die Küche auf?" },
+
+    { "tipo": "ouvir", "voz": "Carmen", "audioKey": "c01a-16", "es": "COCINA CERRADA", "pinyin": "ko-THI-na the-RRA-da", "pt": "👂 Schild: KÜCHE GESCHLOSSEN — du bist zwischen zwei Schichten gelandet, nicht am Ende der Welt.", "tts": "Cocina cerrada." },
+
+    { "tipo": "intro", "voz": "Juli", "audioKey": "c01a-17", "pt": "Und jetzt deine Erlaubnis, denn ich zwinge dich nicht, um zehn Uhr abends zu essen, wenn dir nicht danach ist. Willst du essen wie die Einheimischen: reservier für halb zehn. Willst du um sieben essen, dann isst du eben nicht zu Abend — dann machst du Tapas an der Bar, und das ist ein völlig legitimer Plan. Kostet weniger, du siehst mehr vom Land, und niemanden stört es. Was du nicht tun solltest: um sieben ein komplettes Abendessen im Sitzen suchen. Denn um sieben kochen nur die Küchen, die ausschließlich von Touristen leben — und genau da wohnen die aufgeblasene Rechnung und die Karte mit den Fotos. Zur Ortszeit essen ist keine Höflichkeit. Das ist Selbstschutz." },
+
+    { "tipo": "ouvir", "voz": "Carmen", "audioKey": "c01a-18", "es": "Quiero reservar una mesa para las nueve y media.", "pinyin": "KJE-ro rre-sser-BAR U-na ME-ssa PA-ra las NUE-be i ME-dja", "pt": "Ich möchte einen Tisch für halb zehn reservieren.", "tts": "Quiero reservar una mesa para las nueve y media." },
+
+    { "tipo": "responde", "voz": "Carmen", "promptVoz": "Juli", "promptAudioKey": "c01a-19", "promptPt": "Nachmittag, du läufst an einem Restaurant vorbei, das dir gefällt. Geh rein und reservier einen Tisch für heute Abend, halb zehn. Sprich jetzt.", "audioKey": "c01a-20", "es": "Quiero reservar una mesa para las nueve y media.", "pinyin": "KJE-ro rre-sser-BAR U-na ME-ssa PA-ra las NUE-be i ME-dja", "pt": "Ich möchte einen Tisch für halb zehn reservieren." },
+
+    { "tipo": "intro", "voz": "Thomas", "audioKey": "c01a-21", "pt": "Thomas hier, mit der Sache, die dich am helllichten Tag erwischt. Die Siesta ist kein Nickerchen — da schläft niemand. Aber die kleinen Läden sind zu: ungefähr von halb zwei, zwei bis halb fünf, fünf, und dann bis acht, halb neun. Was NICHT zumacht: die großen Ketten, die Supermärkte, die Restaurants — das ist deren Stoßzeit — und die Museen. Also: der kleine Laden, die Apotheke, der Schuster, der eine Ort mit genau dem Ding, das du brauchst — geh vor halb zwei oder nach fünf. Sonntag: Supermärkte und die meisten Läden zu, Bars und Sehenswürdigkeiten offen. Den Sonntag kennst du ja von zu Hause, also Großeinkauf am Samstag. Und der August: Familienbetriebe machen den ganzen Monat dicht, hängen CERRADO POR VACACIONES an die Tür, und Google Maps hat davon meistens keine Ahnung. Ruf an, bevor du fünfundzwanzig Minuten latschst. Der August ist kein schlechter Monat für Spanien. Er ist ein schlechter Monat, um sich auf eine einzige Adresse zu verlassen." },
+
+    { "tipo": "ouvir", "voz": "Emilio", "audioKey": "c01a-22", "es": "CERRADO POR VACACIONES", "pinyin": "the-RRA-do por ba-ka-THJO-nes", "pt": "👂 Schild: BETRIEBSFERIEN — das ist August, keine Pleite.", "tts": "Cerrado por vacaciones." },
+
+    { "tipo": "intro", "voz": "Juli", "audioKey": "c01a-23", "pt": "Noch ein Stück von der Uhr, und das ist das Stück, das um elf Uhr nachts zählt, wenn jemand Fieber bekommt. Gute Nachricht vorweg: das System kennst du schon. Spanien macht es wie Deutschland — jede Stadt hat mindestens eine Apotheke im Notdienst, und der Plan hängt an der Tür jeder Apotheke, auch an der geschlossenen, vor der du gerade stehst. Nur heißt es hier nicht Notdienst. Das Wort, nach dem du suchst, ist guardia. Erst die Tür lesen, dann in Panik verfallen." },
+
+    { "tipo": "ouvir", "voz": "Emilio", "audioKey": "c01a-24", "es": "¿Hay alguna farmacia de guardia por aquí?", "pinyin": "ai al-GU-na far-MA-thja de GUAR-dja por a-KI", "pt": "Gibt es hier in der Nähe eine Notdienst-Apotheke?", "tts": "¿Hay alguna farmacia de guardia por aquí?" },
+
+    { "tipo": "responde", "voz": "Emilio", "promptVoz": "Juli", "promptAudioKey": "c01a-25", "promptPt": "Halb zwölf nachts. Deine Begleitung braucht dringend etwas aus der Apotheke, und die an der Ecke ist zu. Sprich jemanden auf der Straße an und frag nach der Notdienst-Apotheke. Sprich jetzt.", "audioKey": "c01a-26", "es": "¿Hay alguna farmacia de guardia por aquí?", "pinyin": "ai al-GU-na far-MA-thja de GUAR-dja por a-KI", "pt": "Gibt es hier in der Nähe eine Notdienst-Apotheke?" },
+
+    { "tipo": "ouvir", "voz": "Carmen", "audioKey": "c01a-27", "es": "FARMACIA DE GUARDIA", "pinyin": "far-MA-thja de GUAR-dja", "pt": "👂 der Aushang an der Tür: NOTDIENST-APOTHEKE — mit der Adresse für heute Nacht.", "tts": "Farmacia de guardia." },
+
+    { "tipo": "responde", "voz": "Juli", "promptVoz": "Carmen", "promptAudioKey": "c01a-28", "promptTts": "Ahora solo bebidas.", "promptPt": "Kurze Zwischenfrage — hör zu. Was hat sie dir gerade gesagt? Sag es laut auf Deutsch.", "audioKey": "c01a-29", "es": "'Just drinks for now.' The kitchen isn't open yet — and the answer is not to leave. The answer is to ask what time it opens.", "pt": "Ahora solo bebidas." },
+
+    { "tipo": "intro", "voz": "Juli", "audioKey": "c01a-30", "pt": "Nachsprechen — mit ihnen, in ihrem Tempo, nicht ablesen. Die zwei Fragen, die heute Abend die Arbeit machen." },
+    { "tipo": "shadow", "voz": "Emilio", "audioKey": "c01a-31", "es": "¿Están sirviendo comidas?", "pinyin": "es-TAN sser-BJEN-do ko-MI-das", "pt": "Gibt es gerade etwas zu essen?" },
+    { "tipo": "shadow", "voz": "Carmen", "audioKey": "c01a-32", "es": "¿A qué hora abre la cocina?", "pinyin": "a ke O-ra A-bre la ko-THI-na", "pt": "Wann macht die Küche auf?" },
+
+    { "tipo": "intro", "voz": "Juli", "audioKey": "c01a-33", "pt": "Die Uhr im Fokus, in einer Minute. Ein Gedanke deckt fast alles ab: In Spanien hängt der Tag an zwei Ankern, und alles andere ordnet sich drumherum. Das Mittagessen ist die große Nummer, um zwei. Das Abendessen fängt um neun an. Deshalb verschwinden die kleinen Läden mitten am Tag, und deshalb hat in diesem Land um sechs Uhr abends kein Mensch Hunger. Und dein Minimum für diese Folge, wenn du sonst nichts mitnimmst: Frag ¿Están sirviendo comidas? an der Tür, bevor du dich hinsetzt. Diese eine Frage rettet dir mehr Abende als jeder andere Satz in diesem Kurs." },
+
+    { "tipo": "recap", "voz": "Juli", "audioKey": "c01a-34", "pt": "Teil eins A, geschafft. Du weißt, wann dieses Land isst, wann die Läden verschwinden, was der August mit deiner Lieblingsadresse macht und wo sich die Notdienst-Apotheke die ganze Zeit versteckt hat. Als Nächstes Teil eins B: dasselbe Bier, drei Preise, und keiner sagt dir was. Das Bar-Dossier — was sie dir berechnen dürfen, was auf keinen Fall, und warum die kostenlose Tapa, von der in Granada alle schwärmen, in Barcelona ein Gerücht ist. Bis gleich." }
+  ],
+  "aprofundar": {
+    "titulo": "Die spanische Uhr, zum Nachlesen (optional)",
+    "secoes": [
+      {
+        "titulo": "Der Tag, Stunde für Stunde",
+        "corpo": "Typisch, nicht amtlich — keine spanische Behörde legt eine nationale Abendessenszeit fest, nimm das also als Form des Tages, nicht als Fahrplan. Desayuno 07:30–09:00, klein: Kaffee und Toast. Ein zweiter Kaffee oder ein Snack gegen 11:00. La comida, die Hauptmahlzeit, 14:00–15:30 oder 16:00. La merienda 17:00–18:30. La cena ab 21:00, die Küchen öffnen wieder gegen 20:00–20:30, letzte Bestellung etwa 23:30–00:00. Wer um 18:00–19:00 auftaucht, bekommt eine von drei Antworten: geschlossen, offen aber nur Getränke, oder offen und leer — und 'offen und leer' zu dieser Uhrzeit heißt meistens: ein Laden, der von Touristen lebt.",
+        "exemplos": [
+          { "es": "¿Están sirviendo comidas?", "pt": "es-TAN sser-BJEN-do ko-MI-das — Gibt es gerade etwas zu essen? (an der Tür fragen)" },
+          { "es": "¿Hasta qué hora sirven?", "pt": "AS-ta ke O-ra SSIR-ben — Bis wann serviert ihr?" }
+        ]
+      },
+      {
+        "titulo": "Siesta ist eine Laden-Sache, keine Schlaf-Sache",
+        "corpo": "Kleine inhabergeführte Läden schließen typischerweise gegen 13:30–14:00 und öffnen wieder 16:30–17:00, dann bis 20:00–20:30. Kaufhäuser, Supermarktketten, Restaurants und Museen bleiben durchgehend offen. Praktische Regel: alles Kleine, Spezialisierte oder Medizinische — vor halb zwei oder nach fünf. Sonntags sind Supermärkte und die meisten Läden zu (ausgewiesene Touristenzonen sind die Ausnahme, und das Wohnviertel, in dem du die Ferienwohnung gemietet hast, gehört nicht dazu) — also Großeinkauf am Samstag."
+      },
+      {
+        "titulo": "August, und das Schild, das Google Maps nicht sieht",
+        "corpo": "Familienbetriebe schließen oft den kompletten August und hängen CERRADO POR VACACIONES ans Rollgitter. Online-Einträge zeigen sie häufig weiter als geöffnet an, samt Bewertungen. Der 15. August ist obendrein ein landesweiter Feiertag. Das ist kein Grund, den August zu meiden — es ist ein Grund, keinen Nachmittag um eine einzige Adresse herum zu bauen. Vorher anrufen, oder eine zweite Option zwei Straßen weiter haben.",
+        "exemplos": [
+          { "es": "CERRADO POR VACACIONES", "pt": "Betriebsferien (August)" },
+          { "es": "CERRADO POR DESCANSO DEL PERSONAL", "pt": "Ruhetag des Personals — der wöchentliche Schließtag, meist Sonntag oder Montag" }
+        ]
+      },
+      {
+        "titulo": "La farmacia de guardia",
+        "corpo": "Eine 24-Stunden-Apothekenkette wie in manchen Ländern gibt es nicht, aber jede Gemeinde hält per Turnus mindestens eine Apotheke außerhalb der normalen Zeiten im Dienst — genau das System, das du als Apotheken-Notdienst kennst. Der Plan hängt an der Tür jeder Apotheke der Stadt, die geschlossene Apotheke vor dir ist also selbst das Verzeichnis. Das Wort, nach dem du suchst, ist GUARDIA. Die regionalen Apothekerkammern veröffentlichen denselben Plan online (in Madrid die Seite der COFM), und es gibt landesweite Sammelseiten — aber die Tür funktioniert ohne Netz und ohne Akku.",
+        "exemplos": [
+          { "es": "¿Hay alguna farmacia de guardia por aquí?", "pt": "ai al-GU-na far-MA-thja de GUAR-dja por a-KI — Gibt es hier in der Nähe eine Notdienst-Apotheke?" }
+        ]
+      },
+      {
+        "titulo": "Reservieren und die Uhrzeit zurücksagen",
+        "corpo": "Reservierungen laufen über 'para las…' plus Stunde. Halb ist 'y media', Viertel nach 'y cuarto', Viertel vor 'menos cuarto'. Achtung, deutsche Falle: 'halb zehn' heißt auf Spanisch 'las nueve y media', also neun und halb — nie 'las diez y media'. Halb zehn ist eine völlig normale Abendessens-Reservierung und weist dich sofort als jemanden aus, der sich vorbereitet hat.",
+        "exemplos": [
+          { "es": "Quiero reservar una mesa para las nueve y media.", "pt": "Ich möchte einen Tisch für halb zehn reservieren." },
+          { "es": "Para dos personas, a las diez.", "pt": "PA-ra dos per-SSO-nas, a las djeth — Für zwei Personen, um zehn." }
+        ]
+      }
+    ]
+  }
+}

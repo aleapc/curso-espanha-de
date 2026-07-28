@@ -1,0 +1,117 @@
+{
+  "id": "a08",
+  "slot": "A08",
+  "nivel": "avancado",
+  "numero": 36,
+  "parte": "36",
+  "titulo": "Der Abschied",
+  "aguardaNarracao": true,
+  "_andaime": {
+    "_": "ANDAIME — não é parte pronta. A fala espanhola já está aqui e é definitiva (ativo de DESTINO, mesmos audioKey e mesmos mp3 do curso EN, custo de crédito zero). Tudo que é voz-guia está VAZIO de propósito: é o que o autor escreve, em ALEMÃO, e é a única coisa que este SKU paga.",
+    "funcao_do_slot": "A despedida",
+    "dono": "destino",
+    "o_que_falta": "narração (intro/recap/prompts de responde), `cena`, `moldura`, `permissao`, `frasePiso`, `clique`, `moldes`, `fichasCulturais`, `fatosDatados`, `aprofundar`, o campo `pt` (gloss em ALEMÃO) de cada step e o respelling de pronúncia para leitor alemão.",
+    "nao_traduzir": "a parte inglesa correspondente é ep-a08.json. Ela serve de referência de ESTRUTURA, nunca de texto: `pinyin` de lá é respelling para leitor de inglês (types.ts) e `pt` é o gloss inglês — nenhum dos dois foi copiado, e copiá-los é o anti-padrão 8.",
+    "entra_em_vigor": "no instante em que este arquivo ganhar o campo `cena`, os portões de tom passam de aviso a erro para ele. Apagar `aguardaNarracao` sem escrever a narração não muda nada: quem decide é `cena`."
+  },
+  "steps": [
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e01b-12",
+      "es": "Vale, gracias. Hasta luego.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a08-crudo1-e",
+      "es": "Bueno... pues nada, que nos vamos yendo, ¿eh?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a08-crudo2-c",
+      "es": "Sí, sí, venga. Que mañana hay que madrugar.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a08-crudo3-e",
+      "es": "Bueno, pues nada. Venga, venga.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b18-genial-c",
+      "es": "Ha estado genial. Volveré.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a08-ultima-e",
+      "es": "Mañana nos vamos. Ha estado genial.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a08-vuelve-c",
+      "es": "Pues cuando volváis, ya sabéis dónde estamos.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a08-anoquiene-e",
+      "es": "Nos vemos el año que viene.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a08-aquiestamos-c",
+      "es": "Pues aquí estamos. Aquí no nos movemos.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e01a-18",
+      "es": "Hasta luego.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "b18-hasta-e",
+      "es": "Muchas gracias por todo. Hasta la próxima.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "i08-vayabien-c",
+      "es": "Que vaya bien.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a08-osvaya-e",
+      "es": "Que os vaya muy bien.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a08-paciencia-c",
+      "es": "Gracias por la paciencia con mi español.",
+      "pt": ""
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "q-e08",
+  "nivel": "basico",
+  "titulo": "Quiz — Wenn es schiefgeht",
+  "subtitulo": "Ein Handy weg in der Metro, eine Anzeige, die wirklich zählt, und eine Apotheke um Mitternacht",
+  "introAudioKey": "qe08-i",
+  "introPt": "Quizzeit. Halb sechs in Barcelona, und der Nachmittag ist gerade gekippt. In der Metro verschwindet ein Handy, unser Reisender landet auf der Polizeiwache, und um Mitternacht braucht er eine Apotheke, die offen hat. Hör so oft rein, wie du magst, und beantworte dann die Fragen.",
+  "cenario": "Einem Reisenden werden in der Metro Handy und Geldbörse gestohlen. Er erstattet Anzeige auf der comisaría — online begonnen hatte er sie schon am Abend zuvor — und sucht später in der Nacht eine offene Apotheke.",
+  "dialogo": [
+    { "audioKey": "qe08-d1", "voz": "Emilio", "es": "¡Al ladrón! ¡Me han robado el móvil!", "pinyin": "al la-DRON · meh an rro-BA-do el MO-bil", "pt": "— Haltet den Dieb! Mein Handy ist gestohlen worden! (auf dem Bahnsteig)" },
+    { "audioKey": "qe08-d2", "voz": "Carmen", "es": "Buenas tardes. ¿Qué ha pasado?", "pinyin": "BUE-nas TAR-des · keh a pa-SSA-do", "pt": "— Guten Tag. Was ist passiert? (die Beamtin)" },
+    { "audioKey": "qe08-d3", "voz": "Emilio", "es": "Me han robado el móvil y la cartera.", "pinyin": "meh an rro-BA-do el MO-bil i la kar-TE-ra", "pt": "— Mein Handy und meine Geldbörse sind gestohlen worden." },
+    { "audioKey": "qe08-d4", "voz": "Carmen", "es": "¿Dónde ha sido?", "pinyin": "DON-deh a SSI-do", "pt": "— Wo ist es passiert?" },
+    { "audioKey": "qe08-d5", "voz": "Emilio", "es": "Ha sido en el metro, hace diez minutos.", "pinyin": "a SSI-do en el ME-tro · A-theh DJETH mi-NU-tos", "pt": "— Es war in der Metro, vor zehn Minuten." },
+    { "audioKey": "qe08-d6", "voz": "Emilio", "es": "Quiero poner una denuncia.", "pinyin": "KJE-ro po-NER U-na de-NUN-thia", "pt": "— Ich möchte Anzeige erstatten." },
+    { "audioKey": "qe08-d7", "voz": "Carmen", "es": "¿La ha hecho por internet?", "pinyin": "la a E-tscho por in-ter-NET", "pt": "— Haben Sie das online gemacht?" },
+    { "audioKey": "qe08-d8", "voz": "Emilio", "es": "Sí. Hice la denuncia por internet. Vengo a ratificarla.", "pinyin": "ssi · I-theh la de-NUN-thia por in-ter-NET · BEN-go a rra-ti-fi-KAR-la", "pt": "— Ja. Ich habe die Anzeige online gemacht. Ich komme, um sie zu bestätigen." },
+    { "audioKey": "qe08-d9", "voz": "Emilio", "es": "Necesito una copia para el seguro.", "pinyin": "ne-the-SSI-to U-na KO-pia PA-ra el sse-GU-ro", "pt": "— Ich brauche eine Kopie für die Versicherung." },
+    { "audioKey": "qe08-d10", "voz": "Carmen", "es": "Muy bien. ¿Le han robado el pasaporte también?", "pinyin": "mui bjen · leh an rro-BA-do el pa-ssa-POR-teh tam-BJEN", "pt": "— Gut. Ist Ihr Pass auch gestohlen worden?" },
+    { "audioKey": "qe08-d11", "voz": "Emilio", "es": "No, el pasaporte lo tengo. ¿Hay alguien que hable inglés?", "pinyin": "no · el pa-ssa-POR-teh lo TEN-go · ai AL-gjen keh A-bleh in-GLES", "pt": "— Nein, den Pass habe ich noch. Spricht hier jemand Englisch?" },
+    { "audioKey": "qe08-d12", "voz": "Carmen", "es": "Sí, ahora llamo a un compañero.", "pinyin": "ssi · a-O-ra JA-mo a un kom-pa-NJE-ro", "pt": "— Ja, ich rufe gleich einen Kollegen." },
+    { "audioKey": "qe08-d13", "voz": "Emilio", "es": "¿Hay una farmacia de guardia por aquí? Me duele la cabeza.", "pinyin": "ai U-na far-MA-thia deh GUAR-dia por a-KI · meh DUE-leh la ka-BE-tha", "pt": "— (in derselben Nacht) Gibt es hier in der Nähe eine Notdienst-Apotheke? Ich habe Kopfschmerzen." },
+    { "audioKey": "qe08-d14", "voz": "Carmen", "es": "Sí, hay una en la calle Mayor. Mire la puerta: la lista está ahí.", "pinyin": "ssi · ai U-na en la KA-jeh ma-JOR · MI-reh la PUER-ta · la LIS-ta es-TA a-I", "pt": "— Ja, eine in der Calle Mayor. Schauen Sie an die Tür: Die Liste hängt dort." }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "Was genau meldet er als gestohlen?",
+      "es": "What exactly did he report stolen?",
+      "opcoes": ["Seinen Pass und seinen Koffer", "Sein Handy und seine Geldbörse", "Seine Geldbörse und seinen Pass", "Sein Handy und seine Kamera"],
+      "correta": 1,
+      "explica": "'Me han robado el móvil y la cartera.' Die Vorlage ist 'Me han robado' plus das, was fehlt — und in Spanien heißt das Handy 'el móvil', nie 'celular'. Und 'Handy' erst recht nicht: Das Wort gibt es nur bei uns.",
+      "pt": "'Me han robado el móvil y la cartera.' Die Vorlage ist 'Me han robado' plus das, was fehlt — und in Spanien heißt das Handy 'el móvil', nie 'celular'. Und 'Handy' erst recht nicht: Das Wort gibt es nur bei uns."
+    },
+    {
+      "pergunta": "'Ha sido en el metro, hace diez minutos.' Welche zwei Angaben macht er der Beamtin?",
+      "es": "'Ha sido en el metro, hace diez minutos.' What two things is he giving the officer?",
+      "opcoes": ["Den Wert und die Marke", "Seinen Namen und sein Hotel", "Wo es passiert ist und wann", "Die Liniennummer und die Station"],
+      "correta": 2,
+      "explica": "Wo und wann — mehr braucht die Anzeige nicht. Leg dir beides zurecht, bevor du an den Tresen kommst, dann dauert die ganze Sache Minuten.",
+      "pt": "Wo und wann — mehr braucht die Anzeige nicht. Leg dir beides zurecht, bevor du an den Tresen kommst, dann dauert die ganze Sache Minuten."
+    },
+    {
+      "pergunta": "Er hat gestern Abend schon online angezeigt. Wozu ist er dann auf der Wache?",
+      "es": "He already filed online last night. So what is he at the station to do?",
+      "opcoes": ["Um die Online-Anzeige zu löschen und neu anzufangen", "Um persönlich zu unterschreiben, damit die Anzeige gültig wird", "Um eine Gebühr für die Anzeige zu bezahlen", "Um sein gestohlenes Handy abzuholen"],
+      "correta": 1,
+      "explica": "'Vengo a ratificarla.' Online ist nur die halbe denuncia — echt wird sie mit deiner Unterschrift vor Ort, und die Frist ist kurz. Schau in die Bestätigungsmail und geh am besten noch am selben Tag hin.",
+      "pt": "'Vengo a ratificarla.' Online ist nur die halbe denuncia — echt wird sie mit deiner Unterschrift vor Ort, und die Frist ist kurz. Schau in die Bestätigungsmail und geh am besten noch am selben Tag hin."
+    },
+    {
+      "pergunta": "Warum verlangt er 'una copia'?",
+      "es": "Why does he ask for 'una copia'?",
+      "opcoes": ["Für seine Versicherung", "Um sie am Flughafen zu zeigen", "Damit das Konsulat sie stempelt", "Um sie im Hotel abzugeben"],
+      "correta": 0,
+      "explica": "'Necesito una copia para el seguro.' Keine denuncia, keine Erstattung — und ein Screenshot des Online-Formulars ist nicht dasselbe Dokument. Frag danach, bevor du vom Tresen weggehst.",
+      "pt": "'Necesito una copia para el seguro.' Keine denuncia, keine Erstattung — und ein Screenshot des Online-Formulars ist nicht dasselbe Dokument. Frag danach, bevor du vom Tresen weggehst."
+    },
+    {
+      "pergunta": "Nachts ist die Apotheke zu. Was heißt 'de guardia' — und wo hängt die Liste?",
+      "es": "That night the pharmacy is shut. What does 'de guardia' mean — and where is the list?",
+      "opcoes": ["Eine Apotheke mit Wachmann; frag im Hotel", "Eine Krankenhausapotheke; sie ist in der Notaufnahme", "Die Apotheke mit Nachtdienst; die Liste hängt an der Tür der geschlossenen", "Eine Apotheke nur für Rezepte; frag einen Arzt"],
+      "correta": 2,
+      "explica": "Spanien hat einen Nachtdienstplan statt Vierundzwanzig-Stunden-Apotheken. Eine geschlossen vorgefunden? Geh nicht weg — lies die Tür. Die heutige Notdienst-Apotheke steht an der Scheibe.",
+      "pt": "Spanien hat einen Nachtdienstplan statt Vierundzwanzig-Stunden-Apotheken. Eine geschlossen vorgefunden? Geh nicht weg — lies die Tür. Die heutige Notdienst-Apotheke steht an der Scheibe."
+    },
+    {
+      "pergunta": "Du verlässt ein Kaufhaus und siehst ein großes Schild: SALIDA. Was sagt es dir?",
+      "es": "You're leaving a department store and see a big sign saying SALIDA. What is it telling you?",
+      "opcoes": ["Es gibt Schlussverkauf", "Da geht es raus", "Der Laden ist geschlossen", "Nur für Personal"],
+      "correta": 1,
+      "explica": "SALIDA heißt Ausgang. Für Engländer ist das die Falle Nummer eins, weil sie 'sale' lesen — für dich ist es geschenkt. Der Schlussverkauf heißt REBAJAS. Und am Flughafen heißt SALIDAS im Plural Abflug.",
+      "pt": "SALIDA heißt Ausgang. Für Engländer ist das die Falle Nummer eins, weil sie 'sale' lesen — für dich ist es geschenkt. Der Schlussverkauf heißt REBAJAS. Und am Flughafen heißt SALIDAS im Plural Abflug."
+    },
+    {
+      "pergunta": "An der Bartür steht TIRAR. Was machst du?",
+      "es": "The bar door says TIRAR. What do you do?",
+      "opcoes": ["Drücken", "Ziehen", "Diese Tür nicht benutzen", "Klingeln"],
+      "correta": 1,
+      "explica": "TIRAR heißt ziehen. EMPUJAR heißt drücken — da steckt das 'pu' von 'push' drin. Zwischen diesen beiden passiert der tägliche Zusammenstoß mit der Tür.",
+      "pt": "TIRAR heißt ziehen. EMPUJAR heißt drücken — da steckt das 'pu' von 'push' drin. Zwischen diesen beiden passiert der tägliche Zusammenstoß mit der Tür."
+    }
+  ]
+}

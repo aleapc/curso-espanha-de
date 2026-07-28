@@ -1,0 +1,237 @@
+{
+  "id": "a01",
+  "slot": "A01",
+  "nivel": "avancado",
+  "numero": 29,
+  "parte": "29",
+  "titulo": "Wie sie reden, wenn sie nicht mit Ihnen reden",
+  "aguardaNarracao": true,
+  "_andaime": {
+    "_": "ANDAIME — não é parte pronta. A fala espanhola já está aqui e é definitiva (ativo de DESTINO, mesmos audioKey e mesmos mp3 do curso EN, custo de crédito zero). Tudo que é voz-guia está VAZIO de propósito: é o que o autor escreve, em ALEMÃO, e é a única coisa que este SKU paga.",
+    "funcao_do_slot": "Como eles falam quando não é com você",
+    "dono": "par",
+    "o_que_falta": "narração (intro/recap/prompts de responde), `cena`, `moldura`, `permissao`, `frasePiso`, `clique`, `moldes`, `fichasCulturais`, `fatosDatados`, `aprofundar`, o campo `pt` (gloss em ALEMÃO) de cada step e o respelling de pronúncia para leitor alemão.",
+    "nao_traduzir": "a parte inglesa correspondente é ep-a01.json. Ela serve de referência de ESTRUTURA, nunca de texto: `pinyin` de lá é respelling para leitor de inglês (types.ts) e `pt` é o gloss inglês — nenhum dos dois foi copiado, e copiá-los é o anti-padrão 8.",
+    "entra_em_vigor": "no instante em que este arquivo ganhar o campo `cena`, os portões de tom passam de aviso a erro para ele. Apagar `aguardaNarracao` sem escrever a narração não muda nada: quem decide é `cena`."
+  },
+  "steps": [
+    {
+      "tipo": "ouvir",
+      "voz": "Ivan",
+      "audioKey": "a01-abre-i",
+      "es": "¿Me poneh doh cañah y algo pa' picá?",
+      "pt": "",
+      "tts": "¿Me poneh doh cañah y algo pa picá?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Matilda",
+      "audioKey": "a01-abre-m",
+      "es": "Marchando. ¿Loh dejo aquí?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e03a-doscanas-c",
+      "es": "¿Me pones dos cañas, por favor?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Ivan",
+      "audioKey": "a01-canyas-i",
+      "es": "¿Me poneh doh cañah, por favó?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e01c-10",
+      "es": "¿Cuántas cosas más?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Matilda",
+      "audioKey": "a01-cosas-m",
+      "es": "¿Cuánta' cosa' má'?",
+      "pt": "",
+      "tts": "¿Cuánta cosa má?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e01c-12",
+      "es": "El pescado está muy bueno.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Ivan",
+      "audioKey": "a01-pescao-i",
+      "es": "El pescao está mu bueno.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "b18-pagado-e",
+      "es": "Ya está pagado.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Matilda",
+      "audioKey": "a01-pagao-m",
+      "es": "Ya 'tá pagao.",
+      "pt": "",
+      "tts": "Ya tá pagao."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e04b-jamon-c",
+      "es": "¿Lleva jamón o chorizo?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Ivan",
+      "audioKey": "a01-chorizo-i",
+      "es": "¿Lleva jamón o chorizo?",
+      "pt": "",
+      "tts": "¿Lleva jamón o choriso?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e03b-parallevar-e",
+      "es": "Para llevar, por favor.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Ivan",
+      "audioKey": "a01-llevar-i",
+      "es": "Pa' llevá, por favó.",
+      "pt": "",
+      "tts": "Pa llevá, por favó."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b10-picar-c",
+      "es": "¿Hay algo para picar?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Ivan",
+      "audioKey": "a01-pica-i",
+      "es": "¿Hay algo pa' picá?",
+      "pt": "",
+      "tts": "¿Hay algo pa picá?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b08-donde-aseos-c",
+      "es": "¿Dónde están los aseos?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Matilda",
+      "audioKey": "a01-aseos-m",
+      "es": "¿Dónde 'tán loh aseo'?",
+      "pt": "",
+      "tts": "¿Dónde tán loh aseo?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e03b-queriuno-e",
+      "es": "Quería uno de esos, por favor.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Ivan",
+      "audioKey": "a01-uno-i",
+      "es": "Quería uno de eso', por favó.",
+      "pt": "",
+      "tts": "Quería uno de eso, por favó."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e01c-despacio-e",
+      "es": "¿Me puede hablar más despacio, por favor?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Matilda",
+      "audioKey": "a01-despacio-m",
+      "es": "¿Me puede hablá máh dehpacio, por favó?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e04a-marisco-c",
+      "es": "Soy alérgica al marisco.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Matilda",
+      "audioKey": "a01-marisco-m",
+      "es": "Soy alérgica al marihco.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b07-dejado-c",
+      "es": "Me he dejado el móvil en el taxi.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Ivan",
+      "audioKey": "a01-movil-i",
+      "es": "Me he dejao el móvil en el taxi.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b06-tarjeta-c",
+      "es": "¿Puedo pagar con tarjeta?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Ivan",
+      "audioKey": "a01-paga-i",
+      "es": "¿Puedo pagá con tarjeta?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e03a-otra-c",
+      "es": "Otra, por favor.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Matilda",
+      "audioKey": "a01-otra-m",
+      "es": "Otra, por favó.",
+      "pt": ""
+    }
+  ]
+}

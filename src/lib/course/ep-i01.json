@@ -1,0 +1,125 @@
+{
+  "id": "i01",
+  "slot": "I01",
+  "nivel": "intermediario",
+  "numero": 19,
+  "parte": "19",
+  "titulo": "Ihre Uhr",
+  "aguardaNarracao": true,
+  "_andaime": {
+    "_": "ANDAIME — não é parte pronta. A fala espanhola já está aqui e é definitiva (ativo de DESTINO, mesmos audioKey e mesmos mp3 do curso EN, custo de crédito zero). Tudo que é voz-guia está VAZIO de propósito: é o que o autor escreve, em ALEMÃO, e é a única coisa que este SKU paga.",
+    "funcao_do_slot": "O relógio deles",
+    "dono": "destino",
+    "o_que_falta": "narração (intro/recap/prompts de responde), `cena`, `moldura`, `permissao`, `frasePiso`, `clique`, `moldes`, `fichasCulturais`, `fatosDatados`, `aprofundar`, o campo `pt` (gloss em ALEMÃO) de cada step e o respelling de pronúncia para leitor alemão.",
+    "nao_traduzir": "a parte inglesa correspondente é ep-c01a.json. Ela serve de referência de ESTRUTURA, nunca de texto: `pinyin` de lá é respelling para leitor de inglês (types.ts) e `pt` é o gloss inglês — nenhum dos dois foi copiado, e copiá-los é o anti-padrão 8.",
+    "entra_em_vigor": "no instante em que este arquivo ganhar o campo `cena`, os portões de tom passam de aviso a erro para ele. Apagar `aguardaNarracao` sem escrever a narração não muda nada: quem decide é `cena`."
+  },
+  "steps": [
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e03a-comidas-e",
+      "es": "¿Están sirviendo comidas?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "c01a-09",
+      "es": "Ahora solo bebidas.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "c01a-06",
+      "es": "La cocina abre a las ocho y media.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "c01a-13",
+      "es": "¿A qué hora abre la cocina?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "c01a-15",
+      "es": "¿A qué hora abre la cocina?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "c01a-16",
+      "es": "COCINA CERRADA",
+      "pt": "",
+      "tts": "Cocina cerrada."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "i01-hastaque-e",
+      "es": "¿Hasta qué hora sirven?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "i01-mesanueve-c",
+      "es": "Quería una mesa para las nueve y media.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "i01-cuantos-c",
+      "es": "¿Para cuántas personas?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "i01-somosdos-e",
+      "es": "Somos dos.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "c01a-enlabarra-c",
+      "es": "Mesa ahora mismo no hay. En la barra sí, si os apañáis.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "i01-haymesa-e",
+      "es": "¿Hay mesa a las diez?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "i01-cortado-c",
+      "es": "¿Me pones un cortado?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b11-otrocafe-c",
+      "es": "Otro café, por favor.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "i01-mesadiez-c",
+      "es": "Quería una mesa para las diez.",
+      "pt": ""
+    }
+  ]
+}

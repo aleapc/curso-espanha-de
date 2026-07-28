@@ -1,0 +1,104 @@
+{
+  "id": "c01b",
+  "nivel": "intermediario",
+  "numero": 1,
+  "parte": "1B",
+  "titulo": "„Dasselbe Bier, drei Preise, und keiner sagt dir was.“",
+  "subtitulo": "Das Bar-Dossier: was verboten ist, was einfach Granada ist, und wie du bestellst, ohne dich zu entschuldigen",
+  "steps": [
+    { "tipo": "intro", "voz": "Juli", "audioKey": "c01b-01", "pt": "Teil eins B, und hier sickert das Geld leise aus deiner Reise. Dieselbe Bar, dasselbe Bier, drei verschiedene Preise: im Stehen am Tresen, am Tisch drinnen, draußen auf der Terrasse. Das ist in Spanien völlig legal — und es muss auch auf der Preisliste stehen, die sie per Gesetz aushängen. Fast niemand liest sie. Das ist die ganze Folge: drei Fragen, ein Aushang an der Wand, und ein paar Dinge, die sie schlicht nicht mit dir machen dürfen." },
+
+    { "tipo": "intro", "voz": "Juli", "audioKey": "c01b-02", "pt": "Aufwärmen. Hand auf den Oberschenkel, ein Schlag pro Silbe, alle gleich groß: cer-ve-za. Drei Schläge, drei gleiche. Und jetzt der eine neue Laut, den Spanien für dich hat. Das c und das z in cerveza sind kein s und erst recht kein t — das ist das englische th aus 'think'. Zunge locker zwischen die Zähne, Luft drüber, fertig: ther-BE-tha. Aus dem Schulenglisch kennst du den Laut, du benutzt ihn nur nie freiwillig. Achtung: nicht das deutsche th wie in 'Theater', das ist einfach ein t. Und gleich die Erlaubnis dazu, damit du dich nicht verkrampfst: wenn bei dir 'ser-BE-sa' herauskommt, ist das völlig in Ordnung. Die halbe spanischsprachige Welt spricht es so, in Sevilla sowieso, und verstanden wirst du immer. Aber wenn du das th triffst, klingst du nach jemandem, der in Spanien war — und nicht nach jemandem, der eine App installiert hat." },
+
+    { "tipo": "ouvir", "voz": "Emilio", "audioKey": "c01b-03", "es": "Dime.", "pinyin": "DI-me", "pt": "👂 'Sag an.' — so sagt dir der Mann hinter dem Tresen, dass du dran bist. Das ist nicht unhöflich, das ist dein Stichwort.", "tts": "Dime." },
+
+    { "tipo": "ouvir", "voz": "Carmen", "audioKey": "c01b-04", "es": "¿Quién va?", "pinyin": "kjen ba", "pt": "👂 'Wer ist dran?' — antworte, sonst schaust du zu, wie drei Leute nach dir zuerst bedient werden.", "tts": "¿Quién va?" },
+
+    { "tipo": "intro", "voz": "Juli", "audioKey": "c01b-05", "pt": "Jetzt eine Erlaubnis — und ausnahmsweise musst du dafür nichts ablegen. Deutsche Direktheit funktioniert an der spanischen Bar hervorragend. Ponme una caña, por favor. Wörtlich: 'Stell mir ein kleines Bier hin, bitte.' Klingt knapp, ist knapp, und genau so ist es richtig. Die Höflichkeit steckt im Ton und im 'por favor' am Ende, nicht in drei Schachtelsätzen. Zwei Dinge musst du trotzdem umstellen. Erstens: erst grüßen, dann bestellen. Mit der Bestellung hereinplatzen ist die eine Sache, die hier wirklich unhöflich ankommt. Zweitens: hier gibt es keine Schlange. Ich weiß, das tut weh. Am Tresen wird nicht angestanden — der Kellner merkt sich, wer wann kam, und du musst da sein, wenn er 'dime' sagt. Schau ihm in die Augen und antworte. Wer brav auf den Boden guckt und wartet, bis er an der Reihe ist, der wartet in zwanzig Minuten immer noch." },
+
+    { "tipo": "ouvir", "voz": "Emilio", "audioKey": "c01b-06", "es": "Ponme una caña, por favor.", "pinyin": "PON-me U-na KA-nja, por fa-BOR", "pt": "Ein kleines Bier vom Fass, bitte. (una caña ist die Standardeinheit — wer 'ein Bier' sagt, bekommt eine teure Flasche)", "tts": "Ponme una caña, por favor." },
+
+    { "tipo": "responde", "voz": "Emilio", "promptVoz": "Juli", "promptAudioKey": "c01b-07", "promptPt": "Drei Reihen tief am Tresen. Der Kellner erwischt endlich deinen Blick und sagt 'dime'. Kein Drumherum, keine Entschuldigung — bestell dein kleines Bier. Sprich jetzt.", "audioKey": "c01b-08", "es": "Ponme una caña, por favor.", "pinyin": "PON-me U-na KA-nja, por fa-BOR", "pt": "Ein kleines Bier vom Fass, bitte." },
+
+    { "tipo": "intro", "voz": "Juli", "audioKey": "c01b-09", "pt": "So, die drei Preise. Barra, mesa, terraza — Tresen, Tisch, Terrasse, und mit jedem Schritt steigt der Preis. Legal, normal, und auf einem Touristenplatz liegen zwischen dreißig Cent und einem Euro pro Getränk dazwischen. Zu zweit, vierzehn Tage, drei Getränke am Tag — und du hast einen alberten Betrag ausgegeben, dem du nie zugestimmt hast. Hier die Körperbewegung, sie dauert vier Sekunden: Bevor du dich draußen hinsetzt, schau auf die Preisliste an der Wand oder an der Tür. Die gibt es per Gesetz, sie muss sichtbar sein, und der Aufschlag muss draufstehen. Wer sich ungefragt hinsetzt, zahlt ihn und kann sich hinterher nicht beschweren — es stand ja da. Also frag, laut und vorher." },
+
+    { "tipo": "ouvir", "voz": "Carmen", "audioKey": "c01b-10", "es": "¿Es el mismo precio en la barra?", "pinyin": "es el MISS-mo PRE-thjo en la BA-rra", "pt": "Kostet es am Tresen dasselbe?", "tts": "¿Es el mismo precio en la barra?" },
+
+    { "tipo": "responde", "voz": "Carmen", "promptVoz": "Juli", "promptAudioKey": "c01b-11", "promptPt": "Ein hübscher Platz, draußen ein freier Tisch, und du willst dich gerade setzen. Frag, ob es im Stehen am Tresen dasselbe kostet. Sprich jetzt.", "audioKey": "c01b-12", "es": "¿Es el mismo precio en la barra?", "pinyin": "es el MISS-mo PRE-thjo en la BA-rra", "pt": "Kostet es am Tresen dasselbe?" },
+
+    { "tipo": "ouvir", "voz": "Emilio", "audioKey": "c01b-13", "es": "¿Hay suplemento de terraza?", "pinyin": "ai ssu-ple-MEN-to de te-RRA-tha", "pt": "Gibt es einen Terrassenaufschlag?", "tts": "¿Hay suplemento de terraza?" },
+
+    { "tipo": "responde", "voz": "Emilio", "promptVoz": "Juli", "promptAudioKey": "c01b-14", "promptPt": "Der Kellner kommt auf die Terrasse, um die Bestellung aufzunehmen. Frag ihn geradeheraus nach dem Terrassenaufschlag, bevor du bestellst. Sprich jetzt.", "audioKey": "c01b-15", "es": "¿Hay suplemento de terraza?", "pinyin": "ai ssu-ple-MEN-to de te-RRA-tha", "pt": "Gibt es einen Terrassenaufschlag?" },
+
+    { "tipo": "intro", "voz": "Thomas", "audioKey": "c01b-16", "pt": "Thomas noch mal, mit dem Dossier — denn 'die ziehen mich über den Tisch' und 'so läuft das hier eben' sind zwei verschiedene Dinge, und es hilft ungemein, zu wissen, was gerade vorliegt. Erlaubt, solange sie es dir vorher sagen: der Terrassen- oder Tischaufschlag, Brot berechnen, Eis berechnen, die Milch im Kaffee berechnen, ein Mindestbetrag bei Kartenzahlung, eine Zeitbegrenzung für den Tisch, eine Anzahlung für die Reservierung, die von der Rechnung abgeht. Niemals erlaubt: ein Preis auf der Karte ohne Mehrwertsteuer; ein QR-Code als EINZIGE Möglichkeit, die Karte zu sehen — es muss eine Karte auf Papier oder eine sichtbare Preisliste geben; dir kostenloses Leitungswasser zu verweigern; und ein Servicezuschlag, von dem nie die Rede war. Und noch etwas für die Hosentasche: der Aushang mit dem Satz HAY HOJAS DE RECLAMACIONES A DISPOSICIÓN DEL CONSUMIDOR. Beschwerdeformulare vorhanden. Wenn du diesen Aushang siehst, können sie dir das Formular nicht verweigern." },
+
+    { "tipo": "ouvir", "voz": "Carmen", "audioKey": "c01b-17", "es": "¿Me deja ver la carta en papel, por favor?", "pinyin": "me DE-cha ber la KAR-ta en pa-PEL, por fa-BOR", "pt": "Könnte ich bitte die Speisekarte auf Papier sehen? (hörst du das j in deja? Das ist dein ch aus 'Bach' — geschenkt. Und merk dir: la carta ist die Speisekarte, el menú ist das Tagesmenü)", "tts": "¿Me deja ver la carta en papel, por favor?" },
+
+    { "tipo": "responde", "voz": "Carmen", "promptVoz": "Juli", "promptAudioKey": "c01b-18", "promptPt": "Man zeigt dir einen QR-Code, dein Handy hat kein Netz, und ein Preis ist nirgends zu sehen. Bitte um die Karte auf Papier. Sprich jetzt.", "audioKey": "c01b-19", "es": "¿Me deja ver la carta en papel, por favor?", "pinyin": "me DE-cha ber la KAR-ta en pa-PEL, por fa-BOR", "pt": "Könnte ich bitte die Speisekarte auf Papier sehen?" },
+
+    { "tipo": "intro", "voz": "Juli", "audioKey": "c01b-20", "pt": "Jetzt die kostenlose Tapa, die am meisten überverkaufte Tatsache über Spanien. Gratis-Tapas sind kein spanisches Gesetz. Sie sind eine Gewohnheit aus Granada — und Barcelona hat nie davon gehört. Wo das Tellerchen wirklich gratis zum Getränk kommt: im östlichen Andalusien, vor allem Granada, wo du bei jeder Runde eine andere Tapa bekommst; in Almería, wo man dir eine Liste zum Aussuchen hinlegt; und in Ecken von Kastilien und León, in León und Salamanca, und in Teilen Galiciens. Wo sie ein bezahlter Posten auf der Rechnung ist: Barcelona, Madrid, San Sebastián, Valencia. Und im Baskenland läuft ein ganz anderes Spiel — die pintxos stehen auf dem Tresen, du bedienst dich selbst, und am Ende zählen sie deine Zahnstocher. Was reizend ist, bis du elf davon gegessen hast. Also nicht raten. Fragen." },
+
+    { "tipo": "ouvir", "voz": "Emilio", "audioKey": "c01b-21", "es": "¿La tapa va incluida con la bebida?", "pinyin": "la TA-pa ba in-klu-I-da kon la be-BI-da", "pt": "Ist die Tapa im Getränk inbegriffen?", "tts": "¿La tapa va incluida con la bebida?" },
+
+    { "tipo": "responde", "voz": "Emilio", "promptVoz": "Juli", "promptAudioKey": "c01b-22", "promptPt": "Neben deinem Bier landet ein Tellerchen mit irgendetwas, das du nicht bestellt hast. Kläre jetzt, nicht an der Kasse, ob das zum Getränk dazugehört. Sprich jetzt.", "audioKey": "c01b-23", "es": "¿La tapa va incluida con la bebida?", "pinyin": "la TA-pa ba in-klu-I-da kon la be-BI-da", "pt": "Ist die Tapa im Getränk inbegriffen?" },
+
+    { "tipo": "intro", "voz": "Juli", "audioKey": "c01b-24", "pt": "Das beste Preis-Leistungs-Verhältnis in Spanien steht auf einer Kreidetafel, an der du die ganze Woche vorbeigelaufen bist: el menú del día. Werktags mittags, ein Festpreis, und dafür bekommst du Vorspeise, Hauptgang, Brot, ein Getränk und Nachtisch oder Kaffee. Landesweit liegt der Schnitt bei etwa vierzehn Euro zwanzig. Und jetzt eine Korrektur, weil im Netz das Gegenteil steht: Es gibt kein Gesetz, das Restaurants dazu verpflichtet — diese Vorschrift wurde vor Jahrzehnten abgeschafft. Es ist ein Brauch, ein sehr guter, und die meisten Viertelslokale machen es weiter. Deine Erlaubnis: Du musst nicht beide Gänge aufessen. Niemand schaut, niemand urteilt, und ein halb voller Teller, der zurückgeht, ist kein diplomatischer Zwischenfall." },
+
+    { "tipo": "intro", "voz": "Juli", "audioKey": "c01b-25", "pt": "Sechs Körperregeln für die spanische Bar, jede mit einer Folge. Erstens: beim Reinkommen grüßen und beim Rausgehen hasta luego sagen — Laden, Bar, Wartezimmer, Aufzug. Stumm hereinkommen liest sich als unhöflich. Zweitens: kurz bestellen, und einen Tick lauter, als sich für dich richtig anfühlt. Spanische Bars sind laut. Du darfst hier also ausnahmsweise genau so laut sein, wie uns im Ausland ohnehin alle unterstellen. Drittens: die Rechnung kommt nie von allein — sie unaufgefordert zu bringen gilt als Rauswurf. Du musst fragen, und bis du fragst, kannst du sitzen bleiben, bis die Sonne aufgeht. Viertens: den Kellner rufst du mit Blickkontakt und einem perdone, Hand leicht gehoben. Nie schnipsen, nie 'chico' rufen, nie mit Geld wedeln. Fünftens: es kommt niemand an den Tisch und fragt, ob es schmeckt. Das ist keine Vernachlässigung, das ist Respekt vor deinem Tisch. Und sechstens, deine Erlaubnis des Tages: Du darfst an einem Getränk eine Stunde lang nippen. Der Druck, den Tisch freizumachen, ist eine nordeuropäische Erfindung. Der Tisch gehört dir — und er gehört dir auch noch, nachdem du bezahlt hast." },
+
+    { "tipo": "ouvir", "voz": "Carmen", "audioKey": "c01b-26", "es": "Pagamos a partes iguales.", "pinyin": "pa-GA-mos a PAR-tes i-GUA-les", "pt": "Wir teilen gleichmäßig. (sag es, BEVOR abgerechnet wird, nicht danach)", "tts": "Pagamos a partes iguales." },
+
+    { "tipo": "responde", "voz": "Carmen", "promptVoz": "Juli", "promptAudioKey": "c01b-27", "promptPt": "Ihr seid zu viert, alles kam in die Mitte des Tisches, und der Kellner will gleich abrechnen. 'Getrennt, bitte' ist hier keine gute Idee — komm dem Einzelposten-Streit zuvor und sag ihm, dass ihr gleichmäßig teilt. Sprich jetzt.", "audioKey": "c01b-28", "es": "Pagamos a partes iguales.", "pinyin": "pa-GA-mos a PAR-tes i-GUA-les", "pt": "Wir teilen gleichmäßig." },
+
+    { "tipo": "responde", "voz": "Juli", "promptVoz": "Emilio", "promptAudioKey": "c01b-29", "promptTts": "Dime.", "promptPt": "Hör zu. Der Mann hinter dem Tresen sagt genau ein Wort zu dir. Was bedeutet es, und was machst du damit? Sag es laut auf Deutsch.", "audioKey": "c01b-30", "es": "'Go on' — it's your turn. That's not impatience, that's an invitation, and the correct response is to look up and order in one short sentence.", "pt": "Dime." },
+
+    { "tipo": "intro", "voz": "Juli", "audioKey": "c01b-31", "pt": "Nachsprechen — mit ihnen, in ihrem Tempo, nicht ablesen. Die Bestellung, und die Frage, die sich selbst bezahlt." },
+    { "tipo": "shadow", "voz": "Emilio", "audioKey": "c01b-32", "es": "Ponme una caña, por favor.", "pinyin": "PON-me U-na KA-nja, por fa-BOR", "pt": "Ein kleines Bier vom Fass, bitte." },
+    { "tipo": "shadow", "voz": "Carmen", "audioKey": "c01b-33", "es": "¿Es el mismo precio en la barra?", "pinyin": "es el MISS-mo PRE-thjo en la BA-rra", "pt": "Kostet es am Tresen dasselbe?" },
+
+    { "tipo": "intro", "voz": "Juli", "audioKey": "c01b-34", "pt": "Die Bar im Fokus, in einer Minute. Alles heute läuft auf eine einzige Gewohnheit hinaus: den Preis herausfinden, bevor du drinsitzt. Auf die Liste an der Wand schauen. Fragen, ob der Tresen billiger ist. Fragen, ob die Terrasse einen Aufschlag hat. Fragen, ob die Tapa dabei ist. Vier Sekunden pro Frage, und aus einer Rechnung, über die du dich ärgerst, wird eine, der du zugestimmt hast. Und dein Minimum, wenn du sonst nichts mitnimmst: Ponme una caña, por favor — in normaler spanischer Lautstärke, ohne ein einziges 'Entschuldigung' davor. Dieser eine Satz bringt dir dein Bier, und er bringt dir die Behandlung von jemandem, der nicht zum ersten Mal in Spanien ist." },
+
+    { "tipo": "recap", "voz": "Juli", "audioKey": "c01b-35", "pt": "Folge eins, geschafft. Du weißt, wann dieses Land isst, und du weißt, was die Bar dir berechnen darf und was nicht. Es wartet ein Quiz: zwei Reisende gehen um zwanzig nach sieben in eine Bar und bekommen das alles auf einmal um die Ohren — schau, wie viel du auffängst. Hasta luego." }
+  ],
+  "aprofundar": {
+    "titulo": "Das Bar-Dossier, zum Nachlesen (optional)",
+    "secoes": [
+      {
+        "titulo": "Drei Preise für ein Bier — und warum das legal ist",
+        "corpo": "Das spanische Verbraucherrecht erlaubt einem Betrieb, unterschiedliche Preise zu verlangen, je nachdem, ob du am Tresen, am Tisch oder auf der Terrasse konsumierst — verpflichtet ihn aber, das klar auf der ausgehängten Preisliste anzugeben, und der ausgewiesene Preis muss der Endpreis inklusive Steuer sein. Der Aufschlag selbst ist also keine Abzocke; ein nicht angekündigter Aufschlag schon. Die Vier-Sekunden-Gewohnheit: Liste an der Wand oder an der Tür lesen, bevor du dich draußen hinsetzt. Auf einem Touristenplatz liegt der Unterschied typischerweise zwischen 30 Cent und einem Euro pro Getränk — keine Statistik, nur ein Muster, aber über zwei Wochen Urlaub wird daraus echtes Geld.",
+        "exemplos": [
+          { "es": "¿Es el mismo precio en la barra?", "pt": "Kostet es am Tresen dasselbe?" },
+          { "es": "¿Hay suplemento de terraza?", "pt": "Gibt es einen Terrassenaufschlag?" }
+        ]
+      },
+      {
+        "titulo": "Erlaubt, wenn angekündigt · gar nicht erlaubt",
+        "corpo": "ERLAUBT, sofern vorher angekündigt: Terrassen- oder Tischaufschlag; Brot berechnen; Eis berechnen; die Milch im Kaffee berechnen; ein Mindestbetrag bei Kartenzahlung; eine Zeitbegrenzung für den Tisch; eine Anzahlung für die Reservierung, die von der Rechnung abgeht. NICHT ERLAUBT: ein Kartenpreis ohne Mehrwertsteuer; ein QR-Code als einzige Möglichkeit, die Karte zu sehen (eine Karte auf Papier oder eine sichtbare Preisliste muss existieren); kostenloses Leitungswasser zu verweigern; ein Service- oder Gedeckzuschlag ohne vorherigen Hinweis. Hängt im Lokal der Aushang HAY HOJAS DE RECLAMACIONES A DISPOSICIÓN DEL CONSUMIDOR, kann man dir das Beschwerdeformular anschließend nicht verweigern — die komplette Eskalationsstufe dazu steht in Folge zwei A.",
+        "exemplos": [
+          { "es": "¿Me deja ver la carta en papel, por favor?", "pt": "Könnte ich bitte die Speisekarte auf Papier sehen?" },
+          { "es": "Una jarra de agua del grifo, por favor.", "pt": "U-na CHA-rra de A-gua del GRI-fo — Eine Karaffe Leitungswasser, bitte. Seit 2022 per Gesetz kostenlos." }
+        ]
+      },
+      {
+        "titulo": "Gratis-Tapas sind Geografie, kein Gesetz",
+        "corpo": "Die kostenlose Tapa zum Getränk ist ein regionaler Brauch, am stärksten im östlichen Andalusien (Granada, Almería, Jaén) und in Teilen von Kastilien und León (León, Salamanca) sowie Galicien. Granada ist der Goldstandard: bei jeder Runde eine andere Tapa. In Almería suchst du oft von einer Liste aus. Barcelona, Madrid, San Sebastián und Valencia behandeln Tapas als bezahlte Posten. Das baskische Format ist der pintxo: Einzelportionen auf dem Tresen, du nimmst dir, worauf du Lust hast, und am Ende zählen sie die Zahnstocher auf deinem Teller. Früh fragen — 'Gratis-Tapas sind kein spanisches Gesetz. Das ist eine Gewohnheit aus Granada, und Barcelona hat nie davon gehört.'",
+        "exemplos": [
+          { "es": "¿La tapa va incluida con la bebida?", "pt": "Ist die Tapa im Getränk inbegriffen?" },
+          { "es": "¿Esto es tapa, media ración o ración?", "pt": "Ist das eine Tapa, eine halbe Portion oder eine ganze? — die Frage, die verhindert, dass zwei Leute Essen für sechs bestellen." }
+        ]
+      },
+      {
+        "titulo": "El menú del día — und der Mythos, der in die Tonne kann",
+        "corpo": "Werktags mittags, festes Menü: Vorspeise, Hauptgang, Brot, ein Getränk und Nachtisch oder Kaffee zu einem Festpreis, landesweit im Schnitt etwa 14,20 € (am günstigsten auf den Kanaren, in Asturien, Andalusien und Murcia; am teuersten auf den Balearen). Es ist das beste Preis-Leistungs-Verhältnis der spanischen Küche, und die meisten Besucher laufen daran vorbei, weil sie nach dem Wort 'Tagesmenü' auf ihrer Sprache suchen. Wichtige Korrektur: Kein geltendes Gesetz verpflichtet Restaurants dazu — die Vorschrift aus der Franco-Zeit wurde abgeschafft. Es überlebt, weil es funktioniert. Und du musst nicht beide Gänge aufessen."
+      },
+      {
+        "titulo": "Sechs Körperregeln in der Bar",
+        "corpo": "1. Beim Reinkommen grüßen, beim Rausgehen hasta luego sagen — auch im Aufzug und im Wartezimmer. 2. Kurz bestellen und etwas lauter, als sich höflich anfühlt; die vorsichtig verpackte Bitte geht im Lärm unter. 3. Die Rechnung kommt nie unaufgefordert — sie ungefragt zu bringen gilt als Rauswurf —, du musst also fragen, und bis dahin gehört dir der Tisch. 4. Den Kellner rufst du mit Blickkontakt und 'perdone', Hand leicht gehoben; nie schnipsen, nie 'chico' rufen, nie mit Scheinen wedeln. 5. Niemand fragt nach, wie es schmeckt; das ist Respekt, keine Vernachlässigung. 6. Teilen ist der Normalfall — raciones in die Mitte — und Posten für Posten abzurechnen erzeugt Reibung: geh 'a partes iguales', oder lass eine Person einladen und übernimm die nächste Runde. Frag nach dem Teilen, bevor abgerechnet wird, nicht danach.",
+        "exemplos": [
+          { "es": "Perdone, ¿nos cobras?", "pt": "per-DO-ne, nos KO-bras — Entschuldigung, können wir zahlen? (klingt einheimischer als 'la cuenta, por favor')" },
+          { "es": "Pagamos a partes iguales.", "pt": "Wir teilen gleichmäßig." }
+        ]
+      }
+    ]
+  }
+}

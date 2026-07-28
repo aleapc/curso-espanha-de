@@ -1,0 +1,100 @@
+{
+  "id": "q-e02",
+  "nivel": "basico",
+  "titulo": "Quiz — Vor dem Abflug, und die Ankunft",
+  "subtitulo": "Eine Ankunft von vorne bis hinten: die Kontrolle, die drei Fragen und eine SIM-Karte, die wirklich funktioniert",
+  "introAudioKey": "q-e02-i",
+  "introPt": "Quizzeit. Madrid-Barajas, halb acht Uhr morgens. Wir hören einem Paar zu, das aus einem Land außerhalb des Schengenraums ankommt — deshalb läuft hier einmal die komplette Prozedur ab: Kamera, vier Finger, drei Fragen, und danach ein Handyladen. Der biometrische Teil betrifft dich mit deinem EU-Ausweis nicht. Die drei Fragen und der Handyladen sehr wohl: Die kommen bei dir nur an der Rezeption statt an der Grenze. Hör so oft du willst, dann antworte.",
+  "cenario": "Ankunft an einem spanischen Flughafen aus einem Nicht-Schengen-Land: die biometrische Erfassung, die drei Fragen mit der Buchung als Beweisstück, und danach der Handyladen im Ankunftsbereich.",
+  "dialogo": [
+    { "audioKey": "q-e02-d1", "voz": "Carmen", "es": "Buenos días. Pasaporte, por favor.", "pinyin": "BUE-nos DI-as. pa-ssa-POR-teh, por fa-BOR", "pt": "— Guten Morgen. Den Pass, bitte. (die Beamtin)" },
+    { "audioKey": "q-e02-d2", "voz": "Emilio", "es": "Buenos días. Aquí tiene.", "pinyin": "BUE-nos DI-as. a-KI TJE-neh", "pt": "— Guten Morgen. Hier, bitte." },
+    { "audioKey": "q-e02-d3", "voz": "Carmen", "es": "Mire a la cámara, por favor. Ahora los cuatro dedos aquí.", "pinyin": "MI-reh a la KA-ma-ra, por fa-BOR. a-O-ra los KUA-tro DE-dhos a-KI", "pt": "— Schauen Sie bitte in die Kamera. Jetzt die vier Finger hierhin." },
+    { "audioKey": "q-e02-d4", "voz": "Carmen", "es": "¿Motivo del viaje?", "pinyin": "mo-TI-bo del BJA-cheh", "pt": "— Grund der Reise?" },
+    { "audioKey": "q-e02-d5", "voz": "Emilio", "es": "Vengo de vacaciones.", "pinyin": "BEN-go deh ba-ka-THJO-nes", "pt": "— Ich bin im Urlaub hier." },
+    { "audioKey": "q-e02-d6", "voz": "Carmen", "es": "¿Cuántos días?", "pinyin": "KUAN-tos DI-as", "pt": "— Wie viele Tage?" },
+    { "audioKey": "q-e02-d7", "voz": "Emilio", "es": "Diez días.", "pinyin": "DJETH DI-as", "pt": "— Zehn Tage." },
+    { "audioKey": "q-e02-d8", "voz": "Carmen", "es": "¿Dónde se aloja?", "pinyin": "DON-deh sse a-LO-cha", "pt": "— Wo wohnen Sie?" },
+    { "audioKey": "q-e02-d9", "voz": "Emilio", "es": "Me alojo en el hotel Rialto, en Madrid. Aquí tiene la reserva.", "pinyin": "meh a-LO-cho en el o-TEL rri-AL-to, en ma-DRIDH. a-KI TJE-neh la rre-SSER-ba", "pt": "— Ich wohne im Hotel Rialto, in Madrid. Hier ist die Buchung. (er hält das Handy hoch)" },
+    { "audioKey": "q-e02-d10", "voz": "Carmen", "es": "Muy bien. Que tenga buen viaje.", "pinyin": "mui bjen. keh TEN-ga buen BJA-cheh", "pt": "— Sehr gut. Gute Reise." },
+    { "audioKey": "q-e02-d11", "voz": "Emilio", "es": "Hola. ¿Tienen tarjetas SIM de prepago?", "pinyin": "O-la. TJE-nen tar-CHE-tas ssim deh pre-PA-go", "pt": "— Hallo. Habt ihr Prepaid-SIM-Karten? (im Handyladen)" },
+    { "audioKey": "q-e02-d12", "voz": "Carmen", "es": "Sí. ¿Me deja el pasaporte, por favor?", "pinyin": "ssi. meh DE-cha el pa-ssa-POR-teh, por fa-BOR", "pt": "— Ja. Geben Sie mir bitte den Ausweis? (die Verkäuferin)" },
+    { "audioKey": "q-e02-d13", "voz": "Emilio", "es": "Aquí tiene. Quiero una tarjeta SIM de prepago, solo datos.", "pinyin": "a-KI TJE-neh. KJE-ro U-na tar-CHE-ta ssim deh pre-PA-go, SSO-lo DA-tos", "pt": "— Hier, bitte. Ich möchte eine Prepaid-SIM, nur Daten." },
+    { "audioKey": "q-e02-d14", "voz": "Emilio", "es": "¿Me la puede activar aquí, por favor?", "pinyin": "meh la PUE-deh ak-ti-BAR a-KI, por fa-BOR", "pt": "— Können Sie sie mir hier aktivieren, bitte?" }
+  ],
+  "perguntas": [
+    {
+      "es": "The officer says 'Mire a la cámara' and then asks for four fingers. What is she doing?",
+      "pergunta": "Die Beamtin sagt 'Mire a la cámara' und will dann vier Finger. Was macht sie da?",
+      "opcoes": [
+        "Sie registriert ihn im EES — der biometrischen Erfassung, die den Passstempel ersetzt hat",
+        "Sie prüft seine ETIAS-Genehmigung",
+        "Sie macht ein Sicherheitsfoto, weil er zufällig herausgegriffen wurde",
+        "Sie kassiert die Gebühr für ein Visum bei der Einreise"
+      ],
+      "correta": 0,
+      "pt": "Das ist EES. Seit April 2026 ersetzt es in neunundzwanzig Ländern den Stempel: Gesichtsfoto plus vier Finger beim ersten Übertritt, ungefähr vier Minuten, kostenlos, danach geht es schnell. Und es gilt für Reisende von außerhalb der EU — du läufst daran vorbei und weißt jetzt wenigstens, warum die Schlange so lang ist.",
+      "explica": "Das ist EES. Seit April 2026 ersetzt es in neunundzwanzig Ländern den Stempel: Gesichtsfoto plus vier Finger beim ersten Übertritt, ungefähr vier Minuten, kostenlos, danach geht es schnell. Und es gilt für Reisende von außerhalb der EU — du läufst daran vorbei und weißt jetzt wenigstens, warum die Schlange so lang ist."
+    },
+    {
+      "es": "'Diez días.' How long is he staying?",
+      "pergunta": "'Diez días.' Wie lange bleibt er?",
+      "opcoes": ["Zwei Tage", "Zehn Tage", "Zwölf Tage", "Zweihundert Tage"],
+      "correta": 1,
+      "pt": "'Diez' ist zehn, und das z ist das englische th aus 'think' — DJETH. Genau dieser Laut trennt 'diez' von 'doce', also zehn von zwölf, auf einer lauten Rechnung. Deutsch hat ihn nicht, deshalb lohnt es sich, ihn gleich am ersten Tag einzusammeln.",
+      "explica": "'Diez' ist zehn, und das z ist das englische th aus 'think' — DJETH. Genau dieser Laut trennt 'diez' von 'doce', also zehn von zwölf, auf einer lauten Rechnung. Deutsch hat ihn nicht, deshalb lohnt es sich, ihn gleich am ersten Tag einzusammeln."
+    },
+    {
+      "es": "After naming his hotel he says 'Aquí tiene la reserva.' Why does that end the conversation?",
+      "pergunta": "Nachdem er die Unterkunft genannt hat, sagt er 'Aquí tiene la reserva.' Warum ist das Gespräch damit vorbei?",
+      "opcoes": [
+        "Weil es eine feste Rechtsformel ist, die akzeptiert werden muss",
+        "Weil er die Buchung zeigt — das Dokument übernimmt das Argumentieren, nicht der Satz",
+        "Weil es 'ich habe nichts zu verzollen' bedeutet",
+        "Weil man in Spanien jedes Gespräch höflich so beendet"
+      ],
+      "correta": 1,
+      "pt": "'Aquí tiene' heißt schlicht 'hier, bitte'. Hab die Buchung offen auf dem Handy, bevor du an der Theke stehst. Zeigen ist schneller und sicherer, als einen längeren Satz zu improvisieren — und du bist nie die Person, die die Schlange aufhält.",
+      "explica": "'Aquí tiene' heißt schlicht 'hier, bitte'. Hab die Buchung offen auf dem Handy, bevor du an der Theke stehst. Zeigen ist schneller und sicherer, als einen längeren Satz zu improvisieren — und du bist nie die Person, die die Schlange aufhält."
+    },
+    {
+      "es": "At the phone shop the assistant asks for his passport. Is that normal?",
+      "pergunta": "Im Handyladen will die Verkäuferin den Ausweis sehen. Ist das normal?",
+      "opcoes": [
+        "Nein — raus da, das ist Betrug",
+        "Nur wenn du bar bezahlst",
+        "Ja — spanische Prepaidkarten werden auf ein Ausweisdokument registriert, und sie brauchen es physisch in der Hand",
+        "Ja, aber ein Foto auf dem Handy wird immer akzeptiert"
+      ],
+      "correta": 2,
+      "pt": "Prepaidkarten müssen in Spanien beim Verkauf auf ein Ausweisdokument registriert werden, und Fotos oder Scans werden regelmäßig abgelehnt. Nimm den Personalausweis mit — oder kauf und teste eine eSIM zu Hause und spar dir die Theke ganz.",
+      "explica": "Prepaidkarten müssen in Spanien beim Verkauf auf ein Ausweisdokument registriert werden, und Fotos oder Scans werden regelmäßig abgelehnt. Nimm den Personalausweis mit — oder kauf und teste eine eSIM zu Hause und spar dir die Theke ganz."
+    },
+    {
+      "es": "Three weeks before the trip, a website offers to sell you an ETIAS for €59, 'processed in 24 hours'. What do you do?",
+      "pergunta": "Drei Wochen vor der Reise bietet dir eine Website eine ETIAS für 59 Euro an, 'in 24 Stunden bearbeitet'. Was tust du?",
+      "opcoes": [
+        "Kaufen — ohne die kommst du nicht ins Flugzeug",
+        "Nichts. Du reist mit einem EU-Ausweis und brauchst gar keine — und ein Antragsportal ist ohnehin nicht offen",
+        "Die billigste nehmen, die sind ja alle gleich",
+        "Die Airline bitten, sie für dich zu beantragen"
+      ],
+      "correta": 1,
+      "pt": "ETIAS ist für visumfreie Reisende von außerhalb der EU gedacht, kostet dort 20 Euro und wurde mehrfach verschoben; im Sommer 2026 ist kein Portal offen. Für dich gilt sie nie. Wer sie dir heute verkauft, verkauft ein Dokument, das es nicht gibt, für eine Reise, für die du es nicht brauchst.",
+      "explica": "ETIAS ist für visumfreie Reisende von außerhalb der EU gedacht, kostet dort 20 Euro und wurde mehrfach verschoben; im Sommer 2026 ist kein Portal offen. Für dich gilt sie nie. Wer sie dir heute verkauft, verkauft ein Dokument, das es nicht gibt, für eine Reise, für die du es nicht brauchst."
+    },
+    {
+      "es": "You spent 80 days in Spain in the last six months and you'd like to go back next week. How does the 90/180 rule work?",
+      "pergunta": "Du willst den Winter in Spanien verbringen, von November bis März. Was gilt für dich?",
+      "opcoes": [
+        "Neunzig Tage in hundertachtzig, sonst droht eine Einreisesperre",
+        "Ab drei Monaten musst du dich als EU-Bürger registrieren lassen — und ab hundertdreiundachtzig Tagen im Kalenderjahr wirst du in Spanien steuerlich ansässig",
+        "Gar nichts: Du darfst unbegrenzt bleiben, ganz ohne Formalitäten",
+        "Eine eigene Wohnung in Spanien verlängert die erlaubte Zeit"
+      ],
+      "correta": 1,
+      "pt": "Die Neunzig-Tage-Regel gilt für Briten und Amerikaner, nicht für dich. Deine zwei Schwellen sind andere: nach drei Monaten die Registrierung als Unionsbürger samt NIE, und ab hundertdreiundachtzig Tagen im Kalenderjahr die Steuerpflicht in Spanien — auf das weltweite Einkommen. Und nein: Ein Haus in Marbella schenkt dir keinen einzigen Tag.",
+      "explica": "Die Neunzig-Tage-Regel gilt für Briten und Amerikaner, nicht für dich. Deine zwei Schwellen sind andere: nach drei Monaten die Registrierung als Unionsbürger samt NIE, und ab hundertdreiundachtzig Tagen im Kalenderjahr die Steuerpflicht in Spanien — auf das weltweite Einkommen. Und nein: Ein Haus in Marbella schenkt dir keinen einzigen Tag."
+    }
+  ]
+}

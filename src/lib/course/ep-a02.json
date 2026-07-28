@@ -1,0 +1,117 @@
+{
+  "id": "a02",
+  "slot": "A02",
+  "nivel": "avancado",
+  "numero": 30,
+  "parte": "30",
+  "titulo": "Worüber sie lachen — und der Witz, den Sie machen dürfen",
+  "aguardaNarracao": true,
+  "_andaime": {
+    "_": "ANDAIME — não é parte pronta. A fala espanhola já está aqui e é definitiva (ativo de DESTINO, mesmos audioKey e mesmos mp3 do curso EN, custo de crédito zero). Tudo que é voz-guia está VAZIO de propósito: é o que o autor escreve, em ALEMÃO, e é a única coisa que este SKU paga.",
+    "funcao_do_slot": "Do que eles riem — e a piada que você pode fazer",
+    "dono": "destino",
+    "o_que_falta": "narração (intro/recap/prompts de responde), `cena`, `moldura`, `permissao`, `frasePiso`, `clique`, `moldes`, `fichasCulturais`, `fatosDatados`, `aprofundar`, o campo `pt` (gloss em ALEMÃO) de cada step e o respelling de pronúncia para leitor alemão.",
+    "nao_traduzir": "a parte inglesa correspondente é ep-a02.json. Ela serve de referência de ESTRUTURA, nunca de texto: `pinyin` de lá é respelling para leitor de inglês (types.ts) e `pt` é o gloss inglês — nenhum dos dois foi copiado, e copiá-los é o anti-padrão 8.",
+    "entra_em_vigor": "no instante em que este arquivo ganhar o campo `cena`, os portões de tom passam de aviso a erro para ele. Apagar `aguardaNarracao` sem escrever a narração não muda nada: quem decide é `cena`."
+  },
+  "steps": [
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e03a-cana-e",
+      "es": "¿Me pones una caña, por favor?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a02-marchando-e",
+      "es": "Marchando. ¿Algo de picar?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a02-burro-e",
+      "es": "¡Pero qué burro eres, tío!",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a02-llaves-c",
+      "es": "Anda, calla, que tú te dejaste las llaves dentro del coche.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a02-cachondeo-c",
+      "es": "Que está de cachondeo, hombre.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a02-usted-c",
+      "es": "Como usted quiera.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a02-andaya-e",
+      "es": "Anda ya.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a02-defiende-c",
+      "es": "¡Ah, que este se defiende!",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a02-contando-c",
+      "es": "¡Qué me estás contando!",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a02-juro-e",
+      "es": "Te lo juro por mi madre.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a02-guiri-e",
+      "es": "Soy el guiri, ya lo sé.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a02-sientate-c",
+      "es": "Anda, ven, siéntate aquí.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a02-muypoco-c",
+      "es": "Hablo un poco de español. Muy poco.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a02-queva-e",
+      "es": "Qué va, hombre, si te entiendo perfectamente.",
+      "pt": ""
+    }
+  ]
+}

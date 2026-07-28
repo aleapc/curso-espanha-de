@@ -1,0 +1,119 @@
+{
+  "id": "q-e07",
+  "nivel": "basico",
+  "titulo": "Quiz — Zimmer und Mietwagen",
+  "subtitulo": "Eine Ankunft: die Rezeption, das Zimmer, das nicht funktioniert, und der Tresen, der dir eine Versicherung verkaufen will",
+  "introAudioKey": "qe07-i",
+  "introPt": "Quizzeit. Zwei Szenen, vierundzwanzig Stunden auseinander. Zuerst die Hotelrezeption in Sevilla — Reservierung, Pass, Touristensteuer, WLAN, und ein Zimmer, in dem nichts geht. Dann am nächsten Morgen der Mietwagenschalter am Flughafen, wo ein sehr netter Mensch dir eine Versicherung verkaufen will, die du längst hast. Hör so oft du willst, dann antworte.",
+  "cenario": "Ein Reisender checkt in einem spanischen Hotel ein, meldet zwei Defekte im Zimmer und holt am nächsten Morgen den Mietwagen ab — er lehnt die Zusatzversicherung ab und fragt nach Kaution, Tankregelung und Umweltplakette.",
+  "dialogo": [
+    { "audioKey": "qe07-d1", "voz": "Carmen", "es": "Buenas tardes. ¿Tienen reserva?", "pinyin": "BUE-nas TAR-des · TJE-nen rre-SSER-ba", "pt": "— Guten Tag. Haben Sie eine Reservierung? (die Rezeptionistin)" },
+    { "audioKey": "qe07-d2", "voz": "Emilio", "es": "Sí, tengo una reserva a nombre de Harper.", "pinyin": "ssi · TEN-go U-na rre-SSER-ba a NOM-breh deh Harper", "pt": "— Ja, ich habe eine Reservierung auf den Namen Harper." },
+    { "audioKey": "qe07-d3", "voz": "Carmen", "es": "Muy bien. ¿Me deja el pasaporte? Tengo que rellenar la ficha de viajeros.", "pinyin": "mui bjen · meh DE-cha el pa-ssa-POR-teh · rre-je-NAR la FI-tscha deh bja-CHE-ros", "pt": "— Sehr gut. Geben Sie mir Ihren Pass? Ich muss das Meldeformular ausfüllen." },
+    { "audioKey": "qe07-d4", "voz": "Emilio", "es": "Aquí tiene. ¿La tasa turística está incluida?", "pinyin": "a-KI TJE-neh · la TA-ssa tu-RIS-ti-ka es-TA in-klu-I-da", "pt": "— Bitte sehr. Ist die Touristensteuer inbegriffen?" },
+    { "audioKey": "qe07-d5", "voz": "Carmen", "es": "No, son cuatro euros por persona y noche. Se paga aquí, al salir.", "pinyin": "no · sson KUA-tro E-u-ros por per-SSO-na i NO-tscheh · sseh PA-ga a-KI, al ssa-LIR", "pt": "— Nein, das sind vier Euro pro Person und Nacht. Das zahlen Sie hier, beim Auschecken." },
+    { "audioKey": "qe07-d6", "voz": "Emilio", "es": "Vale. ¿Cuál es la contraseña del wifi?", "pinyin": "BA-leh · kual es la kon-tra-SSE-nja del UI-fi", "pt": "— Alles klar. Wie ist das WLAN-Passwort?" },
+    { "audioKey": "qe07-d7", "voz": "Carmen", "es": "Está en la tarjeta, debajo del número de habitación.", "pinyin": "es-TA en la tar-CHE-ta, deh-BA-cho del NU-me-ro deh a-bi-ta-THJON", "pt": "— Es steht auf der Karte, unter der Zimmernummer." },
+    { "audioKey": "qe07-d8", "voz": "Emilio", "es": "Perdone. El aire acondicionado no funciona. Y no hay agua caliente.", "pinyin": "per-DO-neh · el AI-reh a-kon-di-thjo-NA-do no fun-THJO-na · no ai A-gua ka-LJEN-teh", "pt": "— Entschuldigung. Die Klimaanlage funktioniert nicht. Und es gibt kein warmes Wasser." },
+    { "audioKey": "qe07-d9", "voz": "Carmen", "es": "Lo siento muchísimo. Le cambio de habitación ahora mismo.", "pinyin": "lo SSJEN-to mu-TSCHI-ssi-mo · leh KAM-bjo deh a-bi-ta-THJON a-O-ra MIS-mo", "pt": "— Das tut mir sehr leid. Ich gebe Ihnen sofort ein anderes Zimmer." },
+    { "audioKey": "qe07-d10", "voz": "Emilio", "es": "No quiero seguro adicional, gracias. Ya tengo cobertura.", "pinyin": "no KJE-ro sse-GU-ro a-di-thjo-NAL · ja TEN-go ko-ber-TU-ra", "pt": "— (am nächsten Morgen, am Mietwagenschalter) Keine Zusatzversicherung, danke. Ich bin schon versichert." },
+    { "audioKey": "qe07-d11", "voz": "Carmen", "es": "Entonces le bloqueamos mil doscientos euros en la tarjeta.", "pinyin": "en-TON-thes leh blo-ke-A-mos mil dos-THJEN-tos E-u-ros en la tar-CHE-ta", "pt": "— Dann sperren wir tausendzweihundert Euro auf Ihrer Karte. (der Mitarbeiter)" },
+    { "audioKey": "qe07-d12", "voz": "Emilio", "es": "¿Me lo puede dar por escrito, por favor? ¿Y cuándo me lo devuelven?", "pinyin": "meh lo PUE-deh dar por es-KRI-to · KUAN-do meh lo deh-BUEL-ben", "pt": "— Können Sie mir das bitte schriftlich geben? Und wann bekomme ich es zurück?" },
+    { "audioKey": "qe07-d13", "voz": "Emilio", "es": "¿Este coche tiene etiqueta ambiental? ¿Cuál?", "pinyin": "ES-teh KO-tscheh TJE-neh e-ti-KE-ta am-bjen-TAL · kual", "pt": "— Hat dieses Auto eine Umweltplakette? Welche?" },
+    { "audioKey": "qe07-d14", "voz": "Carmen", "es": "Etiqueta C. No puede entrar en la zona de bajas emisiones del centro.", "pinyin": "e-ti-KE-ta theh · no PUE-deh en-TRAR en la THO-na deh BA-chas e-mi-SSJO-nes del THEN-tro", "pt": "— Plakette C. Damit dürfen Sie nicht in die Umweltzone der Innenstadt." },
+    { "audioKey": "qe07-d15", "voz": "Emilio", "es": "Una última cosa: ¿es gasolina o gasóleo? ¿Y es lleno a lleno?", "pinyin": "U-na UL-ti-ma KO-ssa · es ga-sso-LI-na o ga-SSO-le-o · es JE-no a JE-no", "pt": "— Eine letzte Sache: Benzin oder Diesel? Und ist es voll zu voll?" }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "Die Rezeptionistin nimmt seinen Pass und fängt an, ein Formular auszufüllen. Was passiert da?",
+      "es": "Die Rezeptionistin nimmt seinen Pass und fängt an, ein Formular auszufüllen. Was passiert da?",
+      "opcoes": [
+        "Ein spanisches Gesetz verpflichtet jedes Hotel — und jeden Mietwagenschalter — Gästedaten zu erfassen und zu melden",
+        "Das ist Abzocke; im Hotel gibt man seinen Pass niemals aus der Hand",
+        "Das ist das Formular für die Touristensteuer, und es ist freiwillig",
+        "Sie braucht ihn als Pfand, bis beim Auschecken bezahlt wird"
+      ],
+      "correta": 0,
+      "explica": "Real Decreto 933/2021, verpflichtend seit Dezember 2024: Pass, Telefon, E-Mail und Wohnadresse, alles an die Sicherheitsbehörden gemeldet. Fühlt sich übergriffig an, ist aber kein Betrug und nicht freiwillig — keine Daten, kein Zimmer. Und ja, das ist DSGVO-konform: Grundlage ist eine gesetzliche Pflicht.",
+      "pt": "Real Decreto 933/2021, verpflichtend seit Dezember 2024: Pass, Telefon, E-Mail und Wohnadresse, alles an die Sicherheitsbehörden gemeldet. Fühlt sich übergriffig an, ist aber kein Betrug und nicht freiwillig — keine Daten, kein Zimmer. Und ja, das ist DSGVO-konform: Grundlage ist eine gesetzliche Pflicht."
+    },
+    {
+      "pergunta": "Was erfährt er über die Touristensteuer?",
+      "es": "Was erfährt er über die Touristensteuer?",
+      "opcoes": [
+        "Sie war schon im Online-Preis enthalten",
+        "Sie wird an der Rezeption zusätzlich zum Online-Preis kassiert",
+        "Sie gilt nur für Fünf-Sterne-Hotels",
+        "Sie wird an die Fluggesellschaft gezahlt, nicht ans Hotel"
+      ],
+      "correta": 1,
+      "explica": "'¿La tasa turística está incluida?' — am ersten Tag fragen, nicht am letzten Morgen mit dem Taxi vor der Tür. Eine regionale Steuer, fast nie im Online-Preis, und oft bar an der Rezeption fällig.",
+      "pt": "'¿La tasa turística está incluida?' — am ersten Tag fragen, nicht am letzten Morgen mit dem Taxi vor der Tür. Eine regionale Steuer, fast nie im Online-Preis, und oft bar an der Rezeption fällig."
+    },
+    {
+      "pergunta": "Zwei Sachen im Zimmer sind kaputt. An welche Schablone hängt er die erste?",
+      "es": "Zwei Sachen im Zimmer sind kaputt. An welche Schablone hängt er die erste?",
+      "opcoes": [
+        "'No hay…' + das Ding",
+        "'¿Lleva…?' + das Ding",
+        "Das Ding + 'no funciona'",
+        "'Me han robado' + das Ding"
+      ],
+      "correta": 2,
+      "explica": "'El aire acondicionado no funciona.' Häng alles dran — la ducha, la llave, el ascensor. Und wenn es gar keine Maschine ist, wechselst du zu 'no hay': no hay agua caliente.",
+      "pt": "'El aire acondicionado no funciona.' Häng alles dran — la ducha, la llave, el ascensor. Und wenn es gar keine Maschine ist, wechselst du zu 'no hay': no hay agua caliente."
+    },
+    {
+      "pergunta": "Am Tresen lehnt er die Zusatzversicherung ab. Worum bittet er als Allernächstes?",
+      "es": "Am Tresen lehnt er die Zusatzversicherung ab. Worum bittet er als Allernächstes?",
+      "opcoes": [
+        "Um ein anderes Auto",
+        "Um einen Rabatt auf die Miete",
+        "Darum, mit dem Chef auf Englisch zu sprechen",
+        "Um die Absage schriftlich — '¿Me lo puede dar por escrito?'"
+      ],
+      "correta": 3,
+      "explica": "Die erste Absage funktioniert meistens nicht, und der Druck an diesem Tresen ist mündlich gewollt. 'Por escrito' ist der Notknopf: Kaum jemand schreibt eine Behauptung auf, zu der er nicht stehen kann.",
+      "pt": "Die erste Absage funktioniert meistens nicht, und der Druck an diesem Tresen ist mündlich gewollt. 'Por escrito' ist der Notknopf: Kaum jemand schreibt eine Behauptung auf, zu der er nicht stehen kann."
+    },
+    {
+      "pergunta": "'Le bloqueamos mil doscientos euros en la tarjeta.' Was passiert mit diesem Geld?",
+      "es": "'Le bloqueamos mil doscientos euros en la tarjeta.' Was passiert mit diesem Geld?",
+      "opcoes": [
+        "Es wird abgebucht — es ist ausgegeben",
+        "Es ist eine Kaution, die auf der Karte gesperrt wird, bis das Auto zurück ist",
+        "Es ist der Mietpreis",
+        "Es ist ein Bußgeld für die Umweltzone"
+      ],
+      "correta": 1,
+      "explica": "Wer ihre Versicherung ablehnt, bekommt bei den meisten Firmen eine Kaution gesperrt, üblich sind 500 bis 1.500 Euro. Wichtig für uns: Das geht in der Regel nur mit einer echten Kreditkarte auf den Namen des Fahrers — mit Girocard oder Debitkarte stehst du am Schalter schnell ohne Auto da. Es ist eine Sperre, keine Abbuchung, aber dein Urlaubsgeld ist eingefroren. Frag nach Höhe und Rückgabe, bevor er das Gerät anfasst.",
+      "pt": "Wer ihre Versicherung ablehnt, bekommt bei den meisten Firmen eine Kaution gesperrt, üblich sind 500 bis 1.500 Euro. Wichtig für uns: Das geht in der Regel nur mit einer echten Kreditkarte auf den Namen des Fahrers — mit Girocard oder Debitkarte stehst du am Schalter schnell ohne Auto da. Es ist eine Sperre, keine Abbuchung, aber dein Urlaubsgeld ist eingefroren. Frag nach Höhe und Rückgabe, bevor er das Gerät anfasst."
+    },
+    {
+      "pergunta": "Das Auto hat eine 'C'-Plakette und darf nicht in die ZBE der Innenstadt. Dein Hotel liegt in der Innenstadt. Was tust du?",
+      "es": "Das Auto hat eine 'C'-Plakette und darf nicht in die ZBE der Innenstadt. Dein Hotel liegt in der Innenstadt. Was tust du?",
+      "opcoes": [
+        "Trotzdem reinfahren — Mietwagen sind ausgenommen",
+        "An der Tankstelle eine DGT-Plakette kaufen",
+        "Außerhalb der Zone parken und reinlaufen",
+        "Reinfahren, aber erst nach acht Uhr abends"
+      ],
+      "correta": 2,
+      "explica": "ZBE gesehen, nicht reinfahren. Kontrolliert wird per Kamera, das Bußgeld geht bis 200 Euro, und die Mietwagenfirma reicht es einfach an dich weiter — plus Bearbeitungsgebühr, Monate später.",
+      "pt": "ZBE gesehen, nicht reinfahren. Kontrolliert wird per Kamera, das Bußgeld geht bis 200 Euro, und die Mietwagenfirma reicht es einfach an dich weiter — plus Bearbeitungsgebühr, Monate später."
+    },
+    {
+      "pergunta": "'Gasóleo' — was kommt in den Tank?",
+      "es": "'Gasóleo' — was kommt in den Tank?",
+      "opcoes": [
+        "Benzin — das ist das spanische Wort dafür",
+        "Diesel",
+        "Super 95",
+        "Beides; spanische Zapfsäulen können beides"
+      ],
+      "correta": 1,
+      "explica": "'Gasóleo' hat ein Ö wie Öl, und Öl ist Diesel. Benzin ist 'gasolina' — an der Säule 'gasolina sin plomo', bleifrei. Die Verwechslung kostet vierstellig, also frag am Tresen und nicht an der Zapfsäule. Und 'lleno a lleno' — voll zu voll — ist die einzige Tankregelung, die du unterschreiben solltest.",
+      "pt": "'Gasóleo' hat ein Ö wie Öl, und Öl ist Diesel. Benzin ist 'gasolina' — an der Säule 'gasolina sin plomo', bleifrei. Die Verwechslung kostet vierstellig, also frag am Tresen und nicht an der Zapfsäule. Und 'lleno a lleno' — voll zu voll — ist die einzige Tankregelung, die du unterschreiben solltest."
+    }
+  ]
+}

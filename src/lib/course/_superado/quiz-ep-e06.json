@@ -1,0 +1,117 @@
+{
+  "id": "q-e06",
+  "nivel": "basico",
+  "titulo": "Quiz — Unterwegs",
+  "subtitulo": "Vom Flughafen ins Hotel in den Schnellzug — ohne Schlepper, ohne Abzocke, ohne verpassten Zug",
+  "introAudioKey": "qe06-i",
+  "introPt": "Quizzeit. Eine Reisende, zwei Tage, drei Bahnen und ein Mann in der Ankunftshalle mit einem sehr breiten Lächeln. Sie landet in Barajas, kommt in die Stadt, und am nächsten Morgen nimmt sie den AVE nach Süden — und jeder einzelne Satz, den sie benutzt, ist einer, den du in dieser Folge laut produziert hast. Hör so oft du willst, die Antworten stehen darunter. Und lass ein halbes Ohr bei den Zahlen: zwei davon tragen das spanische th, und wer es überhört, sitzt zweieinhalb Stunden auf dem falschen Bahnsteig.",
+  "cenario": "Ankunftshalle in Madrid Barajas: ein Schlepper, dann der Taxistand, der Festpreis und die Quittung. Am nächsten Morgen: der Flughafenzuschlag am Schalter, das Zugangs-Gate in Atocha, die Gleisnummer und der Gepäckrahmen.",
+  "dialogo": [
+    { "audioKey": "qe06-d1", "voz": "Emilio", "es": "¿Taxi? ¿Taxi, amigo? Muy barato.", "pinyin": "TAK-ssi? TAK-ssi, a-MI-go? mui ba-RA-to", "pt": "— Taxi? Taxi, mein Freund? Ganz billig. (ein Mann in der Ankunftshalle)" },
+    { "audioKey": "qe06-d2", "voz": "Carmen", "es": "No, gracias.", "pinyin": "no, GRA-thias", "pt": "— Nein, danke. (und sie geht weiter, zum Taxistand)" },
+    { "audioKey": "qe06-d3", "voz": "Emilio", "es": "Hola, buenas. ¿Adónde vamos?", "pinyin": "O-la, BUE-nas. a-DON-deh BA-mos", "pt": "— Hallo, guten Tag. Wo geht's hin? (der Fahrer am Stand)" },
+    { "audioKey": "qe06-d4", "voz": "Carmen", "es": "¿Me lleva a esta dirección, por favor?", "pinyin": "me JE-ba a ES-ta di-rek-THION, por fa-BOR", "pt": "— Bringen Sie mich bitte zu dieser Adresse? (Handy hochgehalten)" },
+    { "audioKey": "qe06-d5", "voz": "Carmen", "es": "¿Es tarifa fija, verdad?", "pinyin": "es ta-RI-fa FI-cha, ber-DAD", "pt": "— Das ist der Festpreis, oder? (Tür noch offen)" },
+    { "audioKey": "qe06-d6", "voz": "Emilio", "es": "Sí, 33 euros dentro de la M-30.", "pinyin": "ssi, TREJN-ta i tres E-u-ros DEN-tro de la E-meh TREJN-ta", "pt": "— Ja, 33 Euro innerhalb der M-30.", "tts": "Sí, treinta y tres euros dentro de la eme treinta." },
+    { "audioKey": "qe06-d7", "voz": "Carmen", "es": "Pare aquí, por favor. ¿Me da un recibo?", "pinyin": "PA-reh a-KI, por fa-BOR. me da un rre-THI-bo", "pt": "— Halten Sie hier bitte. Bekomme ich eine Quittung?" },
+    { "audioKey": "qe06-d8", "voz": "Carmen", "es": "¿Este billete vale para el aeropuerto?", "pinyin": "ES-teh bi-JE-teh BA-leh PA-ra el a-e-ro-PUER-to", "pt": "— (am nächsten Morgen, am Schalter) Gilt dieses Ticket für den Flughafen?" },
+    { "audioKey": "qe06-d9", "voz": "Emilio", "es": "No, el aeropuerto lleva suplemento. Son 3 euros más.", "pinyin": "no, el a-e-ro-PUER-to JE-ba ssu-ple-MEN-to. son tres E-u-ros mas", "pt": "— Nein, der Flughafen hat einen Zuschlag. Das sind 3 Euro extra.", "tts": "No, el aeropuerto lleva suplemento. Son tres euros más." },
+    { "audioKey": "qe06-d10", "voz": "Carmen", "es": "Ya tengo el billete del AVE. ¿Dónde está el control de acceso?", "pinyin": "ja TEN-go el bi-JE-teh del A-beh. DON-deh es-TA el kon-TROL de ak-THE-sso", "pt": "— Ich habe mein AVE-Ticket schon. Wo ist das Zugangs-Gate?" },
+    { "audioKey": "qe06-d11", "voz": "Emilio", "es": "Al fondo. Sale a las 11:00, vía 12. Pase ya, que cierran antes.", "pinyin": "al FON-do. SA-leh a las ON-theh, BI-a DO-theh. PA-sseh ja, ke THJE-rran AN-tes", "pt": "— Ganz hinten. Er fährt um 11:00, Gleis 12. Gehen Sie jetzt schon durch, die machen vorher zu.", "tts": "Al fondo. Sale a las once, vía doce. Pase ya, que cierran antes." },
+    { "audioKey": "qe06-d12", "voz": "Carmen", "es": "¿Puedo subir con esta maleta?", "pinyin": "PUE-do ssu-BIR kon ES-ta ma-LE-ta", "pt": "— Kann ich diesen Koffer mit an Bord nehmen?" },
+    { "audioKey": "qe06-d13", "voz": "Emilio", "es": "Si pasa por el arco, sí. Buen viaje.", "pinyin": "ssi PA-ssa por el AR-ko, ssi. buen BJA-cheh", "pt": "— Wenn er durch den Rahmen passt, ja. Gute Reise." }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "Ein Mann in der Ankunftshalle bietet ihr ein billiges Taxi an, und sie geht ohne Zögern weiter. Warum?",
+      "es": "Ein Mann in der Ankunftshalle bietet ihr ein billiges Taxi an, und sie geht ohne Zögern weiter. Warum?",
+      "opcoes": [
+        "Weil ein echtes spanisches Taxi nie um Kunden wirbt — wer dich anspricht, ist keins",
+        "Weil Taxis an spanischen Flughäfen verboten sind",
+        "Weil er billiger war, die Fahrt aber länger dauert",
+        "Weil sie schon den Bus gebucht hatte"
+      ],
+      "correta": 0,
+      "explica": "Es gibt drei legale Wege raus: der Taxistand ('la parada de taxis'), ein App-Wagen, den du in der App buchst und am Abholpunkt einsammelst, oder der Zug. Wer dich in der Halle sucht, ist nichts davon. 'No, gracias' — und weitergehen, ohne langsamer zu werden.",
+      "pt": "Es gibt drei legale Wege raus: der Taxistand ('la parada de taxis'), ein App-Wagen, den du in der App buchst und am Abholpunkt einsammelst, oder der Zug. Wer dich in der Halle sucht, ist nichts davon. 'No, gracias' — und weitergehen, ohne langsamer zu werden."
+    },
+    {
+      "pergunta": "Was klärt sie, BEVOR das Auto losfährt?",
+      "es": "Was klärt sie, BEVOR das Auto losfährt?",
+      "opcoes": [
+        "Ob er Karten nimmt",
+        "Dass es der Flughafen-Festpreis ist",
+        "Welche Route er fährt",
+        "Wie lange die Fahrt dauert"
+      ],
+      "correta": 1,
+      "explica": "'¿Es tarifa fija, verdad?' — Madrid fährt pauschal 33 Euro zwischen Barajas und jeder Adresse innerhalb des M-30-Rings, rund um die Uhr, ohne Zuschläge obendrauf. Kläre das bei offener Tür; auf der Stadtautobahn hast du keinerlei Verhandlungsposition mehr. Wo es keinen Festpreis gibt, läuft das Taxameter — und wenn er es nicht anmacht, steigst du aus.",
+      "pt": "'¿Es tarifa fija, verdad?' — Madrid fährt pauschal 33 Euro zwischen Barajas und jeder Adresse innerhalb des M-30-Rings, rund um die Uhr, ohne Zuschläge obendrauf. Kläre das bei offener Tür; auf der Stadtautobahn hast du keinerlei Verhandlungsposition mehr. Wo es keinen Festpreis gibt, läuft das Taxameter — und wenn er es nicht anmacht, steigst du aus."
+    },
+    {
+      "pergunta": "Sie fragt '¿Este billete vale para el aeropuerto?'. Was sagt der Mann am Schalter?",
+      "es": "Sie fragt '¿Este billete vale para el aeropuerto?'. Was sagt der Mann am Schalter?",
+      "opcoes": [
+        "Ja, damit ist alles abgedeckt",
+        "Nur wenn sie es vorher entwertet",
+        "Nein — der Flughafen hat einen Zuschlag, 3 Euro extra",
+        "Nein — zum Flughafen fährt nur Cercanías"
+      ],
+      "correta": 2,
+      "explica": "Der Flughafen ist fast nie enthalten. Madrid schlägt 3 Euro auf Einzelfahrschein und Zehnerkarte drauf; in Barcelona ist die Flughafen-Metro (L9 Sud) eine eigene Tarifzone mit rund 5,90 Euro pro Richtung, und die T-casual gilt dort nicht. Rechne immer mit einem Zuschlag, dann erwischt es dich nie.",
+      "pt": "Der Flughafen ist fast nie enthalten. Madrid schlägt 3 Euro auf Einzelfahrschein und Zehnerkarte drauf; in Barcelona ist die Flughafen-Metro (L9 Sud) eine eigene Tarifzone mit rund 5,90 Euro pro Richtung, und die T-casual gilt dort nicht. Rechne immer mit einem Zuschlag, dann erwischt es dich nie."
+    },
+    {
+      "pergunta": "In Atocha eröffnet sie mit 'Ya tengo el billete'. Was bringt ihr dieser Satz?",
+      "es": "In Atocha eröffnet sie mit 'Ya tengo el billete'. Was bringt ihr dieser Satz?",
+      "opcoes": [
+        "Er holt sie aus der Ticketschlange und direkt zum Zugangs-Gate",
+        "Eine Erstattung für das Ticket, das sie schon hat",
+        "Ein Upgrade auf einen besseren Platz",
+        "Einen Gepäckanhänger für den Frachtraum"
+      ],
+      "correta": 0,
+      "explica": "'Ya tengo el billete. ¿Dónde está el control de acceso?' erledigt zwei Dinge in einem Atemzug: Es holt sie aus einer Schalterschlange, die vierzig Leute lang sein kann, und es zeigt ihr den einzigen Ort, an dem sie wirklich sein muss. Sag ihn zu jedem, der eine Uniform trägt.",
+      "pt": "'Ya tengo el billete. ¿Dónde está el control de acceso?' erledigt zwei Dinge in einem Atemzug: Es holt sie aus einer Schalterschlange, die vierzig Leute lang sein kann, und es zeigt ihr den einzigen Ort, an dem sie wirklich sein muss. Sag ihn zu jedem, der eine Uniform trägt."
+    },
+    {
+      "pergunta": "'Sale a las once, vía doce.' Wann fährt der Zug, und von wo?",
+      "es": "'Sale a las once, vía doce.' Wann fährt der Zug, und von wo?",
+      "opcoes": [
+        "Um 11:00 Uhr, von Gleis 12",
+        "Um 12:00 Uhr, von Gleis 11",
+        "Um 1:00 Uhr, von Gleis 12",
+        "Um 11:00 Uhr, vom Bahnsteig 12 der Metro"
+      ],
+      "correta": 0,
+      "explica": "'Once' ist elf, 'doce' ist zwölf — und beide tragen das spanische th: 'ON-theh', 'DO-theh'. Wer aus dem th ein s macht, hört die beiden Zahlen fast als dasselbe Wort und steigt in den falschen Zug. Dasselbe Problem zwischen 'cincuenta' (50) und 'sesenta' (60), wenn dir jemand einen Preis vorliest — lass dir Zahlen zeigen. Und 'vía' heißt Gleis, nicht 'über': bei Renfe 'vía', in der Metro 'andén'.",
+      "pt": "'Once' ist elf, 'doce' ist zwölf — und beide tragen das spanische th: 'ON-theh', 'DO-theh'. Wer aus dem th ein s macht, hört die beiden Zahlen fast als dasselbe Wort und steigt in den falschen Zug. Dasselbe Problem zwischen 'cincuenta' (50) und 'sesenta' (60), wenn dir jemand einen Preis vorliest — lass dir Zahlen zeigen. Und 'vía' heißt Gleis, nicht 'über': bei Renfe 'vía', in der Metro 'andén'."
+    },
+    {
+      "pergunta": "Warum sagt der Mann, sie soll 'ya' — sofort — durchgehen, obwohl der Zug noch nicht fährt?",
+      "es": "Warum sagt der Mann, sie soll 'ya' — sofort — durchgehen, obwohl der Zug noch nicht fährt?",
+      "opcoes": [
+        "Weil das Zugangs-Gate vor der Abfahrt schließt und dahinter eine Scannerschlange steht",
+        "Weil der Zug früher abfahren könnte",
+        "Weil der Fahrkartenschalter um 11:00 Uhr schließt",
+        "Weil das Gepäck eingecheckt und verladen werden muss"
+      ],
+      "correta": 0,
+      "explica": "Ein spanischer Hochgeschwindigkeitsbahnhof ist ein kleiner Flughafen: Röntgengerät, Metalldetektor und ein Gate, das vor der Abfahrt zumacht — erklärtes Ziel sind fünf Minuten vorher. Renfe empfiehlt selbst 30 Minuten Vorlauf, und Nachzügler kommen nicht mehr rein. Wer mit deutschem Bahn-Reflex 'pünktlich' ankommt, schaut mit gültigem Ticket in der Hand hinterher.",
+      "pt": "Ein spanischer Hochgeschwindigkeitsbahnhof ist ein kleiner Flughafen: Röntgengerät, Metalldetektor und ein Gate, das vor der Abfahrt zumacht — erklärtes Ziel sind fünf Minuten vorher. Renfe empfiehlt selbst 30 Minuten Vorlauf, und Nachzügler kommen nicht mehr rein. Wer mit deutschem Bahn-Reflex 'pünktlich' ankommt, schaut mit gültigem Ticket in der Hand hinterher."
+    },
+    {
+      "pergunta": "'Si pasa por el arco, sí.' Wovon hängt es ab, ob ihr Koffer mitdarf?",
+      "es": "'Si pasa por el arco, sí.' Wovon hängt es ab, ob ihr Koffer mitdarf?",
+      "opcoes": [
+        "Davon, ob er physisch durch den Metallrahmen am Gate passt",
+        "Allein vom Gewicht, auf einer Waage gewogen",
+        "Davon, ob sie beim Buchen eine Gepäckgebühr bezahlt hat",
+        "Von nichts — spanische Züge nehmen jedes Gepäck"
+      ],
+      "correta": 0,
+      "explica": "Renfe erlaubt bis zu 3 Stück mit zusammen 25 kg und 290 cm Gesamtmaß, das größte Teil höchstens 85 × 55 × 35 cm — durchgesetzt mit einem echten Rahmen am Zugang. E-Scooter und Einräder sind komplett verboten. Die gute Nachricht: keine Gebühr, kein Check-in-Schalter, keine Anhänger und niemand zum Diskutieren. Er passt oder er passt nicht. Und in Spanien heißt er 'maleta', nie 'valija'.",
+      "pt": "Renfe erlaubt bis zu 3 Stück mit zusammen 25 kg und 290 cm Gesamtmaß, das größte Teil höchstens 85 × 55 × 35 cm — durchgesetzt mit einem echten Rahmen am Zugang. E-Scooter und Einräder sind komplett verboten. Die gute Nachricht: keine Gebühr, kein Check-in-Schalter, keine Anhänger und niemand zum Diskutieren. Er passt oder er passt nicht. Und in Spanien heißt er 'maleta', nie 'valija'."
+    }
+  ]
+}

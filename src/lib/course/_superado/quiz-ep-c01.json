@@ -1,0 +1,107 @@
+{
+  "id": "q-c01",
+  "nivel": "intermediario",
+  "titulo": "Quiz — Die spanische Uhr und das Bar-Dossier",
+  "subtitulo": "Zwanzig nach sieben, eine Bar im Viertel, und alles aus Folge eins auf einmal",
+  "introAudioKey": "q-c01-i",
+  "introPt": "Quizzeit. Es ist zwanzig nach sieben abends, irgendwo in Madrid, und unsere zwei Reisenden gehen in eine echte Viertelsbar — keine Fotos auf der Karte, schon mal ein gutes Zeichen. In den nächsten neunzig Sekunden bekommen sie die Küchenzeiten, die drei Preise, die Wahrheit über die kostenlose Tapa und einen Tisch für später. Hör so oft, wie du willst, dann antworte.",
+  "cenario": "Ein Reisender kommt um 19:20 in eine Viertelsbar, findet die Küche geschlossen, bestellt stattdessen ein Bier am Tresen, prüft die Preise und die Tapa, reserviert einen Tisch für halb zehn und zahlt.",
+  "dialogo": [
+    { "audioKey": "q-c01-d1", "voz": "Emilio", "es": "Buenas tardes.", "pinyin": "BUE-nas TAR-des", "pt": "— Guten Tag. (beim REINGEHEN gesagt)" },
+    { "audioKey": "q-c01-d2", "voz": "Carmen", "es": "Hola, buenas. Dime.", "pinyin": "O-la, BUE-nas. DI-me", "pt": "— Hallo. Sag an. (du bist dran — sprich)" },
+    { "audioKey": "q-c01-d3", "voz": "Emilio", "es": "¿Están sirviendo comidas?", "pinyin": "es-TAN sser-BJEN-do ko-MI-das", "pt": "— Gibt es gerade etwas zu essen?" },
+    { "audioKey": "q-c01-d4", "voz": "Carmen", "es": "Ahora solo bebidas. La cocina abre a las ocho y media.", "pinyin": "a-O-ra SSO-lo be-BI-das. la ko-THI-na A-bre a las O-tscho i ME-dja", "pt": "— Im Moment nur Getränke. Die Küche öffnet um halb neun." },
+    { "audioKey": "q-c01-d5", "voz": "Emilio", "es": "Vale. Pues ponme una caña, por favor.", "pinyin": "BA-le. pues PON-me U-na KA-nja, por fa-BOR", "pt": "— Alles klar. Dann ein kleines Bier vom Fass, bitte." },
+    { "audioKey": "q-c01-d6", "voz": "Emilio", "es": "¿Es el mismo precio en la barra?", "pinyin": "es el MISS-mo PRE-thjo en la BA-rra", "pt": "— Kostet es am Tresen dasselbe?" },
+    { "audioKey": "q-c01-d7", "voz": "Carmen", "es": "En la barra es más barato. En la terraza hay suplemento.", "pinyin": "en la BA-rra es mas ba-RA-to. en la te-RRA-tha ai ssu-ple-MEN-to", "pt": "— Am Tresen ist es billiger. Auf der Terrasse gibt es einen Aufschlag." },
+    { "audioKey": "q-c01-d8", "voz": "Emilio", "es": "¿Y la tapa va incluida con la bebida?", "pinyin": "i la TA-pa ba in-klu-I-da kon la be-BI-da", "pt": "— Und ist die Tapa im Getränk inbegriffen?" },
+    { "audioKey": "q-c01-d9", "voz": "Carmen", "es": "Aquí no, cariño. Esto no es Granada.", "pinyin": "a-KI no, ka-RI-njo. ES-to no es gra-NA-da", "pt": "— Hier nicht, mein Lieber. Das hier ist nicht Granada." },
+    { "audioKey": "q-c01-d10", "voz": "Emilio", "es": "Entendido. Quiero reservar una mesa para las nueve y media.", "pinyin": "en-ten-DI-do. KJE-ro rre-sser-BAR U-na ME-ssa PA-ra las NUE-be i ME-dja", "pt": "— Verstanden. Ich möchte einen Tisch für halb zehn reservieren." },
+    { "audioKey": "q-c01-d11", "voz": "Carmen", "es": "Perfecto. ¿Cuántos sois?", "pinyin": "per-FEK-to. KUAN-tos ssois", "pt": "— Perfekt. Wie viele seid ihr? (👂 das ist vosotros — du hörst es ständig und wirst es nie selbst sagen müssen)" },
+    { "audioKey": "q-c01-d12", "voz": "Emilio", "es": "Somos dos. ¿Nos cobras, por favor?", "pinyin": "SSO-mos dos. nos KO-bras, por fa-BOR", "pt": "— Wir sind zu zweit. Können wir zahlen, bitte?" },
+    { "audioKey": "q-c01-d13", "voz": "Carmen", "es": "Son tres euros con cincuenta.", "pinyin": "sson tres E-u-ros kon thin-KUEN-ta", "pt": "— Das macht drei Euro fünfzig." }
+  ],
+  "perguntas": [
+    {
+      "es": "It's twenty past seven. What does she tell him about food?",
+      "pergunta": "Es ist zwanzig nach sieben. Was sagt sie ihm zum Essen?",
+      "opcoes": [
+        "Im Moment nur Getränke — die Küche öffnet um halb neun",
+        "Die Küche bleibt den Rest des Abends geschlossen",
+        "Bis halb neun ist alles ausgebucht",
+        "Essen gibt es nur auf der Terrasse"
+      ],
+      "correta": 0,
+      "pt": "'Ahora solo bebidas. La cocina abre a las ocho y media.' — die Standardantwort vor acht. Die Bar ist offen; die Küche hat nur noch nicht angefangen. Keine Abfuhr, ein Fahrplan.",
+      "explica": "'Ahora solo bebidas. La cocina abre a las ocho y media.' — die Standardantwort vor acht. Die Bar ist offen; die Küche hat nur noch nicht angefangen. Keine Abfuhr, ein Fahrplan."
+    },
+    {
+      "es": "The barwoman's first word to him is 'Dime'. What is she doing?",
+      "pergunta": "Ihr erstes Wort an ihn ist 'Dime'. Was macht sie damit?",
+      "opcoes": [
+        "Sie sagt ihm, er soll warten, bis er dran ist",
+        "Sie bittet ihn, das zu wiederholen",
+        "Sie sagt ihm, dass er dran ist — bestell einfach",
+        "Sie fragt, ob er reserviert hat"
+      ],
+      "correta": 2,
+      "pt": "'Dime' — wörtlich 'sag mir'. Das ist eine Einladung, keine Ungeduld. Aufschauen, antworten, in einem kurzen Satz bestellen. Wer stattdessen auf den Boden guckt, steht in zwanzig Minuten immer noch da.",
+      "explica": "'Dime' — wörtlich 'sag mir'. Das ist eine Einladung, keine Ungeduld. Aufschauen, antworten, in einem kurzen Satz bestellen. Wer stattdessen auf den Boden guckt, steht in zwanzig Minuten immer noch da."
+    },
+    {
+      "es": "He asks '¿Es el mismo precio en la barra?'. What does she tell him?",
+      "pergunta": "Er fragt '¿Es el mismo precio en la barra?'. Was antwortet sie?",
+      "opcoes": [
+        "Alles kostet gleich viel, egal wo du sitzt",
+        "Am Tresen ist es billiger; auf der Terrasse gibt es einen Aufschlag",
+        "Die Terrasse ist vor acht billiger",
+        "Auf der Terrasse gibt es einen Mindestverzehr"
+      ],
+      "correta": 1,
+      "pt": "Drei Preise für ein Bier — barra, mesa, terraza — und das ist völlig legal, solange es auf der ausgehängten Preisliste steht. Vorher fragen, bevor du sitzt: das ist der ganze Trick.",
+      "explica": "Drei Preise für ein Bier — barra, mesa, terraza — und das ist völlig legal, solange es auf der ausgehängten Preisliste steht. Vorher fragen, bevor du sitzt: das ist der ganze Trick."
+    },
+    {
+      "es": "Does the tapa come free with the beer in this bar?",
+      "pergunta": "Gibt es in dieser Bar die Tapa gratis zum Bier?",
+      "opcoes": [
+        "Ja — Gratis-Tapas sind in ganz Spanien gesetzlich vorgeschrieben",
+        "Ja, aber nur beim ersten Getränk",
+        "Nein — Gratis-Tapas sind ein regionaler Brauch, kein spanisches Gesetz",
+        "Nein, weil er am Tresen bestellt hat statt am Tisch"
+      ],
+      "correta": 2,
+      "pt": "'Esto no es Granada.' Die Gratis-Tapa ist eine Gewohnheit aus Granada — dazu das östliche Andalusien und Ecken von León und Galicien. In Madrid, Barcelona, San Sebastián und Valencia ist die Tapa ein bezahlter Posten. Fragen, nicht raten.",
+      "explica": "'Esto no es Granada.' Die Gratis-Tapa ist eine Gewohnheit aus Granada — dazu das östliche Andalusien und Ecken von León und Galicien. In Madrid, Barcelona, San Sebastián und Valencia ist die Tapa ein bezahlter Posten. Fragen, nicht raten."
+    },
+    {
+      "es": "What time does he book the table for?",
+      "pergunta": "Für wann reserviert er den Tisch?",
+      "opcoes": ["Acht Uhr", "Halb neun", "Neun Uhr", "Halb zehn"],
+      "correta": 3,
+      "pt": "'Para las nueve y media' — halb zehn, eine völlig normale spanische Abendessens-Reservierung. Er ist um halb acht nicht beleidigt abgezogen; er ist zu der Uhrzeit wiedergekommen, zu der dieses Land tatsächlich isst. Merke: 'nueve y media' heißt neun und halb, also halb zehn.",
+      "explica": "'Para las nueve y media' — halb zehn, eine völlig normale spanische Abendessens-Reservierung. Er ist um halb acht nicht beleidigt abgezogen; er ist zu der Uhrzeit wiedergekommen, zu der dieses Land tatsächlich isst. Merke: 'nueve y media' heißt neun und halb, also halb zehn."
+    },
+    {
+      "es": "She asks '¿Cuántos sois?'. What does she want to know?",
+      "pergunta": "Sie fragt '¿Cuántos sois?'. Was will sie wissen?",
+      "opcoes": [
+        "Wie viele Personen ihr seid",
+        "Für wann ihr den Tisch wollt",
+        "Ob ihr schon mal hier reserviert habt",
+        "Wie lange ihr in der Stadt bleibt"
+      ],
+      "correta": 0,
+      "pt": "Das ist vosotros — das 'ihr', das es nur in Spanien gibt, und genau deshalb stolpern hier alle. Du bekommst es fünfzigmal am Tag ab und wirst es fast nie selbst brauchen. Erkennen, 'somos dos' antworten, weitermachen.",
+      "explica": "Das ist vosotros — das 'ihr', das es nur in Spanien gibt, und genau deshalb stolpern hier alle. Du bekommst es fünfzigmal am Tag ab und wirst es fast nie selbst brauchen. Erkennen, 'somos dos' antworten, weitermachen."
+    },
+    {
+      "es": "'Son tres euros con cincuenta.' How much is the beer?",
+      "pergunta": "'Son tres euros con cincuenta.' Wie viel kostet das Bier?",
+      "opcoes": ["3,15 €", "3,50 €", "3,60 €", "3,05 €"],
+      "correta": 1,
+      "pt": "Cincuenta ist 50 — 'thin-KUEN-ta', vorne mit dem englischen th aus 'think'. Sesenta ist 60 und fängt mit einem schlichten s an. Genau dieser eine Laut trennt die zwei Zahlen, die du an der Kasse am häufigsten hörst. Und weil du das th selbst wahrscheinlich nicht sprichst, musst du es umso genauer hören: th heißt fünfzig.",
+      "explica": "Cincuenta ist 50 — 'thin-KUEN-ta', vorne mit dem englischen th aus 'think'. Sesenta ist 60 und fängt mit einem schlichten s an. Genau dieser eine Laut trennt die zwei Zahlen, die du an der Kasse am häufigsten hörst. Und weil du das th selbst wahrscheinlich nicht sprichst, musst du es umso genauer hören: th heißt fünfzig."
+    }
+  ]
+}

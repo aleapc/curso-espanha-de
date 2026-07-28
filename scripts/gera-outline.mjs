@@ -1,0 +1,125 @@
+#!/usr/bin/env node
+// GERA O ÍNDICE DO CURSO a partir dos episódios e do contrato de slots.
+//
+//   node scripts/gera-outline.mjs            → reescreve src/lib/course/outline.gen.ts
+//   node scripts/gera-outline.mjs --conferir → só verifica; sai 1 se estiver desatualizado
+//
+// POR QUE ISTO EXISTE. O título de uma parte vivia em DOIS lugares: no próprio
+// `ep-*.json` e, copiado à mão, no `index.ts`. Duas canônicas para a mesma string
+// é o defeito que este projeto já cometeu três vezes — o rótulo de consumo entre
+// o PRODUTO.md e o slots.json, o id de molde entre a GRADE e o moldes.json, e
+// este. Nas três, nenhum script conferia, e a divergência ficaria errada em
+// silêncio: aqui, duas partes reescritas apareceriam na tela com o título antigo
+// e duas partes novas não apareceriam de jeito nenhum.
+//
+// A ORDEM também deixa de ser digitada: vem do contrato (slots.json), que é onde
+// a ordem das 36 partes é lei. Uma parte nova entra no lugar certo do índice no
+// instante em que declara o slot dela — sem ninguém editar lista nenhuma.
+
+import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
+import { join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const root = join(dirname(fileURLToPath(import.meta.url)), '..');
+const dir = join(root, 'src', 'lib', 'course');
+const alvo = join(dir, 'outline.gen.ts');
+const CONFERIR = process.argv.includes('--conferir');
+
+const contrato = JSON.parse(readFileSync(join(dir, 'slots.json'), 'utf8'));
+const ordemDoSlot = new Map(contrato.slots.map((s, i) => [s.id, i]));
+
+// Cor e descrição são apresentação, não conteúdo — ficam aqui, únicas por módulo.
+// Traduzido do CONTRATO (slots.json: nome_pt + promessa_pt), não do curso inglês:
+// o rótulo de módulo é ativo de produto, e derivá-lo da versão inglesa é como se
+// importa a voz do outro comprador sem querer.
+const APRESENTACAO = {
+  basico: {
+    nome: 'Ich komme klar',
+    descricao: 'Das Spanisch, mit dem der Tag läuft: ankommen, bestellen, bezahlen, sich bewegen und Hilfe bekommen.',
+    cor: 'terracota'
+  },
+  intermediario: {
+    nome: 'Ich genieße',
+    descricao: 'Da essen, wo sie essen, wann sie essen, zu dem Preis, den sie zahlen.',
+    cor: 'oliva'
+  },
+  avancado: {
+    nome: 'Ich lese den Raum',
+    descricao: 'Der Humor, der Stolz, der alte Streit — und was ihr Schweigen bedeutet.',
+    cor: 'indigo'
+  }
+};
+
+const partes = [];
+for (const f of readdirSync(dir).filter((x) => /^ep-.*\.json$/.test(x))) {
+  const j = JSON.parse(readFileSync(join(dir, f), 'utf8'));
+  if (!j.slot && !j.dissolveEm) continue;
+  partes.push(j);
+}
+
+// PARTE EM TRÂNSITO CONTINUA NO ÍNDICE, e a razão é o aluno, não a arquitetura.
+// O conteúdo dela está sendo repartido entre slots que ainda estão sendo
+// escritos — mas ele existe hoje, está gravado hoje e alguém pode estar ouvindo
+// hoje. Tirá-la do índice no começo da obra encolheria o curso publicado de 24
+// para 17 partes e roubaria do aluno sete aulas que ninguém substituiu ainda.
+// Ela sai sozinha do índice no dia em que o arquivo for apagado, que é o dia em
+// que o conteúdo já está no destino. Durante a janela há alguma duplicação —
+// e duplicar é o erro barato; o caro é o buraco.
+const ordem = (p) =>
+  p.slot ? (ordemDoSlot.get(p.slot) ?? 900) : 1000 + (typeof p.numero === 'number' ? p.numero : 0);
+partes.sort((a, b) => ordem(a) - ordem(b));
+
+const esc = (s) => String(s).replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+
+let out = `import type { ModuloOutline } from '../types';
+
+// ┌──────────────────────────────────────────────────────────────────────────┐
+// │  ARQUIVO GERADO — não edite à mão.                                       │
+// │  Fonte: os ep-*.json (título) + slots.json (ordem e módulo).             │
+// │  Regenerar: npm run outline   ·   Conferir: npm run outline:conferir     │
+// │                                                                          │
+// │  O título vivia aqui E no episódio. Duas canônicas para a mesma string   │
+// │  é o defeito que fez duas partes reescritas aparecerem na tela com o     │
+// │  título antigo e duas partes novas não aparecerem. Agora deriva.         │
+// └──────────────────────────────────────────────────────────────────────────┘
+
+export const outline: ModuloOutline[] = [
+`;
+
+for (const mod of contrato.modulos) {
+  const doMod = partes.filter((p) => p.nivel === mod.id);
+  if (!doMod.length) continue;
+  const ap = APRESENTACAO[mod.id];
+  out += `  {\n    nivel: '${mod.id}',\n    nome: '${esc(ap.nome)}',\n    descricao: '${esc(ap.descricao)}',\n    cor: '${ap.cor}',\n    licoes: [\n`;
+  for (const p of doMod) {
+    // `pronta` = dá para ouvir a aula. No curso inglês isto era `true` fixo, e
+    // podia ser: lá toda parte listada já tinha narração gravada. Aqui NÃO pode:
+    // as 36 nascem como andaime, com a fala espanhola no lugar e a voz-guia
+    // vazia. Marcá-las prontas poria 36 aulas mudas na home, e o aluno (ou o
+    // revisor) descobriria abrindo uma. `aguardaNarracao` é a flag do andaime, e
+    // ela cai sozinha no dia em que o autor escreve a narração da parte.
+    out += `      { id: '${p.id}', titulo: '${esc(p.titulo)}', pronta: ${p.aguardaNarracao ? 'false' : 'true'} },\n`;
+  }
+  out += `    ]\n  },\n`;
+}
+out += `];\n`;
+
+if (CONFERIR) {
+  const atual = readFileSync(alvo, 'utf8');
+  if (atual === out) {
+    console.log(`\n✓ outline.gen.ts em dia · ${partes.length} partes\n`);
+    process.exit(0);
+  }
+  console.log('\n✗ outline.gen.ts DESATUALIZADO em relação aos episódios.');
+  console.log('  Um título mudou, uma parte nasceu ou uma parte saiu, e o índice não acompanhou.');
+  console.log('  Rode: npm run outline\n');
+  process.exit(1);
+}
+
+writeFileSync(alvo, out);
+console.log(`\n✓ outline.gen.ts gerado · ${partes.length} partes`);
+for (const mod of contrato.modulos) {
+  const n = partes.filter((p) => p.nivel === mod.id).length;
+  if (n) console.log(`   ${mod.nome_pt.padEnd(12)} ${n}`);
+}
+console.log();

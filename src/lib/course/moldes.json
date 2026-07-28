@@ -1,0 +1,674 @@
+{
+  "versao": 1,
+  "sku": "DE → Espanha",
+  "_changelog": [
+    "1 (2026-07-28): ROSTER INICIAL DO PAR ALEMÃO. NÃO é tradução do roster EN v6 — é a re-derivação que a DERIVACAO-DE.md §2 encomendou, implementada contra os 700 steps de fala espanhola do andaime (conferidos um a um em disco, não contra a GRADE do outro par). O RESULTADO CONFIRMA A ESPINHA: os quinze moldes do par EN sobrevivem inteiros, nenhum entra, nenhum sai, o teto continua 12+3. Mudou PREÇO e ORDEM. (a) ORDEM: ME-PONE sobe de 4º a 1º e QUERIA cai de 1º a 3º, pelo motivo escrito em `_regras.recalibragem` — o argumento que fazia QUERIA ser o nº 1 é um argumento sobre a L1 do comprador, e a L1 mudou. HAY sobe a 2º (é o molde mais barato do SKU e o melhor endereço do curso para a regra do ⟨h⟩). OTRA sobe de 9º a 6º (`Noch ein Bier, bitte` é A frase de balcão alemã; empata com SIN-CON-PARA no preço). LLEVA, DONDE e ME-PUEDE deslizam um lugar cada por deslocamento, sem mudança de argumento próprio, e está dito na nota de cada um. PUEDO cai de 2º a 4º e o motivo está escrito na nota dele: foi ultrapassado, não rebaixado — o peso dele SOBE (mais encaixes + a dispensa `können`/`dürfen`). Ordinal que cai sem motivo escrito é exatamente o tipo de silêncio que este arquivo existe para não ter.",
+    "1 (2026-07-28): CAMPO NOVO `armadilhas`, e ele é o que faz este roster ser do PAR e não do destino. O erro nº 1 do comprador alemão não é articulatório, é ORTOGRÁFICO (DERIVACAO §1.1): ele tem em casa todos os sons de que o espanhol de viagem precisa, e o que lhe falta é a regra de leitura. Cada molde declara qual das SETE interferências de leitura ele carrega, na `nota` (que é o que o `briefing-slot.mjs` imprime) e no array `armadilhas` (que é o que uma máquina lê). Medido no andaime: LLEVA carrega quatro das sete e é a frase de alergia; ME-HE-DEJADO carrega seis e é a mais densa do roster; PUEDO é o único operacional cuja CASCA não carrega nenhuma. A regra de redação não mudou: uma regra por parte, grudada a uma palavra que a parte já diz, NUNCA uma tabela lida em voz alta (DERIVACAO §1.1, e é o que impede o G4 de estourar).",
+    "1 (2026-07-28): TRÊS REMOÇÕES E QUATRO ACRÉSCIMOS, todos medidos contra o disco. REMOVIDO: `sin conversión` dos exemplos de SIN-CON-PARA (DERIVACAO §2.3 item 4 — o DCC não existe para quem paga em euros com cartão em euros), reposto por `con tarjeta`, que está gravado em B06, B07, B09, B14 e I10 e que é a ação do §3.4 item 4 deste par. CONSEQUÊNCIA QUE A DERIVAÇÃO NÃO SOLETROU E QUE SAI DELA: B15 CAI dos redisparos de SIN-CON-PARA, porque a única instância do molde em B15 é o callback `Sin conversión.` vindo de B14 — mede-se abrindo `ep-b15.json`. Sobram B13, B14 e I03, que é acima do piso de dois do P5. ACRESCENTADOS, com a frase que os justifica: I01 em QUERIA (`Quería una mesa para las nueve y media` — encaixe novo, e é literalmente a frase onde mora a armadilha `halb zehn` ≠ `las nueve y media` do §3.3 item 5), I01 em ME-PONE (`¿Me pones un cortado?` — encaixe novo), B09 em HAY (`¿Hay otro tren esta tarde?` — encaixe novo, e `otro tren` já estava na lista de exemplos) e B09 em ME-PUEDE (`¿Me puede recargar la tarjeta?` — encaixe novo). Os quatro estão no andaime, vêm depois da casa e passam no G9d; o roster EN não os listava e a doença é a mesma que o changelog dele registra sete vezes — o arquivo executável atrás do corpus.",
+    "1 (2026-07-28): O QUE NÃO PORTOU DO ROSTER EN, e é preciso estar escrito para ninguém repor. (a) `QUERIA.porque_o_numero_1` foi APAGADO, não traduzido: ele dizia que o molde salva o aluno da decisão tú/usted, e para este comprador isso não é benefício — é uma decisão que ele já sabe tomar e precisa aprender a tomar certo. Virou `porque_deixou_de_ser_o_numero_1`. (b) `_pendencia_b17` e `_pendencia_b17_RESOLVIDA_EM_PARTE` não portaram: descrevem o estado LEGADO de duas partes do par EN. Aqui as 36 são andaime e a narração inteira é escrita do zero, então B17 e B05 não têm dívida de regravação — B17 entra nos redisparos de HAY, DONDE, ME-PUEDE e SOY-ESTOY desde o primeiro dia, porque a fala espanhola que os cumpre está em `ep-b17.json`. (c) O `porque` de `Me gustaría` em `cortados` foi reescrito: o acolchoamento não é o problema deste comprador."
+  ],
+  "_leia": "O NÚCLEO GERADOR do par ALEMÃO → espanhol. Um molde é um encaixe cujo buraco se preenche com uma COISA DO MUNDO (um café, a conta, outro quarto) — escolha, não cálculo de conjugação. É o que separa este produto do phrasebook: com inventário fixo o aluno repete o que escrevemos e trava quando a cena desvia dois graus; com molde ele MONTA a frase que nunca escrevemos. LEIA ISTO ANTES DE USAR O ARQUIVO: ele NÃO é a tradução do `moldes.json` do curso EN, e comparar os dois linha a linha para «conferir a versão» é o anti-padrão 9 em ato. O roster é ativo de PAR e se re-derivou (`_regras.ativo_de_par`); o que sobreviveu à re-derivação sobreviveu por mérito medido, não por herança. E este par tem uma camada que o inglês não tem: o comprador alemão erra o espanhol PELO OLHO antes de errar pela boca, então cada molde declara a armadilha de leitura que carrega (`_regras.armadilhas_ortograficas`). O campo `exemplos` é lista de encaixes PLAUSÍVEIS, não manifesto de áudio: alguns estão gravados no andaime e outros não. Confira contra `audio.config.json` antes de escrever qualquer frase-alvo nova — a fala espanhola nova é a única linha de crédito espanhol deste SKU e ela é pequena, não zero.",
+  "_regras": {
+    "teto": "12 moldes OPERACIONAIS + até 3 moldes SOCIAIS = 15 declarados no curso inteiro, e os dois números são LEI (PRODUTO §5.1 e INV-14). O limite é orçamentário, não estético: o molde não custa a apresentação, custa a agenda de recall — 15 × 3 recalls = 45 slots de recall em 36 partes, e o slot de callback do template já está pago em cada parte. É também trava anti-fraude do G9: declarar molde a mais para inflar o numerador quebra o build. O teto NÃO se mexeu na derivação para o alemão, e isso é decisão, não inércia: o orçamento é o mesmo orçamento (DERIVACAO §2.3 item 14). Um 13º operacional ou um 4º social só entram por decisão do dono, e o caminho declarado, se o piso do G9 precisar subir, é ELEVAR o teto operacional de 12 para 14 com o dado na mão — nunca inflar a lista com o que o curso já ensina de graça. TENTAÇÃO NOMEADA DESTE PAR, para que ela não passe por descuido: `¿Tengo que + [infinitivo]?` fica mais barato aqui (`Muss ich…?`, um-a-um) e `Pagamos + [por separado / a partes iguales]` é a maior fricção operacional do par (DERIVACAO §3.4 item 3). Nenhum dos dois entra. O primeiro segue em `ensinados_mas_nao_declarados` e só se reabre com o G9 medido abaixo do piso; o segundo é INVENTÁRIO CONGELADO — duas formas, uma cena, reprova em P2 — e forçá-lo a molde seria comprar um slot de recall com uma lista de dois.",
+    "recalibragem": "A DECISÃO QUE REORGANIZOU ESTE ROSTER, e ela não é um molde. O par `¿me pone?` / `¿me pones?` é o slot cognitivo `Sie` / `du`, e o comprador alemão JÁ RODA essa máquina desde criança, dezenas de vezes por dia, com custo social real e sem esforço consciente. Só que ela está calibrada para a Alemanha: lá `Sie` é o default com qualquer adulto desconhecido, incluindo garçom, balconista e recepcionista. Na Espanha `tú` é o default em bar, loja e balcão, e `usted` com um garçom de vinte e cinco anos lê como distância deliberada. O ANGLÓFONO DECIDE NO ESCURO; O ALEMÃO DECIDE COM CONFIANÇA E DECIDE ERRADO — e isso é pior, porque errar por acaso produz uma frase estranha e errar por convicção produz frieza consistente durante doze dias, sem que ele desconfie uma vez. É a categoria mais cara da derivação: estrutura presente e mal calibrada custa mais que estrutura ausente. POR ISSO ME-PONE É O Nº 1: o aluno não precisa aprender o mecanismo, só o ajuste, e este é o lugar mais barato do curso inteiro para instalá-lo. A recalibragem NÃO é molde (falha em P1: o buraco seria preenchido por uma decisão do sistema, não por coisa do mundo) e NÃO é pedágio (a GRADE do par EN já provou que no espanhol turístico esse acabamento não existe — `Quería…`, `¿Hay…?`, `Sin hielo, por favor` são todas dizíveis sem decidir nada). Portanto a extensão X-POLIDEZ CONTINUA NÃO ATIVADA e o SKU tem 36 partes exatas. Ela entra como beat declarado em B02 e como o eixo de I02, e o andaime já a serve: `ep-i02.json` traz `Ponme una caña, por favor.` e `Perdone, ¿nos cobras?` no mesmo slot, e `ep-b02.json` traz as duas cascas modeladas por nativo (`Ponme…` do Emilio e `Perdone, ¿me pone…?` da Carmen). ONDE A RECALIBRAGEM NÃO VALE, e sem esta linha o produto fabrica um aluno que nunca usa `usted`: Guardia Civil, banco, médico, funcionário público e pessoa claramente mais velha em contexto formal.",
+    "armadilhas_ortograficas": {
+      "_porque": "O erro nº 1 deste comprador não é de boca, é de olho (DERIVACAO §1.1). Ele tem em casa todos os sons de que o espanhol de viagem precisa, menos um; o que lhe falta é a regra de leitura, e o espanhol, que é transparente, mente para ele em sete lugares. Cada molde declara em `armadilhas` quais carrega. REGRA DE REDAÇÃO, e ela é a que impede o G4 de estourar: a regra vem SEMPRE grudada a uma palavra que a parte já ia dizer, uma por parte, dentro de uma frase-alvo que já existe. NUNCA uma tabela lida em voz alta — regra de leitura em áudio-curso vira palestra, e palestra é o que o G4 mede.",
+      "as_sete": {
+        "qu": "⟨qu⟩ lido [kv] — `quería` vira «kveria», `¿qué?` vira «kve», `aquí` vira «akví», `riquísimo` vira «rikvísimo».",
+        "v": "⟨v⟩ lido [f] — `vale` vira «fale» e `vino` vira `fino`, QUE É UMA BEBIDA REAL E PEDÍVEL. É a gag recorrente do SKU (INV-17): o erro não trava a cena, entrega a coisa errada, e o aluno pode conferir na primeira noite.",
+        "z_c": "⟨z⟩ e ⟨c⟩ diante de e/i lidos [ts] — `cerveza` vira «tservetsa», `celíaco` vira «tselíako», `ración` vira «ratsión`. Atenção: o alvo é [θ], mas [s] é aceito e não custa nada (as Canárias são zona de seseo e são 22% deste comprador). O que está PROIBIDO é [ts].",
+        "s": "⟨s⟩ intervocálico lido [z] — `casa` vira «kaza», `pasaporte` vira «pazaporte`, `buenísimo` vira «buenízimo», `reservado` vira «rezervado».",
+        "h": "⟨h⟩ lido audível — `¿Hay…?` vira «Hai», `hielo` vira «Hielo», `hecho` vira «Hetcho», `Me he dejado` vira «Me He dejado».",
+        "j": "⟨j⟩ lido [j] — `jamón` vira «yamón», `dejado` vira «deyado», `cajero` vira «kayero». Inclui a jota escrita ⟨g⟩ diante de e/i (`alérgico`, `vegetariano`, `gente`), onde o alemão lê [g] duro.",
+        "ll": "⟨ll⟩ lido [l] — `¿Lleva…?` vira «Leva», `las llaves` vira «las laves`, `tortilla` vira «tortila`. Esta é a única regra deste SKU que joga a favor e tem atalho: ⟨ll⟩ e ⟨y⟩ são o `j` de `ja`, a mesma letra que a linha do ⟨j⟩ acabou de proibir para a jota."
+      },
+      "_candidata_a_oitava_NAO_CONFERIDA": "⟨ch⟩. O alemão escreve [x]/[ç] como ⟨ch⟩ (`Bach`, `ich`) e o espanhol usa ⟨ch⟩ para [tʃ] — então `hecho`, `noche`, `mucho`, `ocho`, `chaqueta` e `derecha` são candidatos previsíveis a leitura errada, e `hecho` está entre os quatro encaixes fechados de YA-ESTA. A DERIVACAO-DE.md lista SETE e não oito, e este item NÃO está nela. Fica NOMEADO aqui, marcado NÃO CONFERIDO, exatamente pela régua de evidência do PRODUTO §preâmbulo: precisa de revisor com alemão L1 e espanhol peninsular, e NADA NÃO CONFERIDO VIRA ÁUDIO. Quem confirmar, edita a DERIVACAO primeiro e este arquivo depois — nunca o contrário.",
+      "_onde_o_alemao_ganha_de_graca": "Não confundir armadilha com custo geral. Saem de graça para este comprador e NÃO devem ganhar tempo de áudio: a jota [x] (ele tem `Bach`), o `ñ` (`Kognak`), a sílaba tônica dos latinismos (`Hospitál`, `Hotél`, `Restauránt` — o «-o tax» do par EN NÃO EXISTE aqui e escrever aquele GUIRI ALERT é o anti-padrão 9), a consoante final ensurdecida (`usted`, `ciudad`) e a qualidade das cinco vogais. Continuam CAROS: o ritmo (o alemão também é acentual e também reduz átona a schwa — `noche` vira «nochə»), o `r` (uvular, sem âncora no alemão padrão) e o encadeamento entre palavras (o golpe de glote de `ein ¦ Apfel` contra `el hotel` → [e-lo-tel])."
+    },
+    "ensinados_mas_nao_declarados": {
+      "_porque": "Estes o curso ENSINA com duas ou mais substituições na frente do aluno, e mesmo assim NÃO entram na declaração, porque o teto é lei e a lista já está cheia com os de maior cobertura. Isto é legítimo (PRODUTO §5.1: 'molde ensinado e não declarado é legítimo'), e a consequência é assumida: eles não contam no numerador do G9, então a taxa medida SUBESTIMA o produto. Preferimos subestimar a afrouxar a trava. Se a medição real ficar abaixo dos 45%, revê-se o teto COM O DADO NA MÃO, nunca por antecipação. O que NÃO é permitido é o inverso: sumir com um destes da grade porque 'não está no roster'. A lista dos cinco PORTOU INTEIRA do par EN e isso é decisão conferida, não cópia: os cinco motivos são de TETO e de CENA, e nenhum deles é sobre a língua do comprador (DERIVACAO §2.3 item 13). O que mudou foi o PREÇO de dois deles, e está escrito em cada um.",
+      "lista": [
+        {
+          "forma": "[X] no funciona",
+          "casa": "B16",
+          "encaixe": "o que quebrou no quarto (el aire acondicionado, la ducha, la llave, el wifi)",
+          "porque_fora": "cobertura de uma cena só — o quarto. Não passa em P2 (alcance cruzado ≥3 partes diferentes) com folga suficiente para gastar um dos 12. PREÇO NESTE PAR: barato (`funktioniert nicht`, mesmo desenho, e o alemão diz a coisa quebrada primeiro igual). ARMADILHA: `la llave` carrega o ⟨ll⟩, e é a palavra que ele vai dizer na recepção às onze da noite."
+        },
+        {
+          "forma": "Me han robado + [X]",
+          "casa": "B17",
+          "encaixe": "o que sumiu (el móvil, la cartera, el pasaporte, la maleta)",
+          "porque_fora": "cobre uma cena só e é o par escuro de ME-HE-DEJADO, que é o que devolve o objeto de verdade. Declarar o roubo e não o esquecimento seria premiar a moldura de perda que o G1 existe para conter. ARMADILHA: `el pasaporte` carrega o ⟨s⟩ intervocálico e `el móvil` carrega o ⟨v⟩."
+        },
+        {
+          "forma": "Voy a + [infinitivo]",
+          "casa": "B14",
+          "encaixe": "o que eu vou fazer agora (pagar con tarjeta, pagar en efectivo, esperar fuera)",
+          "porque_fora": "no uso do curso ele é uma frase preventiva, não uma família aberta. SOBE DE PESO NESTE PAR, e é a mudança de valor mais forte desta lista: no par EN a frase servia ao bloco do DCC, que aqui MORREU (DERIVACAO §3.3 item 1). `Voy a pagar con tarjeta`, dita ANTES de a maquininha aparecer, passa a ser a fala que resolve a surpresa invertida deste comprador — ele vem de um país onde 45% das transações ainda são em espécie (Bundesbank 2025) e encontra cartão e contactless na rotina do balcão espanhol. É a mesma string que dá a SIN-CON-PARA o encaixe `con tarjeta` que repõe `sin conversión`; quem escrever B14 decide qual das duas declarações o step carrega e NÃO declara as duas."
+        },
+        {
+          "forma": "¿Nos vemos + [hora] + en + [lugar]? · ¿Quedamos allí? · Vale, allí estaré",
+          "casa": "I08",
+          "encaixe": "forma fechada, 4 encaixes gravados: hora × lugar",
+          "porque_fora": "é o molde COMBINAR, e fica FORA da declaração porque o teto de 3 sociais já está tomado por APRECIAÇÃO, ESCOLHA e PREFERÊNCIA — mas VOLTA ao curso como forma fechada, e isto não é negociável: sem ele o aluno ENTENDE o convite e não consegue marcar, e I05/I08 não fecham. Um módulo de ganho que não deixa aceitar um convite tem um buraco no meio da promessa. AVISO DESTE PAR, e ele é caro: a hora do encontro é onde mora a armadilha `halb zehn`. O alemão conta a meia hora PARA A FRENTE (`halb zehn` = 9h30) e o espanhol PARA TRÁS (`las nueve y media` = 9h30); quem traduzir peça a peça erra UMA HORA INTEIRA na frente de quem o convidou. ARMADILHA de leitura: `allí` e `vale` carregam ⟨ll⟩ e ⟨v⟩."
+        },
+        {
+          "forma": "¿Tengo que + [infinitivo]?",
+          "casa": "B09",
+          "encaixe": "obrigação — só a interrogativa (validar, hacer transbordo, reservar, llevar algo)",
+          "porque_fora": "A tabela de casos de fronteira do PRODUTO.md é LEI e lista `Me he dejado + [objeto] + [lugar]` como ENTRA, molde fechado, porque «não há como perguntar por objeto perdido sem passado». `¿Tengo que?` não está na tabela, e os dois não cabem nos 12. Continua ENSINADO em B09 com ≥2 encaixes; só não conta no numerador do G9. FICA MAIS BARATO NESTE PAR (`Muss ich…?`, um-a-um), e isso é argumento para reabrir o teto SÓ se o G9 medido ficar abaixo do piso, com o dado na mão — nunca por antecipação."
+        }
+      ]
+    },
+    "casa": "Onde o molde é ENSINADO, com no mínimo 2 substituições na frente do aluno.",
+    "redisparos": "Onde ele volta com encaixe NOVO. Nenhum molde ganha parte própria — molde atravessa a jornada; virar episódio é como a gramática volta pela janela. LEI DE ORDEM (G9d): todo redisparo vem DEPOIS da casa na ordem canônica dos slots (B01…B18 → I01…I10 → A01…A08). Slot anterior à casa não é redisparo — ou a casa muda para lá, ou o slot vira `previa`. CONFERIDO NESTE ARQUIVO, e o número é MEDIDO e não estimado: as 15 casas, os 59 redisparos e as 15 prévias foram passados um a um pela ordem canônica dos 36 slots — nenhum redisparo viola o G9d, nenhuma prévia cai depois da casa dela, e nenhum molde fica abaixo do piso de 2 redisparos do P5. NOTA DE DERIVAÇÃO: nenhuma casa mudou de slot em relação ao par EN, e isso não é herança — é resultado. A casa é onde a CENA primeiro paga, e a cena é do destino, que não mudou. O que mudou foi quanto tempo cada casa gasta ensinando, e isso está na `nota` de cada molde.",
+    "previas": "Onde o molde APARECE antes da casa. É legítimo e é bom: o aluno diz a frase inteira, modelada por um nativo, como inventário congelado, e a casa depois a abre. Três regras. (1) Uma prévia NUNCA entra em `redisparos` e NUNCA conta para o P5 — ela não é o molde voltando, é o molde chegando. (2) A prévia tem que ter modelo nativo ANTES do `responde`: sem isso o aluno produz uma forma que ninguém disse. (3) A narração da prévia não pode dizer que o aluno «já tem» a peça, e a narração da CASA não pode apresentá-la como novidade — as duas mentem para o aluno em direções opostas, e as duas já aconteceram no corpus do par EN. O campo é documental: nenhum portão o lê. NESTE SKU ele vale mais do que valia lá, porque as 36 narrações estão por escrever: quem escrever a parte da prévia ainda pode acertar a redação de primeira em vez de corrigi-la depois de gravada.",
+    "padrao_de_ensino": "Quatro tempos, e são dos autores, não inventados: nomear o molde → nomear a peça trocável → trocar na frente do aluno → mandar o aluno trocar num responde. NESTE PAR ENTRA UM QUINTO TEMPO OPCIONAL, e ele custa uma frase: quando o molde carrega armadilha de leitura, a regra do ⟨qu⟩, do ⟨v⟩, do ⟨h⟩ ou do ⟨ll⟩ vem grudada ao encaixe que a contém, DEPOIS de o aluno já ter produzido a frase. Nunca antes — a ordem é cena → produção → regra (PRODUTO §4), e regra de leitura que chega antes da fala é palestra com outro nome.",
+    "m2": "APROVEITO não introduz molde OPERACIONAL nenhum. O trabalho normal dele é trocar os encaixes: o mesmo ¿Me pone…? agora recebe 'una caña y un pincho de tortilla' em vez de 'un café'. EXCEÇÃO FECHADA, e é a única do produto (PRODUTO §5.1): M2 planta até TRÊS MOLDES SOCIAIS, nomeados para sempre — APRECIAÇÃO (casa I07), ESCOLHA (casa I03) e PREFERÊNCIA (casa I05). Existem porque a família apetitiva NÃO TEM CENA EM M1: forçá-la para dentro do Básico quebraria a jornada e o prazo. Nenhum quarto molde social entra sem decisão do dono, e a exceção não abre precedente para molde operacional em M2. NOTA DESTE PAR: M2 e M3 é onde o valor deste SKU se concentra. Este comprador tem dois idiomas de fuga em Mallorca — o inglês, que ele fala melhor que o interlocutor espanhol médio, e em muitas cenas o próprio alemão. O que a rede em alemão entrega é o circuito turístico; o que o curso entrega é sair dele. Isso não muda a espinha (18+10+8 é LEI) e não muda o teto de moldes; muda a ordem dos argumentos na loja.",
+    "moldes_sociais": "Um molde SOCIAL não pede, não paga e não repara: ele devolve alguma coisa à conversa — apreciação, escolha, preferência. É por isso que a exceção é segura: ele não desloca ferramental operacional do Básico, ocupa a célula que estava literalmente vazia, e o G9 continua contando ele no mesmo numerador (a trava é o teto de 3, não a categoria). A ORDEM DOS TRÊS NÃO FOI MEXIDA NA DERIVAÇÃO, e é decisão: ela é a ordem em que o PRODUTO §5.1 os nomeia, que é lei de catálogo. A inversão de preço deste par — PREFERÊNCIA virou brinde e APRECIAÇÃO virou o caro — está na `nota` de cada um, que é onde ela muda o trabalho do autor, e não no índice do array, que é onde ela não muda nada.",
+    "m3": "LEIO A SALA não produz molde nenhum. A relação dele com os moldes é auditiva — reconhecer, não montar. Neste SKU o ear module de A01 ganha peso: os quinze moldes ouvidos em velocidade real vêm com os MESMOS audioKeys do par EN, custo de crédito zero, e o programa motor novo do deslize (contra o golpe de glote alemão) tem ali a demonstração de que o que ele ouve como «uma palavra comprida» são três palavras coladas.",
+    "ativo_de_par": "O núcleo gerador vive inteiro em ME VIRO, que é específico do PAR (L1 × destino). Ele NÃO se amortiza entre compradores: o que é forma fechada para um brasileiro não é para um anglófono. A cada comprador novo o roster se RE-DERIVA, não se traduz. ESTE ARQUIVO É A PROVA E O CONTRAEXEMPLO AO MESMO TEMPO, e as duas leituras precisam viajar juntas. A prova: mudou a L1 inteira e mudaram a ordem, o preço, um encaixe obrigatório e a camada de armadilha ortográfica, que o par EN não tem. O contraexemplo: nenhum molde entrou e nenhum saiu. Isso NÃO autoriza ninguém a orçar o próximo SKU como «só troca a narração» — a economia do catálogo cobre a pesquisa de destino e a fala espanhola, e o PRODUTO §3.2 regra 5 diz em letra que ela NÃO cobre a camada de molde. Oito das doze casas deste roster caem em slots `dono: destino` e as doze se re-derivaram assim mesmo.",
+    "_estado_do_andaime": "FATO, conferido em disco em 2026-07-28: os 36 `ep-*.json` deste SKU têm 700 steps, TODOS de tipo `ouvir`, todos com `es` preenchido e `pt` vazio. A fala espanhola é definitiva e vem com os audioKeys do curso EN — mexer no `es` de um step é regravação paga e o portão de áudio acusa. As casas, os redisparos e as prévias declarados aqui são, portanto, COMPROMISSOS COM O AUTOR DA PARTE: é ele quem converte `ouvir` em `responde` e declara `molde` no step. Enquanto isso não acontece o G9 mede zero, e isso é esperado, não é regressão. DUAS CONSEQUÊNCIAS PRÁTICAS. (1) Cada redisparo declarado aqui foi conferido contra a string espanhola que o cumpre, e a string está citada na `nota` ou no changelog — se o autor não achar a frase no arquivo dele, o erro é deste roster e se corrige aqui, não inventando fala espanhola nova. (2) Há steps gravados que este par NÃO PODE USAR: `Sin conversión.` em B12 e B15 e a escada inteira do DCC em B14 descrevem uma cena que não acontece com cartão em euros num país do euro. Deixá-los sem uso no arquivo é o certo; o que não se pode é apagá-los do manifesto nem restaurá-los ao roteiro porque «estão gravados».",
+    "_o_que_este_roster_nao_decidiu": "Nomeado para que ninguém suponha resolvido. (1) A GRADE-36-DE.md, linha a linha — este arquivo diz quais moldes caem em cada slot, não o que a parte fala. (2) A revisão nativa: tudo em `armadilhas_ortograficas` marcado como projeção fonológica precisa de revisor com alemão L1 e espanhol peninsular ANTES de virar áudio, e a candidata ⟨ch⟩ está explicitamente fora até lá. (3) Os clipes espanhóis NOVOS que a gag `vino` × `fino` exige: `Otro vino, por favor.` JÁ EXISTE (audioKey `b11-otrovino-e`, Emilio, em `ep-b11.json`) e `Prefiero el vino tinto.` também (`i05-tinto-e`); a contraparte `fino` NÃO EXISTE em lugar nenhum do andaime — medido. É clipe novo, é a linha de orçamento do DERIVACAO §5 item 2, e não se escreve a gag fingindo que ela está gravada. (4) O G14 (integridade de voz × língua) continua PENDENTE no script, e este é o SKU onde o acidente já aconteceu: enquanto ele não existir, INV-5 é conferência humana obrigatória em toda entrega — a guia nunca fala espanhol, Carmen e Emilio nunca falam alemão."
+  },
+  "moldes": [
+    {
+      "id": "ME-PONE",
+      "categoria": "operacional",
+      "forma": "¿Me pone / Me pones + [X]?",
+      "encaixe": "bebida, comida, quantidade — no balcão",
+      "tipo": "aberto",
+      "casa": "B11",
+      "redisparos": [
+        "B15",
+        "I01",
+        "I02",
+        "I03"
+      ],
+      "previas": [
+        "B01 — `Perdona, ¿me pones una caña?`, com o modelo do Emilio no `ouvir` (audioKey `e01a-13`) e o mesmo clipe reusável no step do aluno. É a PRIMEIRA aparição do molde no curso, dez slots antes da casa. A frase entra em B01 como SOM e não como molde: o que B01 ensina nela é o flick do `r` — que neste par SOBE de peso, porque o `r` alemão é uvular e não tem âncora no padrão. Nenhuma linha nomeia `una caña` como peça trocável, e o step não declara `molde`.",
+        "B02 — as DUAS formas, e é a prévia mais importante do roster inteiro deste SKU. `Ponme una caña, por favor.` (tú, Emilio, `e01b-06`, com o shadow `e01b-06b`) e `Perdone, ¿me pone un café con leche, por favor?` (usted, Carmen, `e01b-08`). É AQUI que entra o beat da recalibragem `Sie`≠`usted` (`_regras.recalibragem`), porque é o único lugar do Básico onde as duas cascas estão gravadas lado a lado por duas vozes diferentes. Continua sendo prévia e não casa: o que B02 ensina é o par tú × usted da CASCA, e a peça que entra no buraco só é aberta em B11. B02 vem nove slots antes da casa.",
+        "B03 — `Perdone, ¿me pone un café con leche, por favor?` no callback de abertura, reusando o clipe da Carmen `e01b-08` de B02. Frase inteira, um encaixe só, nenhuma peça nomeada como trocável.",
+        "B07 — `¿Me pone el taxímetro, por favor?` no banco de trás do táxi, com a maquininha do painel apagada (Carmen, `e06a-taximetro`). É a prévia mais interessante do roster porque o encaixe sai do balcão: `el taxímetro` não é bebida nem comida, e mostra o molde funcionando na cena que ninguém escreveu. RESSALVA HERDADA E MEDIDA: o que está modelado é a CASCA, em B02, cinco slots antes — não há modelo nativo desta frase específica antes dela no andaime. Quem escrever B07 confere."
+      ],
+      "tiles": [
+        "mesa",
+        "compras"
+      ],
+      "exemplos": [
+        "una caña",
+        "un cortado",
+        "dos claras",
+        "una jarra de agua del grifo",
+        "un pincho de tortilla",
+        "medio kilo de aceitunas",
+        "cien gramos de jamón",
+        "medio kilo de tomates",
+        "lo mismo que él",
+        "otra ronda"
+      ],
+      "armadilhas": [
+        "ll",
+        "z_c",
+        "j"
+      ],
+      "porque_o_numero_1": "É o nº 1 deste par por um motivo que não existia no par anterior: `¿me pone?` × `¿me pones?` É o slot cognitivo `Sie` / `du`, e este comprador já roda essa máquina desde criança — com custo social real, dezenas de vezes por dia, sem esforço consciente. O que no curso inglês era um CUSTO (o molde obriga a decidir tú/usted, e o anglófono decide no escuro porque o inglês perdeu o T/V no século XVII) aqui é uma ALAVANCA: o aluno não precisa aprender o mecanismo, só o ajuste — `Sie` é o default na Alemanha e `tú` é o default no balcão espanhol. É o lugar mais barato do curso inteiro para instalar a recalibragem, e a recalibragem é o erro mais caro deste par, porque ele erra com convicção e nunca desconfia. Abre bar, mercado, padaria e terraza, que é onde este aluno passa a viagem. Em I02 a variante ultracurta `Ponme` deixa de ser nota de rodapé e vira ITEM DECLARADO — não é grosseria, é a forma normal do balcão, e a forma do pedido curto e direto ele já traz de casa (`Ein Bier, bitte`).",
+      "nota": "1º e não 4º: ver `porque_o_numero_1` e `_regras.recalibragem`. O trabalho da casa em B11 NÃO é ensinar o mecanismo — é abrir a peça que entra no buraco e ajustar a mira do interlocutor; o tempo que o par EN gastava explicando o par tú/usted gasta-se aqui em encaixes. ARMADILHA DE LEITURA: a casca é LIMPA — `¿me pone?` não carrega nenhuma das sete, e é por isso que ela é o veículo barato da recalibragem (a boca e o olho estão os dois livres). As armadilhas chegam pelos encaixes: ⟨ll⟩ em `un pincho de tortilla` («tortila»), ⟨c⟩+e em `medio kilo de aceitunas` («atseitunas») e a jota em `cien gramos de jamón` («yamón»). Duas permissões que valem dizer em voz alta neste par: `Ponme` não é rude, e I02 traz `Perdone, ¿nos cobras?` gravado — a fórmula de chamar atenção e a forma de tratamento não andam necessariamente juntas, e ouvir isso desarma o aluno que está calculando registro no meio da frase.",
+      "idNoRosterEN": "ME-PONE"
+    },
+    {
+      "id": "HAY",
+      "categoria": "operacional",
+      "forma": "¿Hay + [X]?",
+      "encaixe": "existência de qualquer coisa",
+      "tipo": "aberto",
+      "casa": "B08",
+      "redisparos": [
+        "B09",
+        "B10",
+        "B11",
+        "B12",
+        "B14",
+        "B16",
+        "B17",
+        "I01",
+        "I03",
+        "I05"
+      ],
+      "previas": [
+        "B06 — `¿Hay wifi?` no bar do saguão, com modelo da Carmen (`b06-wifi-c`) no `ouvir` imediatamente antes. Uma frase, três sílabas, nenhuma substituição: inventário congelado que B08 abre depois com cinco encaixes, `por aquí` e a razão de a resposta ser binária. B06 vem dois slots antes de B08 e por isso não pode ser redisparo. É TAMBÉM A PRIMEIRA VEZ QUE O ALUNO LÊ UM ⟨h⟩ ESPANHOL, e quem escrever B06 decide se a regra entra ali ou em B08 — não nos dois, e a recomendação é B08, onde o molde é aberto e a palavra volta cinco vezes."
+      ],
+      "tiles": [
+        "mesa",
+        "quarto",
+        "dieta",
+        "chegar",
+        "transporte",
+        "saude",
+        "simpatia"
+      ],
+      "exemplos": [
+        "wifi",
+        "mesa a las diez",
+        "ascensor",
+        "otro tren esta tarde",
+        "menú del día",
+        "suplemento de terraza",
+        "algo sin gluten",
+        "un mínimo para pagar con tarjeta",
+        "una farmacia de guardia por aquí",
+        "algo típico de aquí",
+        "alguien que hable inglés"
+      ],
+      "armadilhas": [
+        "h",
+        "qu",
+        "j"
+      ],
+      "porque_o_numero_2": "É provavelmente o molde mais barato deste SKU inteiro. `Gibt es…?` é traço a traço o mesmo molde — mesma ordem, mesma pergunta de existência, mesma resposta binária — e é altíssima frequência na língua do aluno. O aluno não precisa aprender nada estrutural: só a casca espanhola. E é o molde de maior alcance do roster: nove redisparos, sete tiles.",
+      "nota": "2º e não 3º porque é o mais barato do roster na estrutura e o mais caro na LETRA, e as duas coisas apontam para o mesmo lugar. ARMADILHA DE LEITURA: o ⟨h⟩ MUDO mora aqui, e este é o melhor endereço possível do curso para ele — o aluno vai dizer `¿Hay…?` mais vezes que qualquer outra palavra espanhola, e o alemão que lê ⟨h⟩ produz «Hai». Uma frase resolve, grudada ao molde, DEPOIS da primeira produção: o ⟨h⟩ espanhol não se ouve, nunca. O redisparo `¿Hay alguien que hable inglés?` (B17) é o melhor teste do curso, porque empilha três das sete numa frase só: ⟨h⟩ em `hay`, ⟨qu⟩ em `que` e ⟨h⟩ outra vez em `hable`. NOTA DE PRODUTO DESTE PAR: ensine `¿Hay alguien que hable inglés?` como o degrau universal da escada de reparo e trate o alemão como fato local de Mallorca, dito uma vez em I09/A05. `¿Hay alguien que hable alemán?` funciona em Palma e falha em Sevilha; instalar a fuga para o alemão dentro do kit anti-pânico é ensinar o aluno a não usar o curso. Segue sendo o contorno canônico do subjuntivo: `busco un sitio que tenga wifi` vira `¿Hay wifi?`. UM ACRÉSCIMO MEDIDO CONTRA O ANDAIME, na mesma disciplina do B09 de ME-PUEDE: B14 entra nos redisparos, porque `ep-b14.json` traz `¿Hay un mínimo para pagar con tarjeta?` — encaixe novo, gravado (`e05a-minimo-c`, Carmen), seis slots depois da casa, e é a pergunta que fecha a cena de cartão × espécie deste par. O roster do par EN não a listava, e o autor de B14 a produz como `responde`.",
+      "idNoRosterEN": "HAY"
+    },
+    {
+      "id": "QUERIA",
+      "categoria": "operacional",
+      "forma": "Quería + [substantivo]",
+      "encaixe": "qualquer coisa que se pede num balcão",
+      "tipo": "aberto",
+      "casa": "B12",
+      "redisparos": [
+        "B15",
+        "B16",
+        "B18",
+        "I01",
+        "I03",
+        "I10"
+      ],
+      "previas": [
+        "B09 — `Quería dos billetes para Sevilla` na bilheteria de longa distância, com modelo da Carmen (`e06b-billetes-c`) imediatamente antes do `responde`. Frase inteira, um encaixe só, nenhuma peça nomeada como trocável: é a chegada do molde, não a volta dele. B09 vem três slots ANTES da casa em B12. AVISO DE REDAÇÃO HERDADO DE UM ERRO REAL DO PAR EN, e ele custa caro se repetir: a narração de B09 NÃO pode dizer que o aluno «já tem» esta palavra da padaria — a padaria é B12 e vem depois. Aqui as 36 narrações estão por escrever, então isto se acerta de primeira em vez de se corrigir depois de gravado.",
+        "B11 — `Quería la carta, por favor` (Carmen, `e03b-quericarta-c`) em `ouvir`, zero produção. A narração da parte deve dizer que o molde ganha o turno dele em seguida, que é a redação certa de uma prévia. B11 vem um slot antes da casa."
+      ],
+      "tiles": [
+        "mesa",
+        "compras",
+        "quarto",
+        "saude",
+        "transporte"
+      ],
+      "exemplos": [
+        "dos billetes para Sevilla",
+        "una mesa para las nueve y media",
+        "otra habitación, si es posible",
+        "una habitación más tranquila, si es posible",
+        "algo para las quemaduras del sol",
+        "medio kilo de esto",
+        "media ración",
+        "cambio, por favor"
+      ],
+      "armadilhas": [
+        "qu",
+        "ll",
+        "v"
+      ],
+      "porque_deixou_de_ser_o_numero_1": "APAGADO E NÃO TRADUZIDO — o argumento do par EN era uma afirmação sobre a L1 do comprador, e a L1 mudou. Lá o campo dizia: `é o único da lista que NÃO codifica interlocutor; ¿me pones? vs ¿me pone? obriga a decidir tú/usted sob estresse, exatamente a decisão que o anglófono toma ao contrário`. Isso fazia de `Quería` uma MULETA para uma habilidade ausente — e o anglófono não tem a máquina, porque o inglês perdeu o T/V no século XVII. Este comprador tem a máquina, rodando, desde criança; ela só está calibrada errada. Vender `Quería` a ele como fuga da decisão seria vender uma muleta a quem tem a perna boa, e pior: deixaria a calibragem errada intacta, porque ele nunca desconfia dela. O MOLDE FICA, e passa em P1, P2 e P3 com folga — o que sai é o argumento de venda. O novo é outro e é honesto: menos sílabas que `Ich hätte gern`, menos marcado, e soa local. Abre bilheteria, recepção, farmácia, padaria, loja, locadora e comisaría.",
+      "nota": "3º e não 1º: ver `porque_deixou_de_ser_o_numero_1`. ARMADILHA DE LEITURA, e é a mais cara do roster depois da de LLEVA porque está na PRIMEIRA SÍLABA da palavra mais usada do molde: ⟨qu⟩ lido [kv] faz `quería` sair «kveria», e a mesma regra derruba `¿qué?`, `queso` e `¿quién?`. É a regra que a DERIVACAO manda plantar em B12, grudada a esta frase, depois de o aluno já a ter dito uma vez. O encaixe-bandeira empilha mais duas: `dos billetes para Sevilla` tem ⟨ll⟩ duas vezes e ⟨v⟩ uma — lido à alemã sai «bi-YE-tes para Se-FI-la». E há uma armadilha que NÃO é de leitura e mora no encaixe novo de I01: `una mesa para las nueve y media` é a frase onde o `halb zehn` mata. O alemão conta a meia hora para a frente (`halb zehn` = 9h30) e o espanhol para trás (`las nueve y media` = 9h30); traduzido peça a peça, o aluno reserva a mesa uma hora errada. É item receptivo, de alto valor e custo baixo, e I01 é onde ele mora.",
+      "idNoRosterEN": "QUERIA"
+    },
+    {
+      "id": "PUEDO",
+      "categoria": "operacional",
+      "forma": "¿Puedo + [infinitivo]?",
+      "encaixe": "qualquer coisa que EU quero fazer",
+      "tipo": "aberto",
+      "casa": "B06",
+      "redisparos": [
+        "B07",
+        "B09",
+        "B10",
+        "B14",
+        "B15",
+        "B16",
+        "B18",
+        "I09"
+      ],
+      "tiles": [
+        "pagar",
+        "compras",
+        "quarto",
+        "taxi"
+      ],
+      "exemplos": [
+        "pagar con tarjeta",
+        "sentarme aquí",
+        "dejar las maletas hasta la hora de entrada",
+        "hacer el check-out más tarde",
+        "probármelo",
+        "aparcar aquí",
+        "sacar una foto",
+        "cambiar el billete",
+        "subir con esta maleta"
+      ],
+      "armadilhas": [
+        "qu",
+        "ll"
+      ],
+      "nota": "4º e não 2º, e o motivo tem de estar escrito porque ordinal que cai em silêncio é o que este arquivo existe para não ter: PUEDO foi ULTRAPASSADO, não rebaixado. ME-PONE e HAY passaram na frente por motivos próprios (a recalibragem e o preço), e o peso de PUEDO SOBE: ele ganha encaixes e ganha uma dispensa que o par EN não precisava dar. A DISPENSA, e ela é obrigatória e dita em voz alta (PRODUTO §5.4, contorno declarado): o alemão separa `können` (conseguir) de `dürfen` (ter licença), e vai procurar o segundo, porque o que ele quer perguntar é quase sempre permissão. `Puedo` cobre os dois. Você não escolhe. Uma linha, nunca um bloco — e nunca a palavra «verbo». ARMADILHA DE LEITURA: a casca é LIMPA, e PUEDO é o ÚNICO operacional do roster nessa condição — `¿Puedo…?` não carrega nenhuma das sete, que é exatamente por que sobra tempo nele para a dispensa. As armadilhas chegam pelos encaixes: ⟨qu⟩ em `aquí` («akví») e ⟨ll⟩ em `cambiar el billete`. Cobre a categoria de improviso mais comum do turista — «isso aqui pode?» — que existe porque as regras mudam de cidade e ele não sabe quais: ZBE, terraza, foto, bagagem, cartão.",
+      "idNoRosterEN": "PUEDO"
+    },
+    {
+      "id": "SIN-CON-PARA",
+      "categoria": "operacional",
+      "forma": "sin / con / para + [X]",
+      "encaixe": "ingrediente, formato, destinatário, finalidade",
+      "tipo": "aberto",
+      "clipe": true,
+      "casa": "B12",
+      "redisparos": [
+        "B13",
+        "B14",
+        "I03"
+      ],
+      "previas": [
+        "B11 — `Una botella de agua sin gas, por favor.` no balcão, um slot antes da casa. Frase inteira, um encaixe só; B12 é que abre `sin` como peça e empilha `sin hielo`, `sin gas`, `para llevar` e `para dos` no mesmo bloco. Quem escrever B11 garante o modelo nativo ANTES de qualquer `responde` — a regra 2 de `_regras.previas` vale aqui como em todas."
+      ],
+      "tiles": [
+        "mesa",
+        "dieta",
+        "pagar"
+      ],
+      "exemplos": [
+        "sin gluten",
+        "sin hielo",
+        "sin gas",
+        "sin cebolla",
+        "sin leche",
+        "con tarjeta",
+        "con ensalada",
+        "para llevar",
+        "para compartir",
+        "para dos",
+        "para mí",
+        "para el seguro"
+      ],
+      "armadilhas": [
+        "h",
+        "ll",
+        "z_c"
+      ],
+      "nota": "Continua sendo o melhor retorno por unidade ensinada de toda a lista, e neste par com folga ainda maior: `ohne` / `mit` / `für` são um-a-um, verbo nenhum, e `para llevar` = `zum Mitnehmen` é uma expressão que o aluno usa toda semana em casa. Funciona como enunciado inteiro — `Sin hielo, por favor.` basta sozinho. A REMOÇÃO OBRIGATÓRIA, e é a única do roster: `sin conversión` SAIU. A conversão dinâmica de moeda só existe quando a moeda do cartão difere da moeda da transação, e este comprador paga em euros com cartão em euros — a maquininha não vai oferecer nada, e a frase que mais dinheiro economizava no par EN aqui não tem cena. Reposta por `con tarjeta`, de peso equivalente e por um motivo próprio deste par: ele vem de um país onde 45% das transações ainda são em espécie (Bundesbank 2025) e a surpresa dele é para o lado oposto à do britânico — `Voy a pagar con tarjeta`, dita ANTES de a maquininha aparecer, é a fala que resolve. CONSEQUÊNCIA MEDIDA E DECLARADA: B15 CAIU dos redisparos, porque a única instância do molde em `ep-b15.json` é o callback `Sin conversión.` herdado de B14. Sobram três, acima do piso de dois do P5. B15 volta no dia em que a parte trouxer um encaixe próprio de `sin/con/para` — e o autor de B15 tem uma candidata barata na mão, porque o callback de abertura dele vai ter de mudar de qualquer jeito. ARMADILHA DE LEITURA: ⟨h⟩ em `sin hielo` («Hielo»), ⟨ll⟩ em `para llevar` («para levar»), e `sin cebolla` empilha duas — ⟨c⟩+e lido [ts] e ⟨ll⟩ («tsebola»). Cola em todos os outros onze.",
+      "idNoRosterEN": "SIN-CON-PARA"
+    },
+    {
+      "id": "OTRA",
+      "categoria": "operacional",
+      "forma": "Otra / Otro + [X]",
+      "encaixe": "repetir o que já deu certo",
+      "tipo": "aberto",
+      "casa": "B11",
+      "redisparos": [
+        "B15",
+        "B16",
+        "I04"
+      ],
+      "tiles": [
+        "mesa",
+        "quarto"
+      ],
+      "exemplos": [
+        "otra, por favor",
+        "otra ronda",
+        "otro vino",
+        "otro café",
+        "otro tenedor",
+        "otra toalla",
+        "otra habitación",
+        "otra talla"
+      ],
+      "armadilhas": [
+        "v",
+        "h",
+        "z_c",
+        "ll"
+      ],
+      "nota": "6º e não 9º, e é a segunda maior subida do roster: empata com SIN-CON-PARA no título de mais barato, porque `Noch ein Bier, bitte` é A frase de balcão alemã — a estrutura, a brevidade e o gesto vêm todos de casa, e o que falta é a casca. `Otra, por favor.` é enunciado completo SEM substantivo nenhum, custo zero. É o molde que te dá de novo aquilo que você já conseguiu, que é 90% do que um turista quer depois do primeiro acerto. ARMADILHA DE LEITURA: aqui mora a GAG RECORRENTE DO SKU, e ela é o item nº 1 do INV-17 (erro fatal previsível ensinado como piada antes de acontecer). `Otro vino, por favor.` está gravado na própria casa (`b11-otrovino-e`, Emilio) e o ⟨v⟩ lido à alemã entrega `un fino` — um xerez seco, que é OUTRA BEBIDA, real e pedível. O erro não trava a cena: entrega a coisa errada. É engraçado em vez de assustador e é falsificável na primeira noite. CUSTO DECLARADO: a contraparte `fino` NÃO existe no andaime (medido) e é clipe espanhol NOVO — não escreva a gag fingindo que está gravada. Duas armadilhas de brinde na mesma lista: `otra habitación` empilha ⟨h⟩ e ⟨c⟩+i («Habitatsión») e `otra llave` traz o ⟨ll⟩. E UMA NOTA DE GÊNERO QUE SÓ EXISTE NESTE PAR: `otra` × `otro` é onde a concordância aparece primeiro, e a dispensa do PRODUTO §5.4 continua valendo mas o ENQUADRAMENTO INVERTE. Não é «você não tem isto, ignore» — o alemão tem três gêneros e concorda sem pensar; é «você tem, e está mal ajustado: `die Sonne` é `el sol`, `der Mond` é `la luna`, `das Bier` é `la cerveza`. Cole o artigo na palavra e não traduza o seu.» Sem essa linha ele traduz o gênero alemão e erra COM MÉTODO, que é pior do que errar ao acaso.",
+      "idNoRosterEN": "OTRA"
+    },
+    {
+      "id": "LLEVA",
+      "categoria": "operacional",
+      "forma": "¿Lleva + [ingrediente]?",
+      "encaixe": "qualquer ingrediente",
+      "tipo": "aberto",
+      "casa": "B13",
+      "redisparos": [
+        "B14",
+        "I03"
+      ],
+      "previas": [
+        "B01 — `¿Lleva jamón?` (Carmen, `e01a-15`), doze slots antes da casa em B13 e a primeira aparição de LLEVA no curso. A frase entra em B01 pela JOTA e não pelo ingrediente — nenhuma linha de B01 diz que `jamón` troca —, e por isso o step não declara `molde`. NESTE PAR ELA MUDA DE NATUREZA: no par EN a jota era treino de boca (o anglófono não tem [x] e entra por `loch`); o alemão TEM o som, em `Bach`, `Buch`, `doch`, e sai de primeira. O que ele não tem é a letra: diante de ⟨j⟩ ele lê [j] e produz «yamón». O bloco cai de ~90 s para ~30 s e vira regra de leitura — `⟨j⟩ é o ch de Bach, sempre, nunca o j de ja` — e o tempo devolvido NÃO volta ao roteiro: vai para o `r` e para o encadeamento.",
+        "B11 — `¿Lleva jamón o chorizo?` (Carmen, `e04b-jamon-c`) em `ouvir`, zero produção. A narração deve prometer que a palavra que abre a pergunta ganha o turno dela depois, que é a redação certa de prévia. B11 vem dois slots antes de B13."
+      ],
+      "tiles": [
+        "dieta",
+        "mesa"
+      ],
+      "exemplos": [
+        "jamón",
+        "chorizo",
+        "ajo",
+        "gluten",
+        "harina",
+        "caldo de pescado",
+        "frutos secos",
+        "conservantes",
+        "cebolla",
+        "leche",
+        "carne"
+      ],
+      "armadilhas": [
+        "ll",
+        "j",
+        "h",
+        "z_c"
+      ],
+      "nota": "7º por deslocamento (OTRA passou), sem mudança de argumento próprio. Entra por aposta × indeterminação, não por frequência: a lista de ingredientes-armadilha é ABERTA — jamón no feijão-verde, caldo de peixe no arroz «de verduras» — e é a prova mais limpa de que inventário fixo não fecha, porque nenhum roteirista pré-escreve a pergunta sobre o ingrediente que ele não sabe que está no prato. ARMADILHA DE LEITURA: ESTE É O MOLDE MAIS CARO DOS SETE NESTA CAMADA, e o motivo é que ele carrega QUATRO das sete numa frase de ALERGIA, onde errar não é constrangimento, é risco. ⟨ll⟩ no próprio nome do molde (`¿Lleva…?` lido «Leva»), ⟨j⟩ em `jamón` e `ajo` («yamón», «ayo»), ⟨h⟩ em `harina` («Harina») e ⟨c⟩+e mais ⟨ll⟩ empilhados em `cebolla` («tsebola»). É o único lugar do curso onde a regra de leitura tem de vir junto com a primeira produção e não depois dela — a ordem cena → produção → regra continua valendo, mas o intervalo encolhe. B13 é INTOCÁVEL por lei (PRODUTO §3.2 regra 7): nunca cortado, nunca atrás de paywall, em nenhum destino. RESSALVA MEDIDA HERDADA E RECONFERIDA NO ANDAIME: `ep-b14.json` recita `¿Lleva jamón o chorizo?`, a mesma string de B13 — é redisparo de CENA, conta no G9 e NÃO vale como recall com encaixe novo ao aferir o P5. Só I03 (`¿Lleva carne?`) traz encaixe novo, e isso é dívida declarada deste molde nos dois pares.",
+      "idNoRosterEN": "LLEVA"
+    },
+    {
+      "id": "DONDE",
+      "categoria": "operacional",
+      "forma": "¿Dónde está + [el/la X]? · ¿Dónde hay + [un/una X]?",
+      "encaixe": "lugar conhecido × lugar qualquer",
+      "tipo": "aberto",
+      "par": true,
+      "casa": "B08",
+      "redisparos": [
+        "B09",
+        "B10",
+        "B17"
+      ],
+      "previas": [
+        "B01 — `¿Dónde está el hospital?` (Carmen, `e01a-09`), sete slots antes da casa e a PRIMEIRA aparição de DONDE no curso. B01 ensina a frase inteira pelo lugar do soco, e o par definido × qualquer continua sendo da casa. NOTA DE PAR, e ela apaga um bloco inteiro do curso inglês: `hospital` é a palavra do GUIRI ALERT do «-o tax» lá (o britânico diz `HOSpital`), e este comprador acentua `Hospitál` como o espanhol acentua — junto com `Hotél`, `Restauránt`, `Balkón` e `Telefón`. O GUIRI ALERT nº 1 do par EN NÃO TEM FUNÇÃO AQUI e escrevê-lo é o anti-padrão 9. O que sobra de B01 nesta frase é o ⟨h⟩ mudo, que é outra coisa.",
+        "B06 — `¿Dónde hay un cajero?` diante do caixa de rua, com modelo nativo gravado (`e05a-cajero-c`, Carmen, e `e05b-cajero-e`, Emilio). Segue prévia e não redisparo: B06 vem dois slots antes de B08, e o par definido × qualquer só é ensinado na casa. Este slot SOBE DE PESO neste par — o caixa de banco de rua contra o caixa independente de saguão é dinheiro real para quem saca em espécie mais vezes que o comprador britânico."
+      ],
+      "tiles": [
+        "chegar",
+        "transporte",
+        "saude"
+      ],
+      "exemplos": [
+        "el baño",
+        "la salida",
+        "el control de acceso",
+        "el andén 4",
+        "el consulado",
+        "un cajero",
+        "una farmacia",
+        "un súper"
+      ],
+      "armadilhas": [
+        "j",
+        "z_c",
+        "h"
+      ],
+      "nota": "8º por deslocamento (OTRA passou), sem mudança de argumento próprio — e o argumento continua sendo de HONESTIDADE: o problema desta cena é a RESPOSTA, não a pergunta. Entra amarrado à escotilha — `¿Está lejos?` + `¿Me lo escribe?` + o dedo. Ensinar a pergunta sem o reparo é fabricar o congelamento. O QUE MUDA NESTE PAR, e é uma redistribuição de tempo e não de casa: o PAR `¿Dónde está el…?` × `¿Dónde hay un…?` vem DE GRAÇA. O alemão já opõe `Wo ist der/die/das…?` a `Wo gibt es hier ein/eine…?`, e o contraste definido × qualquer é NATIVO. O tempo de ensino do par colapsa e NÃO SE DEVOLVE: vai para a escotilha e para a ESCUTA, que é onde a cena realmente quebra. A casa CONTINUA B08 — não mover. ARMADILHA DE LEITURA: a casca é limpa e os encaixes trazem três — jota em `un cajero` («kayero»), ⟨c⟩+i em `una farmacia` («farmatsia») e ⟨h⟩ em `el hospital`.",
+      "idNoRosterEN": "DONDE"
+    },
+    {
+      "id": "ME-PUEDE",
+      "categoria": "operacional",
+      "forma": "¿Me puede + [infinitivo]?",
+      "encaixe": "qualquer coisa que eu quero que VOCÊ faça",
+      "tipo": "aberto",
+      "casa": "B03",
+      "redisparos": [
+        "B04",
+        "B07",
+        "B09",
+        "B13",
+        "B14",
+        "B17",
+        "B18",
+        "I07"
+      ],
+      "tiles": [
+        "reparo",
+        "saude",
+        "pagar"
+      ],
+      "exemplos": [
+        "repetir",
+        "hablar más despacio",
+        "escribir",
+        "llamar un taxi",
+        "enseñar en el mapa",
+        "activar la SIM aquí",
+        "abrir el maletero",
+        "recargar la tarjeta",
+        "hacer sin ajo",
+        "avisar en cocina",
+        "recomendar algo para el dolor de cabeza",
+        "dar la factura para el seguro"
+      ],
+      "armadilhas": [
+        "h",
+        "ll",
+        "v",
+        "s"
+      ],
+      "nota": "9º por deslocamento (OTRA passou), sem mudança de argumento próprio: ele ganha o lugar por PREÇO — é PUEDO no espelho, `Können Sie mir…?` traço a traço, custa meia unidade de ensino — e traz junto o kit anti-pânico (`¿Me lo escribe?`), que continua sendo a heroína deste par. UM ACRÉSCIMO MEDIDO CONTRA O ANDAIME: B09 entra nos redisparos, porque `ep-b09.json` traz `¿Me puede recargar la tarjeta?`, encaixe novo, cinco slots depois da casa — o roster do par EN não o listava. NOTA DE ESCADA, e ela é deste SKU: a escada de reparo de B03 ganha um degrau ambíguo que o par EN não tinha, e a decisão está tomada — o degrau universal é `¿Hay alguien que hable inglés?` (ver HAY), e o alemão de Mallorca é fato local, dito uma vez em I09/A05, nunca estratégia do Básico. ARMADILHA DE LEITURA: a casca é limpa; os encaixes trazem quatro — ⟨h⟩ em `hablar más despacio` e em `hacer` («Hatser», que empilha ⟨h⟩ e ⟨c⟩+e na mesma palavra), ⟨ll⟩ em `llamar un taxi` («lamar»), e `avisar en cocina` empilha ⟨v⟩ e ⟨s⟩ intervocálico («afizar»).",
+      "idNoRosterEN": "ME-PUEDE"
+    },
+    {
+      "id": "YA-ESTA",
+      "categoria": "operacional",
+      "forma": "Ya está + [pagado / reservado / hecho / incluido]",
+      "encaixe": "lista fechada de 4",
+      "tipo": "fechado",
+      "casa": "B14",
+      "redisparos": [
+        "B16",
+        "B18"
+      ],
+      "previas": [
+        "B09 — `Ya está pagado` na bilheteria (Carmen, `b14-yapagado-c`) e `Ya está reservado` no balcão de longa distância (Emilio, `b14-yareservado-e`), os dois com modelo nativo em `ouvir` antes. É a prévia mais forte do roster: dois dos quatro encaixes, modelados e produzidos, cinco slots antes da casa. Não vira casa porque falta o primeiro tempo — nenhuma linha nomeia o molde nem diz que a lista é fechada em quatro, e a lista fechada É a feature. B14 completa com `incluido` e `hecho` e diz «a lista é a lista». AVISO DE REDAÇÃO: a narração da casa NÃO pode apresentar o molde como novidade a um aluno que já o usou duas vezes — é o caso que batizou o G9d no par EN e aqui a narração ainda não está gravada."
+      ],
+      "tiles": [
+        "pagar",
+        "quarto"
+      ],
+      "exemplos": [
+        "pagado",
+        "reservado",
+        "hecho",
+        "incluido"
+      ],
+      "armadilhas": [
+        "s",
+        "v",
+        "h"
+      ],
+      "nota": "Fechado é a FEATURE: com lista fechada o aluno não pode inventar. Evita pagar duas vezes e evita o hotel decidir sozinho o que era a reserva. FICA MAIS BARATO NESTE PAR, e o bloco de gramática em foco encolhe para uma linha: o alemão falado usa o perfeito composto quase sempre e não estranha um estado declarado no presente. O que ele precisa é da LISTA, não do conceito. ARMADILHA DE LEITURA, e ela é densa para um molde de quatro palavras: `reservado` empilha duas — ⟨s⟩ intervocálico lido [z] e ⟨v⟩ lido [f], saindo «rezerfado» —, e `hecho` traz o ⟨h⟩ audível. ATENÇÃO: `hecho` é também o encaixe onde mora a candidata a OITAVA armadilha (⟨ch⟩), que está NÃO CONFERIDA em `_regras.armadilhas_ortograficas` e NÃO vai ao áudio até um revisor nativo fechá-la. Ensine `hecho` pelo ⟨h⟩ e pare aí.",
+      "idNoRosterEN": "YA-ESTA"
+    },
+    {
+      "id": "SOY-ESTOY",
+      "categoria": "operacional",
+      "forma": "Soy / Estoy + [lista fechada]",
+      "encaixe": "lista fechada de 6",
+      "tipo": "fechado",
+      "casa": "B13",
+      "redisparos": [
+        "B17",
+        "I05",
+        "I06"
+      ],
+      "previas": [
+        "B08 — `Estoy perdido/a`, com modelo gravado nas duas vozes (`b08-perdida-c` da Carmen e `b08-perdido-e` do Emilio) e a nota de gênero. Uma frase inteira, presa à escotilha de «parei um estranho e não entendi a resposta»; a casa em B13 é que ensina `Soy + [rótulo]` com a lista fechada e as quatro substituições. B08 vem cinco slots antes de B13.",
+        "B05 — a GRADE do par EN prometia `Soy de Londres` na fronteira e o andaime NÃO o tem: as três respostas gravadas em `ep-b05.json` são `Vengo de vacaciones`, `Diez días` e `Me alojo en el hotel Rialto, en Madrid`. Fica registrado como prévia POTENCIAL e não como redisparo por dois motivos independentes: não existe no disco, e B05 vem oito slots antes da casa. NOTA ESTRUTURAL DESTE SKU: B05 é reescrita TOTAL aqui, porque num voo Schengen interno não há controle de fronteira — mas a FUNÇÃO do slot sobrevive intacta (motivo, tempo, onde você fica) e só muda de balcão, para o check-in do hotel e o da locadora. As três respostas gravadas servem nos dois balcões sem tocar no `es`."
+      ],
+      "tiles": [
+        "dieta",
+        "saude",
+        "simpatia"
+      ],
+      "exemplos": [
+        "alérgico/a a los frutos secos",
+        "alérgica al marisco",
+        "vegetariano/a",
+        "celíaco/a",
+        "de Londres",
+        "perdido/a"
+      ],
+      "armadilhas": [
+        "v",
+        "j",
+        "z_c"
+      ],
+      "nota": "Fechado de propósito: com a lista aberta o aluno produz `soy aburrido` e diz que é chato. O eixo ser/estar é IGUAL de opaco neste par — o alemão também só tem `sein` — e a regra do PRODUTO §5.4 não muda: contraste de sistema nunca se contrasta, chunks congelados mais dispensa em voz alta. DOIS BRINDES QUE O PAR EN NÃO TINHA: `Ich bin Vegetarier` NÃO leva artigo, exatamente como `Soy vegetariano` — o anglófono é empurrado para `soy UN vegetariano` pelo `I am A vegetarian` e este aluno não é; e o predicado nominal sem artigo já é natural para ele. Não gaste áudio consertando o que não quebra. UMA ARMADILHA NOVA, NOMEADA, E QUE NÃO É DE LEITURA: `allergisch GEGEN` faz o aluno produzir `alérgico CONTRA`. O certo é `alérgico A`, e o andaime já traz as duas formas gravadas (`Soy alérgico a los frutos secos`, `Soy alérgica al marisco`). A preposição vai GRUDADA na frase-martelo e a palavra «regência» não aparece no áudio. ARMADILHA DE LEITURA: `vegetariano` empilha duas — ⟨v⟩ lido [f] e a jota escrita ⟨g⟩ diante de e, que o alemão lê [g] duro —, `celíaco` traz ⟨c⟩+e lido [ts] («tselíako») e `alérgico` traz a mesma jota escrita ⟨g⟩. As três moram na parte de alergia, o que faz delas as mais caras do roster depois das de LLEVA.",
+      "idNoRosterEN": "SOY-ESTOY"
+    },
+    {
+      "id": "ME-HE-DEJADO",
+      "categoria": "operacional",
+      "forma": "Me he dejado + [X] + [lugar]",
+      "encaixe": "lista fechada de 4 a 5 objetos × lugar",
+      "tipo": "fechado",
+      "casa": "B07",
+      "_casa_herdada": "A casa B07 vem do par EN e a decisão é ESTRUTURAL, não linguística — por isso porta sem re-derivação (DERIVACAO §2.3 item 11). O motivo original continua valendo inteiro aqui: B18 é o último slot de ME VIRO, os dois outros usos (B07 e B16) ficam necessariamente antes dele, e nem APROVEITO nem LEIO A SALA usam este molde. Casa em B18 daria ZERO redisparos possíveis, e molde sem ≥2 recalls posteriores é frase com outro nome (PRODUTO §5.1, P5). B07 é literalmente onde o molde primeiro paga — o telefone que ficou no táxi à meia-noite — e o andaime o serve com duas substituições já gravadas: `Me he dejado el móvil en el taxi` e `Me he dejado la chaqueta en el taxi`. B18 fica sendo o maior redisparo do curso, que é um fecho de módulo melhor do que uma casa.",
+      "redisparos": [
+        "B16",
+        "B18"
+      ],
+      "tiles": [
+        "quarto",
+        "taxi",
+        "apuro"
+      ],
+      "exemplos": [
+        "el móvil",
+        "la chaqueta",
+        "el pasaporte",
+        "la maleta",
+        "las llaves"
+      ],
+      "armadilhas": [
+        "h",
+        "j",
+        "v",
+        "s",
+        "ll",
+        "qu"
+      ],
+      "nota": "É o esquecimento, não o roubo — e é a diferença que devolve o objeto. `Me han robado` aciona denúncia; `me he dejado` aciona a recepção, o táxi e o bar, que é onde a coisa realmente está. É A MAIOR SURPRESA GRAMATICAL DESTE PAR, e ela é boa: o alemão falado conta o passado no perfeito composto com `haben` (`Ich habe … liegen lassen`), que é o mesmo desenho do `he dejado` peninsular. Onde o inglês FORÇA um passado simples e o britânico estranha, este aluno já está na forma certa. O bloco de gramática em foco de B07 encolhe para uma linha, e o tempo NÃO volta ao roteiro. ARMADILHA DE LEITURA: É O MOLDE MAIS DENSO DO ROSTER — carrega SEIS das sete, e duas delas na própria casca. ⟨h⟩ audível no `he` («Me He dejado») e jota em `dejado` («deyado»); nos encaixes, ⟨v⟩ em `el móvil` («el mófil»), ⟨s⟩ intervocálico em `el pasaporte` («pazaporte»), ⟨ll⟩ mais ⟨v⟩ em `las llaves` («las lafes») e ⟨qu⟩ em `la chaqueta` («tcha-KVE-ta»). Não ensine as seis: escolha UMA por parte, grudada ao encaixe que a parte já diz, e deixe as outras para os redisparos de B16 e B18 — a regra de uma-por-parte é o que impede este molde de virar a palestra que o G4 mede.",
+      "idNoRosterEN": "ME-HE-DEJADO"
+    },
+    {
+      "id": "APRECIACION",
+      "categoria": "social",
+      "nome": "APRECIAÇÃO",
+      "forma": "[isto] estaba + [adjetivo forte] · ¡Qué + [adjetivo]!",
+      "encaixe": "lista fechada de 6 adjetivos de elogio, gravados inteiros",
+      "tipo": "fechado",
+      "casa": "I07",
+      "redisparos": [
+        "I08",
+        "I09"
+      ],
+      "tiles": [
+        "simpatia",
+        "mesa"
+      ],
+      "exemplos": [
+        "estaba buenísimo",
+        "estaba riquísimo",
+        "¡qué bueno!",
+        "¡qué rico!",
+        "¡qué sitio más bonito!",
+        "¡qué buena pinta!"
+      ],
+      "armadilhas": [
+        "qu",
+        "s"
+      ],
+      "nota": "O molde que faltava, e a maior lacuna medida do produto: em 252 frases-alvo do par EN a ÚNICA fala de apreciação que o aluno produzia era `¿qué me recomienda?` — que nem é elogio, é pedido. FECHADO e não aberto porque o adjetivo concorda com o que está sendo elogiado (buenísimo/buenísima) e a lista curta é a feature: 6 encaixes gravados e «a lista é a lista», dito em voz alta, em vez de mandar o aluno calcular gênero na frente do cozinheiro. Abastece sozinho o tile `simpatia`, que o G8 exige com ≥8 cards. O retorno faz parte do molde: `¿Le ha gustado el arroz?` → nomear o prato. O QUE INVERTE NESTE PAR, e muda o trabalho do autor de I07: no par EN o britânico NÃO TINHA AS PALAVRAS. Este aluno vai ter as palavras e achar que está EXAGERANDO — o `-ísimo` não tem equivalente morfológico em alemão e a resposta de elogio à comida é mais contida. Então o que a parte entrega não é vocabulário, é PERMISSÃO (PRODUTO §5.3: permissão não é enfeite): aqui isto não é exagero; é o volume normal do elogio, e abaixo dele o elogio não é ouvido. Este é o molde social CARO deste par, e é o inverso exato do que a `nota` de PREFERENCIA diz. ARMADILHA DE LEITURA: ⟨qu⟩ em toda a metade `¡Qué…!` do molde («kve bueno»), e `riquísimo` empilha duas — ⟨qu⟩ e ⟨s⟩ intervocálico, saindo «rikvízimo». `buenísimo` traz só a segunda.",
+      "idNoRosterEN": "APRECIACION"
+    },
+    {
+      "id": "ELECCION",
+      "categoria": "social",
+      "nome": "ESCOLHA",
+      "forma": "¿Cuál me recomienda: [A] o [B]? · ¿Este es mejor que aquel?",
+      "encaixe": "duas coisas do mundo, lidas na carta, na vitrine ou na mesa ao lado",
+      "tipo": "aberto",
+      "casa": "I03",
+      "redisparos": [
+        "I04",
+        "I09"
+      ],
+      "tiles": [
+        "mesa",
+        "compras"
+      ],
+      "exemplos": [
+        "¿cuál me recomienda: el pulpo o las croquetas?",
+        "¿cuál me recomienda: el arroz o el pescado?",
+        "¿cuál está mejor hoy?",
+        "¿cuál es más típico de aquí?",
+        "¿cuál me recomienda: este o aquel?"
+      ],
+      "armadilhas": [
+        "qu",
+        "j",
+        "h"
+      ],
+      "nota": "É o molde que transforma `¿qué me recomienda?` — pergunta aberta cuja resposta o aluno não entende — numa pergunta BINÁRIA cuja resposta cabe na cabeça dele sob estresse, que é o mesmo princípio de HAY. Sem ele, I03 promete «o prato que você não ia pedir» e entrega uma recomendação que o aluno não consegue processar. O encaixe é coisa do mundo (dois pratos, dois queijos, dois bares): passa em P1 por escolha, não por cálculo. PREÇO NESTE PAR: barato e sem re-derivação — `Was empfehlen Sie: A oder B?` é o mesmo desenho, e o `menú del día` = `Tagesmenü` vem de graça. É o único dos três sociais cuja linha não mudou. ARMADILHA DE LEITURA: ⟨qu⟩ em `que` e `aquel` («kve», «akvel»), jota em `mejor` («meyor») e ⟨h⟩ em `¿cuál está mejor hoy?`. Cuidado de redação: `cuál` NÃO é armadilha — o ⟨c⟩ antes de ⟨u⟩ é [k] nas duas línguas, e chamar atenção para ele gasta tempo consertando o que não quebra.",
+      "idNoRosterEN": "ELECCION"
+    },
+    {
+      "id": "PREFERENCIA",
+      "categoria": "social",
+      "nome": "PREFERÊNCIA",
+      "forma": "Me gusta + [X] · Prefiero + [X]",
+      "encaixe": "coisa, lugar, comida ou bebida — o que eu quero de volta",
+      "tipo": "aberto",
+      "casa": "I05",
+      "redisparos": [
+        "I06",
+        "I09"
+      ],
+      "tiles": [
+        "simpatia",
+        "mesa"
+      ],
+      "exemplos": [
+        "me gusta mucho este barrio",
+        "prefiero el vino tinto",
+        "prefiero sentarme fuera",
+        "me gusta más el de la esquina",
+        "me gusta este sitio",
+        "prefiero andar"
+      ],
+      "armadilhas": [
+        "v",
+        "qu"
+      ],
+      "nota": "É a resposta pronta às perguntas que ELES fazem — `¿qué te parece Madrid?`, `¿tinto o blanco?` — e a única forma de o turista DAR alguma coisa à conversa em vez de só pedir. Fica em I05 e não em M1 porque a família apetitiva não tem cena no Básico: no balcão o aluno pede, não opina. É O BRINDE DO ROSTER E A MAIOR ECONOMIA ISOLADA DA DERIVAÇÃO. A inversão de `gustar` — o obstáculo mais notório do anglófono, e o que o par EN gasta mais tempo desmontando — É NATIVA DO ALEMÃO: `Mir gefällt das`, `Das Essen schmeckt mir`, experienciador no dativo e coisa como sujeito. ATENÇÃO DE REDAÇÃO, e a proibição do jargão CONTINUA VALENDO INTEIRA: `me gusta` entra como bloco congelado com a coisa depois, nunca se explica a inversão do sujeito, e a palavra «verbo» não aparece no áudio (kill-switch do PRODUTO §5.1). O QUE MUDA É QUE A ÂNCORA NA L1 RESOLVE EM CINCO PALAVRAS — «funciona como `gefallen`» — e isso é INV-7 aplicado (abstração vira coisa da língua do aluno), não gramática pela janela. O tempo liberado NÃO se devolve: gasta-se em ENCAIXES, porque o G9 mede cobertura e não economia, e molde barato com três encaixes é orçamento jogado fora. Este é o molde social BARATO deste par, e é o inverso exato do que a `nota` de APRECIACION diz. ARMADILHA DE LEITURA: `prefiero el vino tinto` está gravado (`i05-tinto-e`) e é a SEGUNDA cobrança da gag do ⟨v⟩ — lido à alemã ele pede `el fino`, um xerez seco, que é outra bebida e chega na mesa. Vale a piada de volta aqui, curta, porque o aluno já a ouviu em B11. E `esquina` traz o ⟨qu⟩.",
+      "idNoRosterEN": "PREFERENCIA"
+    }
+  ],
+  "cortados": [
+    {
+      "forma": "Me gustaría + [infinitivo]",
+      "porque": "CONTINUA CORTADO E O MOTIVO É OUTRO — o campo foi reescrito, não traduzido. No par EN o argumento era que `Me gustaría` é o acolchoamento que deixa o britânico sem ser servido: o inglês de balcão empilha orações antes do pedido (`I was wondering if I could possibly…`) e o molde alimentava esse vício. ESSE NÃO É O VÍCIO DESTE COMPRADOR. O pedido curto e direto do balcão alemão (`Ein Bier, bitte`) já tem a forma certa, e dizer a ele para «não acolchoar» é consertar o que não quebra — pior, é copiar texto do outro par, que é o anti-padrão 9. Corta-se por dois motivos próprios: é mais longo e mais marcado que `quería`, e o equivalente que ele traria de casa, `Ich hätte gern`, já traduz mal — é mais cerimonioso em alemão do que `quería` é em espanhol, então traduzir peça a peça sobe o registro sem que ele perceba. Nomeado aqui para que nenhum agente futuro o traga de volta."
+    },
+    {
+      "forma": "GRAU — un poco más / un poco menos + [X]",
+      "porque": "Fica FORA com motivo escrito, e o motivo é do DESTINO e da língua-alvo, não do comprador — por isso porta sem re-derivação. O que justifica esse molde no Phûut! é a escala de picante, e a cozinha espanhola não é apimentada. Portar o molde seria portar a cena errada (anti-padrão 9). Onde a viagem realmente pede grau na Espanha, a necessidade já está coberta por forma fechada, e as duas estão gravadas no andaime: `Poco hecho / Al punto / Muy hecho` em B12 e `media ración` em B11/I03. Se um destino futuro tiver a cena, o molde volta lá, não aqui."
+    },
+    {
+      "forma": "Subjuntivo em subordinada",
+      "porque": "Regra geral: não subordinar — uma oração, um pedido. `Quiero que me traiga la cuenta` → `La cuenta, por favor.` · `Busco un sitio que tenga wifi` → `¿Hay wifi?` (HAY existe literalmente para absorver isto) · `Cuando llegue el tren…` → apontar o painel. Motivo do destino e da língua-alvo, porta sem re-derivação. EXCEÇÃO já concedida: os votos congelados de I08 (`que aproveche`, `que vaya bien`, `¡salud!`) — são itens de vocabulário com forma de subjuntivo, não subjuntivo. NOTA DESTE PAR sobre o terceiro: `¡Salud!` não é `Prost`, e o que muda não é o brinde, é o OLHO — no protocolo alemão olhar nos olhos ao tinir é regra explícita e comentada, e na Espanha o brinde é mais solto. Item receptivo de I08, custo baixo, E O CAMPO 6 DA FICHA (onde não vale) AINDA NÃO ESTÁ FECHADO: não vai ao áudio sem ele."
+    }
+  ]
+}

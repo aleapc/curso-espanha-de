@@ -1,0 +1,765 @@
+{
+  "id": "b12",
+  "slot": "B12",
+  "nivel": "basico",
+  "numero": 12,
+  "parte": "12",
+  "titulo": "Ohne Eis — und eins von denen da",
+  "subtitulo": "Zwei Wörter, die das Essen bringen, das Sie wirklich wollen — und ein Wort, das die Bäckerei, den Marktstand und den Hotelempfang aufmacht",
+  "moldura": "ganha",
+  "cena": "Vierunddreißig Grad, ein Tisch auf der Terrasse, und in dem hohen Glas, das der Kellner gerade vor Sie hinstellt, sind drei Viertel gefrorenes Wasser.",
+  "moldes": [
+    "SIN-CON-PARA",
+    "QUERIA"
+  ],
+  "clique": {
+    "contagem": [
+      "Bäckerei",
+      "Marktstand",
+      "Hotelempfang",
+      "Apotheke"
+    ],
+    "desconto": "Diese vier Sätze hat Ihnen niemand beigebracht. Sie haben sie eben aus einem einzigen gebaut.",
+    "piso": "Vier Sätze, die Sie nie gelernt haben, aus einem, den Sie gelernt haben. Die meisten, die zwei Wochen hier verbringen, bauen keinen einzigen."
+  },
+  "cliqueAudioKey": "b12-n27",
+  "frasePiso": "Vier Sätze, die Sie nie gelernt haben, aus einem, den Sie gelernt haben. Die meisten, die zwei Wochen hier verbringen, bauen keinen einzigen.",
+  "permissao": "Sie begründen nie, warum. «Sin hielo» ist ein ganzer Satz — kein Grund, keine Entschuldigung, keine Geschichte. Und wenn Ihnen das Wort für die Sache fehlt: zeigen Sie darauf und sagen Sie «quería». Den Rest machen die für Sie.",
+  "permissaoAudioKey": "b12-n26",
+  "espelho": "Sich zu entschuldigen, bevor man ein Getränk zurückgibt, ist der Teil, der dort auffällt. Dort entschuldigt sich niemand dafür, weil für die Theke noch gar nichts passiert ist.",
+  "fichasCulturais": [
+    {
+      "sinal": "Sie haben «sin hielo» gesagt, und das Glas landet trotzdem randvoll damit auf dem Tisch.",
+      "suaLeitura": "Er hat es falsch gemacht, und ich bin schuld. Wenn ich jetzt etwas sage, bin ich der schwierige Ausländer.",
+      "oQueEAli": "An der Theke ist ein Getränk erst fertig, wenn Sie es genommen haben. Es sofort zurückzuschieben ist ein Schritt im Vorgang, keine Beschwerde über eine Person. Eis gehört außerdem zu den Extras, die eine Bar berechnen darf, wenn sie es vorher ansagt — es ist eine Position, kein Gefallen.",
+      "oQueVoceFaz": "Schieben Sie das Glas über die Theke zurück, sagen Sie «sin hielo, por favor» noch einmal, freundliches Gesicht. Keine Entschuldigung, keine Erklärung.",
+      "oQueMelhora": "Sie merken, dass Korrigieren dort Routine ist und nichts kostet — und bestellen die restlichen zwei Wochen das, was Sie wirklich wollen.",
+      "ondeNaoVale": "Nicht um Mitternacht an einer dreireihigen Theke: da macht niemand etwas neu. Da trinken Sie es und sagen die zwei Wörter beim nächsten Mal früher.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "b12-n22",
+        "b12-n23",
+        "b12-n24",
+        "b12-n25"
+      ]
+    }
+  ],
+  "fatosDatados": [
+    {
+      "id": "extras-cobraveis-bar",
+      "afirmacao": "Brot, Eis und die Milch im Kaffee darf eine Bar berechnen — solange sie es vorher ansagt.",
+      "fonte": "OCU, via Infobae, jul/2026 — citado em docs/pesquisa-espanha.md",
+      "ano": 2026,
+      "revisarAte": "2027-07-01",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "b12-n24"
+      ]
+    }
+  ],
+  "_autoria": {
+    "_": "PARTE ESCRITA. A fala espanhola é a do andaime: mesmos `es`, mesmos `audioKey`, mesmos mp3 do curso EN — nenhum `es` foi tocado e nenhum clipe espanhol NOVO foi criado, então o custo de crédito espanhol desta parte é ZERO. Tudo que é voz-guia (Juli, Thomas) é escrito e será gravado.",
+    "removidos": "Dois steps do andaime saíram e o motivo é o mesmo: descrevem uma cena que não acontece com cartão em euros num país do euro (DERIVACAO-DE §3.3 item 1). `e03b-sinconversion-c` («Sin conversión.») e `e03b-loanulo-e` («Ay, perdona, ya le he dado. Lo anulo y lo hago otra vez.»), que é a resposta do garçom na escada do DCC. Os dois mp3 continuam no disco e no manifesto — viram órfãos, não some nada. NÃO restaurar «porque estão gravados» (moldes.json `_regras._estado_do_andaime`).",
+    "reposicao": "O encaixe `con tarjeta`, que repõe `sin conversión` em SIN-CON-PARA, NÃO entra aqui: ele pertence à cena de B14 e o roster manda B14 decidir se a declaração fica em `Voy a + [inf]` ou em `sin/con/para`. B12 fecha com oito encaixes próprios (hielo, gas, llevar, dos, compartir, para mí, cebolla, e o `sin gluten` que vem via HAY) e não precisa dele.",
+    "armadilha_desta_parte": "⟨qu⟩ = [kv]. Uma só, grudada a `quería`, e DEPOIS de o aluno já ter produzido a frase (moldes.json `_regras.padrao_de_ensino`, quinto tempo). O ⟨h⟩ mudo aparece como LEMBRETE de uma linha em `hay`/`hielo` — a casa dele é B08, e esta parte não a reabre.",
+    "carta_menu": "O falso amigo diário do par EN (`la carta` × `el menú`) MORREU aqui: `Karte` alemão é a carta e `Menü` alemão é o menu fechado, e os dois batem. O GUIRI ALERT do par EN não foi traduzido — foi substituído por uma declaração de BRINDE em duas linhas (b12-n15, b12-n16), que é o que a DERIVACAO §3.2 manda fazer com o que este comprador já sabe: reconhecimento, não instrução.",
+    "respelling": "O campo `pinyin` é respelling para OLHO ALEMÃO e nunca vai ao TTS (INV-6). Convenção usada, e ela existe para desarmar as sete armadilhas: ⟨qu⟩→k · ⟨v⟩→b · ⟨ll⟩/⟨y⟩→j · ⟨j⟩/⟨g⟩+e,i→ch · ⟨h⟩→nada · ⟨ch⟩→tsch · tônica em MAIÚSCULA · ⟨s⟩→ss (impede o [z] alemão) · ⟨z⟩/⟨c⟩+e,i→ss.",
+    "_revisao_adversarial": "2026-07-28. SEIS CORREÇÕES APLICADAS, todas em clipe de voz-guia ainda NÃO gravado (custo de regravação zero) e nenhuma tocou em `es`, `audioKey` ou manifesto — reconferido: as 24 chaves espanholas continuam byte-a-byte iguais ao `static/audio/manifest.json`. (1) «zwei Silben» em b12-n04, n06, n19 e n23 era resíduo da tradução do par EN e é FALSO em alemão contável: `sin` e `con` têm UMA sílaba, `sin hielo` tem três, e este curso ensina o aluno a contar sílaba por sílaba com a mão em B01 (`b01-n08`: «Ein Schlag pro Silbe… Mu-chas gra-cias: das sind vier»). Trocado por contagem de PALAVRA, que é o que a frase realmente quer dizer. (2) b12-t03 dizia que o ⟨qu⟩ é «die teuerste Lesegewohnheit, die Sie mitbringen», e B01 já dá esse superlativo ao ⟨v⟩ na MESMA voz do Thomas (`b01-n05`: «Das teuerste Zeichen der ganzen Reise ist ein v»). Dois superlativos concorrentes ensinam o aluno a descontar os dois; reescrito para ceder o posto ao ⟨v⟩ e reivindicar frequência, que é verdade e é conferível. (3) b12-s00 mandava «gleiche Schläge» — o programa 1 (metrônomo), que é o gesto da parte INGLESA. O gesto declarado desta parte é o 3 (o deslize) e a convenção do SKU é o `s00` ecoar o gesto da própria parte (`b11-s00`: «letzte Silbe halten», que é o programa 2 de B11). Corrigido para o deslize. (4) b12-n16 dizia «Einmal in diesem Kurs müssen Sie nichts umlernen», e a própria parte desmente isso dois clipes antes (`b12-n08`: «para llevar ist Wort für Wort zum Mitnehmen. Geschenkt»), além de B01 (a jota, o `ñ`, a tônica) e B11 (o gênero, `Noch ein`). A DERIVACAO §3.2 é uma lista de coisas que este comprador já sabe: exclusividade é a afirmação errada. (5) b12-n14 dizia «ausnahmsweise» pelo mesmo motivo. (6) O `aprofundar` §2 dizia «Was der englische Kurs an dieser Stelle als wichtigsten Einbau hat» — metadado de produção vazando em texto de comprador; o aluno alemão não comprou nem conhece o SKU inglês. Reescrito sem citar outro produto, preservando o argumento (o DCC não existe para cartão em euros em país do euro). MEDIDO DEPOIS: G4 98,3 chars/clipe (teto 120), maior clipe 134 (teto individual 320), 15 `responde`, G14 0 divergências, G15 0 anúncios e 0 vazamentos, G12 sem pendência nesta parte, 24 chaves espanholas / 0 clipe novo.",
+    "respelling_pendencia": "A última linha é DECISÃO DE AUTORIA e precisa de veredito do dono. O modelo no áudio é distinción ([θ]), e escrever `ss` grafa a realização em seseo — que a DERIVACAO §1.2 linha 7 declara ACEITA e sem custo (Canárias = 22% deste comprador), enquanto [ts] está PROIBIDO. Escolhi bloquear o desastre no papel em vez de espelhar o modelo, porque o alemão não tem letra para [θ] e a única âncora do par EN (`think`) está expressamente vetada (DERIVACAO §1.5). Se o dono preferir espelhar o áudio, a convenção muda aqui e em mais nada: `ración` → `rra-THJON` em vez de `rra-SSJON`."
+  },
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n01",
+      "bloco": "aquecimento",
+      "gesto": 3,
+      "tom": "ganha",
+      "pt": "Aufwärmen: die Hand gleitet seitlich, ohne anzuhalten. Sin hielo — ein Zug, nicht zwei Wörter."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "bloco": "callback",
+      "molde": "ME-PONE",
+      "encaixe": "una caña",
+      "encaixeGloss": "ein kleines Bier vom Fass",
+      "promptAudioKey": "b12-p01",
+      "promptPt": "Die Bar von gestern, derselbe Mann hinter der Theke, dieselben anderthalb Sekunden. Alle an der Theke halten dasselbe kurze Glas in der Hand. Bestellen Sie das. Sprechen Sie jetzt.",
+      "audioKey": "e03a-cana-e",
+      "es": "¿Me pones una caña, por favor?",
+      "pinyin": "me PO-ness U-na KA-nja, por fa-BOR",
+      "pt": "ein kleines Bier vom Fass",
+      "consulta": [
+        "chegar/balcao"
+      ]
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n02",
+      "bloco": "cena",
+      "pt": "Vierunddreißig Grad. Ein Tisch auf der Terrasse. Der Kellner stellt ein hohes Glas hin, und drei Viertel davon sind gefrorenes Wasser."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n03",
+      "pt": "Dieses Glas schicken Sie nicht zurück. Sie sorgen dafür, dass das nächste anders ankommt."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n04",
+      "bloco": "molde",
+      "pt": "Hier ist der Baustein, und er ist ein Wort lang. Sin — ohne. Con — mit. Para — für. Mehr steht da nicht."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n05",
+      "pt": "Der Baustein bleibt stehen. Nur das Ding dahinter wechselt. Carmen."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e03b-sinhielo-c",
+      "es": "Sin hielo, por favor.",
+      "pinyin": "ssin JE-lo, por fa-BOR",
+      "pt": "Ohne Eis, bitte.",
+      "tts": "Sin hielo, por favor."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n06",
+      "pt": "Dasselbe kurze Wort, und hinten hängt etwas anderes. Emilio, am selben Tisch, an der Wasserflasche."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e03b-singas-e",
+      "es": "Sin gas, por favor.",
+      "pinyin": "ssin gass, por fa-BOR",
+      "pt": "Still, bitte. (wörtlich: ohne Gas)",
+      "tts": "Sin gas, por favor."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "molde": "SIN-CON-PARA",
+      "encaixe": "hielo",
+      "promptAudioKey": "b12-p02",
+      "promptPt": "Zweiter Tag, dieselbe Terrasse, derselbe Kellner. Diesmal soll ein Getränk kommen und kein Schneeball. Sprechen Sie jetzt.",
+      "audioKey": "e03b-sinhielo-c",
+      "es": "Sin hielo, por favor.",
+      "pinyin": "ssin JE-lo, por fa-BOR",
+      "pt": "ohne das Zeug",
+      "consulta": [
+        "mesa/bebida"
+      ]
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n07",
+      "pt": "Jetzt eins, das zurückfragt. Er stellt eine Frage, und ein einziges Wort macht sie zu."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e03b-cuantos-e",
+      "es": "¿Para cuántos?",
+      "pinyin": "PA-ra KUAN-toss",
+      "pt": "👂 «Für wie viele?» — die Frage an der Tür. Notfalls Finger hochhalten. Sie werden nicht müssen.",
+      "tts": "¿Para cuántos?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "molde": "SIN-CON-PARA",
+      "encaixe": "dos",
+      "encaixeGloss": "zu zweit",
+      "promptAudioKey": "b12-p03",
+      "promptPt": "Halb zehn abends, die Tür eines Restaurants, ein Mann mit einem Stapel Karten unterm Arm — und genau das hat er gerade gefragt. Sie und die Person neben Ihnen. Sprechen Sie jetzt.",
+      "audioKey": "e03b-parados-c",
+      "es": "Para dos, por favor.",
+      "pinyin": "PA-ra doss, por fa-BOR",
+      "pt": "für uns beide",
+      "consulta": [
+        "mesa/mesa"
+      ]
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "molde": "SIN-CON-PARA",
+      "encaixe": "llevar",
+      "encaixeGloss": "zum Mitnehmen",
+      "promptAudioKey": "b12-p04",
+      "promptPt": "Acht Uhr morgens, ein Tresen mit belegten Broten. Ihr Zug fährt in zwölf Minuten, und der Mann greift gerade nach Teller und Gabel. Sie setzen sich nicht hin. Sprechen Sie jetzt.",
+      "audioKey": "e03b-parallevar-e",
+      "es": "Para llevar, por favor.",
+      "pinyin": "PA-ra je-BAR, por fa-BOR",
+      "pt": "nicht hier, sondern draußen",
+      "consulta": [
+        "mesa/comida"
+      ]
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n08",
+      "pt": "Dieses eine kennen Sie schon: para llevar ist Wort für Wort zum Mitnehmen. Geschenkt."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n09",
+      "bloco": "molde",
+      "pt": "Das nächste Wort haben Sie am Bahnhofsschalter schon einmal gesagt. Heute wird es der zweite Baustein."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n10",
+      "pt": "Quería. Danach kommt das Ding, und nur das Ding wechselt. Carmen zuerst."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e03b-quericafe-c",
+      "es": "Quería un café con leche, por favor.",
+      "pinyin": "ke-RI-a un ka-FE kon LE-tscheh, por fa-BOR",
+      "pt": "Ich hätte gern einen Milchkaffee, bitte.",
+      "tts": "Quería un café con leche, por favor."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n11",
+      "pt": "Hören Sie die Naht? Quería, und dann das Ding. Dasselbe Wort, ein anderes Ding."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e03b-quericarta-c",
+      "es": "Quería la carta, por favor.",
+      "pinyin": "ke-RI-a la KAR-ta, por fa-BOR",
+      "pt": "Ich hätte gern die Karte, bitte.",
+      "tts": "Quería la carta, por favor."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "molde": "QUERIA",
+      "encaixe": "uno de esos",
+      "encaixeGloss": "eins von denen",
+      "promptAudioKey": "b12-p05",
+      "promptPt": "Die Bäckerei, neun Uhr morgens. Was Sie wollen, liegt hinter Glas, und niemand hat Ihnen je gesagt, wie es heißt. Zeigen Sie darauf und fangen Sie an. Sprechen Sie jetzt.",
+      "audioKey": "e03b-queriuno-e",
+      "es": "Quería uno de esos, por favor.",
+      "pinyin": "ke-RI-a U-no de E-ssoss, por fa-BOR",
+      "pt": "das da hinten",
+      "consulta": [
+        "compras/balcao"
+      ]
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "b12-t01",
+      "pt": "ACHTUNG. Sie lesen quería, und Ihr Auge sagt «kve-ría». Auf Spanisch ist qu immer nur k."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "b12-t02",
+      "pt": "K wie in Kilo. Ke-RI-a. Das u dahinter bleibt stumm, und dasselbe gilt für ¿qué?, queso und ¿quién?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "b12-t03",
+      "pt": "Ein Buchstabe, vier Wörter, die Sie jeden Tag brauchen. Das v kostet ein Getränk; dieses hier steht vorn in jeder Bestellung."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "molde": "HAY",
+      "encaixe": "algo sin gluten",
+      "promptAudioKey": "b12-p06",
+      "promptPt": "Anderer Morgen, dieselbe Bäckerei. Heute kaufen Sie für die Person, mit der Sie reisen — die seit ihrem zwölften Lebensjahr keinen Weizen isst. Hinter dem Glas ist alles daraus gemacht. Sprechen Sie jetzt.",
+      "audioKey": "e03b-singluten-c",
+      "es": "¿Hay algo sin gluten?",
+      "pinyin": "ai AL-go ssin GLU-ten",
+      "pt": "irgendetwas ohne das Zeug",
+      "consulta": [
+        "dieta/sem"
+      ]
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n12",
+      "pt": "Zwei h in dieser Runde, beide stumm: hay und hielo. Ihr Auge sieht sie, Ihr Mund nicht."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "molde": "QUERIA",
+      "encaixe": "medio kilo de tomates",
+      "encaixeGloss": "ein halbes Kilo Tomaten",
+      "promptAudioKey": "b12-p07",
+      "promptPt": "Samstag, der Marktstand. Die Schaufel ist schon in ihrer Hand, vier Leute warten hinter Ihnen, und was Sie wollen, ist die Kiste mit den roten Dingern vor ihr. Die Hälfte von einem Kilo davon. Sprechen Sie jetzt.",
+      "audioKey": "e03b-queritom-c",
+      "es": "Quería medio kilo de tomates.",
+      "pinyin": "ke-RI-a ME-djo KI-lo de to-MA-tess",
+      "pt": "ein halbes Kilo davon",
+      "consulta": [
+        "compras/balcao"
+      ]
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "molde": "QUERIA",
+      "encaixe": "otra habitación",
+      "encaixeGloss": "ein anderes Zimmer",
+      "promptAudioKey": "b12-p08",
+      "promptPt": "Mitternacht, der Hotelempfang. Ihr Fenster geht auf den Platz, und auf dem Platz spielt eine Band. Bitten Sie ihn, Sie woandershin zu legen. Sprechen Sie jetzt.",
+      "audioKey": "e03b-queriohab-e",
+      "es": "Quería otra habitación, si es posible.",
+      "pinyin": "ke-RI-a O-tra a-bi-ta-SSJON, ssi ess po-SSI-bleh",
+      "pt": "woanders hin, wenn es geht",
+      "consulta": [
+        "quarto/pedir"
+      ]
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "molde": "QUERIA",
+      "tom": "protege",
+      "encaixe": "algo para las quemaduras del sol",
+      "promptAudioKey": "b12-p09",
+      "promptPt": "Die Apotheke. Sie haben keine Ahnung, wie das heißt, was zwei Stunden Strand mit Ihren Schultern gemacht haben — aber Sie wissen, wie der Satz anfängt, und Sie wissen, was er tun soll. Sprechen Sie jetzt.",
+      "audioKey": "e03b-queriquem-c",
+      "es": "Quería algo para las quemaduras del sol.",
+      "pinyin": "ke-RI-a AL-go PA-ra lass ke-ma-DU-rass del ssol",
+      "pt": "etwas gegen das, was die Sonne angerichtet hat",
+      "consulta": [
+        "saude/algo-para"
+      ]
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n13",
+      "tom": "ganha",
+      "pt": "Der Satz hält stand. Hören Sie, was am Empfang zurückkommt — und wie wenig Sie davon brauchen."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e03b-queriohab-e",
+      "es": "Quería otra habitación, si es posible.",
+      "pinyin": "ke-RI-a O-tra a-bi-ta-SSJON, ssi ess po-SSI-bleh",
+      "pt": "— Ich hätte gern ein anderes Zimmer, wenn es geht."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e03b-hab1-c",
+      "es": "¿Le importa una planta más alta?",
+      "pinyin": "le im-POR-ta U-na PLAN-ta mass AL-ta",
+      "pt": "👂 «Wäre ein höheres Stockwerk in Ordnung?» — die Gegenfrage, auf die ein Wort reicht.",
+      "acao": "Ja sagen und das höhere Stockwerk nehmen. Sie haben mehr bekommen, als Sie erbeten haben.",
+      "tts": "¿Le importa una planta más alta?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e03b-hab2-e",
+      "es": "Mejor todavía. Gracias.",
+      "pinyin": "me-CHOR to-da-BI-a. GRA-ssjass",
+      "pt": "— Noch besser. Danke.",
+      "tts": "Mejor todavía. Gracias."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "b12-t04",
+      "pt": "ACHTUNG. Quería nimmt ein Ding. Einen Kaffee, ein Zimmer, ein halbes Kilo von etwas."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "b12-t05",
+      "pt": "Hängen Sie einen Plan dahinter — «dass Sie meine Buchung ändern» —, dann heben Sie nicht mehr ab."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "b12-t06",
+      "pt": "Ein Ding wollen: quería. Etwas machen lassen: zeigen und das Ding trotzdem sagen. Man kommt Ihnen entgegen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n14",
+      "bloco": "corpo",
+      "pt": "Zwei noch, und beide passieren im Sitzen. Beim ersten stimmt Ihre Gewohnheit ganz genau."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n15",
+      "pt": "La carta ist die Karte mit allem drauf. El menú ist das feste Mittagessen zum festen Preis."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n16",
+      "pt": "Beide treffen ins Schwarze. Hier müssen Sie nichts umlernen — merken Sie sich die zwei Wörter und gehen Sie weiter."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e03b-carta-c",
+      "es": "¿Nos trae la carta, por favor?",
+      "pinyin": "noss TRA-eh la KAR-ta, por fa-BOR",
+      "pt": "Bringen Sie uns bitte die Karte?",
+      "tts": "¿Nos trae la carta, por favor?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "promptAudioKey": "b12-p10",
+      "promptPt": "Man hat Sie an einen Tisch gesetzt und Ihnen nichts zum Lesen gegeben. Fragen Sie danach — nach der langen, der mit allem drauf. Sprechen Sie jetzt.",
+      "audioKey": "e03b-carta-c",
+      "es": "¿Nos trae la carta, por favor?",
+      "pinyin": "noss TRA-eh la KAR-ta, por fa-BOR",
+      "pt": "die Liste mit allem",
+      "consulta": [
+        "mesa/carta"
+      ]
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n17",
+      "pt": "Vier Wörter entscheiden, wie viel Essen kommt. Tapa ist klein. Pincho liegt auf Brot und wird einzeln bezahlt."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n18",
+      "pt": "Ración ist ein Teller für die Mitte des Tisches. Media ración ist die Hälfte davon, und zu zweit meistens richtig."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e03b-tamano-e",
+      "es": "¿Esto es tapa, media ración o ración?",
+      "pinyin": "ESS-to ess TA-pa, ME-dja rra-SSJON o rra-SSJON",
+      "pt": "Ist das eine kleine, eine halbe oder eine ganze?",
+      "tts": "¿Esto es tapa, media ración o ración?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "promptAudioKey": "b12-p11",
+      "promptPt": "An der Tafel steht ein Name, unter dem Sie sich nichts vorstellen können, und Sie sind ein Nicken davon entfernt, vier davon zu bestellen. Finden Sie erst heraus, wie groß das ist. Sprechen Sie jetzt.",
+      "audioKey": "e03b-tamano-e",
+      "es": "¿Esto es tapa, media ración o ración?",
+      "pinyin": "ESS-to ess TA-pa, ME-dja rra-SSJON o rra-SSJON",
+      "pt": "wie groß ist das hier",
+      "consulta": [
+        "mesa/tamanho"
+      ]
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e03b-consobra-c",
+      "es": "Eso es ración. Es grande, ¿eh? Es para compartir.",
+      "pinyin": "E-sso ess rra-SSJON. ess GRAN-deh, eh? ess PA-ra kom-par-TIR",
+      "pt": "👂 «Das ist ein ganzer Teller — groß, ja? Der ist zum Teilen.» — die Antwort, die Sie vorher brauchten, nicht hinterher.",
+      "tts": "Eso es ración. Es grande, ¿eh? Es para compartir."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "molde": "SIN-CON-PARA",
+      "encaixe": "compartir",
+      "encaixeGloss": "zum Teilen",
+      "promptAudioKey": "b12-p12",
+      "promptPt": "Sie zu zweit, ein Teller in der Mitte, alle anderen im Raum essen genauso. Bestellen Sie einen ganzen Teller Schinken und sagen Sie dazu, wofür er ist. Sprechen Sie jetzt.",
+      "audioKey": "e03b-compartir-c",
+      "es": "Ponnos una ración de jamón para compartir.",
+      "pinyin": "PON-noss U-na rra-SSJON de cha-MON PA-ra kom-par-TIR",
+      "pt": "für die Mitte des Tisches",
+      "consulta": [
+        "mesa/comida"
+      ]
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "molde": "SIN-CON-PARA",
+      "encaixe": "para mí",
+      "encaixeGloss": "für mich",
+      "promptAudioKey": "b12-p13",
+      "promptPt": "Ihre Begleitung hat gerade sehr schnell etwas bestellt, und es klang gut. Der Kellner dreht sich zu Ihnen. Sprechen Sie jetzt.",
+      "audioKey": "e03b-lomismo-c",
+      "es": "Lo mismo para mí.",
+      "pinyin": "lo MISS-mo PA-ra MI",
+      "pt": "dasselbe, hier an dieses Ende",
+      "consulta": [
+        "mesa/comida"
+      ]
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n19",
+      "pt": "Und wenn der Teller fast stimmt, geben Sie der Küche dasselbe kleine Wort — über den Kellner."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e03b-sincebolla-e",
+      "es": "¿Me lo puede hacer sin cebolla?",
+      "pinyin": "me lo PUE-deh a-SSER ssin sse-BO-ja",
+      "pt": "Können Sie es mir ohne Zwiebeln machen?",
+      "tts": "¿Me lo puede hacer sin cebolla?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "molde": "SIN-CON-PARA",
+      "encaixe": "sin cebolla",
+      "encaixeGloss": "ohne Zwiebeln",
+      "promptAudioKey": "b12-p14",
+      "promptPt": "In dem Gericht, das Sie wollen, ist eine Sache drin, die Sie seit Ihrem neunten Lebensjahr nicht mögen — und die eine Küche weglassen kann. Bitten Sie darum. Sprechen Sie jetzt.",
+      "audioKey": "e03b-sincebolla-e",
+      "es": "¿Me lo puede hacer sin cebolla?",
+      "pinyin": "me lo PUE-deh a-SSER ssin sse-BO-ja",
+      "pt": "ohne das eine Ding gemacht",
+      "consulta": [
+        "dieta/sem",
+        "mesa/comida"
+      ]
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e03b-porencima-c",
+      "es": "Es que ya viene hecho. Se la quito por encima, si quieres.",
+      "pinyin": "ess ke ja BJE-neh E-tscho. sse la KI-to por en-SSI-ma, ssi KJE-ress",
+      "pt": "👂 «Das kommt fertig — ich nehme es oben ab, wenn du willst.» — ein halbes Ja, und es lohnt sich.",
+      "acao": "Das halbe Ja annehmen: nicken und «vale» sagen. Bei einer Allergie dagegen nicht — dann gilt Teil 13.",
+      "tts": "Es que ya viene hecho. Se la quito por encima, si quieres."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n20",
+      "pt": "Steak. Drei Wörter, und dafür brauchen Sie keinen Baustein: poco hecho, al punto, muy hecho. Das ist blutig, rosa, durch."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e04b-punto-e",
+      "es": "Poco hecho, por favor. / Al punto. / Muy hecho.",
+      "pinyin": "PO-ko E-tscho, por fa-BOR · al PUN-to · mui E-tscho",
+      "pt": "👂 Blutig, bitte. / Rosa. / Durch. — die Liste ist die Liste.",
+      "acao": "Eines der drei Wörter beim Bestellen sagen, nicht wenn der Teller kommt.",
+      "tts": "Poco hecho, por favor. Al punto. Muy hecho."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n21",
+      "pt": "Das sagen Sie beim Bestellen, nicht wenn der Teller schon da steht. Danach wird daran nichts mehr geändert."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e03b-alpunto-c",
+      "es": "Al punto, por favor.",
+      "pinyin": "al PUN-to, por fa-BOR",
+      "pt": "Rosa, bitte.",
+      "tts": "Al punto, por favor."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n22",
+      "bloco": "capsula",
+      "pt": "Sie haben sin hielo gesagt, und das Glas kommt trotzdem voll damit. Schauen Sie, was der Mann an der Theke macht."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n23",
+      "pt": "Zurück über die Theke, dasselbe kleine Wort noch einmal, freundliches Gesicht, und keine Entschuldigung."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n24",
+      "pt": "Eis darf eine Bar berechnen, wenn sie es vorher ansagt. Es ist eine Position, kein Gefallen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n25",
+      "pt": "Nicht um Mitternacht an einer dreireihigen Theke. Da trinken Sie es und sagen es beim nächsten Mal früher."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n26",
+      "bloco": "permissao",
+      "pt": "Und Sie begründen nie, warum. Sin hielo ist ein ganzer Satz. Kein Grund, keine Entschuldigung, keine Geschichte."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n27",
+      "bloco": "clique",
+      "pt": "Zählen Sie mit. Die Bäckerei, der Marktstand, der Hotelempfang, die Apotheke. Vier Orte, ein Wort."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n28",
+      "pt": "Diese vier Sätze hat Ihnen niemand beigebracht. Sie haben sie eben aus einem einzigen gebaut."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n29",
+      "bloco": "piso",
+      "pt": "Vier Sätze, die Sie nie gelernt haben, aus einem, den Sie gelernt haben. Die meisten bauen in zwei Wochen keinen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-s00",
+      "pt": "Nachsprechen. Laut, mit ihnen, die Hand gleitet durch. Die zwei, die die meisten Tage verändern:"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Carmen",
+      "audioKey": "e03b-sinhielo-c",
+      "molde": "SIN-CON-PARA",
+      "es": "Sin hielo, por favor.",
+      "pinyin": "ssin JE-lo, por fa-BOR",
+      "pt": "Ohne Eis, bitte."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Carmen",
+      "audioKey": "e03b-queriquem-c",
+      "molde": "QUERIA",
+      "es": "Quería algo para las quemaduras del sol.",
+      "pinyin": "ke-RI-a AL-go PA-ra lass ke-ma-DU-rass del ssol",
+      "pt": "Ich hätte gern etwas gegen Sonnenbrand."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Juli",
+      "audioKey": "b12-r01",
+      "bloco": "recap",
+      "pt": "Einmal noch laut, dann sind Sie fertig. Ein Tresen, an dem wir noch nicht standen."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "molde": "SIN-CON-PARA",
+      "encaixe": "llevar",
+      "encaixeGloss": "zum Mitnehmen",
+      "promptAudioKey": "b12-p15",
+      "promptPt": "Neun Uhr abends, der Eistresen, und Sie gehen damit in der Hand zum Bahnhof. Sprechen Sie jetzt.",
+      "audioKey": "e03b-parallevar-e",
+      "es": "Para llevar, por favor.",
+      "pinyin": "PA-ra je-BAR, por fa-BOR",
+      "pt": "nicht hier gegessen",
+      "consulta": [
+        "compras/balcao"
+      ]
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b12-n30",
+      "pt": "Das war's. Zwei Bausteine, sechs Tresen, und nichts davon mussten Sie nachschlagen. Hasta luego."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "Zwei Bausteine, und warum Ihnen niemand eine Speisekarte gegeben hat (freiwillig)",
+    "secoes": [
+      {
+        "titulo": "Warum quería und nicht quiero — und warum nicht me gustaría",
+        "corpo": "Verstanden werden alle drei. Quiero geht und klingt etwas schroff. Quería ist das, was man über einem spanischen Tresen tatsächlich hört, und es kostet Sie keine Silbe mehr. Me gustaría ist das, was im Schulbuch steht, und es bleibt hier bewusst draußen — nicht weil Polstern in Spanien unhöflich wäre, sondern weil es länger ist, auffälliger klingt und weil Ihr deutsches Ich hätte gern ohnehin schlecht dorthin übersetzt: es ist eine Konstruktion mit zwei Teilen, quería ist ein Wort. Und eine Warnung, die in diesem Kurs nur für Sie gilt: Ihr Auge liest qu als kv. Auf Spanisch ist qu ausnahmslos k, und das u dahinter ist stumm. Das trifft quería, qué, queso, quién, quince, aquí und riquísimo — also fast alles, was Sie im Laufe eines Tages sagen.",
+        "exemplos": [
+          {
+            "es": "Quería un adaptador de enchufe.",
+            "pt": "ke-RI-a un a-dap-ta-DOR de en-TSCHU-feh — Ich hätte gern einen Steckdosenadapter. (ein Wort, das Sie noch nie gesagt haben, in einem Satz, der Ihnen schon gehört)"
+          },
+          {
+            "es": "Quería dos billetes para Sevilla.",
+            "pt": "ke-RI-a doss bi-JE-tess PA-ra sse-BI-ja — Ich hätte gern zwei Fahrkarten nach Sevilla. (dasselbe Wort, Bahnhofsschalter — und drei Lesefallen in einer Zeile: das ll ist ein j, das v ist ein b)"
+          }
+        ]
+      },
+      {
+        "titulo": "Wie weit sin, con und para tragen",
+        "corpo": "Zwei Wörter, kein Verb, und sie funktionieren als vollständige Äußerung: Sin hielo, por favor. ist ein fertiger Satz. Sin nimmt alles, was wegbleiben soll — gluten, gas, cebolla, hielo, leche. Con nimmt alles, was dazukommen soll — hielo, limón, leche, tarjeta. Para ist das weiteste der drei: es nimmt einen Zweck (para llevar), eine Zahl (para dos), eine Person (para mí) und ein Dokument (para el seguro — die Quittung für die Versicherung, und das ist die Version, für die Sie am dankbarsten sein werden). Ihr Vorteil hier ist groß und Sie dürfen ihn ruhig hören: ohne, mit und für stehen eins zu eins daneben, und para llevar ist Wort für Wort zum Mitnehmen. Ein Einbau, den Reiseführer aus dem angelsächsischen Raum hier gern groß aufziehen, fehlt bei uns bewusst: sin conversión am Kartenterminal. Die dynamische Währungsumrechnung entsteht nur, wenn die Währung Ihrer Karte von der Währung des Betrags abweicht. Sie zahlen Euro mit einer Euro-Karte. Das Gerät wird Ihnen gar nichts anbieten.",
+        "exemplos": [
+          {
+            "es": "¿Me lo pone para llevar?",
+            "pt": "me lo PO-neh PA-ra je-BAR — Machen Sie es mir zum Mitnehmen? (die zwei Bausteine übereinander)"
+          },
+          {
+            "es": "Quería la factura para el seguro.",
+            "pt": "ke-RI-a la fak-TU-ra PA-ra el sse-GU-ro — Ich hätte gern die Rechnung für die Versicherung."
+          }
+        ]
+      },
+      {
+        "titulo": "La carta, el menú und die vier Größen",
+        "corpo": "Hier stimmt Ihre Intuition, und das ist selten genug, um es zu sagen: la carta ist die Speisekarte, el menú ist das feste Mittagessen zum Festpreis, und beides deckt sich mit Karte und Menü, wie Sie die Wörter zu Hause benutzen. Wer aus dem Englischen kommt, stolpert hier jeden Tag; Sie nicht. Zwei andere Wörter auf derselben Seite sind weniger freundlich: entrada ist die Vorspeise, nicht der Eingang, und tortilla ist ein dickes Kartoffelomelett, kein Fladen. Zu den Größen: eine tapa ist ein kleiner Teller zum Getränk; ein pincho oder montadito ist die nördliche Variante auf einer Scheibe Brot und wird pro Stück bezahlt; eine ración ist ein voller Teller zum Teilen und wirklich groß; eine media ración ist die Hälfte davon und für zwei Personen meistens genau richtig. Im Baskenland läuft das pintxo-System anders: Sie nehmen sich selbst vom Tresen, und die Zahnstocher auf Ihrem Teller sind die Rechnung — also aufheben. Und S.M. oder según mercado neben Meeresfrüchten heißt, dass der Preis von Gewicht und Markt des Tages abhängt: fragen Sie vor dem Bestellen.",
+        "exemplos": [
+          {
+            "es": "¿Cuánto cuesta antes de pedirlo?",
+            "pt": "KUAN-to KUESS-ta AN-tess de pe-DIR-lo — Was kostet das, bevor ich es bestelle?"
+          },
+          {
+            "es": "¿Cuántos palillos tienes?",
+            "pt": "KUAN-toss pa-LI-joss TJE-ness — 👂 «Wie viele Stäbchen hast du?» — er wirft Ihnen nichts vor, er rechnet zusammen."
+          }
+        ]
+      }
+    ]
+  }
+}

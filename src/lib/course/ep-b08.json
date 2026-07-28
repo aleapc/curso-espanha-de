@@ -1,0 +1,712 @@
+{
+  "id": "b08",
+  "slot": "B08",
+  "nivel": "basico",
+  "numero": 8,
+  "parte": "8",
+  "titulo": "Vier Prozent Akku, und die Straße ist nicht da",
+  "subtitulo": "Zwei Wörter, die jede Auskunft holen — und drei, die sie festhalten, wenn der Kopf nicht mitkommt",
+  "moldura": "ganha",
+
+  "cena": "Vier Uhr nachmittags, Ihr Handy hat vier Prozent, die Straße ist nicht da, wo die Karte sie hatte, und pro Minute gehen vierzig Menschen an Ihnen vorbei.",
+
+  "moldes": ["HAY", "DONDE"],
+
+  "clique": {
+    "contagem": ["Marktstand", "Brunnen", "Metrostation", "Hotelempfang"],
+    "desconto": "Diese Sätze hat Ihnen niemand gegeben. Sie haben sie aus zwei Wörtern gebaut: hay und dónde.",
+    "piso": "Sie sprechen morgen einen Fremden an und kommen an. Die meisten, die zwei Wochen hier sind, versuchen es nie."
+  },
+  "cliqueAudioKey": "b08-n31",
+
+  "frasePiso": "Sie sprechen morgen einen Fremden an und kommen an. Die meisten, die zwei Wochen hier sind, versuchen es nie.",
+
+  "permissao": "Sie werden die Antwort nicht verstehen, und Sie sollen es auch nicht. Ein Wort von fünf und ein Arm sind hier ein gelungenes Gespräch. Und Sie dürfen zweimal fragen: hundert Meter weiter, jemand anderes, dieselbe Frage — das kostet nichts und fällt niemandem auf. Wenn das Wort fehlt, halten Sie das Handy hin und zeigen Sie darauf.",
+  "permissaoAudioKey": "b08-n29",
+
+  "espelho": "Stehen zu bleiben, bis die Auskunft vollständig ist, und dreimal nachzufragen — das ist dort das Auffällige. Die Auskunft ist als Anfang gemeint, nicht als Anleitung, und die zweite Hälfte holt man sich hundert Meter weiter bei jemand anderem.",
+
+  "fichasCulturais": [
+    {
+      "sinal": "Sie fragen nach einem Geldautomaten, und die Antwort zeigt erst auf die Ecke — und hängt dann einen halben Satz an, mit einem zweiten, zwei Straßen weiter.",
+      "suaLeitura": "Er schickt mich auf einen Umweg. Der an der Ecke ist doch da, ich sehe ihn von hier aus.",
+      "oQueEAli": "Der sichtbare Automat mitten im Durchgang gehört keiner Bank: er nimmt eine eigene Gebühr pro Abhebung, und genau deshalb steht er dort, wo Sie ihn zuerst sehen. Der halbe Satz, den man anhängt, ist der wertvolle Teil der Auskunft.",
+      "oQueVoceFaz": "Die zwei Straßen gehen, an einer Bankfiliale abheben, und dabei mehr auf einmal nehmen — die Gebühr fällt pro Abhebung an, nicht pro Euro.",
+      "oQueMelhora": "Sie zahlen die Gebühr einmal in der Woche statt zweimal am Tag, und das Geld bleibt für die letzte Runde übrig.",
+      "ondeNaoVale": "Sonntagabend im Dorf und nachts am Flughafen gilt es nicht: da ist der teure Automat der einzige, und er ist billiger als die Fahrt zum nächsten.",
+      "evidencia": "FATO",
+      "audioKeys": ["b08-n09", "b08-n10", "b08-n11", "b08-n12", "b08-n13"]
+    },
+    {
+      "sinal": "Sie fragen vier Wörter, und zurück kommt der ganze Weg in einem Atemzug — Ampel, zweite links, dann rechts, neben der Bank —, während der Arm die Strecke in die Luft zeichnet.",
+      "suaLeitura": "Ich habe zu gut gefragt, er hält mich für kompetenter, als ich bin, und jetzt stehe ich hier und nicke.",
+      "oQueEAli": "Auf der Straße wird die Auskunft als fertiger Weg gegeben und nicht als erster Schritt: die Person löst die ganze Sache für Sie, und der Arm trägt die Hälfte der Information, die der Mund gerade zu schnell sagt.",
+      "oQueVoceFaz": "Auf den Arm schauen, nur die erste Abbiegung mitnehmen, gracias sagen und losgehen. Hundert Meter weiter fragen Sie den Nächsten.",
+      "oQueMelhora": "Sie gehen mit einer Anweisung los, die in Ihren Kopf passt, statt mit fünf, von denen Sie vier verlieren — und kommen beim zweiten Anlauf an.",
+      "ondeNaoVale": "Nicht am Schalter mit einer Schlange dahinter: da kommt ein Wort und eine Handbewegung, und beides nehmen Sie und gehen. Und nicht bei jemandem, der selbst gerade eine Karte aufklappt — der ist so fremd hier wie Sie.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["b08-n20", "b08-n21", "b08-n22", "b08-n23", "b08-n24"]
+    }
+  ],
+
+  "fatosDatados": [
+    {
+      "id": "comision-cajero-por-operacion",
+      "afirmacao": "In Spanien nimmt der Automat eine Gebühr pro Abhebung, verbreitet zwischen drei und fünf Euro — sie hängt an der Zahl der Abhebungen, nicht am Betrag.",
+      "valor": "€3–5 pro Abhebung",
+      "fonte": "levantamento de tarifas de ATM na Espanha, 2026 — síntese em docs/pesquisa-espanha.md §8.2",
+      "ano": 2026,
+      "revisarAte": "2027-07-01",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": ["b08-n10", "b08-n11"]
+    },
+    {
+      "id": "cajero-independiente-em-zona-turistica",
+      "afirmacao": "Die freistehenden Automaten in Touristenlagen gehören keiner Bank, nehmen ihre eigene Gebühr und sind genau deshalb die sichtbarsten; der Rat lautet durchgehend, sie zu meiden.",
+      "fonte": "consenso de guias de campo e comparativos de tarifas 2026, registrado em docs/pesquisa-espanha.md §8.2",
+      "ano": 2026,
+      "revisarAte": "2027-07-01",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": ["b08-n10", "b08-n12"]
+    }
+  ],
+
+  "_autoria": {
+    "_": "PARTE ESCRITA (o andaime saiu). A fala espanhola é a do andaime: os mesmos 21 `es`, os mesmos `audioKey` e os mesmos mp3 do curso EN — nenhum `es` foi tocado, nenhum step espanhol foi removido, e NENHUM CLIPE ESPANHOL NOVO foi criado. Conferido contra `static/audio/manifest.json` em 2026-07-28: as 21 chaves existem e o texto bate string a string. O custo de crédito espanhol desta parte é ZERO; o que este SKU paga aqui é a narração alemã — 39 clipes de voz-guia (Juli 36 + Thomas 3) e 15 prompts.",
+    "o_que_o_par_redistribuiu": "DERIVACAO §4.2 (B08 = MÉDIA) e `moldes.json` → DONDE: o par `¿Dónde está el…?` × `¿Dónde hay un…?` vem DE GRAÇA, porque o alemão já opõe `Wo ist der…?` a `Wo gibt es hier einen…?`. O bloco do par gasta QUATRO clipes (b08-n15 a b08-n18) e é escrito como RECONHECIMENTO, não instrução (DERIVACAO §3.2). O tempo NÃO voltou ao roteiro: foi para a ESCUTA (b08-n20 a b08-n24, cinco clipes e três steps receptivos) e para a ESCOTILHA (b08-n25 a b08-n28 e três `responde`). É a redistribuição que o roster encomendou, medida em clipes.",
+    "armadilha_desta_parte": "⟨h⟩ MUDO, uma só, na voz do Thomas, DEPOIS de o aluno já ter produzido `¿Hay…?` duas vezes (`moldes.json` → `_regras.padrao_de_ensino`, quinto tempo). A redação é NEUTRA de propósito: B01 já planta a regra em `el hospital` e `Hasta luego` (b01-n17, e01a-18), então esta parte não a apresenta como novidade nem afirma que o aluno já a domina — ela a gruda à palavra que ele vai dizer mais vezes que qualquer outra do curso. As outras seis chegam pelo respelling: ⟨j⟩ em `cajero` (ka-CHE-ro), ⟨c⟩+i em `farmacia` (far-MA-ssja), ⟨ll⟩ em `calles` (KA-jess) e `calle` (KA-jeh), ⟨v⟩ em `va` (ba) e `lleva` (JE-ba), ⟨s⟩ em `aseos` (a-SSE-oss) e ⟨z⟩ em `plaza` (PLA-ssa). Zero clipe de tabela.",
+    "gesto": "Programa 3, o DESLIZE (DERIVACAO §1.3), e a escolha é da parte e não do calendário: o ⟨h⟩ mudo e o golpe de glote alemão são o mesmo problema visto de dois lados. `¿Hay un cajero?` sai [ai-un-ka-CHE-ro] e `los aseos` sai [lo-sa-SSE-oss] — não dá para deslizar contínuo e picar as palavras. O aquecimento usa `los aseos`, que é som da própria parte e NÃO estraga a regra do Thomas, que só chega depois da primeira produção.",
+    "escotilha_sem_declaracao_de_molde": "`¿Me lo puede enseñar en el mapa?` (b08-mapa-e) e `¿Me lo escribe, por favor?` (e01c-08) entram como RECALL do kit anti-pânico de B03 e NÃO declaram `molde`. Medido: a mesma string `¿Me lo puede enseñar en el mapa?` já está em `ep-b03.json` (`e01c-mapa-e`, Emilio), então aqui ela seria redisparo DE CENA e não encaixe novo — a mesma disciplina que o roster aplica a LLEVA em B14. O roster não lista B08 nos redisparos de ME-PUEDE e esta parte NÃO o acrescenta: declarar molde para um encaixe repetido infla o numerador do G9 sem ensinar nada. Quando B03 for escrito e declarar a string, ela conta lá, que é o lugar dela.",
+    "previa_SOY_ESTOY": "`Estoy perdido/a` é PRÉVIA (casa em B13, cinco slots depois). As três regras de `_regras.previas` estão cumpridas: (1) B08 não entra nos redisparos de SOY-ESTOY; (2) os DOIS modelos nativos vêm antes da produção — `b08-perdida-c` da Carmen e `b08-perdido-e` do Emilio —, porque o aluno vai produzir uma das duas formas e nenhuma pode sair da boca dele sem ter saído da de um nativo; (3) a narração não diz que o aluno já tem a peça. O `molde` fica declarado nos dois `ouvir` (inerte no G9, que só varre `responde` e `shadow`) e NÃO no `responde` — é frase inteira, inventário congelado, e contá-la como gerada seria fraude de numerador.",
+    "respelling": "O campo `pinyin` é respelling para OLHO ALEMÃO e nunca vai ao TTS (INV-6). Mesma convenção de B11 e B12: ⟨h⟩ some (`hay`→ai) · ⟨j⟩ e ⟨g⟩+e,i→ch de Bach · ⟨ll⟩ e ⟨y⟩→j de ja · ⟨qu⟩→k · ⟨v⟩→b · ⟨ch⟩→tsch · ⟨ñ⟩→nj · ⟨s⟩, ⟨z⟩ e ⟨c⟩+e,i→ss (nunca s simples, porque o s intervocálico alemão é [z]) · -e final→-eh, contra o schwa · MAIÚSCULA marca a tônica.",
+    "consulta": "Cinco `responde` marcados, dentro da faixa de 3 a 6 do SCHEMA §4: `pagar/dinheiro`, `taxi/destino`, `transporte/plataforma`, `reparo/apontar` e `reparo/escreve`. Nenhuma folha reativa foi usada — esta parte é de ganho e o teto de 15% do G8 é do curso, não desta parte.",
+    "pendencia_G14": "O portão voz × língua roda neste SKU (`audio.config.json._g14`) e esta parte sai com zero divergência. INV-5 continua exigindo conferência humana: Juli e Thomas CITAM espanhol dentro da narração alemã (`hay`, `dónde`, `por aquí`, `la calle`, `la correspondencia`, `gracias`) e nunca o falam como fala; Carmen e Emilio não dizem uma palavra de alemão.",
+    "_revisao_adversarial": "2026-07-28. SEIS CORREÇÕES APLICADAS, todas em clipe de voz-guia ainda NÃO gravado (custo de regravação ZERO) e nenhuma tocou em `es`, `audioKey`, `tts` ou manifesto — reconferido depois: as 21 chaves espanholas continuam byte-a-byte iguais a `static/audio/manifest.json` e idênticas às 21 do `ep-b08.json` do par EN. (1) CONTRADIÇÃO INTERNA, e era a mais cara: b08-n34 fechava com «Gefragt, verstanden, weitergegangen» cinco clipes depois de b08-n29 prometer «Sie werden die Antwort nicht verstehen, und Sie sollen es auch nicht». A parte inteira existe para desmontar a exigência de compreender a resposta, e a última frase a remontava. Trocado por «Gefragt, ein Wort mitgenommen, weitergegangen». (2) RESSILABIFICAÇÃO ERRADA no `aprofundar` §3: `el hospital` estava grafado «e-lo-spi-TAL». O espanhol não admite ataque /sp/ (é por isso que existe `España`, `espagueti`), a sílaba fecha em /s/ — e B01 já grafa certo na mesma obra (`b01-n17`: «e-los-pi-tal»). Pior neste par especificamente: o olho alemão lê ⟨sp⟩ em início de sílaba como [ʃp], então o respelling errado ensinava «e-lo-SCHPI-tal». Corrigido para «e-los-pi-TAL». (3) METADADO DE PRODUÇÃO VAZANDO EM TEXTO DE COMPRADOR, o mesmo defeito que a revisão de B12 já corrigiu: o `aprofundar` §2 abria com «einen Vorteil, den ein englischsprachiger Käufer nicht hat». O aluno alemão não comprou o SKU inglês, não sabe que ele existe e não tem por que ouvir falar dos compradores dele. A vantagem continua declarada (DERIVACAO §3.2 manda declarar), sem citar outro produto. (4) DRILL SEM PISTA DE MUNDO em b08-p09: o prompt mandava produzir `¿Dónde hay un cajero?` a partir de «Am Hotelempfang… Ihnen ist völlig egal, welcher es ist», e nem o prompt nem o `pt` diziam uma palavra sobre dinheiro — o aluno não tinha como saber o que perguntar. Era o único `responde` da parte sem pista (p02 tem a carta recusada, p10 tem o Pflaster, p15 tem a cozinha vazia). Entrou «im Portemonnaie ist kein Schein mehr», que dá a pista sem dizer o encaixe: R-B do G15 segue cumprida. (5) b08-n26 dizia que os dois reparos levam a informação «aufs Papier», e um deles (b08-mapa-e) a leva para o Display — o próprio prompt de p12 diz «Ihr Handy liegt offen in Ihrer Hand». Corrigido para «aufs Display oder aufs Papier». (6) b08-n01 era palavra por palavra o b12-n01 («Aufwärmen: die Hand gleitet seitlich, ohne anzuhalten. X — ein Zug, nicht zwei Wörter»), com a frase trocada. O SKU não tem fórmula fixa de aquecimento — B05, B11 e B14 formulam cada um do seu jeito — e o aluno ouviria o mesmo clipe duas vezes em quatro partes. Reescrito, mesmo gesto 3, mesma instrução. CORRIGIDO TAMBÉM NESTE campo `_autoria`: `o_que_o_par_redistribuiu` dizia TRÊS clipes para b08-n15 a b08-n18, que são QUATRO. MEDIDO DEPOIS DAS SEIS: G4 92,8 chars/clipe (teto 120), maior clipe 109 (teto individual 320), 15 `responde`, G14 0 divergências na parte, G15 0 anúncios e 0 vazamentos, 21 chaves espanholas / 0 clipe novo / 0 `es` tocado, `valida-audio` sem nenhuma linha em «TEXTO À FRENTE DO ÁUDIO». NÃO CORRIGIDO, e é pendência de SKU e não desta parte: o respelling do SKU usa ⟨w⟩ para o glide ([LWE-go] aqui, [PWE-do] em B06, [KWA-tro] em B10 e no `aprofundar` §2 desta parte), e o olho alemão lê ⟨w⟩ como [v] — é exatamente o [kv] que o roster chama de armadilha mais cara. B12 já grafa `KUAN-to`/`KUESS-ta`, então a convenção do SKU está partida ao meio. Consertar só em B08 aumentaria a divergência; a decisão é do dono e vale para as 36 de uma vez."
+  },
+
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n01",
+      "bloco": "aquecimento",
+      "gesto": 3,
+      "tom": "ganha",
+      "pt": "Aufwärmen, zehn Sekunden: die Hand gleitet seitwärts durch, ohne abzusetzen. los aseos — ein Zug, nicht zwei."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "bloco": "callback",
+      "promptAudioKey": "b08-p01",
+      "promptPt": "Nachts um eins, Sie sitzen hinten im Taxi, und auf dem Handy leuchtet die Straße, in der Ihr Hotel steht. Halten Sie ihm das Display hin und sagen Sie es dazu. Sprechen Sie jetzt.",
+      "audioKey": "e06a-d2",
+      "es": "¿Me lleva a esta dirección, por favor?",
+      "pinyin": "me JE-ba a ESS-ta di-rek-SSJON, por fa-BOR",
+      "pt": "zu diesem Punkt hier, bitte"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n02",
+      "bloco": "cena",
+      "pt": "Vier Uhr nachmittags, das Handy hat vier Prozent, und die Straße ist nicht da, wo die Karte sie hatte."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n03",
+      "pt": "Pro Minute gehen vierzig Menschen an Ihnen vorbei. Jeder Einzelne löst das in zehn Sekunden."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n04",
+      "pt": "Schwierig ist nicht die Frage. Schwierig ist die Antwort — und die bauen wir so, dass sie hineinpasst."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n05",
+      "bloco": "molde",
+      "pt": "Der erste Baustein ist ein Wort lang. Hay. Danach kommt die Sache, und nur die Sache wechselt."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b08-cajero-c",
+      "es": "¿Hay un cajero por aquí?",
+      "pinyin": "ai un ka-CHE-ro por a-KI",
+      "pt": "Gibt es hier in der Nähe einen Geldautomaten?",
+      "tts": "¿Hay un cajero por aquí?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n06",
+      "pt": "Hören Sie das Ende: por aquí. Hier in der Nähe. Damit reicht als Antwort ein Ja."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "b08-farmacia-e",
+      "es": "¿Hay una farmacia por aquí?",
+      "pinyin": "ai U-na far-MA-ssja por a-KI",
+      "pt": "Gibt es hier in der Nähe eine Apotheke?",
+      "tts": "¿Hay una farmacia por aquí?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n07",
+      "pt": "Vorne bewegt sich nichts. Nur die Sache dahinter ist eine andere."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "molde": "HAY",
+      "encaixe": "un cajero",
+      "encaixeGloss": "ein Geldautomat",
+      "consulta": ["pagar/dinheiro"],
+      "promptAudioKey": "b08-p02",
+      "promptPt": "Sonntagvormittag am Marktstand. Die Kirschen sind gewogen, die Frau schüttelt bei Ihrer Karte den Kopf, und in Ihrer Tasche sind vier Euro. Fragen Sie den Mann am Stand daneben. Sprechen Sie jetzt.",
+      "audioKey": "b08-cajero-c",
+      "es": "¿Hay un cajero por aquí?",
+      "pinyin": "ai un ka-CHE-ro por a-KI",
+      "pt": "wo man an Scheine kommt"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "molde": "HAY",
+      "encaixe": "aseos",
+      "encaixeGloss": "Toiletten",
+      "promptAudioKey": "b08-p03",
+      "promptPt": "Ein Platz mit Bänken, Kinder sitzen auf dem Rand vom Brunnen, und Sie sind seit zwei Stunden zu Fuß unterwegs. Fragen Sie die Frau, die die Tauben füttert. Sprechen Sie jetzt.",
+      "audioKey": "b08-aseos-e",
+      "es": "¿Hay aseos por aquí?",
+      "pinyin": "ai a-SSE-oss por a-KI",
+      "pt": "das, was Sie jetzt dringend brauchen"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "b08-t01",
+      "pt": "Und jetzt ein Zeichen, das Sie gerade zweimal gesagt haben. Das h in hay ist stumm."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "b08-t02",
+      "pt": "Nicht «hai» mit Hauch. Nur ai, wie in Mai. Das Zeichen steht da und schweigt."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "b08-t03",
+      "pt": "Dasselbe in hola, hotel, hasta, hielo. Ein hörbares h gibt es im Spanischen nicht."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n08",
+      "pt": "Und die Antwort ist ja oder nein, plus ein Arm. Mehr muss Ihr Kopf nicht auffangen."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "molde": "HAY",
+      "encaixe": "una parada de taxis",
+      "encaixeGloss": "ein Taxistand",
+      "consulta": ["taxi/destino"],
+      "promptAudioKey": "b08-p04",
+      "promptPt": "Halb drei nachts, das letzte Lokal stellt die Stühle hoch, und bis zum Hotel sind es vierzig Minuten zu Fuß. Fragen Sie den Kellner nach der Stelle, wo die Wagen warten. Sprechen Sie jetzt.",
+      "audioKey": "b08-taxis-c",
+      "es": "¿Hay una parada de taxis por aquí?",
+      "pinyin": "ai U-na pa-RA-da de TAK-ssiss por a-KI",
+      "pt": "die Stelle, wo die Wagen stehen"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "molde": "HAY",
+      "encaixe": "una tienda",
+      "encaixeGloss": "ein Geschäft",
+      "promptAudioKey": "b08-p05",
+      "promptPt": "Halb elf abends in der Ferienwohnung, das Kind hat Durst, und im Kühlschrank steht nichts. Fragen Sie den Nachbarn im Treppenhaus. Sprechen Sie jetzt.",
+      "audioKey": "b08-tienda-e",
+      "es": "¿Hay una tienda por aquí?",
+      "pinyin": "ai U-na TJEN-da por a-KI",
+      "pt": "irgendwo, wo man noch etwas kaufen kann"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n09",
+      "bloco": "capsula",
+      "tom": "protege",
+      "pt": "Manchmal kommt mehr zurück als ein Ja. Hören Sie, was der Mann an der Ecke anhängt."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "b08-comision-e",
+      "receptivo": true,
+      "acao": "Die zwei Straßen gehen. Der halbe Satz hinten ist der wertvolle.",
+      "es": "Ahí en la esquina hay uno, pero cobra comisión. El del banco está a dos calles.",
+      "pinyin": "a-I en la ess-KI-na ai U-no, PE-ro KO-bra ko-mi-SSJON. el del BAN-ko ess-TA a doss KA-jess",
+      "pt": "👂 «Da an der Ecke gibt es einen, aber der nimmt Gebühr. Der von der Bank ist zwei Straßen weiter.»",
+      "tts": "Ahí en la esquina hay uno, pero cobra comisión. El del banco está a dos calles."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n10",
+      "pt": "Der an der Ecke gehört keiner Bank. Er nimmt seine eigene Gebühr, und die steht auf dem Schirm."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n11",
+      "pt": "Sie fällt pro Abhebung an, nicht pro Euro: drei bis fünf. Einmal dreihundert schlägt dreimal hundert."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n12",
+      "pt": "Also seltener und mehr, und lieber an einer Bankfiliale. Der halbe Satz hinten war die Auskunft."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n13",
+      "tom": "ganha",
+      "pt": "Sonntagabend im Dorf gilt das nicht. Da ist der teure der einzige, und billiger als die Fahrt."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n14",
+      "pt": "Manchmal kommt auch eine Frage zurück. Diese hier lösen Sie mit drei Wörtern."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "b08-adonde-e",
+      "receptivo": true,
+      "acao": "Das Ziel nennen, mehr nicht.",
+      "es": "¿Adónde va?",
+      "pinyin": "a-DON-deh ba",
+      "pt": "👂 «Wo wollen Sie hin?» — die Gegenfrage, auf die ein Ortsname reicht.",
+      "tts": "¿Adónde va?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "promptAudioKey": "b08-p06",
+      "promptPt": "Er hat gerade gefragt, wohin Sie wollen. Auf Ihrem Zettel steht der große Platz mit den Arkaden, mitten in der Altstadt. Sagen Sie ihn. Sprechen Sie jetzt.",
+      "audioKey": "b08-plaza-c",
+      "es": "A la Plaza Mayor.",
+      "pinyin": "a la PLA-ssa ma-JOR",
+      "pt": "wohin Sie unterwegs sind"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n15",
+      "bloco": "molde",
+      "pt": "Der zweite Baustein hat zwei Türen. Dónde está — und dónde hay."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n16",
+      "pt": "Wo ist der Ausgang? Wo gibt es hier einen Geldautomaten? Denselben Unterschied machen Sie zu Hause."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n17",
+      "pt": "Der bestimmte gegen irgendeinen — den treffen Sie im Schlaf. Hier sitzt er an derselben Stelle."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b08-donde-aseos-c",
+      "es": "¿Dónde están los aseos?",
+      "pinyin": "DON-deh ess-TAN loss a-SSE-oss",
+      "pt": "Wo sind die Toiletten? — die von diesem Haus.",
+      "tts": "¿Dónde están los aseos?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e05a-cajero-c",
+      "es": "¿Dónde hay un cajero?",
+      "pinyin": "DON-deh ai un ka-CHE-ro",
+      "pt": "Wo gibt es hier einen Geldautomaten? — irgendeinen, egal welchen.",
+      "tts": "¿Dónde hay un cajero?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n18",
+      "pt": "Está fragt nach dem einen, den es hier gibt. Hay fragt nach irgendeinem davon."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "molde": "DONDE",
+      "encaixe": "la salida",
+      "encaixeGloss": "der Ausgang",
+      "consulta": ["transporte/plataforma"],
+      "promptAudioKey": "b08-p07",
+      "promptPt": "In der Metrostation unter dem Platz, drei Treppen, und einmal standen Sie schon auf der falschen Seite oben. Fragen Sie den Mann am Schalter, wo es hier rausgeht. Sprechen Sie jetzt.",
+      "audioKey": "b08-salida-e",
+      "es": "¿Dónde está la salida?",
+      "pinyin": "DON-deh ess-TA la ssa-LI-da",
+      "pt": "die Tür nach draußen"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b08-correspondencia-c",
+      "receptivo": true,
+      "acao": "Eines der beiden Wörter zurücksagen — la calle oder la correspondencia.",
+      "es": "¿La salida a la calle o la correspondencia?",
+      "pinyin": "la ssa-LI-da a la KA-jeh o la ko-rress-pon-DEN-ssja",
+      "pt": "👂 «Raus auf die Straße oder zum Umsteigen?» — es gibt zwei, und er will wissen, welchen.",
+      "tts": "¿La salida a la calle o la correspondencia?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n19",
+      "pt": "La calle ist die Straße draußen, la correspondencia ist der Umstieg. Ein Wort zurück reicht."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "molde": "DONDE",
+      "encaixe": "los aseos",
+      "encaixeGloss": "die Toiletten",
+      "promptAudioKey": "b08-p08",
+      "promptPt": "Sie sitzen längst im Restaurant, die Vorspeise ist weg, und der Kellner geht mit einem Tablett an Ihnen vorbei. Halten Sie ihn kurz auf. Sprechen Sie jetzt.",
+      "audioKey": "b08-donde-aseos-c",
+      "es": "¿Dónde están los aseos?",
+      "pinyin": "DON-deh ess-TAN loss a-SSE-oss",
+      "pt": "die in diesem Haus"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "molde": "DONDE",
+      "encaixe": "un cajero",
+      "encaixeGloss": "irgendein Geldautomat",
+      "promptAudioKey": "b08-p09",
+      "promptPt": "Am Hotelempfang, halb neun morgens, und im Portemonnaie ist kein Schein mehr. Die Frau kennt das Viertel, und Ihnen ist egal, welcher — Hauptsache, es gibt einen. Sprechen Sie jetzt.",
+      "audioKey": "e05a-cajero-c",
+      "es": "¿Dónde hay un cajero?",
+      "pinyin": "DON-deh ai un ka-CHE-ro",
+      "pt": "einen, egal welchen"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "molde": "DONDE",
+      "encaixe": "una farmacia",
+      "encaixeGloss": "eine Apotheke",
+      "promptAudioKey": "b08-p10",
+      "promptPt": "Zweiter Tag, neue Sandalen, und an der Ferse ist die Haut ab. Sie brauchen ein Pflaster und wissen nicht, wo es hier so etwas gibt. Fragen Sie den Zeitungsverkäufer. Sprechen Sie jetzt.",
+      "audioKey": "b08-donde-farmacia-e",
+      "es": "¿Dónde hay una farmacia?",
+      "pinyin": "DON-deh ai U-na far-MA-ssja",
+      "pt": "das grüne Kreuz, irgendeines"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n20",
+      "bloco": "capsula",
+      "pt": "Und jetzt der Teil, an dem diese Szene wirklich kippt. Sie fragen vier Wörter und bekommen den ganzen Weg."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "b08-respuesta-e",
+      "receptivo": true,
+      "acao": "Nur die erste Abbiegung mitnehmen und losgehen.",
+      "es": "Sí, mira, todo recto, en el segundo semáforo a la izquierda, y luego la segunda a la derecha, al lado del banco.",
+      "pinyin": "ssi, MI-ra, TO-do RREK-to, en el sse-GUN-do sse-MA-fo-ro a la iss-KJER-da, i LWE-go la sse-GUN-da a la de-RE-tscha, al LA-do del BAN-ko",
+      "pt": "👂 «Immer geradeaus, an der zweiten Ampel links, dann die zweite rechts, neben der Bank.»",
+      "tts": "Sí, mira, todo recto, en el segundo semáforo a la izquierda, y luego la segunda a la derecha, al lado del banco."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n21",
+      "pt": "Fünf Anweisungen in einem Atemzug. Auf der Straße kommt die Auskunft als ganzer Weg, nicht als Schritt."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n22",
+      "pt": "Sie müssen das nicht behalten. Schauen Sie auf den Arm — er trägt die Hälfte der Auskunft."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n23",
+      "pt": "Nehmen Sie die erste Abbiegung, sagen Sie gracias und gehen Sie los. Hundert Meter weiter fragen Sie neu."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n24",
+      "pt": "Am Schalter mit einer Schlange dahinter gilt das nicht: da kommt ein Wort, und das nehmen Sie."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n25",
+      "pt": "Drei Sätze halten die Luke offen, wenn der Kopf nicht mitkommt. Der erste ist zwei Wörter lang."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b08-lejos-c",
+      "es": "¿Está lejos?",
+      "pinyin": "ess-TA LE-choss",
+      "pt": "Ist es weit?",
+      "tts": "¿Está lejos?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "promptAudioKey": "b08-p11",
+      "promptPt": "Der Arm hat nach rechts gezeigt und die Stimme lief weiter. Die Richtung haben Sie — aber nicht, ob das zehn Minuten sind oder eine Stunde. Sprechen Sie jetzt.",
+      "audioKey": "b08-lejos-c",
+      "es": "¿Está lejos?",
+      "pinyin": "ess-TA LE-choss",
+      "pt": "zehn Minuten oder eine Stunde?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n26",
+      "pt": "Die anderen zwei kennen Sie aus Teil drei. Sie holen die Auskunft aus der Luft aufs Display oder aufs Papier."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "consulta": ["reparo/apontar", "reparo/escreve"],
+      "promptAudioKey": "b08-p12",
+      "promptPt": "Er hat vier Straßennamen gesagt und Sie haben keinen einzigen behalten. Ihr Handy liegt offen in Ihrer Hand. Halten Sie es hin. Sprechen Sie jetzt.",
+      "audioKey": "b08-mapa-e",
+      "es": "¿Me lo puede enseñar en el mapa?",
+      "pinyin": "me lo PUE-deh en-sse-NJAR en el MA-pa",
+      "pt": "zeigen Sie es mir hier drauf"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "consulta": ["reparo/escreve"],
+      "promptAudioKey": "b08-p13",
+      "promptPt": "Kein Netz, kein Empfang, und der Name der Straße ist lang. Sie haben einen Kassenbon in der Tasche, er hat einen Kugelschreiber. Sprechen Sie jetzt.",
+      "audioKey": "e01c-08",
+      "es": "¿Me lo escribe, por favor?",
+      "pinyin": "me lo ess-KRI-beh, por fa-BOR",
+      "pt": "auf Papier, bitte"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n27",
+      "pt": "Und wenn gar nichts hilft, gibt es einen Satz, der die Arbeit an die andere Seite abgibt."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b08-perdida-c",
+      "molde": "SOY-ESTOY",
+      "es": "Estoy perdida.",
+      "pinyin": "ess-TOI per-DI-da",
+      "pt": "Ich habe mich verlaufen. — so sagt es Carmen.",
+      "tts": "Estoy perdida."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n28",
+      "pt": "Nur der letzte Buchstabe richtet sich nach Ihnen: a oder o. Emilio sagt denselben Satz."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "b08-perdido-e",
+      "molde": "SOY-ESTOY",
+      "es": "Estoy perdido.",
+      "pinyin": "ess-TOI per-DI-do",
+      "pt": "Ich habe mich verlaufen. — so sagt es Emilio.",
+      "tts": "Estoy perdido."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "promptAudioKey": "b08-p14",
+      "promptPt": "Zwanzig Minuten im Kreis, dieselbe Kirche zum dritten Mal, und eine Frau kommt mit ihrem Einkauf entgegen. Machen Sie es kurz. Sprechen Sie jetzt.",
+      "audioKey": "b08-perdido-e",
+      "es": "Estoy perdido.",
+      "pinyin": "ess-TOI per-DI-do",
+      "pt": "der Satz, der um Hilfe bittet, ohne zu bitten"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n29",
+      "bloco": "permissao",
+      "pt": "Sie werden die Antwort nicht verstehen, und Sie sollen es auch nicht. Ein Wort von fünf und ein Arm reichen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n30",
+      "pt": "Und Sie dürfen zweimal fragen. Hundert Meter weiter, jemand anderes, dieselbe Frage — das kostet nichts."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n31",
+      "bloco": "clique",
+      "tom": "ganha",
+      "pt": "Zählen Sie die Orte. Der Marktstand. Der Brunnen. Die Metrostation. Der Hotelempfang."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n32",
+      "pt": "Diese Sätze hat Ihnen niemand gegeben. Sie haben sie aus zwei Wörtern gebaut: hay und dónde."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n33",
+      "bloco": "piso",
+      "pt": "Sie sprechen morgen einen Fremden an und kommen an. Die meisten, die zwei Wochen hier sind, versuchen es nie."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-s00",
+      "pt": "Nachsprechen. Laut, mit ihnen, und ohne Loch zwischen den Wörtern. Die zwei, die jeden Tag drankommen:"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Carmen",
+      "audioKey": "b08-cajero-c",
+      "molde": "HAY",
+      "es": "¿Hay un cajero por aquí?",
+      "pinyin": "ai un ka-CHE-ro por a-KI",
+      "pt": "Gibt es hier in der Nähe einen Geldautomaten?"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Carmen",
+      "audioKey": "b08-lejos-c",
+      "es": "¿Está lejos?",
+      "pinyin": "ess-TA LE-choss",
+      "pt": "Ist es weit?"
+    },
+    {
+      "tipo": "recap",
+      "voz": "Juli",
+      "audioKey": "b08-r01",
+      "bloco": "recap",
+      "pt": "Einmal noch laut, an einem Ort, an dem wir noch nicht standen. Erster Morgen, und die Küche ist leer."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "molde": "HAY",
+      "encaixe": "un supermercado",
+      "encaixeGloss": "ein Supermarkt",
+      "promptAudioKey": "b08-p15",
+      "promptPt": "Erster Morgen in der Ferienwohnung: kein Kaffee, keine Milch, kein Brot, und unten kehrt jemand den Gehweg. Sprechen Sie jetzt.",
+      "audioKey": "b08-super-c",
+      "es": "¿Hay un supermercado por aquí?",
+      "pinyin": "ai un ssu-per-mer-KA-do por a-KI",
+      "pt": "wo es alles auf einmal gibt"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b08-n34",
+      "pt": "Das war's. Gefragt, ein Wort mitgenommen, weitergegangen — und die Hälfte kam vom Arm. Hasta luego."
+    }
+  ],
+
+  "aprofundar": {
+    "titulo": "Zwei Wörter, ein Arm und die Luke (optionale Lektüre)",
+    "secoes": [
+      {
+        "titulo": "Warum die Ja-oder-Nein-Frage mehr wert ist als die gute Frage",
+        "corpo": "«¿Dónde está la farmacia más cercana?» ist eine bessere Frage, und genau das ist ihr Problem: sie klingt nach jemandem, der Spanisch kann, und sie holt eine Antwort, die Sie nicht halten können. «¿Hay una farmacia por aquí?» holt ein Ja, ein Nein und einen Arm — drei Dinge, die alle in Ihren Kopf passen, auch wenn er gerade voll ist. Der Teil, der die Antwort klein macht, ist das Ende: por aquí, hier in der Nähe. Ohne es fragen Sie nach dem ganzen Stadtplan, mit ihm nach den nächsten zweihundert Metern. Und hay macht noch etwas, das Sie nie merken werden: es nimmt Ihnen eine ganze Konstruktion ab. «Ich suche einen Ort, der WLAN hat» ist auf Spanisch ein Nebensatz mit einer Verbform, die dieser Kurs Ihnen nie zeigen wird — und die Sie auch nie brauchen, weil «¿Hay wifi?» dasselbe erledigt. Dieselbe Abkürzung trägt später durch die halbe Reise: ¿Hay mesa a las diez? ¿Hay ascensor? ¿Hay menú del día?",
+        "exemplos": [
+          {
+            "es": "¿Hay wifi?",
+            "pt": "ai UI-fi — Gibt es WLAN? (drei Silben statt eines Nebensatzes)"
+          },
+          {
+            "es": "¿Hay otro tren esta tarde?",
+            "pt": "ai O-tro tren ESS-ta TAR-deh — Gibt es heute Nachmittag noch einen Zug? (dieselbe Frage, ein anderer Schalter)"
+          }
+        ]
+      },
+      {
+        "titulo": "El, la, un, una — das eine Wort, das die Frage ändert",
+        "corpo": "Hier haben Sie einen Vorteil, und er ist groß genug, um ihn einmal auszusprechen: der Unterschied zwischen «Wo ist der Ausgang?» und «Wo gibt es hier einen Geldautomaten?» ist derselbe, den Sie zu Hause dutzendmal am Tag treffen, ohne darüber nachzudenken. Está fragt nach dem einen Ding, von dem beide wissen, dass es hier existiert: der Ausgang dieses Bahnhofs, das Gleis mit der Nummer, die Toiletten dieses Lokals. Hay fragt danach, ob es irgendwo in der Gegend so etwas überhaupt gibt. Wer die beiden vertauscht, wird trotzdem verstanden — «¿Dónde está un cajero?» bringt Sie zum Automaten. Es ist also kein Fehler, den Sie fürchten müssen; es ist nur eine Tür, die schon offen steht. Was Sie dagegen wirklich mitnehmen sollten: kleben Sie den Artikel ans Wort und übersetzen Sie Ihren nicht mit. «Der Ausgang» ist la salida, «die Toiletten» sind los aseos, «der Geldautomat» ist el cajero. Drei Geschlechter haben Sie, und Sie stimmen sie im Schlaf ab — sie zeigen hier nur woandershin.",
+        "exemplos": [
+          {
+            "es": "¿Dónde está el andén cuatro?",
+            "pt": "DON-deh ess-TA el an-DEN KWA-tro — Wo ist Gleis vier? (das gibt es, es hat eine Nummer)"
+          },
+          {
+            "es": "¿Dónde hay un súper por aquí?",
+            "pt": "DON-deh ai un SSU-per por a-KI — Wo gibt es hier einen Supermarkt? (irgendeinen)"
+          }
+        ]
+      },
+      {
+        "titulo": "Die Luke: weit, Karte, Papier, Finger",
+        "corpo": "Die Frage ist der billige Teil dieser Szene. Teuer ist die Antwort, und deshalb hängen an dieser Lektion drei Sätze, die nichts Neues fragen, sondern das Gesagte festhalten. «¿Está lejos?» sagt Ihnen, ob Sie losgehen oder ein Taxi nehmen — zwei Wörter, und sie kommen fast immer mit einer Handbewegung zurück, die die Entfernung zeigt. «¿Me lo puede enseñar en el mapa?» verlegt die Auskunft von den Ohren auf den Bildschirm, wo Sie sie in Ruhe lesen können. «¿Me lo escribe, por favor?» tut dasselbe auf Papier und funktioniert auch ohne Netz. Und «Estoy perdido» — mit -a, wenn Sie eine Frau sind — gibt die ganze Aufgabe an die andere Seite ab: wer das hört, hört auf zu erklären und fängt an zu führen. Drei Leseregeln stecken in dieser Lektion und kosten Sie sonst Zeit auf der Straße: das h ist immer stumm (hay = ai, hotel = o-TEL), das j ist das ch von Bach (cajero = ka-CHE-ro, lejos = LE-choss), und das c vor i ist der weiche Laut, nie ein ts (farmacia = far-MA-ssja). Dazu die Sache, die die Hand in dieser Folge übt: zwischen den Wörtern wird nicht abgesetzt. Los aseos wird zu «lo-sa-SSE-oss», el hospital zu «e-los-pi-TAL» — ein Zug pro Wortgruppe, und der Knacklaut, den Sie zu Hause vor jedem Vokal setzen, bleibt weg.",
+        "exemplos": [
+          {
+            "es": "¿Me lo puede enseñar en el mapa?",
+            "pt": "me lo PUE-deh en-sse-NJAR en el MA-pa — Können Sie es mir auf der Karte zeigen?"
+          },
+          {
+            "es": "Estoy perdida.",
+            "pt": "ess-TOI per-DI-da — Ich habe mich verlaufen. (mit -o, wenn Sie ein Mann sind)"
+          }
+        ]
+      }
+    ]
+  }
+}

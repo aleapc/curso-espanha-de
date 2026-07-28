@@ -1,0 +1,124 @@
+{
+  "id": "a07",
+  "slot": "A07",
+  "nivel": "avancado",
+  "numero": 35,
+  "parte": "35",
+  "titulo": "Zeichen: willkommen, unangenehm und Zeit zu gehen",
+  "aguardaNarracao": true,
+  "_andaime": {
+    "_": "ANDAIME — não é parte pronta. A fala espanhola já está aqui e é definitiva (ativo de DESTINO, mesmos audioKey e mesmos mp3 do curso EN, custo de crédito zero). Tudo que é voz-guia está VAZIO de propósito: é o que o autor escreve, em ALEMÃO, e é a única coisa que este SKU paga.",
+    "funcao_do_slot": "Sinais: bem-vindo, incômodo e hora de ir",
+    "dono": "destino",
+    "o_que_falta": "narração (intro/recap/prompts de responde), `cena`, `moldura`, `permissao`, `frasePiso`, `clique`, `moldes`, `fichasCulturais`, `fatosDatados`, `aprofundar`, o campo `pt` (gloss em ALEMÃO) de cada step e o respelling de pronúncia para leitor alemão.",
+    "nao_traduzir": "a parte inglesa correspondente é ep-a07.json. Ela serve de referência de ESTRUTURA, nunca de texto: `pinyin` de lá é respelling para leitor de inglês (types.ts) e `pt` é o gloss inglês — nenhum dos dois foi copiado, e copiá-los é o anti-padrão 8.",
+    "entra_em_vigor": "no instante em que este arquivo ganhar o campo `cena`, os portões de tom passam de aviso a erro para ele. Apagar `aguardaNarracao` sem escrever a narração não muda nada: quem decide é `cena`."
+  },
+  "steps": [
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a06-celebra-c",
+      "es": "¿Qué se celebra hoy?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e01b-15",
+      "es": "Buenas.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a07-gusto-c",
+      "es": "Mucho gusto.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a07-encantado-e",
+      "es": "Encantado. ¿Qué tal?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a07-oye-e",
+      "es": "Oye, una cosa.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e01c-02",
+      "es": "Hablo un poco de español.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a07-ya-c",
+      "es": "Ya, ya. Bueno.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a07-yatedire-e",
+      "es": "Ya te diré.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a07-yaveremos-c",
+      "es": "Ya veremos.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a07-otrodia-c",
+      "es": "Vale, otro día.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a07-guiri-e",
+      "es": "Mira, los guiris.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a07-yatevas-e",
+      "es": "¿Ya te vas?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a07-quedo-c",
+      "es": "No, no, me quedo un rato.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a07-puesnada-e",
+      "es": "Bueno, pues nada.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a07-placer-c",
+      "es": "Un placer.",
+      "pt": ""
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "curso-espanha-de",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "¡Dime! (DE → Espanha) — Spanisch + Kultur fürs Überleben in Spanien. Audio-first PWA, offline nutzbar.",
+  "scripts": {
+    "dev": "vite dev --host",
+    "build": "vite build",
+    "preview": "vite preview --host",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "audio": "node scripts/generate-audio.mjs",
+    "audio:list": "node scripts/generate-audio.mjs --list",
+    "estrutura": "node scripts/valida-estrutura.mjs",
+    "estrutura:estrito": "node scripts/valida-estrutura.mjs --estrito",
+    "audio:check": "node scripts/valida-audio.mjs",
+    "tom": "node scripts/valida-tom.mjs",
+    "tom:relatorio": "node scripts/valida-tom.mjs --relatorio",
+    "reuso": "node scripts/mede-reuso.mjs",
+    "outline": "node scripts/gera-outline.mjs",
+    "outline:conferir": "node scripts/gera-outline.mjs --conferir",
+    "briefing": "node scripts/briefing-slot.mjs",
+    "briefing:todos": "node scripts/briefing-slot.mjs --todos",
+    "consulta": "node scripts/build-consulta.mjs",
+    "consulta:cobertura": "node scripts/build-consulta.mjs --cobertura",
+    "transito": "node scripts/confere-transito.mjs"
+  },
+  "_prebuild": {
+    "_": "NÃO HÁ `prebuild` NESTE SKU, E ISSO É DELIBERADO. O curso-espanha (EN) tem um: `outline:conferir && estrutura:estrito && audio:check && tom`, e lá ele faz sentido porque as 36 partes estão escritas. Aqui o curso NASCEU VAZIO — 36 andaimes com a fala espanhola no lugar e a voz-guia por escrever. Ligar o portão hoje deixaria a build vermelha durante a obra inteira, e equipe que convive com vermelho aprende a ignorar vermelho, que é como se perde um portão para sempre. Os quatro comandos existem e rodam à mão; o que não existe é o gatilho automático.",
+    "quando_ligar": "quando as 18 partes de ME VIRO tiverem `cena` (é `cena`, não `aguardaNarracao`, que faz o valida-tom cobrar de uma parte). Nesse dia entra `\"prebuild\": \"npm run outline:conferir && npm run estrutura:estrito && npm run audio:check && npm run tom\"` e este bloco é atualizado com o número medido no dia.",
+    "estrutura": "MODO AVISO. Os 36 slots estão preenchidos por andaime, então ele já passa hoje — o que ele cobre agora é divergência de contrato (slot inventado, slot duplicado, nivel errado, B13 ausente), que é erro duro nos dois modos.",
+    "audio:check": "MODO ESTRITO, e sempre foi. Manifesto × mp3 em disco × texto atual do curso. É o portão que existe por causa DESTE repositório: foi aqui que 938 mp3 em inglês ficaram sob chaves alemãs sem nada acusar. Esses 938 foram apagados na montagem do andaime.",
+    "tom": "Sai PARCIAL enquanto as 36 partes não tiverem `cena`: sem `cena` a parte é 'legado' e todo erro dela vira aviso. Não é frouxidão — é a escalada por parte, que faz cada parte entrar em vigor sozinha no dia em que é escrita.",
+    "o_que_ainda_nao_existe": "moldes.json (o núcleo gerador RE-DERIVA, não se traduz — sem ele `npm run briefing` não roda e o G9 mede zero), formas-verbais.json e consulta.json. Os três degradam para aviso de propósito."
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^3.0.6",
+    "@sveltejs/kit": "^2.8.0",
+    "@sveltejs/vite-plugin-svelte": "^7.2.0",
+    "@types/node": "^22.9.0",
+    "@vite-pwa/sveltekit": "^1.1.0",
+    "autoprefixer": "^10.4.20",
+    "pinyin-pro": "^3.28.1",
+    "svelte": "^5.1.16",
+    "svelte-check": "^4.0.5",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3",
+    "vite": "^8.1.4",
+    "vite-plugin-pwa": "^1.3.0"
+  }
+}

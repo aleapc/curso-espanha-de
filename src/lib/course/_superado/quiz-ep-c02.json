@@ -1,0 +1,113 @@
+{
+  "id": "q-c02",
+  "nivel": "intermediario",
+  "titulo": "Quiz — Geld, Manieren und die Masche",
+  "subtitulo": "Las Ramblas, ein Zweig Rosmarin, zwei Bier und ein Posten, der nie auf der Karte stand",
+  "introAudioKey": "qc02-i",
+  "introPt": "Quizzeit. Ein Reisender geht die Ramblas hinunter, bekommt einen Zweig Rosmarin in die Hand gedrückt, den er nie wollte, setzt sich auf eine Terrasse für zwei Bier — und findet dann einen Posten auf der Rechnung, der nie auf der Karte stand. Er löst alle drei Sachen, ohne ein einziges Mal laut zu werden. Genau das ist der Trick. Hör so oft du willst, dann antworte.",
+  "cenario": "Barcelona, später Nachmittag. Eine Frau bietet auf den Ramblas ein ‚Geschenk' an; dann eine Terrasse, zwei cañas, und eine Rechnung mit einem Gedeckpreis, von dem niemand etwas gesagt hat.",
+  "dialogo": [
+    { "audioKey": "qc02-d1", "voz": "Carmen", "es": "Toma, un romero. Es un regalo.", "pinyin": "TO-ma, un rro-ME-ro. es un rre-GA-lo", "pt": "— Hier, ein Zweig Rosmarin. Ein Geschenk. (eine Frau tritt ihm auf den Ramblas in den Weg)" },
+    { "audioKey": "qc02-d2", "voz": "Emilio", "es": "No, gracias. No me interesa.", "pinyin": "no, GRA-thjas. no me in-te-RE-ssa", "pt": "— Nein danke. Kein Interesse. (Hände in den Taschen, er geht weiter)" },
+    { "audioKey": "qc02-d3", "voz": "Carmen", "es": "Buenas tardes. ¿Qué van a tomar?", "pinyin": "BUE-nas TAR-des. ke ban a to-MAR", "pt": "— Guten Tag. Was möchten Sie trinken? (die Kellnerin auf der Terrasse)" },
+    { "audioKey": "qc02-d4", "voz": "Emilio", "es": "Dos cañas, por favor.", "pinyin": "dos KA-njas, por fa-BOR", "pt": "— Zwei kleine Bier, bitte." },
+    { "audioKey": "qc02-d5", "voz": "Carmen", "es": "Marchando.", "pinyin": "mar-TSCHAN-do", "pt": "— Kommt sofort." },
+    { "audioKey": "qc02-d6", "voz": "Emilio", "es": "La cuenta, por favor.", "pinyin": "la KUEN-ta, por fa-BOR", "pt": "— Die Rechnung, bitte. (sie kommt nie von allein)" },
+    { "audioKey": "qc02-d7", "voz": "Carmen", "es": "Son dieciséis con cincuenta.", "pinyin": "sson dje-thi-SSE-is kon thin-KUEN-ta", "pt": "— Das macht sechzehn fünfzig." },
+    { "audioKey": "qc02-d8", "voz": "Emilio", "es": "Perdone, ¿me trae la cuenta detallada?", "pinyin": "per-DO-neh, me TRA-eh la KUEN-ta de-ta-JA-da", "pt": "— Entschuldigung, bringen Sie mir die detaillierte Rechnung?" },
+    { "audioKey": "qc02-d9", "voz": "Carmen", "es": "Aquí tiene.", "pinyin": "a-KI TJE-neh", "pt": "— Bitte sehr." },
+    { "audioKey": "qc02-d10", "voz": "Emilio", "es": "Aquí hay un cargo que no estaba en la carta. ¿Qué es?", "pinyin": "a-KI ai un KAR-go ke no es-TA-ba en la KAR-ta. ke es?", "pt": "— Hier ist ein Posten, der nicht auf der Karte stand. Was ist das?" },
+    { "audioKey": "qc02-d11", "voz": "Carmen", "es": "Es el cubierto, señor. Dos con cincuenta.", "pinyin": "es el ku-BJER-to, sse-NJOR. dos kon thin-KUEN-ta", "pt": "— Das ist der Gedeckpreis, mein Herr. Zwei fünfzig." },
+    { "audioKey": "qc02-d12", "voz": "Emilio", "es": "No estaba anunciado. La hoja de reclamaciones, por favor.", "pinyin": "no es-TA-ba a-nun-THJA-do. la O-cha de rre-kla-ma-THJO-nes, por fa-BOR", "pt": "— Darauf wurde nirgends hingewiesen. Das amtliche Beschwerdeformular, bitte. (immer noch im Sitzen, immer noch normale Lautstärke)" },
+    { "audioKey": "qc02-d13", "voz": "Carmen", "es": "Perdone usted. Se lo quito. Son catorce euros.", "pinyin": "per-DO-neh us-TED. sse lo KI-to. sson ka-TOR-theh EH-u-ros", "pt": "— Entschuldigen Sie bitte. Ich nehme es raus. Das macht vierzehn Euro." },
+    { "audioKey": "qc02-d14", "voz": "Emilio", "es": "Gracias. Está bien así.", "pinyin": "GRA-thjas. es-TA bjen a-SSI", "pt": "— Danke. Stimmt so. (er gibt fünfzehn — das Aufrunden, und damit das ganze Trinkgeldsystem)" }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "Eine Frau stellt sich ihm auf den Ramblas in den Weg und drückt ihm einen Zweig Rosmarin in die Hand, als Geschenk. Was sagt er — und was machen seine Füße?",
+      "es": "A woman steps in front of him on Las Ramblas and presses a sprig of rosemary into his hand, calling it a gift. What does he say — and what do his feet do?",
+      "opcoes": [
+        "‚No, gracias. No me interesa.' — und er geht weiter",
+        "‚Gracias' — und er nimmt ihn an, aus Höflichkeit",
+        "Er bleibt stehen und erklärt freundlich, dass er ihn nicht will",
+        "Er gibt ein paar Euro, damit die Sache aufhört"
+      ],
+      "correta": 0,
+      "explica": "Das ist ‚el romero', und die Masche läuft über deine Manieren, nicht über Gewalt. Nimm ihn an, bleib stehen oder diskutiere — und du bist mitten im Geschäft, oft mit einer zweiten Person an deiner Tasche, während die erste deine Hand hält. Hände in die Taschen, Hand nicht ausstrecken, nicht langsamer werden. Liegt der Zweig schon in deiner Hand: fallen lassen oder zurückgeben und weitergehen.",
+      "pt": "Das ist ‚el romero', und die Masche läuft über deine Manieren, nicht über Gewalt. Nimm ihn an, bleib stehen oder diskutiere — und du bist mitten im Geschäft, oft mit einer zweiten Person an deiner Tasche, während die erste deine Hand hält. Hände in die Taschen, Hand nicht ausstrecken, nicht langsamer werden. Liegt der Zweig schon in deiner Hand: fallen lassen oder zurückgeben und weitergehen."
+    },
+    {
+      "pergunta": "Die Kellnerin sagt ‚Son dieciséis con cincuenta.' Wie hoch ist die Rechnung?",
+      "es": "The waitress says 'Son dieciséis con cincuenta.' How much is the bill?",
+      "opcoes": ["16,50 €", "16,60 €", "60,16 €", "6,50 €"],
+      "correta": 0,
+      "explica": "‚cincuenta' ist 50, und in Spanien steckt darin das englische th aus ‚think': thin-KUEN-ta. In ‚sesenta' (60) steckt es nicht. Diesen Laut musst du nie selbst produzieren — sag ruhig ein scharfes s, das macht halb Andalusien auch. Aber du musst ihn hören, denn 5, 12 bis 15, 50, 100 und ‚céntimos' tragen ihn alle, und das sind genau die Zahlen auf jeder Rechnung des Landes.",
+      "pt": "‚cincuenta' ist 50, und in Spanien steckt darin das englische th aus ‚think': thin-KUEN-ta. In ‚sesenta' (60) steckt es nicht. Diesen Laut musst du nie selbst produzieren — sag ruhig ein scharfes s, das macht halb Andalusien auch. Aber du musst ihn hören, denn 5, 12 bis 15, 50, 100 und ‚céntimos' tragen ihn alle, und das sind genau die Zahlen auf jeder Rechnung des Landes."
+    },
+    {
+      "pergunta": "Eine Zahl auf der Rechnung sieht falsch aus. Worum bittet er ZUERST?",
+      "es": "A number on the bill looks wrong. What does he ask for FIRST?",
+      "opcoes": [
+        "Um die aufgeschlüsselte Rechnung — ‚la cuenta detallada'",
+        "Um das amtliche Beschwerdeformular",
+        "Um den Geschäftsführer",
+        "Um die örtliche Polizei"
+      ],
+      "correta": 0,
+      "explica": "Stufe eins der Leiter, und sie ist absichtlich sanft: Sie beschuldigt niemanden und lässt allen einen eleganten Ausweg. In etwa der Hälfte der Fälle löst sich das Problem auf dem Weg zur Kasse still in Luft auf. Der ganze Trick der Leiter ist, dass deine Stimme sich zwischen den Stufen nicht verändert.",
+      "pt": "Stufe eins der Leiter, und sie ist absichtlich sanft: Sie beschuldigt niemanden und lässt allen einen eleganten Ausweg. In etwa der Hälfte der Fälle löst sich das Problem auf dem Weg zur Kasse still in Luft auf. Der ganze Trick der Leiter ist, dass deine Stimme sich zwischen den Stufen nicht verändert."
+    },
+    {
+      "pergunta": "Was ist ‚el cubierto' — und warum widerspricht er?",
+      "es": "What is 'el cubierto' — and why does he object to it?",
+      "opcoes": [
+        "Ein Gedeckpreis, nur zulässig, wenn man es dir vor dem Hinsetzen gesagt hat",
+        "Ein Trinkgeld, das das spanische Gesetz automatisch aufschlägt",
+        "Die Mehrwertsteuer, die in Spanien immer am Ende dazukommt",
+        "Der Terrassenaufschlag, der nie berechnet werden darf"
+      ],
+      "correta": 0,
+      "explica": "‚Servicio' und ‚cubierto' dürfen nur berechnet werden, wo die Regionalregeln es erlauben UND wenn man dich vorher informiert hat — gedruckt auf der Karte oder auf der Preistafel am Eingang. Hat man nicht. Achte auf den Gegensatz: Ein Terrassenaufschlag IST völlig legal, solange er ausgehängt ist. Genau deshalb liest du die Preistafel, bevor du dich hinsetzt.",
+      "pt": "‚Servicio' und ‚cubierto' dürfen nur berechnet werden, wo die Regionalregeln es erlauben UND wenn man dich vorher informiert hat — gedruckt auf der Karte oder auf der Preistafel am Eingang. Hat man nicht. Achte auf den Gegensatz: Ein Terrassenaufschlag IST völlig legal, solange er ausgehängt ist. Genau deshalb liest du die Preistafel, bevor du dich hinsetzt."
+    },
+    {
+      "pergunta": "‚La hoja de reclamaciones, por favor.' Warum beendet dieser Satz die Diskussion?",
+      "es": "'La hoja de reclamaciones, por favor.' Why does that sentence end the argument?",
+      "opcoes": [
+        "Es ist ein amtliches Formular in dreifacher Ausfertigung, und ein Blatt geht an die Regionalbehörde, die den Betrieb kontrolliert und zulässt",
+        "Es verhängt automatisch ein Bußgeld von mehreren tausend Euro",
+        "Es verpflichtet das Restaurant rechtlich, die ganze Rechnung zu erstatten",
+        "Es ruft die örtliche Polizei an deinen Tisch"
+      ],
+      "correta": 0,
+      "explica": "Es wirkt, bevor du ein einziges Wort hineingeschrieben hast: Du beschwerst dich nicht, du eröffnest eine Akte bei der Stelle, die den Betrieb zulässt — und für viele Betriebe ist es schlicht billiger, das am Tisch zu regeln. Die Aushändigung zu verweigern ist ein eigener Verstoß, unabhängig davon, ob du mit der Rechnung recht hattest. Sag es im Sitzen, in normaler Lautstärke, ohne entschuldigendes Lächeln.",
+      "pt": "Es wirkt, bevor du ein einziges Wort hineingeschrieben hast: Du beschwerst dich nicht, du eröffnest eine Akte bei der Stelle, die den Betrieb zulässt — und für viele Betriebe ist es schlicht billiger, das am Tisch zu regeln. Die Aushändigung zu verweigern ist ein eigener Verstoß, unabhängig davon, ob du mit der Rechnung recht hattest. Sag es im Sitzen, in normaler Lautstärke, ohne entschuldigendes Lächeln."
+    },
+    {
+      "pergunta": "Ein echter spanischer Polizist will laut offiziellen Reisehinweisen sehen…",
+      "es": "According to UK Foreign Office advice, a genuine Spanish police officer will ask to see…",
+      "opcoes": [
+        "Deinen Ausweis — nie deine Geldbörse",
+        "Deine Geldbörse, um sie auf Falschgeld zu prüfen",
+        "Deine Bankkarte und deine PIN",
+        "Deine Hotel-Schlüsselkarte"
+      ],
+      "correta": 0,
+      "explica": "Diebe, die sich als Polizisten ausgeben, fragen nach der Geldbörse — meist auf Englisch, meist zu zweit, mit einem Ausweis, der kurz gezeigt und schnell wieder eingesteckt wird. Du gibst sie nicht heraus, und du wirst nicht körperlich. Du sagst: ‚Enséñeme su placa. Vamos a la comisaría.' Ein echter Beamter geht gern mit zur Wache; ein falscher löst sich in Luft auf.",
+      "pt": "Diebe, die sich als Polizisten ausgeben, fragen nach der Geldbörse — meist auf Englisch, meist zu zweit, mit einem Ausweis, der kurz gezeigt und schnell wieder eingesteckt wird. Du gibst sie nicht heraus, und du wirst nicht körperlich. Du sagst: ‚Enséñeme su placa. Vamos a la comisaría.' Ein echter Beamter geht gern mit zur Wache; ein falscher löst sich in Luft auf."
+    },
+    {
+      "pergunta": "Die Rechnung liegt bei vierzehn Euro, er gibt fünfzehn und sagt ‚Está bien así.' Ist das der richtige Betrag?",
+      "es": "The bill lands at fourteen euros, he hands over fifteen and says 'Está bien así.' Is that the right amount to leave?",
+      "opcoes": [
+        "Ja — Aufrunden ist in Spanien das ganze System",
+        "Nein, er hätte zwanzig Prozent lassen sollen",
+        "Nein, er hätte fünfzehn Prozent lassen sollen",
+        "Nein — in Spanien überhaupt etwas zu lassen ist seltsam"
+      ],
+      "correta": 0,
+      "explica": "Aufrunden, oder gar nichts lassen. Beides ist völlig normal, denn spanisches Gastropersonal hat Gehalt und Tarifvertrag — Trinkgeld ist Bonus, nicht Lohn. Dein deutscher Zehn-Prozent-Reflex ist nicht schlimm, nur ein bisschen zu viel; zwanzig Prozent wirken nicht großzügig, sondern wie ein Akzent. Und Bonus: ‚Está bien así' ist dein ‚Stimmt so' und funktioniert im Du wie im Sie.",
+      "pt": "Aufrunden, oder gar nichts lassen. Beides ist völlig normal, denn spanisches Gastropersonal hat Gehalt und Tarifvertrag — Trinkgeld ist Bonus, nicht Lohn. Dein deutscher Zehn-Prozent-Reflex ist nicht schlimm, nur ein bisschen zu viel; zwanzig Prozent wirken nicht großzügig, sondern wie ein Akzent. Und Bonus: ‚Está bien así' ist dein ‚Stimmt so' und funktioniert im Du wie im Sie."
+    }
+  ]
+}

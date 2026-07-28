@@ -1,0 +1,103 @@
+{
+  "id": "q-e01",
+  "nivel": "basico",
+  "titulo": "Quiz — Laute, Begrüßung und das Reparatur-Set",
+  "subtitulo": "Eine Bar in Madrid, von vorne bis hinten: reingehen, bestellen, den Faden verlieren, retten, zahlen, gehen",
+  "introAudioKey": "qe01-i",
+  "introPt": "Quizzeit. Ein Reisender geht um neun Uhr morgens in eine Nachbarschaftsbar in Madrid. Er versteht nicht alles, was zu ihm gesagt wird — nicht mal annähernd — und das spielt überhaupt keine Rolle, denn er grüßt den Raum, bestellt kurz, bittet um Wiederholung, wenn er den Faden verliert, und geht mit Frühstück wieder raus. Hör so oft du magst, dann beantworte die Fragen. Und mach dir keinen Kopf, ob du jedes Wort erwischst: Erwisch die Form des Ganzen.",
+  "cenario": "Eine Nachbarschaftsbar in Madrid, neun Uhr morgens. Der Reisende grüßt den Raum, bestellt ein Bier und etwas zu essen, verliert den Faden, als die Kellnerin schnell spricht, repariert das Gespräch, fragt eine Zutat ab, zahlt und geht.",
+  "dialogo": [
+    { "audioKey": "qe01-d1", "voz": "Emilio", "es": "Hola, buenos días.", "pinyin": "O-la, BUE-nos DI-as", "pt": "— Hallo, guten Morgen. (beim Reinkommen, in den Raum gesagt)" },
+    { "audioKey": "qe01-d2", "voz": "Carmen", "es": "Buenos días. Dime.", "pinyin": "BUE-nos DI-as. DI-meh", "pt": "— Guten Morgen. Sag. (die Kellnerin — du bist dran, jetzt sofort)" },
+    { "audioKey": "qe01-d3", "voz": "Emilio", "es": "Ponme una caña, por favor.", "pinyin": "PON-meh U-na KA-nja, por fa-BOR", "pt": "— Ein kleines Bier vom Fass, bitte." },
+    { "audioKey": "qe01-d4", "voz": "Carmen", "es": "¿Y algo de comer? Tenemos tortilla, jamón y unas croquetas recién hechas.", "pinyin": "i AL-go deh ko-MER? teh-NE-mos tor-TI-ja, cha-MON i U-nas kro-KE-tas rre-THJEN E-tschas", "pt": "— Und etwas zu essen? Wir haben Tortilla, Schinken und ein paar frische Kroketten. (schnell, alles in einem Atemzug)" },
+    { "audioKey": "qe01-d5", "voz": "Emilio", "es": "Perdona, ¿puedes hablar más despacio?", "pinyin": "per-DO-na, PUE-dhes a-BLAR mas des-PA-thio", "pt": "— Entschuldigung, kannst du langsamer sprechen?" },
+    { "audioKey": "qe01-d6", "voz": "Carmen", "es": "Claro. ¿Quieres algo de comer?", "pinyin": "KLA-ro. KJE-res AL-go deh ko-MER", "pt": "— Klar. Willst du etwas essen?" },
+    { "audioKey": "qe01-d7", "voz": "Emilio", "es": "Hablo un poco de español. ¿La tortilla lleva jamón?", "pinyin": "A-blo un PO-ko deh es-pa-NJOL. la tor-TI-ja JE-ba cha-MON", "pt": "— Ich spreche ein bisschen Spanisch. Ist in der Tortilla Schinken drin?" },
+    { "audioKey": "qe01-d8", "voz": "Carmen", "es": "La tortilla no. Las croquetas sí.", "pinyin": "la tor-TI-ja no. las kro-KE-tas SSI", "pt": "— In der Tortilla nicht. In den Kroketten schon." },
+    { "audioKey": "qe01-d9", "voz": "Emilio", "es": "Vale. La tortilla, por favor.", "pinyin": "BA-leh. la tor-TI-ja, por fa-BOR", "pt": "— Okay. Die Tortilla, bitte." },
+    { "audioKey": "qe01-d10", "voz": "Carmen", "es": "Son cinco con cincuenta.", "pinyin": "sson THIN-ko kon thin-KUEN-ta", "pt": "— Das macht fünf fünfzig." },
+    { "audioKey": "qe01-d11", "voz": "Emilio", "es": "Perdona, no entiendo. ¿Me lo escribes?", "pinyin": "per-DO-na, no en-TJEN-do. meh lo es-KRI-bes", "pt": "— Entschuldigung, ich verstehe nicht. Schreibst du es mir auf?" },
+    { "audioKey": "qe01-d12", "voz": "Carmen", "es": "Claro. Cinco con cincuenta.", "pinyin": "KLA-ro. THIN-ko kon thin-KUEN-ta", "pt": "— Klar. Fünf fünfzig. (schreibt es auf eine Serviette)" },
+    { "audioKey": "qe01-d13", "voz": "Emilio", "es": "Vale, muchas gracias. Hasta luego.", "pinyin": "BA-leh, MU-tschas GRA-thias. AS-ta LUE-go", "pt": "— Okay, vielen Dank. Bis später." }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "Er kommt durch die Tür und das Erste, was er sagt, ist 'hola, buenos días' — an niemand Bestimmtes gerichtet. Warum?",
+      "opcoes": [
+        "In Spanien grüßt man beim Reinkommen den ganzen Raum; stumm reinzukommen wirkt unhöflich",
+        "So bestellt man in Spanien — der Gruß ist die Bestellung",
+        "Er fragt, ob die Bar geöffnet hat",
+        "Er entschuldigt sich vorab für sein Spanisch"
+      ],
+      "correta": 0,
+      "explica": "Laden, Bar, Bäckerei, Wartezimmer, Aufzug — beim Reinkommen wird gegrüßt und beim Rausgehen 'hasta luego' gesagt, auch zu jemandem, den du nie wiedersiehst. Kostet ein Wort und verändert sichtbar, wie du bedient wirst."
+    },
+    {
+      "pergunta": "Die Kellnerin antwortet mit 'Dime'. Was ist gerade passiert?",
+      "opcoes": [
+        "Sie fragt nach seinem Namen",
+        "Sie sagt ihm, er soll warten, bis er dran ist",
+        "Er ist dran — das Fenster ist offen und er soll jetzt sofort bestellen",
+        "Sie sagt, dass sie ihn nicht versteht"
+      ],
+      "correta": 2,
+      "explica": "'Dime' — wörtlich 'sag mir' — und '¿quién va?' sind die zwei Sätze, mit denen ein Kellner signalisiert, dass du dran bist. Sagen musst du sie nie, erkennen unbedingt, denn das Fenster schließt schnell. Aufschauen, sofort antworten."
+    },
+    {
+      "pergunta": "Er bestellt 'una caña'. Was landet auf dem Tresen?",
+      "opcoes": [
+        "Eine Flasche importiertes Lagerbier",
+        "Ein kleines Glas Bier vom Fass — die spanische Standardeinheit",
+        "Ein großes Bier, ein halber Liter",
+        "Ein Glas Weißwein"
+      ],
+      "correta": 1,
+      "explica": "'Una caña' ist ein kleines Glas vom Fass und genau das, was alle um dich herum trinken. Wer auf Englisch 'a beer' bestellt, bekommt meistens eine teure Flasche."
+    },
+    {
+      "pergunta": "Die Kellnerin rattert die Speisen in einem Atemzug herunter und er versteht fast nichts. Was macht er?",
+      "opcoes": [
+        "Er fragt, ob sie Englisch spricht",
+        "Er nickt, lächelt und hofft das Beste",
+        "Er bittet sie, langsamer zu sprechen, und sagt dann, dass er ein bisschen Spanisch spricht",
+        "Er zeigt auf den Nachbarn und bestellt dasselbe"
+      ],
+      "correta": 2,
+      "explica": "Die Reparatur-Leiter, der Reihe nach: erst langsamer, dann 'ich verstehe nicht', dann 'schreib es auf'. Wer sofort auf '¿habla inglés?' springt, verschenkt das Wohlwollen, das er sich gerade gekauft hat — und 'hablo un poco de español' kauft Geduld, während 'no hablo español' das Gespräch beendet."
+    },
+    {
+      "pergunta": "'Son cinco con cincuenta.' Was kostet das Frühstück?",
+      "opcoes": [
+        "6,50 €",
+        "5,50 €",
+        "15,50 €",
+        "50 €"
+      ],
+      "correta": 1,
+      "explica": "Fünf Euro fünfzig. Beide Zahlen tragen das spanische th — THIN-ko, thin-KUEN-ta — und genau deshalb ist dieser Laut bei Preisen so wichtig. Cinco, doce, quince und cincuenta haben ihn alle, und 'cincuenta' (50) ist die Zahl, die am häufigsten als 'sesenta' (60) missverstanden wird."
+    },
+    {
+      "pergunta": "Er ist sich beim Preis immer noch nicht sicher und sagt '¿me lo escribes?'. Warum ist das der klügste Zug im ganzen Gespräch?",
+      "opcoes": [
+        "Weil Schreiben in Spanien höflicher ist als Sprechen",
+        "Weil sie dadurch dauerhaft langsamer spricht",
+        "Weil es das Problem von seinen Ohren aufs Papier verlagert, wo man sich nicht verhören kann",
+        "Weil er damit zeigt, dass er es mit dem Spanischlernen ernst meint"
+      ],
+      "correta": 2,
+      "explica": "Preise, Straßennamen, Gleisnummern, Öffnungszeiten, Medikamentennamen — sobald irgendetwas davon auf Papier oder auf einem Display steht, ist dein Hörproblem weg. Wenn die Wörter nicht funktionieren, hör auf, Wörter zu benutzen."
+    },
+    {
+      "pergunta": "Beim Rausgehen sagt er 'hasta luego' zu einer Frau, die er nie im Leben wiedersehen wird. Ist das richtig so?",
+      "opcoes": [
+        "Ja — das ist der Standardabschied beim Verlassen jedes Ladens und jeder Bar, egal bei wem",
+        "Nein, 'hasta luego' heißt, dass man später wiederkommt",
+        "Nein, das sagt man nur zu Freunden",
+        "Ja, aber nur abends"
+      ],
+      "correta": 0,
+      "explica": "Wörtlich heißt es 'bis später', und niemand nimmt das wörtlich. Beim Reinkommen grüßen, beim Rausgehen verabschieden — dieses Paar bringt dir in Spanien mehr als jede Menge Vokabeln."
+    }
+  ]
+}

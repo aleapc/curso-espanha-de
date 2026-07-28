@@ -1,0 +1,116 @@
+{
+  "id": "q-e04",
+  "nivel": "basico",
+  "titulo": "Quiz — Allergie und die unsichtbare Zutat",
+  "subtitulo": "Ein Mittagessen in Sevilla: eine Nussallergie, ein Vegetarier, ein Teller grüne Bohnen und eine gemeinsame Fritteuse",
+  "introAudioKey": "qe04-i",
+  "introPt": "Quizzeit. Du setzt dich in Sevilla zum Mittagessen hin. Du bist allergisch gegen Nüsse, du bist Vegetarier, und die Kellnerin ist freundlich, im Stress und felsenfest davon überzeugt, dass ein bisschen Schinken noch nie jemandem geschadet hat. Hör so oft zu, wie du willst, und beantworte dann die Fragen.",
+  "cenario": "Mittagessen in einer Taberna in Sevilla: eine Allergie ansagen, sie hochschalten, wenn sie nicht ernst genommen wird, herausfinden, was wirklich in den grünen Bohnen und im Gemüsereis steckt, und vor den Pommes nach der Fritteuse fragen.",
+  "dialogo": [
+    { "audioKey": "qe04-d1", "voz": "Carmen", "es": "Hola, buenas. ¿Qué van a tomar?", "pinyin": "O-la, BUE-nass · ke ban a to-MAR", "pt": "— Hallo. Was nehmen Sie? (die Kellnerin)" },
+    { "audioKey": "qe04-d2", "voz": "Emilio", "es": "Antes de nada: soy alérgico a los frutos secos.", "pinyin": "AN-tess de NA-da · ssoi a-LER-chi-ko a loss FRU-toss SSE-koss", "pt": "— Zuerst mal: Ich bin allergisch gegen Nüsse." },
+    { "audioKey": "qe04-d3", "voz": "Carmen", "es": "Ah, vale. Un poquito no pasa nada, ¿no?", "pinyin": "a, BA-le · un po-KI-to no PA-ssa NA-da, no", "pt": "— Ah, okay. Ein kleines bisschen macht doch nichts, oder?" },
+    { "audioKey": "qe04-d4", "voz": "Emilio", "es": "No. Es alergia, no es manía. Es una alergia grave. Puedo acabar en el hospital.", "pinyin": "no · ess a-LER-chja, no ess ma-NI-a · ess U-na a-LER-chja GRA-be · PUE-do a-ka-BAR en el oss-pi-TAL", "pt": "— Nein. Es ist eine Allergie, keine Marotte. Es ist ernst. Ich kann im Krankenhaus landen." },
+    { "audioKey": "qe04-d5", "voz": "Carmen", "es": "Perdone. Ahora mismo aviso en cocina y le traigo la carta de alérgenos.", "pinyin": "per-DO-ne · a-O-ra MISS-mo a-BI-sso en ko-THI-na i le TRAI-go la KAR-ta de a-LER-che-noss", "pt": "— Entschuldigung. Ich sage sofort in der Küche Bescheid und bringe Ihnen die Allergenliste." },
+    { "audioKey": "qe04-d6", "voz": "Carmen", "es": "Las judías verdes están muy buenas hoy.", "pinyin": "lass chu-DI-ass BER-dess ess-TAN mui BUE-nass oi", "pt": "— Die grünen Bohnen sind heute sehr gut." },
+    { "audioKey": "qe04-d7", "voz": "Emilio", "es": "¿Lleva jamón o chorizo?", "pinyin": "JE-ba cha-MON o tscho-RI-tho", "pt": "— Ist da Schinken oder Chorizo drin?" },
+    { "audioKey": "qe04-d8", "voz": "Carmen", "es": "Sí, lleva jamón. Va picadito, casi no se ve.", "pinyin": "ssi, JE-ba cha-MON · ba pi-ka-DI-to, KA-ssi no sse be", "pt": "— Ja, Schinken ist drin. Ganz fein gehackt, man sieht ihn kaum." },
+    { "audioKey": "qe04-d9", "voz": "Emilio", "es": "Soy vegetariano: no como carne ni pescado. ¿Me lo puede hacer sin jamón?", "pinyin": "ssoi be-che-ta-RJA-no · no KO-mo KAR-ne ni pess-KA-do · me lo PUE-de a-THER ssin cha-MON", "pt": "— Ich bin Vegetarier: Ich esse kein Fleisch und keinen Fisch. Können Sie es ohne den Schinken machen?" },
+    { "audioKey": "qe04-d10", "voz": "Carmen", "es": "Claro. ¿Y el arroz de verduras? Ese lleva caldo de pescado.", "pinyin": "KLA-ro · i el a-RROTH de ber-DU-rass · E-sse JE-ba KAL-do de pess-KA-do", "pt": "— Klar. Und der Gemüsereis? Der ist mit Fischfond gemacht." },
+    { "audioKey": "qe04-d11", "voz": "Emilio", "es": "Entonces las patatas fritas. ¿Lo fríen en la misma freidora que el pescado?", "pinyin": "en-TON-thess lass pa-TA-tass FRI-tass · lo FRI-en en la MISS-ma fre-i-DO-ra ke el pess-KA-do", "pt": "— Dann die Pommes. Frittiert ihr die in derselben Fritteuse wie den Fisch?" },
+    { "audioKey": "qe04-d12", "voz": "Carmen", "es": "Sí, es la misma. Pero le hago una ensalada y unas judías sin jamón, ¿vale?", "pinyin": "ssi, ess la MISS-ma · PE-ro le A-go U-na en-ssa-LA-da i U-nass chu-DI-ass ssin cha-MON, BA-le", "pt": "— Ja, es ist dieselbe. Aber ich mache Ihnen einen Salat und Bohnen ohne Schinken, in Ordnung?" }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "Die Kellnerin sagt «un poquito no pasa nada». Was will sie damit sagen?",
+      "es": "Die Kellnerin sagt «un poquito no pasa nada». Was will sie damit sagen?",
+      "opcoes": [
+        "Dass die Portion sehr klein ist",
+        "Dass ein winziges bisschen vom Allergen schon nicht schadet",
+        "Dass es nichts kostet",
+        "Dass die Küche geschlossen ist"
+      ],
+      "correta": 1,
+      "explica": "Genau für diesen Moment gibt es die Leiter. Sie ist nicht schludrig — sie hat deine Allergie unter »Vorliebe« abgelegt. Die Antwort ist der Hammer: «Es alergia, no es manía.»",
+      "pt": "Genau für diesen Moment gibt es die Leiter. Sie ist nicht schludrig — sie hat deine Allergie unter »Vorliebe« abgelegt. Die Antwort ist der Hammer: «Es alergia, no es manía.»"
+    },
+    {
+      "pergunta": "Welcher Satz ändert am Ende ihr Verhalten?",
+      "es": "Welcher Satz ändert am Ende ihr Verhalten?",
+      "opcoes": [
+        "«¿Qué me recomienda?»",
+        "«Hablo un poco de español.»",
+        "«Es alergia, no es manía. Es una alergia grave.»",
+        "«La cuenta, por favor.»"
+      ],
+      "correta": 2,
+      "explica": "Wenn du benennst, was man dir gerade unterstellt — manía, eine kleine Schrulle —, ist es tot, und «grave» macht die Sache medizinisch. Direkt danach geht sie in die Küche und holt die Allergenliste.",
+      "pt": "Wenn du benennst, was man dir gerade unterstellt — manía, eine kleine Schrulle —, ist es tot, und «grave» macht die Sache medizinisch. Direkt danach geht sie in die Küche und holt die Allergenliste."
+    },
+    {
+      "pergunta": "Was ist tatsächlich in den «judías verdes», den grünen Bohnen?",
+      "es": "Was ist tatsächlich in den «judías verdes», den grünen Bohnen?",
+      "opcoes": [
+        "Schinken, klein gewürfelt",
+        "Nüsse",
+        "Nichts außer Bohnen und Olivenöl",
+        "Käse"
+      ],
+      "correta": 0,
+      "explica": "Die unsichtbare spanische Zutat. Schinken ist hier Würze und kein Fleischgericht — deshalb bringt »ist das vegetarisch?« gar nichts und «¿Lleva jamón o chorizo?» bringt die Wahrheit.",
+      "pt": "Die unsichtbare spanische Zutat. Schinken ist hier Würze und kein Fleischgericht — deshalb bringt »ist das vegetarisch?« gar nichts und «¿Lleva jamón o chorizo?» bringt die Wahrheit."
+    },
+    {
+      "pergunta": "Warum wird an «no como carne» noch «ni pescado» angehängt?",
+      "es": "Warum wird an «no como carne» noch «ni pescado» angehängt?",
+      "opcoes": [
+        "Weil es höflicher klingt",
+        "Weil Fisch in Spanien oft nicht als «carne» zählt — mit «no como carne» allein bekommst du Thunfisch",
+        "Weil es die Pluralform ist",
+        "Um eine größere Portion zu bestellen"
+      ],
+      "correta": 1,
+      "explica": "«Carne» heißt im Alltagsspanisch Fleisch von Landtieren. Lass «ni pescado» weg, und die Sardellen kommen mit reinem Gewissen. Sag es jedes einzelne Mal.",
+      "pt": "«Carne» heißt im Alltagsspanisch Fleisch von Landtieren. Lass «ni pescado» weg, und die Sardellen kommen mit reinem Gewissen. Sag es jedes einzelne Mal."
+    },
+    {
+      "pergunta": "Was stimmt mit dem «arroz de verduras», dem Gemüsereis, nicht?",
+      "es": "Was stimmt mit dem «arroz de verduras», dem Gemüsereis, nicht?",
+      "opcoes": [
+        "Es liegen Nüsse obendrauf",
+        "Es gibt ihn nur abends",
+        "Er ist mit Fischfond gemacht",
+        "Er kostet am Tisch extra"
+      ],
+      "correta": 2,
+      "explica": "«De verduras» beschreibt, was du sehen kannst — nicht, worauf es aufgebaut ist. «¿Lleva caldo de pescado o de carne?» ist die Frage, die das aufdeckt, und die Paella ist der Klassiker.",
+      "pt": "«De verduras» beschreibt, was du sehen kannst — nicht, worauf es aufgebaut ist. «¿Lleva caldo de pescado o de carne?» ist die Frage, die das aufdeckt, und die Paella ist der Klassiker."
+    },
+    {
+      "pergunta": "Warum fragt er nach der «freidora», bevor er Pommes bestellt?",
+      "es": "Warum fragt er nach der «freidora», bevor er Pommes bestellt?",
+      "opcoes": [
+        "Um zu prüfen, ob sie tiefgekühlt oder frisch sind",
+        "Weil eine spanische Bar meist nur eine Fritteuse hat — die Pommes teilen sich also das Öl mit dem Fisch",
+        "Um den Preis zu erfahren",
+        "Weil Frittiertes extra berechnet wird"
+      ],
+      "correta": 1,
+      "explica": "Kreuzkontamination ist eine Frage der Technik, nicht der Zutaten — und diese Frage gibt dir kein Sprachführer. Eine einzige Fritteuse macht die Kroketten, die Calamares, den Fisch und deine »sicheren« Pommes.",
+      "pt": "Kreuzkontamination ist eine Frage der Technik, nicht der Zutaten — und diese Frage gibt dir kein Sprachführer. Eine einzige Fritteuse macht die Kroketten, die Calamares, den Fisch und deine »sicheren« Pommes."
+    },
+    {
+      "pergunta": "Du hast es zweimal erklärt und bist immer noch nicht sicher. Wonach greifst du?",
+      "es": "Du hast es zweimal erklärt und bist immer noch nicht sicher. Wonach greifst du?",
+      "opcoes": [
+        "«¿Habla inglés?»",
+        "«¿Tienen la carta de alérgenos?»",
+        "«Otra, por favor.»",
+        "«¿Está incluido el servicio?»"
+      ],
+      "correta": 1,
+      "explica": "Jedes Lokal in Spanien muss per Gesetz Allergen-Informationen für jedes Gericht vorhalten. Wenn du danach fragst, geht es nicht mehr um deinen Akzent, sondern um ein Dokument, das man dir vorlegen muss.",
+      "pt": "Jedes Lokal in Spanien muss per Gesetz Allergen-Informationen für jedes Gericht vorhalten. Wenn du danach fragst, geht es nicht mehr um deinen Akzent, sondern um ein Dokument, das man dir vorlegen muss."
+    }
+  ]
+}

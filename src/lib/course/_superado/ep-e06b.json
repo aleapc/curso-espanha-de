@@ -1,0 +1,412 @@
+{
+  "id": "e06b",
+  "nivel": "basico",
+  "numero": 6,
+  "parte": "6B",
+  "titulo": "Der Zug ist jetzt ein Flughafen",
+  "subtitulo": "Dreißig Minuten vorher da, Koffer durchs Röntgengerät, und ein Gate, das vor der Abfahrt zumacht",
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "e06b-n01",
+      "pt": "Teil 6B. Du hast ein Ticket für den Neun-Uhr-zehn nach Sevilla. Zu Hause heißt das: du bist um neun Uhr acht da, verfällst in leichten Trab und steigst ein. Mach das in Spanien, und du siehst deinen Zug hinter einer Sicherheitsschlange abfahren — mit einem gültigen Ticket in der Hand, was es irgendwie schlimmer macht. Aufwärmen, dreißig Sekunden. Metronom: Se-vi-lla — drei gleich große Schläge, und das Doppel-L ist ein J: 'se-BI-ja'. Wie Mallorca. Und einmal das th: gracias. Zunge zwischen die Zähne, nicht 'grats'. Die Vokale lassen wir aus, die kannst du. Gut. Sorgen wir dafür, dass du deinen Zug kriegst."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "e06b-n02",
+      "pt": "Zuerst eine Wiederholung aus 6A, denn Atocha in Madrid ist genau der Ort, wo es zubeißt. Du kommst aus der U-Bahn hoch, und da sind zwei völlig verschiedene Schrankenreihen, zwei Logos, und die App hat irgendwas Unbrauchbares gesagt wie 'nimm den Zug'. Frag, in welcher Bahn du gerade stehst."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "promptAudioKey": "e06b-p01",
+      "promptPt": "Zwei Schrankenreihen, zwei Logos, und du weißt nicht, zu welchem Netz dein Ticket gehört. Frag. Sprich jetzt.",
+      "audioKey": "e06b-cercometro",
+      "es": "¿Esto es Cercanías o metro?",
+      "pinyin": "ES-to es ther-ka-NI-as o ME-tro",
+      "pt": "Ist das Cercanías oder die Metro?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "e06b-n03",
+      "pt": "Jetzt das Modell, das du dir installieren musst, und es heißt nicht 'Bahnhof'. Ein spanischer Hochgeschwindigkeitsbahnhof ist ein kleiner Flughafen. Dein Koffer geht durchs Röntgengerät. Du gehst durch einen Metalldetektor. Spanien ist das einzige westliche Land, das das im Hochgeschwindigkeitsverkehr noch macht — der internationale Eisenbahnverband hält es für unnötig, der Renfe-Chef hat öffentlich über die Abschaffung nachgedacht, und die Regierung hat es verteidigt. Für deine Reise heißt das: es ist da. Und hinter dem Scanner ist ein Gate — 'el control de acceso' —, das vor der Abfahrt schließt, erklärtes Ziel sind fünf Minuten vorher. Renfe empfiehlt selbst, dreißig Minuten vorher am Bahnhof zu sein. Es gibt kein Aufspringen in letzter Sekunde. Bei uns steigst du sechzig Sekunden vor Abfahrt noch ein; hier ist zu einfach zu. Dreißig Minuten. Trag es dir jetzt ins Handy ein, ich warte."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e06b-aveseville",
+      "es": "¿A qué hora sale el AVE a Sevilla?",
+      "pinyin": "a ke O-ra SA-leh el A-beh a se-BI-ja",
+      "pt": "Wann fährt der AVE nach Sevilla? (AVE wird als Wort gesprochen: 'A-beh')",
+      "tts": "¿A qué hora sale el AVE a Sevilla?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "promptAudioKey": "e06b-p02",
+      "promptPt": "Du stehst am Informationsschalter in Atocha und willst den Schnellzug in den Süden. Frag, wann der AVE nach Sevilla fährt — und sag AVE als Wort, nicht als drei Buchstaben. Sprich jetzt.",
+      "audioKey": "e06b-aveseville",
+      "es": "¿A qué hora sale el AVE a Sevilla?",
+      "pinyin": "a ke O-ra SA-leh el A-beh a se-BI-ja",
+      "pt": "Wann fährt der AVE nach Sevilla?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "e06b-n04",
+      "pt": "Der nützlichste Satz in einem spanischen Bahnhof ist keine Frage nach der Uhrzeit. Es ist dieser: 'Ya tengo el billete. ¿Dónde está el control de acceso?' — Ich habe mein Ticket schon, wo ist das Gate? Er erledigt zwei Dinge auf einmal. Er holt dich aus der Ticketschlange, die in Atocha um acht Uhr morgens vierzig Leute lang sein kann, alle mit einem echten Anliegen. Und er zeigt dir den einzigen Ort, an dem du wirklich sein musst. Sag ihn zu jedem, der eine Uniform trägt."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e06b-controlacceso",
+      "es": "Ya tengo el billete. ¿Dónde está el control de acceso?",
+      "pinyin": "ja TEN-go el bi-JE-teh. DON-deh es-TA el kon-TROL de ak-THE-sso",
+      "pt": "Ich habe mein Ticket schon. Wo ist das Zugangs-Gate?",
+      "tts": "Ya tengo el billete. ¿Dónde está el control de acceso?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "promptAudioKey": "e06b-p03",
+      "promptPt": "Noch fünfundzwanzig Minuten, Ticket längst auf dem Handy, und an den Schaltern steht eine riesige Schlange. Sag der Frau in Uniform, dass du dein Ticket schon hast, und frag nach dem Gate. Sprich jetzt.",
+      "audioKey": "e06b-controlacceso",
+      "es": "Ya tengo el billete. ¿Dónde está el control de acceso?",
+      "pinyin": "ja TEN-go el bi-JE-teh. DON-deh es-TA el kon-TROL de ak-THE-sso",
+      "pt": "Ich habe mein Ticket schon. Wo ist das Zugangs-Gate?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "e06b-n05",
+      "pt": "Bahnsteig — beziehungsweise Gleis. In der Metro heißt es 'andén'. Bei Renfe heißt es 'vía', gesprochen 'BI-a'. Gleiche Idee, anderes Wort, und 'vía' ist das, was auf der Tafel steht, auf die du mit dem Koffer zwischen den Knöcheln blinzelst. Spanische Tafeln zeigen spät an, oft zehn oder fünfzehn Minuten vor Abfahrt, manchmal weniger. Deshalb steht die halbe Halle da und starrt nach oben wie Leute, die auf Regen warten. Frag, und du kannst dich hinsetzen: '¿De qué vía sale?'"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e06b-anuncio",
+      "es": "Tren AVE con destino Sevilla, vía 8. Embarque por la puerta H.",
+      "pinyin": "tren A-beh kon des-TI-no se-BI-ja, BI-a O-tscho. em-BAR-keh por la PUER-ta A-tscheh",
+      "pt": "👂 die Durchsage: AVE-Zug nach Sevilla, Gleis 8. Einstieg über Gate H.",
+      "tts": "Tren AVE con destino Sevilla, vía ocho. Embarque por la puerta hache."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "promptAudioKey": "e06b-p04",
+      "promptPt": "Neben deinem Zug steht auf der Tafel immer noch nichts, und du würdest dich gern hinsetzen. Frag den Bahnmitarbeiter, von welchem Gleis er fährt. Sprich jetzt.",
+      "audioKey": "e06b-quevia",
+      "es": "¿De qué vía sale?",
+      "pinyin": "de ke BI-a SA-leh",
+      "pt": "Von welchem Gleis fährt er?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "e06b-guiri",
+      "pt": "Guiri-Alarm, und dieser hier hat echte Leute echte Züge gekostet. Du stehst am Schalter und willst eine Fahrkarte. Auf Deutsch ist eine Karte eine Karte: Fahrkarte, Bankkarte, Stadtkarte, Speisekarte — alles Karte. Also sagst du 'una carta, por favor'. Und dann passiert etwas Wunderbares: Man reicht dir die Speisekarte. 'La carta' ist die Speisekarte. Das Zugticket ist 'el billete'. Die Bankkarte ist 'la tarjeta'. Der Stadtplan ist 'el plano'. Ein deutsches Wort, vier spanische — such dir das richtige aus, bevor du hungrig am Gleis stehst. Der zweite kommt gleich hinterher: auf der Tafel steht 'vía 12'. Dein Kopf liest 'via' und denkt 'über' — über Gleis 12, wo soll das denn hingehen. Nein. 'Vía' ist das Gleis. Fertig. Und der dritte, weil er am teuersten ist: die Uhrzeit. 'A las once' heißt um elf. 'A las doce' heißt um zwölf. Beide tragen das spanische th — 'ON-theh', 'DO-theh' — und wer das th nicht hört, hört elf und zwölf als dasselbe Wort. Dasselbe Problem hast du zwischen 'cincuenta', fünfzig, und 'sesenta', sechzig, wenn dir jemand einen Preis vorliest. Faustregel: Wenn eine Zahl fällt, lass sie dir zeigen. Auf dem Display, auf dem Ticket, mit den Fingern. Kein Mensch in Spanien hält dich für dumm, weil du die Uhrzeit sehen willst."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "e06b-n06",
+      "pt": "Jetzt der Teil, der deutsche Reisende ehrlich verblüfft, weil wir es gewohnt sind, den Koffer ins Gepäckregal zu wuchten und ihn zu vergessen. Renfe hat Gepäckgrenzen, und sie werden mit einem physischen Rahmen durchgesetzt — einem echten Metallrahmen am Zugangs-Gate. Bis zu drei Gepäckstücke pro Person, zusammen höchstens fünfundzwanzig Kilo und zweihundertneunzig Zentimeter Gesamtmaß, und das größte Einzelstück darf fünfundachtzig mal fünfundfünfzig mal fünfunddreißig Zentimeter nicht überschreiten. E-Scooter und Einräder sind komplett verboten, wegen Brandgefahr. Jetzt die Erlaubnis, weil ich nicht will, dass du im Hotelzimmer deine Socken wiegst: Es gibt keine Gebühr, keinen Check-in-Schalter, keine Anhänger, kein Drama und niemanden zum Diskutieren. Er passt durch den Rahmen oder nicht. Wenn deiner grenzwertig ist, frag vor der Schlange, nicht in ihr: '¿Puedo subir con esta maleta?' Und in Spanien heißt der Koffer 'maleta' — nicht 'valija', das ist Argentinien."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e06b-maleta",
+      "es": "¿Puedo subir con esta maleta?",
+      "pinyin": "PUE-do ssu-BIR kon ES-ta ma-LE-ta",
+      "pt": "Kann ich diesen Koffer mit an Bord nehmen?",
+      "tts": "¿Puedo subir con esta maleta?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "promptAudioKey": "e06b-p05",
+      "promptPt": "Dein Koffer ist riesig, und am Gate steht ein Metallrahmen, den er sichtbar nicht mag. Frag den Mitarbeiter, bevor du dich anstellst, ob du ihn mitnehmen darfst. Sprich jetzt.",
+      "audioKey": "e06b-maleta",
+      "es": "¿Puedo subir con esta maleta?",
+      "pinyin": "PUE-do ssu-BIR kon ES-ta ma-LE-ta",
+      "pt": "Kann ich diesen Koffer mit an Bord nehmen?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "e06b-n07",
+      "pt": "Noch eine Frage, und sie verhindert den Klassiker: anzunehmen, dass der Schnellzug da hält, wo du hinwillst. Tut er oft nicht — genau deshalb ist er schnell. Dieselbe Strecke kann ein AVE sein, der an deiner Stadt vorbeirauscht, und ein Media Distancia, der dort hält. Also: '¿Este tren para en…?' Hält dieser Zug in. Wieder eine Schablone: hinten hängst du jeden Ort an. Und Achtung, kleine Falle für dein Auge: dieses 'para' ist nicht 'für'. Es ist das Verb 'parar', halten."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "promptAudioKey": "e06b-p06",
+      "promptPt": "Du stehst eine Wagentür vom Einsteigen entfernt und bist nicht sicher, ob er in Córdoba hält. Frag. Sprich jetzt.",
+      "audioKey": "e06b-paracordoba",
+      "es": "¿Este tren para en Córdoba?",
+      "pinyin": "ES-teh tren PA-ra en KOR-do-ba",
+      "pt": "Hält dieser Zug in Córdoba?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "promptAudioKey": "e06b-p07",
+      "promptPt": "Jetzt tausch den Ort am Ende aus. Anderer Tag, anderer Plan — frag, ob er in Toledo hält. Sprich jetzt.",
+      "audioKey": "e06b-paratoledo",
+      "es": "¿Este tren para en Toledo?",
+      "pinyin": "ES-teh tren PA-ra en to-LE-do",
+      "pt": "Hält dieser Zug in Toledo?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "e06b-n08",
+      "pt": "Und jetzt die Szene, die in keinem Sprachführer steht, weil Sprachführer davon ausgehen, dass alles nach Plan läuft. Du hast ihn verpasst. Die Sicherheitsschlange war zu lang, oder die Metro stand, oder du bist schlicht ein Mensch im Urlaub. Hier ist das Protokoll, und das Protokoll ist wichtiger als der Satz. Erstens: Stell dich nicht an den Fahrkartenautomaten an. Du willst zu 'Atención al Cliente', dem Kundenservice. Zweitens: sofort hin. Am selben Tag, direkt. Je weiter du dich von deiner Abfahrtszeit entfernst, desto weniger kann irgendwer für dich tun. Drittens: sag es. 'He perdido el tren. ¿Puedo cambiar el billete?' Viertens: die Antwort hängt davon ab, was du bezahlt hast. Die billigsten Tarife sind oft nicht umbuchbar, und es kann sein, dass du neu kaufst — aber viele Leute landen im nächsten Zug, einfach weil sie sofort da waren, am richtigen Schalter, ruhig. Ruhig ist das Schlüsselwort. Sitzstimme, auch im Stehen."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e06b-perdidotren",
+      "es": "He perdido el tren. ¿Puedo cambiar el billete?",
+      "pinyin": "e per-DI-do el tren. PUE-do kam-BJAR el bi-JE-teh",
+      "pt": "Ich habe meinen Zug verpasst. Kann ich das Ticket umbuchen?",
+      "tts": "He perdido el tren. ¿Puedo cambiar el billete?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "promptAudioKey": "e06b-p08",
+      "promptPt": "Das Gate ist vor deiner Nase zugegangen. Vier Minuten später stehst du beim Kundenservice. Sag ihr, was passiert ist, und frag, ob du umbuchen kannst — ruhig. Sprich jetzt.",
+      "audioKey": "e06b-perdidotren",
+      "es": "He perdido el tren. ¿Puedo cambiar el billete?",
+      "pinyin": "e per-DI-do el tren. PUE-do kam-BJAR el bi-JE-teh",
+      "pt": "Ich habe meinen Zug verpasst. Kann ich das Ticket umbuchen?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "e06b-n09",
+      "pt": "Eine Korrektur vor den Schildern, und ehrlich gesagt gibt es diesen Kurs genau für so etwas. Wenn du ein Reisevideo von 2023 oder 2024 gesehen hast, hat man dir erzählt, spanische Nahverkehrszüge seien kostenlos. Waren sie. Sind sie nicht mehr. Die wiederkehrenden Gratis-Programme für Cercanías endeten am einunddreißigsten Dezember 2025 und wurden durch eine einheitliche Regelung für 2026 ersetzt. Kostenlos sind 2026 nur noch die Netze in Asturien und Kantabrien, und selbst da braucht es eine Mindestzahl an Fahrten. Es gibt ein Zehn-Euro-Monatsticket für junge Leute, aber das verlangt spanische Staatsangehörigkeit oder Wohnsitz, also nichts für dich. Plane Geld für deine Cercanías-Tickets ein. Wer dir etwas anderes erzählt hat, hat nicht gelogen — er hatte vor zwei Jahren recht. So, jetzt drei Schilder. Nur Augen."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e06b-s-control",
+      "es": "CONTROL DE ACCESO",
+      "pinyin": "kon-TROL de ak-THE-sso",
+      "pt": "👂 das Gate. Scanner, Metalldetektor, Gepäckrahmen. Sei 30 Minuten vorher durch — es macht vor deinem Zug zu.",
+      "tts": "control de acceso"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e06b-s-atencion",
+      "es": "ATENCIÓN AL CLIENTE",
+      "pinyin": "a-ten-THION al kli-EN-teh",
+      "pt": "👂 Kundenservice — dahin gehst du, wenn es schiefgegangen ist. Nicht zu den Automaten.",
+      "tts": "atención al cliente"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "e06b-n10",
+      "pt": "Ganze Szene, Atocha, fünfundzwanzig Minuten Luft. Hör zu — jedes Wort davon gehört jetzt dir."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e06b-d1",
+      "es": "Perdone, ya tengo el billete. ¿Dónde está el control de acceso?",
+      "pinyin": "per-DO-neh, ja TEN-go el bi-JE-teh. DON-deh es-TA el kon-TROL de ak-THE-sso",
+      "pt": "— Entschuldigung, ich habe mein Ticket schon. Wo ist das Zugangs-Gate?",
+      "tts": "Perdone, ya tengo el billete. ¿Dónde está el control de acceso?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e06b-d2",
+      "es": "Al fondo a la derecha. ¿Para qué tren?",
+      "pinyin": "al FON-do a la de-RE-tscha. PA-ra ke tren",
+      "pt": "— Ganz hinten rechts. Für welchen Zug?",
+      "tts": "Al fondo a la derecha. ¿Para qué tren?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e06b-d3",
+      "es": "El AVE a Sevilla. ¿A qué hora sale?",
+      "pinyin": "el A-beh a se-BI-ja. a ke O-ra SA-leh",
+      "pt": "— Der AVE nach Sevilla. Wann fährt er?",
+      "tts": "El AVE a Sevilla. ¿A qué hora sale?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e06b-d4",
+      "es": "A las 11:40, vía 12. Le recomiendo pasar ya.",
+      "pinyin": "a las ON-theh kua-REN-ta, BI-a DO-theh. le rre-ko-MJEN-do pa-SSAR ja",
+      "pt": "— Um 11:40, Gleis 12. Ich würde jetzt schon durchgehen. (da sind dein 'once' und dein 'doce')",
+      "tts": "A las once cuarenta, vía doce. Le recomiendo pasar ya."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e06b-d5",
+      "es": "¿Puedo subir con esta maleta?",
+      "pinyin": "PUE-do ssu-BIR kon ES-ta ma-LE-ta",
+      "pt": "— Kann ich diesen Koffer mitnehmen?",
+      "tts": "¿Puedo subir con esta maleta?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e06b-d6",
+      "es": "Sí, si pasa por el arco. Buen viaje.",
+      "pinyin": "ssi, ssi PA-ssa por el AR-ko. buen BJA-cheh",
+      "pt": "— Ja, wenn er durch den Rahmen passt. Gute Reise.",
+      "tts": "Sí, si pasa por el arco. Buen viaje."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "e06b-s00",
+      "pt": "Shadowing. Über sie drüber, laut, nicht abwarten. Achte auf das th in 'acceso' — 'ak-THE-sso' — und halt die Vokale gerade. Und das s ist stimmlos: kein summendes deutsches s."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Carmen",
+      "audioKey": "e06b-controlacceso",
+      "es": "Ya tengo el billete. ¿Dónde está el control de acceso?",
+      "pinyin": "ja TEN-go el bi-JE-teh. DON-deh es-TA el kon-TROL de ak-THE-sso",
+      "pt": "Ich habe mein Ticket schon. Wo ist das Zugangs-Gate?"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Carmen",
+      "audioKey": "e06b-quevia",
+      "es": "¿De qué vía sale?",
+      "pinyin": "de ke BI-a SA-leh",
+      "pt": "Von welchem Gleis fährt er?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "e06b-n11",
+      "pt": "Züge im Fokus, neunzig Sekunden. Erstens: dreißig Minuten, und das ist kein Puffer. Das ist ein Scanner, eine Schlange und ein Gate, das zumacht. Zweitens: 'vía' bei Renfe, 'andén' in der Metro — und nur eins von beiden steht auf der Tafel, auf die du gerade starrst. Drittens: der Koffer muss durch einen Metallrahmen, und keine Gebühr der Welt bringt dich daran vorbei. Viertens, und das ist eine Erlaubnis, weil ich dir die ganze Lektion lang erzählt habe, was schiefgehen kann: Ein spanischer Fernzug ist großartig. Reservierter Platz, Platz für die Beine, keine Diskussion um deine Sitzplatzreservierung, kein Stehen im Gang zwischen Köln und Hamburg. Komm eine halbe Stunde früher, und es ist die zivilisierteste Art, ein Land zu durchqueren, die Europa zu bieten hat. Fünftens: kauf sechzig bis neunzig Tage vorher, wenn die günstigen Tarife freigeschaltet werden. Buchst du am Vorabend, zahlst du das Zwei- bis Dreifache, und auf manchen Strecken gibt es gar keinen Platz mehr. Renfe, Ouigo und Iryo fahren dieselben Gleise, prüf alle drei. Und Regeln ändern sich: Tarife, Sicherheit, Gepäckgrenzen. Schau vor dem Flug auf die Seite des Betreibers — der Link ist in der App."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Juli",
+      "audioKey": "e06b-rend",
+      "pt": "Teil 6B geschafft, und damit Folge sechs. Du kommst aus einem Flughafen raus, quer durch eine Stadt und quer durch ein Land, und du weißt, warum der Mann mit dem Metallrahmen nicht dein Feind ist. Als Nächstes 7A: einchecken. Die Reservierung, die Passfrage, die nach Abzocke aussieht und keine ist, die Touristensteuer, vor der dich niemand gewarnt hat, und das meistgefragte Wort des ganzen Urlaubs: 'contraseña'. Los, versuch es einmal. Bis dort."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e06b-controlacceso",
+      "es": "Ya tengo el billete. ¿Dónde está el control de acceso?",
+      "pinyin": "ja TEN-go el bi-JE-teh. DON-deh es-TA el kon-TROL de ak-THE-sso",
+      "pt": "Ich habe mein Ticket schon. Wo ist das Zugangs-Gate? — der Satz, der dich an vierzig Leuten vorbeibringt."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "Spanische Züge von innen (optional)",
+    "secoes": [
+      {
+        "titulo": "Warum da ein Scanner steht — und was 'dreißig Minuten' dir wirklich kaufen",
+        "corpo": "Spanische Hochgeschwindigkeitsbahnhöfe betreiben Röntgengeräte und Metalldetektoren. Spanien ist das einzige westliche Land, das das im Hochgeschwindigkeitsverkehr noch tut, zu berichteten Kosten von rund 13 Millionen Euro im Jahr und etwa 360 Sicherheitskräften, und der internationale Eisenbahnverband rät davon ab. Es ist eine laufende Debatte, keine abgeschlossene Politik: Der Renfe-Präsident hat die Abschaffung öffentlich ins Spiel gebracht, die Regierung hat das Festhalten daran verteidigt, und auf der Atlantikachse ist der Scanner bereits verschwunden, während er für Avant, AVE und Avlo bleibt. Für deine Reise gilt: nimm an, dass er da ist. Renfe empfiehlt selbst 30 Minuten vor Abfahrt, mit dem erklärten Ziel, das Zugangs-Gate 5 Minuten vor dem Zug zu schließen. Das mentale Modell heißt 'kleiner Flughafen', nicht 'Bahnhof' — denn der Fehlerfall ist keine Verspätung, sondern ein verpasster Zug ohne jede Nachzügler-Regelung.",
+        "exemplos": [
+          {
+            "es": "Ya tengo el billete. ¿Dónde está el control de acceso?",
+            "pt": "— Ich habe mein Ticket schon. Wo ist das Zugangs-Gate?"
+          },
+          {
+            "es": "¿A qué hora cierra el control de acceso?",
+            "pt": "— Wann schließt das Gate?"
+          }
+        ]
+      },
+      {
+        "titulo": "Gepäck: der Metallrahmen und die Zahlen dahinter",
+        "corpo": "Renfes Regelung, Stand 2026: bis zu 3 Gepäckstücke pro Person, zusammen höchstens 25 kg und 290 cm Gesamtmaß, das größte Einzelstück höchstens 85 × 55 × 35 cm. Durchgesetzt wird das mit physischen Messrahmen an den Zugängen. E-Scooter und Einräder sind wegen Brandgefahr komplett verboten. Es gibt keine Gebühr, keinen Check-in und keine Gepäckanhänger — es passt oder es passt nicht. Das Wort ist in Spanien 'maleta' ('valija' ist argentinisch und markiert dich sofort). Die Gepäckaufbewahrung, wo der Bahnhof eine hat, heißt 'consigna'.",
+        "exemplos": [
+          {
+            "es": "¿Puedo subir con esta maleta?",
+            "pt": "ma-LE-ta — Kann ich diesen Koffer mit an Bord nehmen?"
+          },
+          {
+            "es": "¿Hay consigna en la estación?",
+            "pt": "kon-SIG-na — Gibt es im Bahnhof eine Gepäckaufbewahrung?"
+          }
+        ]
+      },
+      {
+        "titulo": "Buchen: drei Betreiber, ein Gleisnetz und das 60–90-Tage-Fenster",
+        "corpo": "Der Markteintritt von Iryo 2022 beendete dreißig Jahre Renfe-Monopol, und der Wettbewerb hat die Preise auf den umkämpften Strecken kräftig gedrückt; Ouigo ist der Billiganbieter. Renfe und Iryo geben ihre günstigsten Tarife typischerweise 60 bis 90 Tage im Voraus frei, Ouigo öffnet den Verkauf teils schon 9 Monate vorher. Danach verhalten sich die Preise wie Flugpreise — kurzfristig das Zwei- bis Dreifache, und auf stark nachgefragten Strecken gibt es womöglich gar keinen Platz mehr. Deshalb gehört der Zugkauf auf die Checkliste vor der Abreise, gleich neben die eSIM: Am Bahnhof lässt sich das nicht mehr reparieren. Prüf für dieselbe Fahrt alle drei Anbieter; sie fahren dieselben Strecken.",
+        "exemplos": [
+          {
+            "es": "¿Hay billetes para el tren de las once?",
+            "pt": "ON-theh — Gibt es Tickets für den Elf-Uhr-Zug?"
+          },
+          {
+            "es": "¿Este billete se puede cambiar?",
+            "pt": "— Kann man dieses Ticket umbuchen?"
+          }
+        ]
+      },
+      {
+        "titulo": "Cercanías ist nicht mehr kostenlos (die Korrektur für 2026)",
+        "corpo": "Die wiederkehrenden Gratis-Programme im Cercanías-Nahverkehr endeten am 31. Dezember 2025 und wurden durch die einheitliche Regelung für 2026 ersetzt. Nur die Netze in Asturien und Kantabrien bleiben bis zum 31. Dezember 2026 kostenlos, und selbst das nur mit einer Mindestzahl an Fahrten pro Viermonatszeitraum. Das 10-Euro-Monatsticket für junge Leute (Jahrgänge 2000 bis 2011) setzt spanische Staatsangehörigkeit oder Wohnsitz voraus und steht Besuchern damit nicht offen. Jeder Blog, jedes Video und jeder Reiseführer von 2023 bis 2024, der dir erzählt, der spanische Nahverkehr sei gratis, hatte damals recht und liegt heute falsch.",
+        "exemplos": [
+          {
+            "es": "Un billete de Cercanías a Aranjuez, por favor.",
+            "pt": "ther-ka-NI-as — Ein Cercanías-Ticket nach Aranjuez, bitte."
+          },
+          {
+            "es": "¿Tengo que validar el billete?",
+            "pt": "ba-li-DAR — Muss ich das Ticket entwerten? (bei Cercanías meistens ja)"
+          }
+        ]
+      },
+      {
+        "titulo": "vía / andén — und die drei Wörter, die dein deutsches Auge falsch liest",
+        "corpo": "Renfe sagt 'vía' (Gleis); die Metro sagt 'andén' (Bahnsteig). Für dich meinen sie dasselbe, und immer nur eines von beiden steht auf der Tafel vor dir. Spanische Tafeln zeigen spät an, oft 10 bis 15 Minuten vor Abfahrt — deshalb lohnt sich '¿De qué vía sale?' mehr als Stehen und Starren. Und dann die drei Wörter, die ein deutsches Auge automatisch falsch übersetzt: 'vía' ist das Gleis, nicht 'über'. 'La carta' ist die Speisekarte — das Ticket ist 'el billete', die Bankkarte 'la tarjeta', der Stadtplan 'el plano'. Und 'para' in '¿Este tren para en Córdoba?' ist nicht 'für', sondern das Verb 'parar', halten. Dazu die Zahlen: 'once' (11) und 'doce' (12) tragen beide das spanische th — 'ON-theh', 'DO-theh' —, und genau dieses th unterscheidet auch 'cincuenta' (50) von 'sesenta' (60), wenn dir jemand einen Preis vorliest. Wer das th als s hört, hört diese Paare als ein einziges Wort. Zwei Auswege: das th selbst mitsprechen, damit dein Ohr es lernt, und sich Zahlen zeigen lassen.",
+        "exemplos": [
+          {
+            "es": "El tren de las once, vía doce.",
+            "pt": "— Der Elf-Uhr-Zug, Gleis zwölf."
+          },
+          {
+            "es": "¿Este tren para en Córdoba?",
+            "pt": "— Hält dieser Zug in Córdoba? (der AVE oft nicht; der Media Distancia schon)"
+          }
+        ]
+      },
+      {
+        "titulo": "Du hast ihn verpasst: das Protokoll",
+        "corpo": "Stell dich nicht an die Fahrkartenautomaten an. Geh direkt zu 'Atención al Cliente', und geh sofort — je weiter du dich von deiner planmäßigen Abfahrt entfernst, desto weniger Möglichkeiten gibt es. Sag 'He perdido el tren. ¿Puedo cambiar el billete?' und bleib ruhig im Ton, so als würdest du sitzen. Was danach passiert, hängt von deinem Tarif ab: Die billigsten Tickets sind häufig nicht umbuchbar, und es kann sein, dass du neu kaufen musst. Reisende, die sich sofort und freundlich melden, werden aber regelmäßig auf die nächste Abfahrt gesetzt. Das hier ist ein Protokoll, kein Zauberspruch — der Satz eröffnet nur das Gespräch.",
+        "exemplos": [
+          {
+            "es": "He perdido el tren. ¿Puedo cambiar el billete?",
+            "pt": "— Ich habe meinen Zug verpasst. Kann ich das Ticket umbuchen?"
+          },
+          {
+            "es": "¿Hay otro tren esta tarde?",
+            "pt": "— Gibt es heute Nachmittag noch einen Zug?"
+          }
+        ]
+      }
+    ]
+  }
+}

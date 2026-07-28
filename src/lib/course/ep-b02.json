@@ -1,0 +1,549 @@
+{
+  "id": "b02",
+  "slot": "B02",
+  "nivel": "basico",
+  "numero": 2,
+  "parte": "2",
+  "titulo": "Zehn Wörter, und eins davon ist ein Du",
+  "subtitulo": "Grüßen beim Reingehen und beim Rausgehen — lauter als zu Hause, und mit der Anrede, auf die Sie zu Hause anders geeicht sind",
+  "moldura": "ganha",
+
+  "cena": "Halb zehn morgens, eine Bäckerei in Palma. Sie schieben die Tür auf, sagen nichts und gehen zur Vitrine — und hinter der Theke wird es eine Sekunde lang still.",
+
+  "moldes": [],
+
+  "clique": {
+    "contagem": ["die Bäckerei", "der Hutladen am Nachmittag", "die Bar am Abend", "das Hotelfrühstück"],
+    "desconto": "Keinen dieser Sätze mussten Sie bauen. Sie sind fertig — neu ist nur, an welchen Türen Sie sie sagen.",
+    "piso": "Sie grüßen beim Reingehen und beim Rausgehen, laut genug, dass es ankommt. Die meisten Gäste sagen zwei Wochen lang kein Wort an der Tür."
+  },
+  "cliqueAudioKey": "b02-n20",
+
+  "frasePiso": "Sie grüßen beim Reingehen und beim Rausgehen, laut genug, dass es ankommt. Die meisten Gäste sagen zwei Wochen lang kein Wort an der Tür.",
+
+  "permissao": "Sie dürfen lauter sein, als es Ihnen höflich vorkommt — der Gruß gilt dem Raum, nicht einer Person. «Ponme una caña» ist nicht unhöflich, sondern die gewöhnliche Form, und die kurze, direkte Bestellung bringen Sie schon mit. Sie dürfen ohne Kauf wieder hinausgehen, und Sie dürfen mit denselben drei Wörtern hinausgehen, mit denen alle anderen hinausgehen. Und «usted» bleibt Ihnen: im Amt, in der Bank, beim Arzt ist es das Richtige.",
+  "permissaoAudioKey": "b02-n18",
+
+  "espelho": "Wortlos hereinzukommen ist das, was dort auffällt. Es kommt nicht als Zurückhaltung an, sondern als Übersehen — der Raum hat Sie gehört und auf zwei Wörter gewartet, die nicht kamen.",
+
+  "fichasCulturais": [
+    {
+      "sinal": "Sie kommen in einen kleinen Laden, gehen wortlos zum Regal, und die Person hinter dem Tresen sieht kurz hoch und sieht wieder weg.",
+      "suaLeitura": "Ich störe nicht, ich schaue nur. Grüßen kann ich, wenn ich etwas brauche.",
+      "oQueEAli": "Der Gruß beim Reingehen gilt dort dem Raum und nicht einer Person, und er ist die Anmeldung: er sagt, dass jemand hereingekommen ist. Ohne ihn ist niemand hereingekommen, und der Rest des Besuchs läuft in dieser Lücke.",
+      "oQueVoceFaz": "Zwei Wörter in den Raum, bevor Sie zur Ware gehen, und eine Stufe lauter als es Ihnen angemessen vorkommt. Beim Hinausgehen dasselbe, auch ohne Kauf.",
+      "oQueMelhora": "Sie werden angesprochen statt beobachtet, und beim zweiten Mal in demselben Laden fängt das Gespräch schon an der Tür an.",
+      "ondeNaoVale": "Nicht im Supermarkt, im Kaufhaus und in der Kette am Flughafen — dort grüßt man an der Kasse und nicht in der Tür. Die Regel gehört dem kleinen Raum, in dem man gehört wird.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["b02-n03", "b02-n04", "b02-n05"]
+    },
+    {
+      "sinal": "Sie stehen vor jemandem, den Sie noch nie gesehen haben, und Ihr Kopf hat die Anrede längst gewählt, bevor der erste Ton fällt.",
+      "suaLeitura": "Das entscheide ich seit dreißig Jahren richtig. Höflich ist höflich, überall.",
+      "oQueEAli": "Der Schalter ist derselbe, die Voreinstellung ist eine andere. Bei uns ist das Sie die Grundeinstellung gegenüber jedem fremden Erwachsenen; in Bar, Laden und an der Theke ist es dort das Du. Wer bei einem Kellner Mitte zwanzig beim Sie bleibt, setzt Abstand, ohne es zu wollen.",
+      "oQueVoceFaz": "An der Theke und im kleinen Laden duzen. Die Endungen tragen es: perdona statt perdone, ¿me pones? statt ¿me pone?",
+      "oQueMelhora": "Der zweite Abend in derselben Bar fühlt sich anders an als der erste, und Sie merken, dass Sie nicht wärmer geworden sind, sondern näher.",
+      "ondeNaoVale": "Nicht bei der Guardia Civil, in der Bank, beim Arzt, im Amt und bei sichtlich älteren Menschen in formellem Umfeld — dort ist «usted» das Richtige, und wer es Ihnen ganz wegnimmt, hat Ihnen etwas genommen.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["b02-n11", "b02-n12", "b02-n13", "b02-n14"]
+    },
+    {
+      "sinal": "Sie haben nichts gefunden, wollen hinaus, und der Weg zur Tür kommt Ihnen plötzlich sehr lang vor.",
+      "suaLeitura": "Ich habe nichts gekauft, also gehe ich lieber leise. Alles andere wäre peinlich.",
+      "oQueEAli": "Das Rausgehen hat dort seine eigene Formel, und sie hängt nicht am Kauf. Drei Wörter schließen den Besuch ab: eines nimmt an, eines dankt, eines verabschiedet. Der Besuch war der Besuch, nicht der Umsatz.",
+      "oQueVoceFaz": "Im Hinausgehen «vale, gracias, hasta luego» sagen, im Gehen, ohne stehen zu bleiben. Keine Erklärung, warum Sie nichts genommen haben.",
+      "oQueMelhora": "Sie können ohne Kaufdruck hineingehen und wiederkommen — und Sie kommen in derselben Woche wieder, weil nichts unangenehm war.",
+      "ondeNaoVale": "Nicht auf dem Markt, wenn schon abgewogen wurde: da ist etwas angefangen, und der Abgang braucht einen Satz mehr. Und nicht in der Bar, in der Sie noch etwas offen haben.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["b02-n16", "b02-n17"]
+    }
+  ],
+
+  "fatosDatados": [
+    {
+      "id": "tuteo-default-espanha",
+      "afirmacao": "Spanien duzt: in Bar, Laden, Restaurant und Taxi ist «tú» die Grundeinstellung, und «usted» bleibt drei Orten vorbehalten — Polizei und Behörde, sichtlich ältere Menschen, formeller Schalter.",
+      "fonte": "RAE/ASALE, Nueva gramática básica §10.6.2 «tú y usted»; Moreno Fernández (CVC); Aleza Kap. 4 — zusammengefasst in docs/pesquisa-espanha.md §4.1",
+      "ano": 2026,
+      "revisarAte": "2028-07-01",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "b02-n12",
+        "b02-n14"
+      ]
+    },
+    {
+      "id": "horario-da-saudacao",
+      "afirmacao": "«Buenos días» läuft bis zum Mittagessen, und das Mittagessen liegt dort bei 14:00–15:30/16:00; danach «buenas tardes», bis es dunkel wird.",
+      "fonte": "docs/pesquisa-espanha.md §5.A (Karten 2 und 3) und die Tabelle der Mahlzeiten — la comida 14:00–15:30/16:00",
+      "ano": 2026,
+      "revisarAte": "2028-07-01",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": [
+        "b02-n06"
+      ]
+    },
+    {
+      "id": "grussen-beim-reingehen",
+      "afirmacao": "Wortlos hereinzukommen gilt als unhöflich: Laden, Bar, Wartezimmer und Aufzug werden beim Reingehen gegrüßt und beim Rausgehen verabschiedet.",
+      "fonte": "docs/pesquisa-espanha.md §7.2, «As 6 regras de corpo e comportamento no bar», Regel 1. Qualitativer Konsens spanischer Quellen, keine quantitative Studie — nie als «Studien zeigen» formulieren.",
+      "ano": 2026,
+      "revisarAte": "2028-07-01",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": [
+        "b02-n03",
+        "b02-n05"
+      ]
+    },
+    {
+      "id": "ustedes-canarias",
+      "afirmacao": "Auf den Kanaren und in weiten Teilen der westlichen Andalusien wird «ustedes» auch im Informellen benutzt; «vosotros» ist die Festlandform.",
+      "fonte": "docs/pesquisa-espanha.md §4.2 (RAE/ASALE). Zählt für dieses Paar doppelt: 22 % der deutschen Spanienreisen gehen auf die Kanaren (docs/DERIVACAO-DE.md §3.1 und §4.3).",
+      "ano": 2026,
+      "revisarAte": "2031-01-01",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": []
+    }
+  ],
+
+  "_notasDeAutoria": {
+    "_": "PARTE ESCRITA. A narração alemã de B02 foi escrita em 2026-07-28; `aguardaNarracao` saiu e `cena` foi declarado por último, que é o que põe os portões em vigor para este arquivo. Nenhum campo `es` foi tocado: os oito clipes espanhóis do andaime continuam com os mesmos audioKey e os mesmos mp3 do curso EN.",
+    "clipes_espanhois_novos": "NENHUM, e o custo de crédito espanhol desta parte é ZERO. Os quatro steps espanhóis acrescentados ao andaime reusam clipes que JÁ existem em disco e que o aluno já ouviu em B01: `e01a-05` («Muchas gracias.», Carmen), `e01a-13` («Perdona, ¿me pones una caña?», Emilio), `e01a-03` («No, gracias.», Emilio) e `e01a-18` («Hasta luego.», Carmen). O `e01a-13` é a peça mais valiosa do reuso: ele é o gêmeo tú de `e01b-08` (usted), gravado por outra voz, e dá o par mínimo perdonA/perdonE + ponES/ponE sem gravar nada.",
+    "o_que_esta_parte_e": "RECONHECIMENTO, não instrução (DERIVACAO-DE §3.2, primeira linha da tabela). O comprador alemão já cumprimenta ao entrar na padaria; o curso inglês apresenta isso como revelação e aqui isso seria mentira. O que a parte entrega é o DELTA: o volume (o gruß é ao RAIO do balcão, não a uma pessoa), a saída sem compra, e a Anrede. Nenhum clipe diz «na Espanha se cumprimenta ao entrar» como novidade.",
+    "recalibragem": "O beat `Sie`≠`usted` mora aqui por decisão do roster (`moldes.json` → `_regras.recalibragem`: «entra como beat declarado em B02 e como o eixo de I02»). B02 é o único lugar do Básico onde as duas cascas estão gravadas lado a lado por duas vozes diferentes — `e01b-06`/`e01a-13` (tú, Emilio) e `e01b-08` (usted, Carmen). O ângulo desta parte é o da DECISÃO ANTES DA FALA («o alemão decide com confiança e decide errado»), e é deliberadamente OUTRO ângulo que o de B11, que trata do que volta do balcão depois de a escolha ter sido feita. As duas fichas não se repetem em nenhuma frase; conferido lado a lado.",
+    "previa_e_nao_casa": "ME-PONE é PRÉVIA aqui, não casa (casa = B11, nove slots à frente). Por isso: `moldes` é array vazio, NENHUM step declara `molde`, nenhuma linha nomeia `una caña` ou `un café con leche` como peça trocável, e a narração em nenhum momento diz que o aluno «já tem» a peça. O que B02 abre é o par tú × usted da CASCA; o buraco só é aberto em B11. Mesma disciplina de B01. Consequência de portão: o G16 não cobra `clique` desta parte (o gatilho é a raiz `moldes`), e o `clique` está aqui assim mesmo, contando PORTAS e não frases — é o fecho de três batidas do §5.2, e a contagem é do que o aluno fez nesta parte.",
+    "armadilha_desta_parte": "⟨v⟩, e é RECALL declarado, não primeiro contato: B01 consumiu cinco das sete e a pendência dela avisa que B02, B08 e B16 herdam recall. A regra chega na voz do Thomas, DEPOIS de o aluno já ter produzido, grudada às palavras da própria parte que a carregam. São TRÊS e não duas (corrigido na revisão adversarial): `por favor`, que o aluno já ouviu quatro vezes antes do bloco do Thomas e que não custa nada errar; `va` de «¿Quién va?» (receptivo: lido «fa», ele não reconhece a pergunta e perde a vez); e `vale` (produtivo: «fale» não é nada e é a palavra mais frequente da viagem depois de `gracias`). Uma regra, dois custos nomeados, zero tabela lida em voz alta.",
+    "o_s_que_nao_tem_hospedeiro": "PENDÊNCIA REAL, declarada em vez de maquiada. A DERIVACAO §1.2 linha 6 endereça ⟨s⟩ a B02 («gracias», «casa»), e as notas de B01 repetem esse endereço. Conferido palavra a palavra nas doze frases espanholas desta parte: NÃO HÁ ⟨s⟩ intervocálico em nenhuma delas — `gracias`, `buenas`, `buenos`, `pones`, `días`, `tardes` têm todos o ⟨s⟩ final ou pré-consonantal, onde o alemão já o produz surdo. Forçar a regra aqui exigiria uma palavra que a cena não pede, e regra de leitura sem frase-alvo é a tabela lida em voz alta que o G4 existe para medir. Decisão: o ⟨s⟩ entra pelo RESPELLING (o esquema `ss`, que nunca escreve s simples) e por uma seção do `aprofundar`, em texto — e a regra em ÁUDIO precisa de casa nova. Candidatos com palavra de verdade: `casa` e `pasaporte` (B04/B05), `una de esas` (B11, já gravado), `museo` (B08). Quem escrever B04 ou B05 decide; se ninguém decidir, o ⟨s⟩ fica só em texto e isso tem de estar escrito em algum lugar — está aqui.",
+    "respelling_para_leitor_alemao": "Mesmo esquema fechado de B11, sem uma exceção: ⟨v⟩→b (`vale`→BA-leh) · ⟨h⟩ some (`hola`→O-la, `hasta`→ASS-ta) · ⟨qu⟩→k (`quién`→kjen) · ⟨s⟩, ⟨z⟩ e ⟨c⟩+e,i→ss, nunca s simples, porque s intervocálico alemão é [z] (`gracias`→GRA-ssjass) · ⟨ch⟩→tsch (`leche`→LE-tscheh, `muchas`→MU-tschass) · ⟨ñ⟩→nj · ⟨j⟩ e ⟨g⟩+e,i→ch de Bach · -e final→-eh, contra o schwa · MAIÚSCULA marca a tônica. Cinco das sete armadilhas morrem aqui sem custar um clipe: ⟨v⟩, ⟨h⟩, ⟨qu⟩, ⟨z⟩/⟨c⟩ e ⟨s⟩.",
+    "gesto": "Programa 2, `die flache Hand`, com o alvo TROCADO da DERIVACAO §1.3: a vogal átona FINAL, contra o schwa alemão. É o programa certo para esta parte porque quatro das dez palavras terminam em -e ou -es átono — `perdone`, `tardes`, `leche`, `vale` — e é exatamente aí que `TAR-des` vira «TAR-dəs» e some o que identifica a palavra do outro lado. O aquecimento usa três delas e NÃO usa `Dime`: ver a correção 1 da revisão adversarial.",
+    "tratamento": "Juli e Thomas tratam o aluno por SIE, como em B01, B04, B05, B11, B12 e B14. Continua havendo o bônus editorial que B11 registrou, e nesta parte ele fica encenado de propósito: a guia siezt o aluno na mesma frase em que lhe mostra que ao balcão espanhol se duzt.",
+    "G3_e_G9": "Nove `responde` (o mínimo é 4 e a média de ME VIRO é 8). Nenhum deles carrega `molde`, e isso NÃO é descuido nem inflação evitada por sorte: é ESTRUTURAL e vale a pena estar escrito. Nenhum dos quinze moldes do roster tem casa antes de B03, então toda frase-alvo de B01 e de B02 é inventário congelado por posição, e as duas partes DILUEM o G9 por construção. Medido imediatamente antes e depois desta escrita, com seis partes reescritas no corpus: a taxa de ME VIRO cai de 52% para 47% enquanto as seis frases-alvo novas desta parte entram sem molde. O número global se move a cada onda — o que importa é o sinal, e o sinal é para baixo. Não se conserta declarando ME-PONE num `responde` de prévia — isso seria inflar o numerador com uma frase que a parte não ensina como molde, que é a fraude que o próprio `moldes.json` nomeia. Conserta-se sozinho quando B03, B06, B07, B08, B12 e B13 forem escritas: são seis casas de molde, todas depois desta.",
+    "pendencia_G14": "O portão voz × língua roda neste SKU (`audio.config.json._g14`) e esta parte sai com zero divergência. Juli e Thomas CITAM espanhol dentro da narração alemã — `perdona`, `perdone`, `pones`, `pone`, `vale`, `Ponme una caña` — e isso é o trabalho da guia e é permitido; nenhuma linha põe uma FALA espanhola na boca delas. Carmen e Emilio não dizem uma palavra de alemão. INV-5 continua exigindo conferência humana, e ela pegou uma coisa que o script NÃO pega: ver a correção 4 abaixo — o G14 conta marcas de língua e por isso deixa passar um `Hasta luego.` de duas palavras na boca da guia, que era uso e não citação.",
+    "_revisao_adversarial_2026-07-28": "Seis correções aplicadas, todas conferidas contra o texto e os clipes da própria parte. (1) `b02-n01`: o aquecimento mandava dizer «DI-me» em voz alta, e vinte steps depois `b02-n15` diz «Eines hören Sie täglich und sagen es nie» sobre exatamente esse clipe. Além de a guia se contradizer em voz alta, é produção de um item que o INV-9 e o G12 marcam como receptivo puro. Trocado por `LE-che`, que é átona final igual, é palavra que o aluno DIZ (em `un café con leche`) e mantém o alvo anti-schwa do programa 2. (2) `b02-n08` anunciava «An der Theke kommen zwei Wörter dazu. Eines holt ihn ab, das andere bestellt» e o clipe seguinte era `Ponme una caña, por favor.`, que NÃO tem palavra de abordagem nenhuma — a narração prometia uma peça que o áudio não entregava, e `perdona`/`perdone` só chegam dois steps depois. A linha passou a descrever o que o clipe é: o pedido curto e direto. (3) `b02-n10`, em consequência: é ele que introduz `Perdone, ¿me pone…?`, e agora NOMEIA `perdona`/`perdone` como a palavra que aborda, além de mandar ouvir as terminações. Sem isso a parte nunca ensinava o «pedir licença» que o `slots.json` põe na função de B02, e a ficha 2 e o prompt `b02-p07` («Holen Sie ihn ab») cobravam uma peça que a narração não tinha dado. (4) `b02-r02` terminava com a guia dizendo «Hasta luego.» — não como citação, com crase ou aspas, mas como a despedida dela. É INV-5: a voz-guia falando a língua-alvo, e numa voz de-DE o ⟨h⟩ sairia audível, ensinando o erro que a própria parte acabou de corrigir. O G14 não acusa porque a frase tem duas palavras e não bate o mínimo de marcas. Virou «Bis später.», que é a glosa alemã de `hasta luego` que o próprio shadow já usa. De quebra, o «wenn zurückkommt» sem sujeito virou «wenn etwas zurückkommt». (5) `b02-t01` dizia «Zwei v sind Ihnen heute begegnet». São TRÊS: `por favor` aparece em `e01b-06` (ouvir e responde), em `e01b-08` (ouvir) e no shadow `e01b-06b` — quatro audições, todas ANTES do bloco do Thomas. Um aviso que erra a conta do que o aluno acabou de ouvir queima a autoridade do aviso. Corrigido para três, com `por fa-BOR` nomeado; os dois custos continuam sendo `va` e `vale`. (6) `fatosDatados` não existia, e a parte enuncia quatro afirmações do destino que o par EN carregava com fonte: o tuteo como default (FATO, RAE/ASALE §10.6.2, via pesquisa §4.1), o relógio do cumprimento (CONSENSO, pesquisa §5.A), a regra de cumprimentar ao entrar (CONSENSO, pesquisa §7.2 regra 1) e o `ustedes` canário do `aprofundar` (FATO, pesquisa §4.2). Sem elas o slot mais citado do Básico ficava sem `revisarAte` e sem fonte, que é a dívida com juros que o G13 existe para não deixar acumular. MEDIDO DEPOIS: G4 = 100 chars/clipe de média e 120 no pior · G14 = 0 divergência nesta parte · `valida-audio` não acusa nenhum `es` à frente do áudio (nenhum campo `es` foi tocado) · 9 `responde` · 37 clipes de voz-guia a gravar, o mesmo número de antes.",
+    "_o_que_a_revisao_NAO_consertou": "Três coisas ficam de fora, e é melhor estarem escritas. (1) O G6 do `valida-tom.mjs` só conhece gentílico em inglês e em português — o regex não tem `die Spanier sind`, `der Deutsche ist` nem `die Deutschen`. Neste SKU a narração inteira é alemã, então o portão de estereótipo está efetivamente DESLIGADO. Varri esta parte à mão (zero gentílico + cópula; os únicos `man` são comportamento com lugar, no molde da ficha) mas o script precisa ganhar a lista alemã antes que alguém confie nele. É edição de `scripts/valida-tom.mjs`, fora do escopo desta revisão. (2) O `aprofundar` desta parte declara um esquema de re-grafia que «nunca escreve um s simples», e o `aprofundar` de B01 escreve `má-so-mé-nos` e `e-los-pi-tál` — s simples entre vogais, que um leitor alemão sonoriza. Ali o s é intervocálico POR ENCADEAMENTO e é o exemplo do programa 3, então a colisão é real e a decisão é do dono do esquema, não desta parte. Conferido: nenhum campo `pinyin` de nenhuma parte escrita viola a regra. (3) A `ondeNaoVale` da ficha do cumprimento diverge da do par EN, que exclui a sala de café da manhã do hotel enquanto esta a inclui (e o `clique` conta `das Hotelfrühstück`). As duas são CONSENSO autoral e a pesquisa (§7.2 regra 1) não arbitra — fica anotado para quem reconferir a ficha com revisor."
+  },
+
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b02-n01",
+      "bloco": "aquecimento",
+      "gesto": 2,
+      "tom": "ganha",
+      "pt": "Aufwärmen, zehn Sekunden. Flache Hand, und halten Sie das letzte e: bue-nas TAR-des, per-DO-ne, LE-che."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "bloco": "callback",
+      "consulta": ["simpatia/agradecer"],
+      "promptAudioKey": "b02-p01",
+      "promptPt": "Jemand hält Ihnen die Tür auf, während Sie mit zwei vollen Tüten dastehen. Zwei Wörter, nicht eines. Sprechen Sie jetzt.",
+      "audioKey": "e01a-05",
+      "es": "Muchas gracias.",
+      "pinyin": "MU-tschass GRA-ssjass",
+      "pt": "das größere Danke"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b02-n02",
+      "bloco": "cena",
+      "pt": "Halb zehn morgens, eine Bäckerei in Palma. Sie schieben die Tür auf und gehen zur Vitrine."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b02-n03",
+      "pt": "Sie haben nichts gesagt, und hinter der Theke wird es kurz still. Das ist keine Ablehnung, das ist eine Lücke."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b02-n04",
+      "tom": "ganha",
+      "pt": "Grüßen beim Reingehen bringen Sie schon mit. Beim Bäcker zu Hause machen Sie es jeden Samstag."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b02-n05",
+      "pt": "Zwei Dinge sind anders. Es gilt dem Raum und nicht einer Person, und es ist eine Stufe lauter."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e01b-03",
+      "es": "Hola, buenos días.",
+      "pinyin": "O-la, BWE-noss DI-ass",
+      "pt": "Hallo, guten Morgen. — Das h schweigt. Fünf volle Vokale, keiner rutscht am Ende weg."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "consulta": ["chegar/entrar"],
+      "promptAudioKey": "b02-p02",
+      "promptPt": "Viertel nach neun, Sie treten in eine kleine Bäckerei, in der schon drei Leute stehen. Sagen Sie es in den Raum, bevor Sie zur Vitrine gehen. Sprechen Sie jetzt.",
+      "audioKey": "e01b-03",
+      "es": "Hola, buenos días.",
+      "pinyin": "O-la, BWE-noss DI-ass",
+      "pt": "der Gruß in den Raum, morgens"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b02-n06",
+      "pt": "Das gilt bis zum Mittagessen. Danach wechselt der Gruß, und der Schalter ist das Essen, nicht die Uhr."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e01b-04",
+      "es": "Buenas tardes.",
+      "pinyin": "BWE-nass TAR-dess",
+      "pt": "Guten Tag. — Vom Mittagessen an, bis es dunkel wird. Das e in TAR-des bleibt ein volles e."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "promptAudioKey": "b02-p03",
+      "promptPt": "Vier Uhr nachmittags, die Sonne steht noch hoch, und Sie gehen in einen Laden für Sonnenhüte. Grüßen Sie, bevor jemand hochsieht. Sprechen Sie jetzt.",
+      "audioKey": "e01b-04",
+      "es": "Buenas tardes.",
+      "pinyin": "BWE-nass TAR-dess",
+      "pt": "der Gruß nach dem Mittagessen"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b02-n07",
+      "pt": "Und wenn Sie nicht wissen, welche Tageszeit gerade gilt: ein Wort deckt alle ab, und es klingt von hier."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e01b-15",
+      "es": "Buenas.",
+      "pinyin": "BWE-nass",
+      "pt": "Der Gruß für jede Tageszeit. Ein Wort, und er klingt nach Nachbarschaft statt nach Reiseführer."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "promptAudioKey": "b02-p04",
+      "promptPt": "Zehn nach acht abends, Sie kommen in die Bar von gestern, und die Sonne ist gerade weg. Sie haben keine Ahnung, welcher Gruß jetzt dran wäre. Ein Wort. Sprechen Sie jetzt.",
+      "audioKey": "e01b-15",
+      "es": "Buenas.",
+      "pinyin": "BWE-nass",
+      "pt": "das eine Wort, das immer geht"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b02-n08",
+      "pt": "An der Theke wird bestellt, und der Satz ist kürzer, als Sie ihn sich zutrauen. Emilio, halb zwölf."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e01b-06",
+      "es": "Ponme una caña, por favor.",
+      "pinyin": "PON-meh U-na KA-nja, por fa-BOR",
+      "pt": "Mach mir ein kleines Bier vom Fass, bitte. — Kein Anlauf davor, keine Entschuldigung."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b02-n09",
+      "tom": "ganha",
+      "pt": "Das ist nicht schroff, das ist die gewöhnliche Form. Und die kurze, direkte Bestellung bringen Sie mit."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "consulta": ["chegar/balcao"],
+      "promptAudioKey": "b02-p05",
+      "promptPt": "Zwanzig nach elf, eine Bar zwei Straßen vom Hotel. Der Wirt trocknet sich die Hände ab und sieht Sie an, und überall auf dem Tresen steht dasselbe kleine kalte Glas. Sprechen Sie jetzt.",
+      "audioKey": "e01b-06",
+      "es": "Ponme una caña, por favor.",
+      "pinyin": "PON-meh U-na KA-nja, por fa-BOR",
+      "pt": "das kleine Glas, das hier alle haben"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b02-n10",
+      "pt": "Jetzt gesiezt, mit einem Wort davor: perdona oder perdone holt jeden ab. Endungen hören, nicht das Getränk."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e01b-08",
+      "es": "Perdone, ¿me pone un café con leche, por favor?",
+      "pinyin": "per-DO-neh, me PO-neh un ka-FE kon LE-tscheh, por fa-BOR",
+      "pt": "Entschuldigung, einen Milchkaffee, bitte. — Zwei Endungen tragen die Anrede: perdonE, ponE."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e01a-13",
+      "es": "Perdona, ¿me pones una caña?",
+      "pinyin": "per-DO-na, me PO-ness U-na KA-nja",
+      "pt": "Und geduzt: perdonA, ponES. Ein a statt einem e, ein s hinten dran — mehr trennt die beiden nicht."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b02-n11",
+      "bloco": "capsula",
+      "pt": "Diesen Schalter legen Sie zu Hause zwanzigmal am Tag um, ohne hinzusehen. Er steht hier nur anders."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b02-n12",
+      "pt": "Bei uns ist das Sie die Voreinstellung bei jedem fremden Erwachsenen. In Bar, Laden und an der Theke ist es dort das Du."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b02-n13",
+      "tom": "protege",
+      "pt": "Das Unangenehme daran ist nicht der einzelne Satz. Es ist, dass keiner Sie korrigiert und Sie nie ins Zweifeln kommen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b02-n14",
+      "pt": "Bei Guardia Civil, Bank, Arzt, Amt und sichtlich älteren Menschen im formellen Rahmen bleibt das Sie richtig."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "consulta": ["chegar/tu-usted"],
+      "promptAudioKey": "b02-p06",
+      "promptPt": "Frühstück im Hotel, halb neun, und der Kellner im weißen Jackett, der Ihnen den Stuhl zurechtrückt, ist gut dreißig Jahre älter als Sie. Auf seinem Wagen steht die Milchkanne. Sprechen Sie jetzt.",
+      "audioKey": "e01b-08",
+      "es": "Perdone, ¿me pone un café con leche, por favor?",
+      "pinyin": "per-DO-neh, me PO-neh un ka-FE kon LE-tscheh, por fa-BOR",
+      "pt": "dasselbe, aber gesiezt"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "consulta": ["chegar/tu-usted", "chegar/balcao"],
+      "promptAudioKey": "b02-p07",
+      "promptPt": "Zweiter Abend in derselben Kneipe, derselbe Mann hinter dem Tresen, ungefähr in Ihrem Alter. Holen Sie ihn ab und bestellen Sie — so, wie es hier unter Nachbarn geht. Sprechen Sie jetzt.",
+      "audioKey": "e01a-13",
+      "es": "Perdona, ¿me pones una caña?",
+      "pinyin": "per-DO-na, me PO-ness U-na KA-nja",
+      "pt": "dasselbe, aber geduzt"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b02-n15",
+      "pt": "Eines hören Sie täglich und sagen es nie. Es kommt schnell, es sind drei Wörter, und es meint Sie."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e01b-10",
+      "receptivo": true,
+      "acao": "Sofort melden, in einem Satz. Wer schweigt, verliert die Reihe an den Nächsten.",
+      "es": "¿Quién va? Dime.",
+      "pinyin": "kjen ba. DI-meh",
+      "pt": "👂 «Wer ist dran? Sag an.» — die Übergabe an Sie, und sie wartet nicht."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "b02-t01",
+      "pt": "Drei v sind Ihnen heute begegnet, und alle drei sind weiche b: por fa-BOR, das va in «¿Quién va?», und vale."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "b02-t02",
+      "pt": "Lesen Sie «fa», erkennen Sie die Frage nicht, wenn sie kommt — und die Reihe geht an den hinter Ihnen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "b02-t03",
+      "pt": "Und «fale» sagt Ihnen keiner zurück. BA-leh. Das Wort hören Sie in zwei Wochen tausendmal."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b02-n16",
+      "pt": "Bleibt das Rausgehen. Das ist die Hälfte der Gewohnheit, und es ist die, die fast alle weglassen."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e01b-12",
+      "es": "Vale, gracias. Hasta luego.",
+      "pinyin": "BA-leh, GRA-ssjass. ASS-ta LWE-go",
+      "pt": "Passt, danke, bis später. — Der ganze Abgang in fünf Wörtern, und das h schweigt wieder."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "consulta": ["chegar/sair"],
+      "promptAudioKey": "b02-p08",
+      "promptPt": "Bezahlt, die Tüte in der Hand, und Sie sind schon halb an der Tür. Im Gehen, ohne stehen zu bleiben. Sprechen Sie jetzt.",
+      "audioKey": "e01b-12",
+      "es": "Vale, gracias. Hasta luego.",
+      "pinyin": "BA-leh, GRA-ssjass. ASS-ta LWE-go",
+      "pt": "der ganze Abgang"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b02-n17",
+      "tom": "ganha",
+      "pt": "Auch ohne Kauf. Sie sehen sich um, es ist nichts dabei, und Sie gehen mit denselben drei Wörtern hinaus."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "promptAudioKey": "b02-p09",
+      "promptPt": "Auf der Terrasse hält Ihnen jemand eine Speisekarte hin, und Sie wollten nur kurz an den Tresen. Zwei Wörter, freundliches Gesicht, ohne stehen zu bleiben. Sprechen Sie jetzt.",
+      "audioKey": "e01a-03",
+      "es": "No, gracias.",
+      "pinyin": "no, GRA-ssjass",
+      "pt": "das freundliche Nein"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b02-n18",
+      "bloco": "permissao",
+      "pt": "Sie dürfen lauter sein, als es Ihnen höflich vorkommt. Der Gruß gilt dem Raum, und der Raum ist voll."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b02-n19",
+      "pt": "Und Sie dürfen ohne Kauf hinaus. Der Gruß an der Tür kauft nichts — er macht die Tür nur auf."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b02-n20",
+      "bloco": "clique",
+      "pt": "Zählen Sie die Türen: die Bäckerei, der Hutladen am Nachmittag, die Bar am Abend, das Hotelfrühstück."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b02-n21",
+      "pt": "Keinen dieser Sätze mussten Sie bauen. Neu ist nur, an welchen Türen Sie sie jetzt sagen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b02-n22",
+      "bloco": "piso",
+      "pt": "Sie grüßen beim Reingehen und beim Rausgehen, laut genug. Die meisten Gäste sagen zwei Wochen lang kein Wort an der Tür."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b02-s00",
+      "pt": "Nachsprechen. Laut, mit ihnen, das letzte e halten. Die zwei, die jeden Tag drankommen:"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Emilio",
+      "audioKey": "e01b-06b",
+      "es": "Ponme una caña, por favor.",
+      "pinyin": "PON-meh U-na KA-nja, por fa-BOR",
+      "pt": "Mach mir ein kleines Bier vom Fass, bitte."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Carmen",
+      "audioKey": "e01a-18",
+      "es": "Hasta luego.",
+      "pinyin": "ASS-ta LWE-go",
+      "pt": "Bis später."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Juli",
+      "audioKey": "b02-r01",
+      "bloco": "recap",
+      "pt": "Das war Teil zwei. Rein, gegrüßt, bestellt, raus — und Sie wissen, wen Sie an der Theke duzen."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Juli",
+      "audioKey": "b02-r02",
+      "pt": "Weiter mit Teil drei: was Sie sagen, wenn etwas zurückkommt, wovon Sie kein Wort verstanden haben. Bis später."
+    }
+  ],
+
+  "aprofundar": {
+    "titulo": "Die zehn Wörter, und wann welches (optionale Lektüre)",
+    "secoes": [
+      {
+        "titulo": "Die Uhr der Grüße",
+        "corpo": "«Buenos días» geht bis zum Mittagessen, und das Mittagessen ist dort später als bei uns — der Schalter ist die Mahlzeit und nicht die Uhrzeit, weshalb «buenos días» um halb zwei noch völlig in Ordnung ist und um Viertel nach drei nicht mehr. Danach «buenas tardes», bis es dunkel wird, und ab dann «buenas noches», die anders als bei uns auch eine Begrüßung ist: man sagt sie beim Hereinkommen und nicht nur beim Gehen. Wer sich das nicht merken will, sagt «buenas» — ein Wort, jede Tageszeit, klingt nach Nachbarschaft und ist die beste Investition dieser Folge. Zum Hinausgehen ist «hasta luego» die gewöhnliche Form, viel häufiger als «adiós», das endgültiger klingt, als es die meisten Abgänge sind. Und «vale» ist das Schweizer Taschenmesser: es heißt ja, okay, verstanden, einverstanden, passt schon, und es beginnt die Hälfte aller Antworten, die Sie hören werden.",
+        "exemplos": [
+          {
+            "es": "Buenas.",
+            "pt": "BWE-nass — ein Wort, jede Tageszeit, rein wie raus."
+          },
+          {
+            "es": "Vale, gracias. Hasta luego.",
+            "pt": "BA-leh, GRA-ssjass. ASS-ta LWE-go — der komplette Abgang, auch ohne Kauf."
+          }
+        ]
+      },
+      {
+        "titulo": "Perdona oder perdone — woran Sie die Anrede hören",
+        "corpo": "Die Anrede sitzt dort in den Endungen und nicht in einem eigenen Wort, und deshalb rutscht sie an einem deutschen Ohr leicht durch. Beim Ansprechen: «perdona» duzt, «perdone» siezt. Beim Bestellen: «¿me pones?» duzt, «¿me pone?» siezt. Eine Silbe Unterschied, jedes Mal dieselbe. Es lohnt sich, beim Zuhören darauf zu achten, wie man Sie anspricht, denn damit ist die Frage in der Regel schon beantwortet: wer Sie duzt, wird gern zurückgeduzt. Die Grundeinstellung an Theke, in Bar und im kleinen Laden ist das Du; im Amt, in der Bank, beim Arzt, bei der Guardia Civil und gegenüber sichtlich älteren Menschen in formellem Rahmen bleibt es beim Sie, und ein Kurs, der Ihnen das «usted» ganz abgewöhnt, hat Ihnen ein Werkzeug weggenommen. Zwei Nebenbemerkungen für später: in der Mehrzahl gibt es auf dem Festland ein eigenes Du-Wort für Gruppen, «vosotros», das Sie hören und nie bilden müssen — und auf den Kanaren und in Teilen Andalusiens wird stattdessen «ustedes» benutzt, auch unter Freunden. Beides gehört ins Ohr, nicht in den Mund.",
+        "exemplos": [
+          {
+            "es": "Perdona, ¿me pones una caña?",
+            "pt": "per-DO-na, me PO-ness U-na KA-nja — geduzt: perdonA, ponES."
+          },
+          {
+            "es": "Perdone, ¿me pone un café con leche, por favor?",
+            "pt": "per-DO-neh, me PO-neh un ka-FE kon LE-tscheh — gesiezt: perdonE, ponE."
+          }
+        ]
+      },
+      {
+        "titulo": "Das s, das nie summt — und das v, das nie ein f ist",
+        "corpo": "Zwei Lesegewohnheiten kosten in dieser Folge etwas. Die erste ist das v: geschrieben v, gesprochen ein weiches b. Das «va» in «¿quién va?» ist ein «ba», und «vale» ist «BA-leh». Wer «fale» sagt, sagt nichts — es gibt das Wort nicht, und es ist ausgerechnet das Wort, das Sie in zwei Wochen am häufigsten brauchen. Die zweite steht in dieser Folge nicht im Ohr, weil kein Satz von heute sie enthält, und deshalb steht sie hier: das spanische s ist immer stimmlos, auch zwischen zwei Vokalen. Bei uns summt es dort — «Rose», «Nase», «lesen» —, und dieselbe Gewohnheit macht aus «casa» ein «kaza», aus «museo» ein «muzeo» und aus «pasaporte» ein «pazaporte». Deshalb schreiben wir in der Aussprachehilfe dieses Kurses nie ein einzelnes s, sondern immer ss: «GRA-ssjass», «BWE-nass», «me PO-ness». Wo Sie ss lesen, sprechen Sie scharf, und dann liegen Sie in beiden Fällen richtig. Ein Trost zum Schluss: das h am Anfang ist einfach nicht da. «Hola» ist «O-la», «hasta» ist «ASS-ta», und es gibt keine einzige Ausnahme.",
+        "exemplos": [
+          {
+            "es": "Hola, buenos días.",
+            "pt": "O-la, BWE-noss DI-ass — kein h, und das s am Ende bleibt scharf."
+          },
+          {
+            "es": "Muchas gracias.",
+            "pt": "MU-tschass GRA-ssjass — ch wie tsch, c vor i zwischen den Zähnen, s scharf."
+          }
+        ]
+      }
+    ]
+  }
+}

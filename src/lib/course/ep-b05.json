@@ -1,0 +1,486 @@
+{
+  "id": "b05",
+  "slot": "B05",
+  "nivel": "basico",
+  "numero": 5,
+  "parte": "5",
+  "titulo": "Die drei Fragen kommen nicht vom Grenzer",
+  "subtitulo": "Kein Stempel, kein Beamter — aber drei Tresen wollen wissen: warum, wie lange, wo Sie schlafen",
+  "moldura": "ganha",
+  "cena": "Palma, 14 Uhr 40: die Türen gehen auf, niemand will Ihren Ausweis sehen — und zwei Stunden später steht jemand hinter einem Tresen und fragt, warum, wie lange und wo Sie schlafen.",
+  "moldes": [],
+  "permissao": "Verstehen müssen Sie das Formular nicht. Ausweis und Buchung hinlegen, und wenn etwas an Ihnen vorbeirauscht, fragen Sie einfach noch einmal nach — dafür gibt es einen Satz, und Sie haben ihn seit Teil drei.",
+  "permissaoAudioKey": "b05-n15",
+  "espelho": "Was dort auffällt, ist nicht der Akzent, sondern die vorbereitete Rede: gefragt werden drei Dinge, und wer sie erklärt, hält die Schlange auf.",
+  "frasePiso": "Sie beantworten an einem spanischen Tresen drei Fragen auf Spanisch, ohne Zettel. Die meisten schieben den Ausweis rüber und sagen «hello».",
+  "clique": {
+    "contagem": [
+      "die Rezeption",
+      "der Mietwagenschalter",
+      "die Ferienwohnung"
+    ],
+    "desconto": "Keinen dieser Sätze mussten Sie gestern schon können. Dreimal derselbe Tresen, nur ein anderes Schild darüber.",
+    "piso": "Drei Antworten tragen Sie durch jeden Check-in in Spanien — Hotel, Wohnung oder Mietwagen."
+  },
+  "cliqueAudioKey": "b05-n17",
+  "fichasCulturais": [
+    {
+      "sinal": "Die Frau an der Rezeption fragt nach Geburtsdatum, Telefon, E-Mail und voller Wohnadresse — und bei Kindern danach, wie Sie mit ihnen verwandt sind.",
+      "suaLeitura": "Das geht ein Hotel nichts an. Entweder ist sie neugierig, oder meine Daten werden gleich weiterverkauft.",
+      "oQueEAli": "Es ist eine Pflicht des Hauses, keine Frage des Hauses: Unterkünfte, Ferienwohnungen und Mietwagenschalter erheben seit Dezember 2024 genau diese Liste und melden sie an die Sicherheitsbehörden.",
+      "oQueVoceFaz": "Alles auf einmal geben — Ausweis und Wohnadresse schon in der Hand, bevor Sie am Tresen stehen.",
+      "oQueMelhora": "Der Check-in dauert zwei Minuten statt zehn, und der Abend gehört Ihnen.",
+      "ondeNaoVale": "Nicht im Gästezimmer von Freunden: die Pflicht liegt beim Betrieb, und wer privat beherbergt, ohne zu vermieten, fragt Sie nach gar nichts.",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "e07a-ficha-c",
+        "b05-n05",
+        "b05-n06"
+      ]
+    }
+  ],
+  "fatosDatados": [
+    {
+      "id": "schengen-interno-sem-controle",
+      "afirmacao": "Ein Flug aus Deutschland bleibt innerhalb von Schengen: dort wird keine Grenze kontrolliert, es gibt keinen Stempel und keine Einreiseregistrierung.",
+      "fonte": "Comissão Europeia, DG HOME — o controle documental e o EES valem para a fronteira EXTERNA do espaço Schengen; um voo Alemanha→Espanha é trecho interno. ⚠️ O Código das Fronteiras Schengen (arts. 25–27) permite reintrodução TEMPORÁRIA de controle interno, notificada país a país e por prazo determinado: reconferir o estado das notificações antes de gravar e em cada revalidação.",
+      "ano": 2026,
+      "revisarAte": "2027-04-01",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "b05-n03"
+      ]
+    },
+    {
+      "id": "rd-933-2021",
+      "afirmacao": "Seit Dezember 2024 müssen Hotels, Ferienwohnungen und Mietwagenschalter Geburtsdatum, Telefon, E-Mail und volle Wohnadresse erheben und weitermelden — und wer die Angaben verweigert, bekommt kein Zimmer.",
+      "fonte": "Real Decreto 933/2021 — BOE-A-2021-17461; obrigatório desde 02/dez/2024. Lista completa e a extensão a locadoras de veículos em docs/pesquisa-espanha.md §8.1",
+      "ano": 2024,
+      "revisarAte": "2027-06-01",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "b05-n05",
+        "b05-n06",
+        "b05-n07"
+      ]
+    }
+  ],
+  "_notasDeAutoria": {
+    "_": "Narração alemã de B05 escrita em 2026-07-28. A parte entrou em vigor (campo `cena` declarado) e `aguardaNarracao` foi removido. Nenhum campo `es` foi alterado — os seis clipes do andaime continuam com o texto e o audioKey do curso EN.",
+    "o_que_esta_parte_deixou_de_ser": "DERIVACAO-DE §4.1: num voo Schengen interno não há controle de fronteira. Morreram integralmente as três perguntas na cabine, a fila do EES, a câmera, as quatro digitais, a regra 90/180 e o quiosque de `autoservicio` como quiosque biométrico. A FUNÇÃO do slot (motivo, tempo, onde você fica) sobrevive inteira e muda de balcão: check-in de hotel, check-in de apartamento turístico e balcão da locadora — os três obrigados pelo mesmo RD 933/2021.",
+    "as_tres_respostas_gravadas": "`Vengo de vacaciones.`, `Diez días.` e `Me alojo en el hotel Rialto, en Madrid.` servem nos três balcões sem tocar no `es`, exatamente como o briefing do slot previa. `Me alojo…` migra da fronteira para o balcão da locadora, que é onde o endereço na Espanha é de fato exigido pelo decreto.",
+    "clipes_espanhois_reusados_de_outras_partes": "CINCO, todos já gravados e no manifesto — custo de crédito ZERO: `e07a-tasa-e` (¿La tasa turística está incluida?, de ep-b04) como CALLBACK · `e02a-pasaporte-c` (¿Necesito el pasaporte?, órfão desde a reescrita de B04 — ver abaixo) · `e07a-reserva-e` e `e07a-ficha-c` (de ep-b16) para o balcão do check-in · `e01c-repetir-c` (de ep-b03) como escotilha. NENHUM clipe espanhol NOVO foi criado: esta parte não acrescenta uma linha ao orçamento de gravação em espanhol.",
+    "callback_e_a_reescrita_de_B04": "O callback foi decidido DEPOIS de ler o ep-b04.json reescrito, não antes. A primeira versão desta parte usava `¿Necesito el pasaporte?` como recuperação de B04, porque era lá que o clipe morava; a reescrita alemã de B04 (que apaga a loja de SIM junto com o eSIM, pelo roaming intra-UE) deixou os quatro clipes `e02a-*` órfãos no disco — `npm run audio:check` os lista. Duas consequências, ambas resolvidas aqui: (1) o callback passou a ser `¿La tasa turística está incluida?`, que B04 DE de fato ensina, e cai na cena certa — a recepção que cobra a mais depois de tudo estar pago online; (2) `¿Necesito el pasaporte?` foi recolhido para cá com `ouvir` + `responde` próprios, porque é o clipe do documento e a parte do documento é esta. A escotilha trocou de `¿Me lo puede escribir…?` para `¿Me puede repetir, por favor?` pelo mesmo motivo: B04 já usa a primeira como callback dele, e três partes seguidas com a mesma frase é recall desperdiçado.",
+    "coordenacao_com_b16": "`e07a-reserva-e` e `e07a-ficha-c` continuam em ep-b16.json e não foram retirados de lá. B05 planta o momento do check-in (documento, ficha de viajeros, as três respostas); B16 fica com o QUARTO (a chave, o que não funciona, o check-out e a tasa turística). Quem escrever B16 trata os dois clipes como recuperação, não como novidade — e `¿La tasa turística está incluida?` fica INTEIRO com B16: é cobrança de check-out e foi deliberadamente deixada fora daqui.",
+    "o_unico_molde_declarado": "UM step: `¿Me puede repetir, por favor?` → `molde: \"ME-PUEDE\"`, com `encaixe: \"repetir\"`. É redisparo puro — a casa é B03, que vem antes (G9d conferido) — e por isso a raiz `moldes` continua VAZIA e o G16 não cobra clique desta parte. A peça é nomeada uma vez, no fecho (`b05-n18`, «der Baustein aus Teil drei»), que é o termo alemão canônico já adotado no `valida-tom.mjs` (G15) por outro autor deste SKU. As outras 7 frases-alvo NÃO são instância de molde nenhum do roster e por isso entram só no denominador do G9. Medido antes e depois: a taxa de ME VIRO ficou em 50%, que é exatamente o piso — quem escrever as próximas partes de M1 não tem folga nenhuma aqui.",
+    "regra_de_leitura_desta_parte": "UMA, grudada a palavras que a parte já ia dizer, depois de o aluno já ter produzido a frase (moldes.json → `_regras.padrao_de_ensino`, quinto tempo): o ⟨j⟩ de `alojo` e `deja` = o ch de `Bach`. É redisparo da regra que nasce em B01, não regra nova. Os dois BRINDES vão junto e são ditos como brinde: a tônica de `hotél` já está certa em alemão, e o `-d` final de `Madrid` sai duro sozinho porque o alemão ensurdece a final (DERIVACAO §1.2 linhas 9 e 11). O ⟨h⟩ mudo NÃO é declarado como regra aqui — ele é entregue implícito pelo Gleiten (`el hotel` → e-lo-TEL, `en el hotel` → e-ne-lo-TEL), porque o endereço da regra do ⟨h⟩ é B08, com `¿Hay…?`.",
+    "firma": "O item está no áudio (b05-n14) na forma mais estreita possível e de propósito: diz o que a palavra faz NAQUELE balcão (`firma` = a assinatura, e o verbo é `firmar`), sem afirmar nada sobre como um leitor alemão processa a palavra. A DERIVACAO §4.1 endereça o falso amigo a este slot, mas o §1.6 marca a lista alemã inteira como NÃO CONFERIDA — e nada NÃO CONFERIDO vira áudio. A versão que ficou é fato lexical do espanhol, não projeção sobre o comprador. Se o revisor de alemão L1 confirmar a interferência, a linha pode ganhar o contraste explícito; até lá, não.",
+    "gesto": "Programa 3 (das Gleiten) no primeiro step. Motivo: a frase mais longa da parte é `Me alojo en el hotel Rialto, en Madrid`, e `en el hotel` é o exemplo canônico de ressilabificação da DERIVACAO §1.3. O SCHEMA §4.4 sugere 1 ou 2 como padrão de abertura de M1; aqui o som que a parte cobra é outro, e o `GestoRitmo.svelte` deste SKU já desenha o Gleiten em 3 (editado junto com B01).",
+    "receptivo": "Três steps `ouvir` marcados com 👂 + `acao`, seguindo o que B01 já pôs em vigor: `¿Me deja el pasaporte?…` (o que ele VAI ouvir e não responde), `Control de pasaportes` (a placa que deixou de ser a fila dele) e `Autoservicio` (a placa que diz que ninguém vem). O G12 conta 3 pares ouvir→agir desta parte para o piso de 8 do SKU.",
+    "_revisao_adversarial_2026_07_28": "Revisor de B05. Nenhum `es` tocado (valida-audio: 0 clipes com texto à frente do áudio; os 11 audioKeys espanhóis desta parte batem no manifesto e têm mp3). G14 do script: 0 divergências; varredura manual de inglês na narração alemã: 0 ocorrências. SETE CORREÇÕES, todas em texto que ainda não foi gravado: (1) `b05-n01` dizia «Hand flach, ein Zug seitwärts» — mão plana é o PROGRAMA 2 (`b01-n13`, a segurada anti-schwa), e o step declara `gesto: 3`; passou a ser «Die Hand gleitet seitwärts … ohne anzuhalten», que é a definição do programa 3 em `b01-n15`. (2) `b05-n11` e a §4 do `aprofundar` diziam que `en el hotel` vira «e-lo-TEL» — isso é `el hotel` (o exemplo canônico da DERIVAÇÃO §1.2 linha 5). `en el hotel` é «e-ne-lo-TEL», e o áudio estava ensinando a comer o /n/ na única parte cujo gesto é o Gleiten. (3) o `pinyin` de `e02b-alojo-e` era «e-nel o-TEL», que quebra a palavra exatamente onde a ligação tem de acontecer, contradizendo o «ein Zug» do próprio step → «e-ne-lo-TEL». (4) o mesmo `pinyin` grafava `Madrid` como «ma-DRITH», que na convenção deste SKU (`th` = a língua entre os dentes) contradiz o que `b05-n12` promete em voz alta («klingt hart, fast wie ein t», o brinde do Auslautverhärtung, DERIVAÇÃO §1.2 linha 11) → «ma-DRIT». (5) a glosa de `Diez días` dizia «kein ts am Anfang und keins am Ende» e não existe candidato a ts no começo de nada nessa frase → passou a nomear o ⟨z⟩ de `diez`. (6) `b05-n14` punha o recepcionista DIZENDO `firma` (imperativo de tú) na mesma cena em que ele trata o hóspede por usted (`¿Me deja el pasaporte?`) e em que o `aprofundar` diz que o balcão é um dos poucos lugares onde usted é o certo; virou a palavra IMPRESSA na linha do formulário — que é onde o falso amigo `firma`≠`Firma` de fato morde um leitor alemão, e continua sendo fato lexical do espanhol, sem afirmar nada NÃO CONFERIDO. (7) `¿Necesito el pasaporte?` estava com prompt que citava um formulário ainda não apresentado, herdava `bloco: \"callback\"` sendo material NOVO, e drilava uma pergunta ociosa a três steps de a parte mandar «alles hinlegen und fertig»: os dois steps foram para depois da cápsula, abrem `bloco: \"corpo\"`, e a pergunta passou a ser a única deste SKU que só um cidadão da UE faz — Personalausweis contra Reisepass, cuja resposta o `aprofundar` já traz («Ausweis- oder Passnummer»). Convenção de `pinyin` alinhada dentro da parte e com ep-b04: `au-to-sser-BI-thio` (⟨s⟩ que um alemão sonorizaria), `PUE-deh`/`TJE-neh`/`pa-ssa-POR-teh` (⟨-e⟩ final que um alemão reduz a schwa — o erro CARO da DERIVAÇÃO §1.2 linha 2), e o `e07a-tasa-e` com a MESMA grafia que ep-b04 dá ao mesmo mp3.",
+    "pendencias": [
+      "G14 continua PENDENTE como portão de conteúdo e este é o SKU do acidente: conferência humana obrigatória de que Juli e Thomas não dizem uma frase espanhola inteira e que Carmen e Emilio não dizem uma palavra alemã. Nesta parte a guia CITA espanhol em b05-n01, n10, n11 e n14 — citar é o trabalho dela, falar não seria. (b05-n07, o outro clipe do Thomas, não cita espanhol nenhum.)",
+      "CONVENÇÃO DE `pinyin` DIVERGENTE NO SKU, e ela é maior que esta parte. Cinco partes já escritas usam o campo: ep-b04, b11, b12 e b14 grafam ⟨z⟩ e ⟨c⟩+e,i como `ss` (`te-RRA-ssa`, `GRA-ssjass`, `ssin-KUEN-ta`, `po-li-SSI-a`) — isto é SESEO na tela, e a DERIVAÇÃO §1.2 linha 7 manda o modelo seguir distinción obrigatória (INV-21, «modelo em seseo é o erro do Hablá»). B05 usa `th` (`ba-ka-THIO-nes`, `DJETH`, `ne-the-SSI-to`), que é o que a lei pede, e reserva `ss` para o ⟨s⟩ surdo. Uma das duas convenções tem de ser escolhida e aplicada às cinco partes ANTES de a sexta ser escrita — e ep-b14 é a que mais tem a perder, porque é a parte dos números. B01, que deveria ser a casa da convenção, não usa `pinyin` em nenhum step.",
+      "Os 21 clipes de narração alemã e os 8 prompts desta parte não existem em disco: `npm run audio:check` acusa até a geração.",
+      "DEPENDÊNCIA VIVA DE B04: o callback (`e07a-tasa-e`) só é recuperação enquanto B04 mantiver a tasa turística. Se B04 for reescrita outra vez e a soltar, o callback daqui vira novidade e tem de mudar — é a mesma armadilha que já aconteceu uma vez nesta parte, com `e02a-pasaporte-c`.",
+      "O nome do hóspede gravado é `Harper`, britânico, e não pode mudar (é áudio pago). A glosa manda o aluno pôr o próprio nome no lugar; se um dia houver orçamento para um clipe novo, `Tengo una reserva a nombre de Fischer.` é a substituição óbvia deste SKU."
+    ]
+  },
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b05-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "pt": "Teil fünf. Die Hand gleitet seitwärts, ein Zug pro Wortgruppe, ohne anzuhalten. Nicht `el` `hotel`, sondern e-lo-TEL."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b05-n02",
+      "bloco": "cena",
+      "pt": "Palma, 14 Uhr 40, zehn Tage vor Ihnen. Die Türen gehen auf, Sie laufen mit dem Strom — und es kommt niemand."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b05-n03",
+      "pt": "Kein Schalter, kein Stempel, kein Blick. Der Flug blieb innerhalb von Schengen, und dort wird keine Grenze kontrolliert."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e02b-control-c",
+      "receptivo": true,
+      "es": "Control de pasaportes",
+      "pinyin": "kon-TROL de pa-ssa-POR-tes",
+      "pt": "👂 Schild: Passkontrolle. Aus Deutschland kommend ist das nicht Ihre Schlange — die ist für Flüge von außerhalb.",
+      "acao": "Nicht anstellen. Am Schild vorbei, Richtung Gepäck.",
+      "tts": "Control de pasaportes"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e02b-auto-e",
+      "receptivo": true,
+      "es": "Autoservicio",
+      "pinyin": "au-to-sser-BI-thio",
+      "pt": "👂 Schild: Selbstbedienung. Wo das steht, kommt niemand zu Ihnen — an der Zapfsäule wie am Automaten.",
+      "acao": "Nicht warten. Selbst hingehen und selbst anfangen.",
+      "tts": "Autoservicio"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b05-n04",
+      "pt": "Der Erste, der überhaupt etwas von Ihnen will, steht zwei Stunden später hinter einem Tresen und tippt."
+    },
+    {
+      "consulta": [
+        "quarto/checkin",
+        "pagar/dinheiro"
+      ],
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "bloco": "callback",
+      "promptAudioKey": "b05-p01",
+      "promptPt": "An der Rezeption ist längst alles online bezahlt. Sie tippt trotzdem noch etwas ein und nennt eine Zahl. Fragen Sie nach, ob das schon drin war. Sprechen Sie jetzt.",
+      "audioKey": "e07a-tasa-e",
+      "es": "¿La tasa turística está incluida?",
+      "pinyin": "la TA-ssa tu-RISS-ti-ka ess-TA in-klu-I-da",
+      "pt": "Ist die Kurtaxe inbegriffen?",
+      "tts": "¿La tasa turística está incluida?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e07a-ficha-c",
+      "receptivo": true,
+      "es": "¿Me deja el pasaporte? Tengo que rellenar la ficha de viajeros.",
+      "pinyin": "me DE-cha el pa-ssa-POR-teh — TENG-go ke rre-je-NAR la FI-tscha de bja-CHE-ros",
+      "pt": "👂 «Lassen Sie mir den Ausweis da? Ich muss das Gästeblatt ausfüllen.» — Der erste Satz an der Rezeption, fast immer.",
+      "acao": "Nichts sagen. Ausweis rüberschieben, bevor sie zweimal fragen muss.",
+      "tts": "¿Me deja el pasaporte? Tengo que rellenar la ficha de viajeros."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b05-n05",
+      "bloco": "capsula",
+      "pt": "Das ist nicht ihre Neugier. Seit Dezember 2024 müssen Hotels, Ferienwohnungen und Mietwagenschalter Ihre Daten melden."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b05-n06",
+      "pt": "Geburtsdatum, Telefon, E-Mail, volle Wohnadresse — und bei Kindern, wie Sie mit ihnen verwandt sind."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "b05-n07",
+      "tom": "protege",
+      "pt": "Thomas hier. Wer die Angaben verweigert, bekommt kein Zimmer. Das Haus hat da keinen Spielraum, es ist Vorschrift."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b05-n08",
+      "tom": "ganha",
+      "pt": "Also einmal alles hinlegen und fertig. Ausweis raus, bevor Sie am Tresen stehen — dann dauert es zwei Minuten."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e02a-pasaporte-c",
+      "bloco": "corpo",
+      "es": "¿Necesito el pasaporte?",
+      "pinyin": "ne-the-SSI-to el pa-ssa-POR-teh",
+      "pt": "Brauche ich den Pass? — Sie reisen mit dem Personalausweis; die Nummer darauf reicht dem Formular. Das s in der Mitte bleibt scharf: «pa-ssa-POR-teh», ohne Summen.",
+      "tts": "¿Necesito el pasaporte?"
+    },
+    {
+      "consulta": [
+        "quarto/checkin"
+      ],
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "promptAudioKey": "b05-p08",
+      "promptPt": "Sie haben nur den Personalausweis dabei, der Pass liegt zu Hause im Ordner. Er streckt die Hand aus und sagt nicht, welches der beiden er meint. Fragen Sie nach. Sprechen Sie jetzt.",
+      "audioKey": "e02a-pasaporte-c",
+      "es": "¿Necesito el pasaporte?",
+      "pinyin": "ne-the-SSI-to el pa-ssa-POR-teh",
+      "pt": "Brauche ich den Pass?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e07a-reserva-e",
+      "es": "Tengo una reserva a nombre de Harper.",
+      "pinyin": "TENG-go u-na rre-SSER-ba a NOM-bre de …",
+      "pt": "Ich habe eine Reservierung auf den Namen Harper. — Ihr Name steht am Schluss, alles davor bleibt, wie es ist.",
+      "tts": "Tengo una reserva a nombre de Harper."
+    },
+    {
+      "consulta": [
+        "quarto/checkin"
+      ],
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "promptAudioKey": "b05-p02",
+      "promptPt": "Rezeption in Madrid, halb zwölf nachts. Der Mann hinter dem Tresen schaut hoch und sagt nichts. Fangen Sie an — Ihr Name ganz zum Schluss. Sprechen Sie jetzt.",
+      "audioKey": "e07a-reserva-e",
+      "es": "Tengo una reserva a nombre de Harper.",
+      "pinyin": "TENG-go u-na rre-SSER-ba a NOM-bre de …",
+      "pt": "Ich habe eine Reservierung auf den Namen …"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b05-n09",
+      "pt": "Dann kommen die drei Dinge, die an jedem dieser Tresen gefragt werden: warum, wie lange, wo Sie schlafen."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e02b-vacaciones-e",
+      "es": "Vengo de vacaciones.",
+      "pinyin": "BENG-go de ba-ka-THIO-nes",
+      "pt": "Ich bin im Urlaub hier. — Beide v sind weiche b, und das c vor i ist der Laut zwischen den Zähnen.",
+      "tts": "Vengo de vacaciones."
+    },
+    {
+      "consulta": [
+        "taxi/locadora",
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "promptAudioKey": "b05-p03",
+      "promptPt": "Anderer Schalter, anderer Tag: Sie holen den Mietwagen ab. Sie tippt Ihren Namen ein und fragt, was Sie herführt. Drei Wörter reichen. Sprechen Sie jetzt.",
+      "audioKey": "e02b-vacaciones-e",
+      "es": "Vengo de vacaciones.",
+      "pinyin": "BENG-go de ba-ka-THIO-nes",
+      "pt": "Ich bin im Urlaub hier."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e02b-diez-c",
+      "es": "Diez días.",
+      "pinyin": "DJETH DI-as",
+      "pt": "Zehn Tage. — Das z am Ende von `diez` ist kein ts: die Zungenspitze geht locker zwischen die Zähne."
+    },
+    {
+      "consulta": [
+        "quarto/checkin"
+      ],
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "promptAudioKey": "b05-p04",
+      "promptPt": "In der Ferienwohnung füllt die Gastgeberin das Blatt aus und kommt zu der Zeile, in der steht, wie lange Sie bleiben. Zwei Wörter. Sprechen Sie jetzt.",
+      "audioKey": "e02b-diez-c",
+      "es": "Diez días.",
+      "pinyin": "DJETH DI-as",
+      "pt": "Zehn Tage."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "b05-n10",
+      "pt": "Thomas noch einmal. Das j in `alojo` und in `deja` ist das ch von `Bach` — nie das j von `ja`."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b05-n11",
+      "gesto": 3,
+      "pt": "Und `en el hotel` hängt zusammen: e-ne-lo-TEL, ein Zug. Die Betonung auf TEL sitzt bei Ihnen schon richtig."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e02b-alojo-e",
+      "gesto": 3,
+      "es": "Me alojo en el hotel Rialto, en Madrid.",
+      "pinyin": "me a-LO-cho e-ne-lo-TEL rri-AL-to, en ma-DRIT",
+      "pt": "Ich wohne im Hotel Rialto, in Madrid. — Zwei Züge: `me alojo` und dann alles andere in einem Stück.",
+      "tts": "Me alojo en el hotel Rialto, en Madrid."
+    },
+    {
+      "consulta": [
+        "taxi/locadora",
+        "quarto/checkin"
+      ],
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "promptAudioKey": "b05-p05",
+      "promptPt": "Madrid, der Schalter der Mietwagenfirma: für das Formular braucht er eine Adresse in Spanien und wartet mit dem Kuli. Sagen Sie ihm, wo Sie schlafen. Sprechen Sie jetzt.",
+      "audioKey": "e02b-alojo-e",
+      "es": "Me alojo en el hotel Rialto, en Madrid.",
+      "pinyin": "me a-LO-cho e-ne-lo-TEL rri-AL-to, en ma-DRIT",
+      "pt": "Ich wohne im Hotel Rialto, in Madrid."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b05-n12",
+      "pt": "Das d am Schluss von `Madrid` klingt hart, fast wie ein t. Am Wortende machen Sie das zu Hause auch — geschenkt."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b05-n13",
+      "pt": "Und Zeigen ist schneller als Sagen. Die Buchung schon offen auf dem Handy, hinhalten, ein Satz dazu."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e02b-reserva-c",
+      "es": "Aquí tiene la reserva.",
+      "pinyin": "a-KI TJE-neh la rre-SSER-ba",
+      "pt": "Hier ist die Buchung. — Der Satz, der das Gespräch beendet: der Bildschirm streitet für Sie.",
+      "tts": "Aquí tiene la reserva."
+    },
+    {
+      "consulta": [
+        "quarto/checkin",
+        "reparo/apontar"
+      ],
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "promptAudioKey": "b05-p06",
+      "promptPt": "Der Name in seinem System sieht anders aus als auf Ihrem Handy, und er runzelt die Stirn. Erklären Sie nichts — halten Sie ihm den Bildschirm hin und sagen Sie den einen Satz dazu. Sprechen Sie jetzt.",
+      "audioKey": "e02b-reserva-c",
+      "es": "Aquí tiene la reserva.",
+      "pinyin": "a-KI TJE-neh la rre-SSER-ba",
+      "pt": "Hier ist die Buchung."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b05-n14",
+      "pt": "Dann schiebt er Ihnen das Blatt hin, und auf der Zeile steht `firma`. An diesem Tresen ist das Ihre Unterschrift."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b05-n15",
+      "bloco": "permissao",
+      "pt": "Verstehen müssen Sie das Formular nicht. Rauscht etwas an Ihnen vorbei, fragen Sie einfach noch einmal nach."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e01c-repetir-c",
+      "es": "¿Me puede repetir, por favor?",
+      "pinyin": "me PUE-deh rre-pe-TIR, por fa-BOR",
+      "pt": "Können Sie das wiederholen, bitte? — Der Satz aus Teil drei, und am Tresen verdient er sich zum ersten Mal etwas.",
+      "tts": "¿Me puede repetir, por favor?"
+    },
+    {
+      "consulta": [
+        "reparo/devagar",
+        "quarto/checkin"
+      ],
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "molde": "ME-PUEDE",
+      "encaixe": "repetir",
+      "encaixeGloss": "wiederholen",
+      "promptAudioKey": "b05-p07",
+      "promptPt": "Er nennt Ihnen die Uhrzeit fürs Frühstück und eine Zimmernummer, und beides rauscht an Ihnen vorbei. Halten Sie ihn auf, freundlich. Sprechen Sie jetzt.",
+      "audioKey": "e01c-repetir-c",
+      "es": "¿Me puede repetir, por favor?",
+      "pinyin": "me PUE-deh rre-pe-TIR, por fa-BOR",
+      "pt": "Können Sie das wiederholen, bitte?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b05-n16",
+      "bloco": "espelho",
+      "pt": "Was dort auffällt, ist nicht der Akzent. Es ist die vorbereitete Rede: gefragt sind drei Dinge, erklärt wird nichts."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b05-n17",
+      "bloco": "clique",
+      "pt": "Sie haben heute an der Rezeption, am Mietwagenschalter und in der Ferienwohnung dasselbe gesagt."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b05-n18",
+      "pt": "Dreimal derselbe Tresen, nur ein anderes Schild darüber. Und der Baustein aus Teil drei hat wieder gearbeitet."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Juli",
+      "audioKey": "b05-r01",
+      "bloco": "recap",
+      "pt": "Das war Teil fünf. Kein Grenzer — aber drei Antworten: warum, wie lange, wo Sie schlafen."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Juli",
+      "audioKey": "b05-r02",
+      "pt": "Einmal laut, bevor es weitergeht: die Gastgeberin fragt, wie lange Sie bleiben. Was sagen Sie?"
+    },
+    {
+      "tipo": "recap",
+      "voz": "Juli",
+      "audioKey": "b05-r03",
+      "pt": "Weiter mit Teil sechs: die ersten sechzig Minuten — Gepäck, Bargeld, Toilette. Bis gleich."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "Ankommen, im Detail (optional)",
+    "secoes": [
+      {
+        "titulo": "Warum an der Grenze nichts passiert",
+        "corpo": "Die Kontrollen, von denen englischsprachige Reiseführer voll sind — Kamera, vier Fingerabdrücke, Stempel, die Neunzig-Tage-Regel — gehören zur AUSSENgrenze des Schengen-Raums. Ein Flug von Deutschland nach Spanien ist ein Binnenflug innerhalb dieses Raums: es gibt dort keine Grenzkontrolle, keinen Stempel und keine Registrierung. Für Sie bleibt davon genau eins übrig, und das ist eine Sache der Fluggesellschaft, nicht der Grenze: ohne gültiges Ausweisdokument kommen Sie nicht an Bord, und ein Kind braucht ein eigenes. Zwei Fußnoten, damit Sie nichts Falsches erwarten. Erstens darf ein Staat Binnenkontrollen befristet wieder einführen; das wird angekündigt, es ist keine Dauerlage, und es betrifft vor allem Landgrenzen. Zweitens: dass niemand Ihren Ausweis sehen will, heißt nicht, dass Sie ihn im Koffer lassen können — der erste Tresen nach der Ankunft will ihn ganz sicher.",
+        "exemplos": [
+          {
+            "es": "Control de pasaportes",
+            "pt": "Passkontrolle — das Schild gibt es weiter, nur nicht für Sie"
+          }
+        ]
+      },
+      {
+        "titulo": "Die Liste, und woher sie kommt",
+        "corpo": "Real Decreto 933/2021, verbindlich seit dem 2. Dezember 2024: Unterkünfte UND Autovermietungen müssen erheben und an die Sicherheitsbehörden übermitteln — Vor- und Nachname, Ausweis- oder Passnummer, Staatsangehörigkeit, Geschlecht, Geburtsdatum, Telefon, E-Mail, die vollständige Wohnadresse, die Zahl der Reisenden und, wenn Minderjährige dabei sind, das Verwandtschaftsverhältnis. Es gilt für Hotels, Ferienwohnungen und Mietwagenschalter gleichermaßen, das Formular ist manchmal nur auf Spanisch, und ohne die Angaben findet kein Check-in statt. Das ist der ganze Grund, warum an einem Tresen in Palma dieselbe Liste abgefragt wird wie an einem Tresen in Madrid: es ist keine Hausregel, es ist ein Dekret. Praktische Folge: Wohnadresse und Ausweis gehören in die Hand, bevor Sie dran sind — und wer mit dem eigenen Auto oder mit der Fähre kommt, spart sich genau einen dieser Tresen, den der Mietwagenfirma."
+      },
+      {
+        "titulo": "«Me alojo en…» passt auf jede Adresse",
+        "corpo": "`Me alojo en…` heißt «ich wohne (vorübergehend) in…» und nimmt jede Art von Unterkunft an. Deshalb ist es die einzige Fassung dieser Antwort, die Sie sich merken müssen: Anfang sagen, Unterkunft anhängen. Gefragt wird es an der Rezeption, am Mietwagenschalter und überall dort, wo jemand ein Formular vor sich hat. In der vertraulichen Form hören Sie `¿Dónde te alojas?`, förmlich `¿Dónde se aloja?` — und der Schalter ist eine der wenigen Stellen in Spanien, an denen die förmliche Form wirklich die richtige ist.",
+        "exemplos": [
+          {
+            "es": "Me alojo en un apartamento, en el centro.",
+            "pt": "me a-LO-cho en un a-par-ta-MEN-to, en el THEN-tro — Ich wohne in einer Wohnung, im Zentrum."
+          },
+          {
+            "es": "Me alojo en casa de un amigo.",
+            "pt": "me a-LO-cho en KA-ssa de un a-MI-go — Ich wohne bei einem Freund."
+          }
+        ]
+      },
+      {
+        "titulo": "Die vier Wörter dieser Folge, die man falsch liest",
+        "corpo": "`pasaporte` — das s bleibt scharf, «pa-ssa-POR-teh», kein Summen in der Mitte. `alojo` und `deja` — das j ist das ch von `Bach`; wer es als j von `ja` liest, sagt «a-lo-yo», und das ist kein spanisches Wort. `ficha` — das ch ist hier kein Bach-Laut, sondern tsch wie in `Tschüss`: «FI-tscha». `viajeros` — dasselbe j wie oben, und das v davor ein weiches b: «bja-CHE-ros». Und ein Geschenk zum Schluss: `hotel` betonen Sie im Deutschen ohnehin hinten, genau wie im Spanischen; das h schweigt und die Silbe klebt am Wort davor, `en el hotel` wird «e-ne-lo-TEL»."
+      }
+    ]
+  }
+}

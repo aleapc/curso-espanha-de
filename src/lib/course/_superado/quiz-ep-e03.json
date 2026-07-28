@@ -1,0 +1,118 @@
+{
+  "id": "q-e03",
+  "nivel": "basico",
+  "titulo": "Quiz — Theke, Tisch und Rechnung",
+  "subtitulo": "Ein Abend in einer Madrider Bar, von der Tür bis zum letzten Euro",
+  "introAudioKey": "qe03-i",
+  "introPt": "Quizzeit. Ihr seid zu zweit und geht um neun Uhr abends in eine volle Bar in Madrid. Du grüßt den Raum, prüfst den Preis an der Theke, bestellst, bekommst die echte Karte, bestellst kein Abendessen für sechs, trinkst Wasser, für das du nichts zahlst, lehnst Brot ab, das du nie wolltest, und hakst eine Zeile auf der Rechnung nach. Hör so oft du magst, dann antworte.",
+  "cenario": "Ein Paar geht abends in eine spanische Bar: Sie grüßen, prüfen, ob die Terrasse mehr kostet, bestellen Getränke, fragen nach der Karte, klären die Portionsgrößen, bekommen Leitungswasser, lehnen das Brot ab, bitten um die Rechnung und haken einen Posten nach.",
+  "dialogo": [
+    { "audioKey": "qe03-d1", "voz": "Carmen", "es": "Buenas.", "pinyin": "BUE-nas", "pt": "— Hallo. (du beim Reinkommen — den Raum zu grüßen ist nicht optional)" },
+    { "audioKey": "qe03-d2", "voz": "Emilio", "es": "¡Hola! Dime.", "pinyin": "O-la — DI-me", "pt": "— Hallo! Leg los. (der Wirt: «dime» heißt, du bist dran)" },
+    { "audioKey": "qe03-d3", "voz": "Carmen", "es": "¿Es el mismo precio en la barra?", "pinyin": "es el MISS-mo PRE-thjo en la BA-rra", "pt": "— Kostet es an der Theke dasselbe?" },
+    { "audioKey": "qe03-d4", "voz": "Emilio", "es": "En la terraza hay suplemento. En la barra no.", "pinyin": "en la te-RRA-tha ai ssu-ple-MEN-to — en la BA-rra no", "pt": "— Auf der Terrasse gibt es einen Zuschlag. An der Theke nicht." },
+    { "audioKey": "qe03-d5", "voz": "Carmen", "es": "Vale. ¿Me pones dos cañas, por favor?", "pinyin": "BA-le — me PO-nes dos KA-njas, por fa-BOR", "pt": "— Gut. Zwei kleine Bier, bitte?" },
+    { "audioKey": "qe03-d6", "voz": "Carmen", "es": "¿Y nos trae la carta?", "pinyin": "i nos TRA-e la KAR-ta", "pt": "— Und bringen Sie uns die Karte? (la carta — nicht «el menú»)" },
+    { "audioKey": "qe03-d7", "voz": "Emilio", "es": "Aquí tienes. Hoy hay pulpo, muy bueno.", "pinyin": "a-KI TJE-nes — oi ai PUL-po, mui BUE-no", "pt": "— Bitte sehr. Heute haben wir Oktopus, sehr gut." },
+    { "audioKey": "qe03-d8", "voz": "Carmen", "es": "¿Esto es tapa, media ración o ración?", "pinyin": "ESS-to es TA-pa, ME-dja rra-THJON o rra-THJON", "pt": "— Ist das eine Tapa, eine halbe oder eine ganze Portion?" },
+    { "audioKey": "qe03-d9", "voz": "Emilio", "es": "Ración. Es grande, para compartir.", "pinyin": "rra-THJON — es GRAN-de, PA-ra kom-par-TIR", "pt": "— Ganze Portion. Groß, zum Teilen." },
+    { "audioKey": "qe03-d10", "voz": "Carmen", "es": "Entonces media ración. Y una jarra de agua del grifo, por favor.", "pinyin": "en-TON-thes ME-dja rra-THJON — i U-na CHA-rra de A-gua del GRI-fo", "pt": "— Dann eine halbe Portion. Und einen Krug Leitungswasser, bitte." },
+    { "audioKey": "qe03-d11", "voz": "Carmen", "es": "El pan no, gracias. No queremos pan.", "pinyin": "el pan no, GRA-thjas — no ke-RE-mos pan", "pt": "— Kein Brot, danke. Wir möchten kein Brot." },
+    { "audioKey": "qe03-d12", "voz": "Carmen", "es": "¿Nos cobras, por favor?", "pinyin": "nos KO-bras, por fa-BOR", "pt": "— Können wir zahlen, bitte? (die Rechnung kommt nie von allein)" },
+    { "audioKey": "qe03-d13", "voz": "Emilio", "es": "Son veinticinco con cincuenta.", "pinyin": "sson be-in-ti-THIN-ko kon thin-KUEN-ta", "pt": "— Das macht fünfundzwanzig fünfzig." },
+    { "audioKey": "qe03-d14", "voz": "Carmen", "es": "Perdone, creo que hay un error. Esto no lo hemos pedido.", "pinyin": "per-DO-ne, KRE-o ke ai un e-RROR — ESS-to no lo E-mos pe-DI-do", "pt": "— Entschuldigung, ich glaube, da ist ein Fehler. Das haben wir nicht bestellt." }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "Der Wirt sagt «Dime». Was macht er da gerade?",
+      "es": "The barman says «Dime». What is he doing?",
+      "opcoes": [
+        "Er sagt dir, dass die Bar voll ist",
+        "Er sagt dir, dass du dran bist — bestell jetzt",
+        "Er fragt nach deinem Namen",
+        "Er fragt, ob du auf die Terrasse willst"
+      ],
+      "correta": 1,
+      "explica": "«Dime» heißt wörtlich «sag mir», und es ist genau der Moment, in dem du reden sollst. Kopf hoch, Blickkontakt, bestellen. Wer höflich auf einen längeren Satz wartet, sieht zu, wie jemand anders bedient wird.",
+      "pt": "«Dime» heißt wörtlich «sag mir», und es ist genau der Moment, in dem du reden sollst. Kopf hoch, Blickkontakt, bestellen. Wer höflich auf einen längeren Satz wartet, sieht zu, wie jemand anders bedient wird."
+    },
+    {
+      "pergunta": "Warum fragt sie «¿Es el mismo precio en la barra?», bevor sie sich hinsetzt?",
+      "es": "Why does she ask «¿Es el mismo precio en la barra?» before sitting down?",
+      "opcoes": [
+        "Weil unterschiedliche Preise für Theke, Tisch und Terrasse verboten sind",
+        "Weil das eine höfliche Art ist, nach Rabatt zu fragen",
+        "Weil dasselbe Getränk legal drei verschiedene Preise haben darf und der Zuschlag nur auf der ausgehängten Liste stehen muss",
+        "Weil die Terrasse immer billiger ist"
+      ],
+      "correta": 2,
+      "explica": "Barra, mesa und terraza dürfen legal unterschiedliche Preise tragen — solange es auf der Preisliste steht. Frag, bevor du dich setzt, nicht nachdem du gezahlt hast: Was ausgehängt ist, ist rechtens, und dann hast du nichts zu beanstanden.",
+      "pt": "Barra, mesa und terraza dürfen legal unterschiedliche Preise tragen — solange es auf der Preisliste steht. Frag, bevor du dich setzt, nicht nachdem du gezahlt hast: Was ausgehängt ist, ist rechtens, und dann hast du nichts zu beanstanden."
+    },
+    {
+      "pergunta": "Sie bittet um «la carta». Was hätte sie bekommen, wenn sie nach «el menú» gefragt hätte?",
+      "es": "She asks for «la carta». What would she have got if she'd asked for «el menú»?",
+      "opcoes": [
+        "Genau dasselbe — das sind Synonyme",
+        "Das feste Tagesgericht zum Festpreis — und damit hätte sie es bestellt",
+        "Die Weinkarte",
+        "Die Rechnung"
+      ],
+      "correta": 1,
+      "explica": "Hier hast du Heimvorteil: «la carta» ist die Karte, «el menú» ist das Menü — genau wie im Deutschen. Englischsprachige fallen täglich darauf herein, weil «menu» bei ihnen die Karte ist, und bekommen ungefragt ein komplettes Mittagessen serviert. Dein Stolperwort in dieser Folge ist ein anderes: «ración».",
+      "pt": "Hier hast du Heimvorteil: «la carta» ist die Karte, «el menú» ist das Menü — genau wie im Deutschen. Englischsprachige fallen täglich darauf herein, weil «menu» bei ihnen die Karte ist, und bekommen ungefragt ein komplettes Mittagessen serviert. Dein Stolperwort in dieser Folge ist ein anderes: «ración»."
+    },
+    {
+      "pergunta": "Der Wirt sagt, der Oktopus sei eine «ración». Warum wechselt sie zu «media ración»?",
+      "es": "The barman says the octopus is a «ración». Why does she switch to «media ración»?",
+      "opcoes": [
+        "Weil eine ración ein kleiner Happen ist und sie mehr will",
+        "Weil eine ración ein großer Teller zum Teilen ist und sie nur zu zweit sind",
+        "Weil raciones nur mittags serviert werden",
+        "Weil in einer ración immer Schinken ist"
+      ],
+      "correta": 1,
+      "explica": "«Ración» ist keine Ration. Tapa klein, pincho auf Brot und nach Zahnstocher gezählt, media ración richtig für zwei, ración reicht für vier. Wer «ración» als «Häppchen» liest, bestellt zu zweit Abendessen für sechs.",
+      "pt": "«Ración» ist keine Ration. Tapa klein, pincho auf Brot und nach Zahnstocher gezählt, media ración richtig für zwei, ración reicht für vier. Wer «ración» als «Häppchen» liest, bestellt zu zweit Abendessen für sechs."
+    },
+    {
+      "pergunta": "Sie bestellt «una jarra de agua del grifo». Was stimmt daran in Spanien?",
+      "es": "She orders «una jarra de agua del grifo». What's true about that in Spain?",
+      "opcoes": [
+        "Das ist eine dreiste Bitte, die manche Lokale durchgehen lassen",
+        "Gastronomiebetriebe müssen auf Nachfrage kostenloses, unverpacktes Wasser anbieten — Gesetz seit 2022",
+        "Es ist nur gratis, wenn man auch Essen bestellt",
+        "Es ist gratis, aber nur an der Theke, nie am Tisch"
+      ],
+      "correta": 1,
+      "explica": "Seit 2022 müssen Gastronomiebetriebe kostenloses, unverpacktes Wasser anbieten. Bitte um eine «jarra» — einen Krug — statt um ein Glas. Zu Hause wärst du mit der Frage nicht weit gekommen; hier steht sie im Gesetz. Und wenn sich jemand rundheraus weigert, ist das ein Fall für das Beschwerdeformular.",
+      "pt": "Seit 2022 müssen Gastronomiebetriebe kostenloses, unverpacktes Wasser anbieten. Bitte um eine «jarra» — einen Krug — statt um ein Glas. Zu Hause wärst du mit der Frage nicht weit gekommen; hier steht sie im Gesetz. Und wenn sich jemand rundheraus weigert, ist das ein Fall für das Beschwerdeformular."
+    },
+    {
+      "pergunta": "Die Summe lautet «veinticinco con cincuenta». Wie viel ist das?",
+      "es": "The total is «veinticinco con cincuenta». How much is that?",
+      "opcoes": [
+        "25,50 €",
+        "25,60 €",
+        "26,50 €",
+        "65,50 €"
+      ],
+      "correta": 0,
+      "explica": "Fünfundzwanzig fünfzig. Beide Hälften tragen das spanische th des englischen «think» — thin-ko, thin-KUEN-ta. Überhörst du es, wird aus «cincuenta» (50) schnell «sesenta» (60). Vier der Zahlen auf jeder Barrechnung haben diesen Laut.",
+      "pt": "Fünfundzwanzig fünfzig. Beide Hälften tragen das spanische th des englischen «think» — thin-ko, thin-KUEN-ta. Überhörst du es, wird aus «cincuenta» (50) schnell «sesenta» (60). Vier der Zahlen auf jeder Barrechnung haben diesen Laut."
+    },
+    {
+      "pergunta": "«Perdone, creo que hay un error… esto no lo hemos pedido.» Wenn der Kellner sich weiter weigert — was ist der nächste Schritt?",
+      "es": "«Perdone, creo que hay un error… esto no lo hemos pedido.» If the waiter still refuses, what's the next step?",
+      "opcoes": [
+        "Lauter werden, damit die anderen Gäste es hören",
+        "Die Zahlung verweigern und rausgehen",
+        "Ruhig und im Sitzen nach «la hoja de reclamaciones» fragen",
+        "Eine schlechte Bewertung schreiben und es vergessen"
+      ],
+      "correta": 2,
+      "explica": "Sechs Wörter, im selben Ton wie «bringen Sie uns bitte die Karte»: «La hoja de reclamaciones, por favor.» Es ist ein amtliches Formular in dreifacher Ausfertigung, und ein Blatt geht an die regionale Verbraucherbehörde, die den Laden zulässt — die Aushändigung zu verweigern ist selbst ein ernster Verstoß. Sitzen bleiben, normale Lautstärke. Ein schreiender Tourist ist Unterhaltung; ein ruhiger, der nach einem Amtsformular fragt, ist ein Problem.",
+      "pt": "Sechs Wörter, im selben Ton wie «bringen Sie uns bitte die Karte»: «La hoja de reclamaciones, por favor.» Es ist ein amtliches Formular in dreifacher Ausfertigung, und ein Blatt geht an die regionale Verbraucherbehörde, die den Laden zulässt — die Aushändigung zu verweigern ist selbst ein ernster Verstoß. Sitzen bleiben, normale Lautstärke. Ein schreiender Tourist ist Unterhaltung; ein ruhiger, der nach einem Amtsformular fragt, ist ein Problem."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "_comentario": "¡Dime! (DE → Espanha): voz-guia ALEMÃ — Juli (educadora, de-DE) + Thomas (avisos, o equivalente do George). Fala-alvo em espanhol PENINSULAR — Carmen + Emilio, e Ivan + Matilda SÓ no ear module (A01). REGRA INV-5: a voz-guia NUNCA fala espanhol e a voz nativa NUNCA fala alemão. Modelo: guia em flash (narração longa, sem exigência de sotaque estrangeiro, metade do custo), alvo em multilingual_v2 (segura melhor o sotaque peninsular). O gerador decide por PT_VOICES = {Juli, Thomas, narrador} — conferido.",
+  "_acervo": "static/audio tem 752 mp3, TODOS de fala espanhola, copiados verbatim do curso EN com os mesmos audioKey: Carmen 359 · Emilio 377 · Ivan 9 · Matilda 7. Custo de crédito zero — é ativo de DESTINO. Os 938 mp3 que estavam aqui antes eram narração INGLESA sob chaves alemãs (o acidente que originou o portão valida-audio) e foram apagados na montagem do andaime, em 28/07/2026. O que este SKU vai pagar é a narração alemã, que ainda não existe: os 36 ep-*.json nascem com `aguardaNarracao: true` e voz-guia vazia.",
+  "_fonetica_do_par": "ATENÇÃO ao inverter a fonética, e a inversão NÃO é a que o senso comum sugere. O erro nº 1 do comprador alemão é ORTOGRÁFICO, não articulatório: ele tem quase todos os sons e o que lhe falta é a regra de leitura — ⟨qu⟩=[kv] (`quería`→'kveria'), ⟨v⟩=[f] (`vino`→`fino`, que é uma bebida real e pedível), ⟨z⟩/⟨c⟩+e,i=[ts] (`cerveza`→'tservetsa'), ⟨s⟩=[z], ⟨h⟩ audível, ⟨j⟩=[j], ⟨ll⟩=[l]. BRINDES: as vogais em QUALIDADE (monotongos tensos), o [x] de `Bach` para a jota, a sílaba tônica dos latinismos (`Hospitál`, `Hotél` — o '-o tax' do curso inglês não se aplica) e a consoante final ensurdecida. CAROS E NOVOS: o golpe de glote contra o encadeamento espanhol (`el hotel`→[e-lo-tel]), o `r` uvular contra o tap, a distinción (que era brinde para o inglês e aqui vira [ts] ininteligível) e a vogal átona final, que o alemão reduz a schwa. O RITMO continua caro: o alemão também é acentual. Detalhe em docs/DERIVACAO-DE.md.",
+  "model": "eleven_flash_v2_5",
+  "modelZh": "eleven_multilingual_v2",
+  "narrador": "b7rYqIwPfdKfLiwkAgFs",
+  "Juli": "b7rYqIwPfdKfLiwkAgFs",
+  "Thomas": "5faieqDE3osz75KiOI2M",
+  "Carmen": "h2cd3gvcqTp3m65Dysk7",
+  "Emilio": "ZCh4e9eZSUf41K4cmCEL",
+  "Ivan": "FVkjSdzllLpQkLZaNmJl",
+  "Matilda": "tSdO3lUIODN7SK6eWVhu",
+  "_ear_module": "A01 usa Ivan e Matilda, NÃO Carmen e Emilio: Emilio é o modelo masculino padrão das outras partes e usá-lo também como voz de variação contamina o modelo. Ivan e Matilda são as duas ÚNICAS vozes peninsulares da biblioteca pública do ElevenLabs e NENHUMA é verificadamente regional — por isso A01 não alega sotaque de região nenhuma. Neste SKU a prioridade de casting da 5ª voz deixa de ser Sevilha e passa a ser BALEAR ou CANÁRIA: 42% deste comprador desembarca nas Baleares e 22% nas Canárias, que são zona de seseo.",
+  "_vozes_alternativas_testadas": "amostras em Downloads/DE-amostras — Rhea le3O97c6UClnRdpxkDTb, Lara Sophie lMjHgR0mlECMlSEhnD6j, Roman 1YST1S3BrkT7E0wcLKQD.",
+  "_g14": {
+    "guia": [
+      "Juli",
+      "Thomas"
+    ],
+    "guiaLingua": "de",
+    "alvo": [
+      "Carmen",
+      "Emilio"
+    ],
+    "alvoLingua": "es"
+  }
+}

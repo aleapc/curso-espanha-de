@@ -1,0 +1,612 @@
+{
+  "id": "b04",
+  "slot": "B04",
+  "nivel": "basico",
+  "numero": 4,
+  "parte": "4",
+  "titulo": "Die Liste mit Frist — der Ausweis, die Karte, die Zusatzversicherung, die drei Buchungen",
+  "subtitulo": "Vier Zeilen, die vor dem Abflug erledigt sein müssen — und das meiste auf den üblichen Checklisten betrifft Sie gar nicht",
+  "moldura": "ganha",
+  "cena": "Der Flug ist bezahlt, der Ausweis liegt seit Jahren in derselben Schublade, und die Einzige, die morgen früh auf das Datum schaut, steht am Check-in-Schalter — mit einer Schlange hinter Ihnen.",
+  "permissao": "Das meiste auf den Reise-Checklisten betrifft Sie nicht: kein Roaming-Paket, keine spanische SIM-Karte, keine Einreisegenehmigung. Ihre Liste hat vier Zeilen, und drei davon sind heute in zehn Minuten erledigt.",
+  "permissaoAudioKey": "b04-n18",
+  "frasePiso": "Sie steigen mit einem geprüften Ausweis, der Karte, einer Zusatzversicherung für zehn bis zwanzig Euro im Jahr und drei Buchungen ins Flugzeug. Die meisten Gäste merken erst an der Rezeption, dass auf ihrer Rechnung noch eine Zeile fehlt.",
+  "espelho": "An der Rezeption zu sagen, es sei doch online schon alles bezahlt, ist der Teil, der dort seltsam wirkt: der Portalpreis ist nicht der Endpreis, und die Zeile, die fehlt, ist eine öffentliche Abgabe, keine Erfindung des Hauses.",
+  "_clique_nao_se_aplica": "B04 NÃO é casa de molde nenhum. `moldes.json` (v1, DE) dá ME-PUEDE à casa B03 e lista B04 entre os redisparos — por isso a raiz não declara `moldes[]`, e por isso o bloco final desta parte é «Gramática em foco» (PRODUTO T4) e não o clique. A decisão está registrada no próprio `valida-tom.mjs` (G16, item 6): o gatilho do clique é a raiz `moldes`, nunca `steps[].molde`, precisamente porque a versão anterior deste portão cobrava clique de redisparo puro e a parte inglesa correspondente produziu uma contagem inventada de três lugares para um molde que pagava em um.",
+  "_steps_removidos": "OS CINCO STEPS DE SIM PRÉ-PAGA SAÍRAM, e não por estilo. O andaime herdou de `ep-e02a.json` (EN) as chaves e02a-sim-c · e02a-solodatos-e · e02a-pasaporte-c · e02a-eloriginal-e · e02a-activar-e, que existem para o item «telefone» da lista britânica. Para este comprador esse item NÃO EXISTE: o roaming intra-UE tarifa como em casa (DERIVACAO-DE §4.1), então ninguém compra SIM espanhola numa viagem de 7,9 noites e comprar seria o produto ensinando a gastar. Os cinco mp3 continuam no disco e viram órfãos — `valida-audio.mjs` os reporta como aviso, não como erro, e o custo é de deploy. NÃO APAGAR do manifesto: eles são ativo de destino e B06 (`dono: destino`, onde o eSIM também sai) ou um SKU futuro de fora da UE pode reusá-los verbatim. O único step do lote que tinha ME-PUEDE (`activar la SIM aquí`) foi substituído por dois redisparos com encaixe novo e cena de verdade neste par: `dar la factura para el seguro` e `dar por escrito`.",
+  "_pendencia_zbe": "A ZBE PARA VEÍCULO DE PLACA ESTRANGEIRA NÃO É AFIRMADA AQUI, e a omissão é decisão. `pesquisa-espanha.md` §8.4 documenta que o distintivo da DGT só é emitido a veículo matriculado na Espanha e que o procedimento para placa estrangeira varia por município; DERIVACAO-DE §4.1 marca o ponto como PENDÊNCIA DE PESQUISA. Como o comprador deste SKU chega de avião e aluga carro com placa espanhola (que já tem distintivo), o item não é dele — quem escrever B07 decide o que fazer com o alemão que desce de carro próprio, com fonte na mão. Nada sobre ZBE entrou no áudio desta parte.",
+  "_pendencia_consulta": "Duas frases desta parte não têm folha na `taxonomia.ts`: `¿Esto es público o privado?` (a pergunta que separa a rede pública da clínica privada, onde o cartão europeu não vale) e a própria Kurtaxe no check-IN. A taxonomia tem `saude/112`, mas essa folha é reativa e o G8 tem teto de 15% de cards reativos. Proposta para quem montar o `consulta.json`: acrescentar `saude/publico-privado` (nível 2 é local, PRODUTO §6) e pendurar também em `quarto/checkin`. Enquanto a folha não existir, os steps ficam sem `consulta` em vez de pendurados na folha errada.",
+  "_moldura_nota": "GANHA, e a conta está declarada porque o G1 tem orçamento. REMEDIDO em 28/07/2026 com `npm run tom`, depois de B03 ter trocado o título herdado («Das Anti-Panik-Set» → «Noch einmal, langsamer, und auf ein Stück Papier»): ME VIRO está em 3/18 contra um teto de 4, e não em 4/18 como esta nota afirmava. As três defensivas de hoje são `ep-b13.json` e `ep-b14.json`, que declaram `moldura: protege` no arquivo, e `ep-b17.json`, que ainda não declara nada e cai no léxico de perda pelo título («Apotheke, Schmerzen und Notfall»). B03 NÃO é mais uma delas. Sobra UMA vaga, e a premissa desta nota mudou de «não há vaga» para «há uma, e B17 ainda vai querê-la quando for escrita» — a CONCLUSÃO não muda e fica mais folgada, porque seria errado no mérito: para este comprador a lista ENCOLHE (sem ETIAS, sem EES, sem 90/180, sem roaming, sem eSIM), e o que sobra custa dez a vinte euros por ano. A parte tem dois beats defensivos declarados no campo `tom` — o documento e o balcão da locadora — dentro de uma parte de ganho, que é exatamente o desenho do PRODUTO §3.2 regra 9.",
+  "fichasCulturais": [
+    {
+      "sinal": "Beim Auschecken tippt die Rezeptionistin etwas ein, dreht den Bildschirm zu Ihnen und nennt einen Betrag, der in Ihrer Buchungsbestätigung nirgends steht — und fragt, ob Sie ihn bar haben.",
+      "suaLeitura": "Ich habe online alles bezahlt. Das ist ein Aufschlag, den sie sich hier gerade ausdenken, und in bar will sie ihn auch noch.",
+      "oQueEAli": "Die Kurtaxe ist eine öffentliche Abgabe pro Person und Nacht, die das Haus einzieht und weiterreicht. Sie steht fast nie im Portalpreis und wird am Tresen kassiert. Auf den Balearen sind es je nach Kategorie ein bis vier Euro pro Person und Nacht, plus zehn Prozent Mehrwertsteuer auf die Abgabe selbst (docs/pesquisa-espanha.md §8.2).",
+      "oQueVoceFaz": "Beim Check-IN fragen, nicht beim Check-out: ¿La tasa turística está incluida? Und dann das Geld gleich beiseitelegen.",
+      "oQueMelhora": "Das Auschecken dauert zwei Minuten, Sie fahren mit der Rechnung weg, die Sie erwartet haben, und der letzte Kontakt mit dem Haus ist keine Diskussion.",
+      "ondeNaoVale": "Nicht überall: die Abgabe ist regional, nicht national, und Höhe und Existenz hängen von der Region ab. In Barcelona ist es ein anderer Betrag nach anderer Rechnung, in Mogán auf Gran Canaria hat ein Gericht die kommunale Abgabe im Juli 2026 gekippt, und in weiten Teilen Spaniens gibt es sie gar nicht.",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "b04-n16",
+        "b04-n17"
+      ]
+    }
+  ],
+  "fatosDatados": [
+    {
+      "id": "de-eu-nada-a-comprar",
+      "afirmacao": "Als EU-Bürgerin oder EU-Bürger brauchen Sie für Spanien keine Einreisegenehmigung, kein Roaming-Paket und keine spanische SIM-Karte: innerhalb der EU wird geroamt wie zu Hause, und einen Schengen-Binnenflug erwartet keine Grenzkontrolle.",
+      "valor": "sem ETIAS · sem EES · sem regra 90/180 · sem roaming extra",
+      "fonte": "docs/DERIVACAO-DE.md §4.1 — o estatuto jurídico do comprador alemão diante da Espanha; regulamento de roaming intra-UE («roam like at home») e livre circulação Schengen",
+      "ano": 2026,
+      "revisarAte": "2027-07-01",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "b04-n18"
+      ]
+    },
+    {
+      "id": "de-documento-valido-e-menor",
+      "afirmacao": "Personalausweis oder Reisepass müssen bis nach der Rückkehr gültig sein, jedes Kind braucht ein eigenes Dokument, und geprüft wird am Abflugschalter der Fluggesellschaft, nicht in Spanien. Ein neues Dokument dauert Wochen.",
+      "fonte": "docs/DERIVACAO-DE.md §4.1 — «documento de identidade válido e, para menor, o documento próprio da criança; companhia aérea recusa embarque com documento vencido». O prazo de emissão do documento alemão NÃO foi conferido em fonte primária: o áudio diz «Wochen», sem número.",
+      "ano": 2026,
+      "revisarAte": "2027-01-31",
+      "evidencia": "CONSENSO",
+      "risco": "medio",
+      "audioKeys": [
+        "b04-n03",
+        "b04-n04",
+        "b04-n05"
+      ]
+    },
+    {
+      "id": "de-ehic-verso-do-cartao",
+      "afirmacao": "Wer GESETZLICH versichert ist, hat die Europäische Krankenversicherungskarte auf der Rückseite der Gesundheitskarte. Damit wird man in Spanien staatlich behandelt, zu denselben Bedingungen wie jemand, der dort wohnt. Bei privater Versicherung steht sie dort nicht — dann gilt die eigene Police.",
+      "fonte": "docs/DERIVACAO-DE.md §4.1 (EVZ / AOK / betanet), que escreve «está no verso do cartão da CAIXA DE SAÚDE» — ou seja, do sistema legal (GKV) — + docs/pesquisa-espanha.md §8.5, que descreve o mesmo direito pelo lado do cartão britânico: cuidado estatal medicamente necessário ao preço que um residente paga. O ESCOPO É PARTE DO FATO e a versão anterior deste item o tinha perdido: dizia «die Rückseite der deutschen Gesundheitskarte» sem qualificador, o que é falso para quem tem PKV — e o modo de falha é justamente o que o slot existe para evitar (chegar achando-se coberto). A afirmação sobre o que o segurado privado TEM não é feita: o áudio só diz que ali a carta não está e remete à própria apólice.",
+      "ano": 2026,
+      "revisarAte": "2027-03-31",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "b04-n06",
+        "b04-n07",
+        "b04-n07b"
+      ]
+    },
+    {
+      "id": "de-ehic-nao-cobre",
+      "afirmacao": "Die Karte gilt im öffentlichen Netz. Sie zahlt keinen Rücktransport im Ambulanzflugzeug, keine Bergung, keine Begleitperson und keine Privatklinik.",
+      "fonte": "docs/DERIVACAO-DE.md §4.1 (EVZ / AOK / betanet) + docs/pesquisa-espanha.md §8.5 — repatriação, internação em hospital privado e o que não é médico ficam de fora do cartão europeu",
+      "ano": 2026,
+      "revisarAte": "2027-03-31",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "b04-n08",
+        "b04-n09"
+      ]
+    },
+    {
+      "id": "de-auslandsreisekranken-10-20",
+      "afirmacao": "Die Auslandsreisekrankenversicherung schließt genau diese Lücke und kostet zehn bis zwanzig Euro — nicht pro Tag, pro Jahr. Abgeschlossen wird sie vor dem Abflug.",
+      "valor": "€10–20 por ano",
+      "fonte": "docs/DERIVACAO-DE.md §4.1, que cita EVZ / AOK / betanet e chama este de «o melhor item de B04 deste SKU: custo trivial, buraco real, prazo real»",
+      "ano": 2026,
+      "revisarAte": "2027-07-01",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "b04-n10"
+      ]
+    },
+    {
+      "id": "publico-ou-privado-nao-se-ve",
+      "afirmacao": "Ob eine Praxis zum öffentlichen Netz gehört oder privat ist, sieht man ihr von außen nicht an — deshalb wird gefragt, bevor jemand anfängt zu behandeln.",
+      "fonte": "docs/pesquisa-espanha.md §8.5 rotula como INFERÊNCIA, com base no desenho do sistema, a armadilha equivalente da Costa del Sol (clínica privada com recepção na língua do turista) e marca `¿Esto es público o privado?` como «a pergunta que economiza mil euros». Aqui a inferência foi mantida SEM número e SEM afirmação sobre a rede de língua alemã em Mallorca, que DERIVACAO-DE §3.5 traz de fonte comercial e marca NÃO CONFERIDO.",
+      "ano": 2026,
+      "revisarAte": "2027-03-31",
+      "evidencia": "INFERENCIA",
+      "risco": "baixo",
+      "audioKeys": [
+        "b04-n08"
+      ]
+    },
+    {
+      "id": "recibo-para-o-seguro",
+      "afirmacao": "Die Versicherung erstattet gegen Beleg, und den Beleg gibt es nur an Ort und Stelle, an der Kasse.",
+      "fonte": "Princípio de reembolso (Kostenerstattung) das apólices de viagem, e o par de falas que o acervo já grava para a cena: `¿Me puede dar la factura para el seguro?` e `Necesito una copia para el seguro.` (docs/pesquisa-espanha.md §8.5 e ep-b17.json). Não há fonte primária citada no repositório para a obrigatoriedade do documento — é prática corrente, rotulada CONSENSO e dita sem número.",
+      "ano": 2026,
+      "revisarAte": "2027-07-01",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": [
+        "b04-t02"
+      ]
+    },
+    {
+      "id": "ave-60-90-dias",
+      "afirmacao": "Schnellzugfahrkarten kauft man sechzig bis neunzig Tage vorher. Kurzfristig kostet dieselbe Fahrt das Zwei- bis Dreifache.",
+      "valor": "60–90 dias · última hora 2 a 3× mais caro · Ouigo abre vendas com até 9 meses",
+      "fonte": "docs/pesquisa-espanha.md §8.4 — Renfe e Iryo soltam as tarifas mais baratas tipicamente 60 a 90 dias antes; preços sobem como tarifa aérea",
+      "ano": 2026,
+      "revisarAte": "2027-01-31",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "b04-n12"
+      ]
+    },
+    {
+      "id": "locadora-seguro-antes-e-caucao",
+      "afirmacao": "Die Versicherung für den Mietwagen entscheiden Sie zu Hause und drucken sie aus. Wer die Police des Schalters ablehnt, dem werden bei manchen Anbietern fünfhundert bis fünfzehnhundert Euro auf der Karte geblockt.",
+      "valor": "caução €500–1.500 ao recusar o seguro do balcão",
+      "fonte": "docs/pesquisa-espanha.md §8.4 (OCU e imprensa especializada, 2025–2026): pressão por seguro no balcão, caução de €500 a €1.500 ao recusar, e o protocolo de quatro passos que esta parte usa — decidir antes e por escrito, `No quiero seguro adicional`, `¿Me lo puede dar por escrito?`, `¿Cuánto me bloquean?`",
+      "ano": 2026,
+      "revisarAte": "2027-01-31",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "b04-n13",
+        "b04-n14"
+      ]
+    },
+    {
+      "id": "locadora-cartao-no-nome-de-quem-dirige",
+      "afirmacao": "Geblockt wird auf einer Kreditkarte, die auf die fahrende Person lautet. Eine neue Karte dauert Wochen — deshalb gehört der Punkt auf die Liste vor dem Abflug und nicht an den Schalter.",
+      "valor": "cartão de CRÉDITO, no nome de quem dirige",
+      "fonte": "docs/DERIVACAO-DE.md §4.1, que lista literalmente «caução e CARTÃO EM NOME DO CONDUTOR na locadora» entre os itens de prazo físico que ENTRAM em B04 neste SKU — e a versão anterior desta parte cobria a caução e deixava o cartão de fora, que é a metade com prazo. docs/pesquisa-espanha.md §8.4 registra o lado do risco: a caução «nem sempre fica óbvia antes do pagamento, especialmente com cartão de DÉBITO», e o comprador alemão é justamente o que sai de casa com Girocard. O prazo de emissão de um cartão novo NÃO tem fonte primária no repositório: o áudio diz «Wochen», sem número, pela mesma disciplina do item do documento.",
+      "ano": 2026,
+      "revisarAte": "2027-01-31",
+      "evidencia": "CONSENSO",
+      "risco": "medio",
+      "audioKeys": [
+        "b04-n14b"
+      ]
+    },
+    {
+      "id": "ecotasa-baleares-1-4",
+      "afirmacao": "Auf den Balearen sind es je nach Kategorie ein bis vier Euro pro Person und Nacht, plus zehn Prozent auf die Abgabe selbst. Sie steht fast nie im Portalpreis und wird an der Rezeption kassiert, oft in bar.",
+      "valor": "€1–4 por pessoa/noite + 10% de IVA sobre a própria ecotaxa",
+      "fonte": "docs/pesquisa-espanha.md §8.2 — a subida anunciada em 2025 NÃO entrou em vigor; até jun/2026 seguem €1 a €4 por pessoa/noite + 10%. A taxa quase sempre não está no preço do portal e é cobrada no balcão, muitas vezes em efectivo",
+      "ano": 2026,
+      "revisarAte": "2026-12-31",
+      "evidencia": "FATO",
+      "risco": "alto",
+      "audioKeys": [
+        "b04-n16",
+        "b04-n17"
+      ]
+    },
+    {
+      "id": "ecotasa-a-conta-na-cara",
+      "afirmacao": "Zu zweit, acht Nächte, bei zwei Euro: gut fünfunddreißig Euro, die im Portalpreis nicht stehen.",
+      "valor": "2 pessoas × 8 noites × €2 + 10% = €35,20",
+      "fonte": "INFERÊNCIA declarada: aritmética sobre a faixa de €1–4 do item `ecotasa-baleares-1-4` e sobre a estadia média alemã de 7,9 noites (docs/DERIVACAO-DE.md §3.1, Turespaña/INE 2024). Não é preço observado; se a categoria do hotel não for a de €2, o total não vale. Separada do item pai porque a régua de evidência é por afirmação",
+      "ano": 2026,
+      "revisarAte": "2026-12-31",
+      "evidencia": "INFERENCIA",
+      "risco": "alto",
+      "audioKeys": [
+        "b04-n16"
+      ]
+    },
+    {
+      "id": "mogan-anulada",
+      "afirmacao": "Die kommunale Abgabe von Mogán auf Gran Canaria wurde im Juli 2026 gerichtlich gekippt — der Status ist offen.",
+      "fonte": "docs/pesquisa-espanha.md §8.2 — Mogán aprovou em fev/2025 a primeira taxa turística municipal da Espanha (€0,15 por pessoa/dia); em jul/2026 o TSJ de Canárias anulou a ordenança, cabe recurso. Status 2026 = incerto. NÃO vai ao áudio: vive na ficha cultural (campo `ondeNaoVale`) e no `aprofundar`",
+      "ano": 2026,
+      "revisarAte": "2026-11-30",
+      "evidencia": "FATO",
+      "risco": "alto"
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b04-n01",
+      "bloco": "aquecimento",
+      "gesto": 2,
+      "tom": "ganha",
+      "pt": "Teil vier. Hand flach auf den Oberschenkel, letzte Silbe halten: das E am Ende von puede ist ein volles E."
+    },
+    {
+      "consulta": [
+        "reparo/escreve"
+      ],
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "bloco": "callback",
+      "molde": "ME-PUEDE",
+      "encaixe": "escribir",
+      "encaixeGloss": "aufschreiben",
+      "promptAudioKey": "b04-p01",
+      "promptPt": "Gestern der Weg zum Bahnhof, heute derselbe Satz. Die Antwort war lang, Sie haben nichts behalten, und Sie wollen sie schwarz auf weiß. Sprechen Sie jetzt.",
+      "audioKey": "e01c-escribir-c",
+      "es": "¿Me lo puede escribir, por favor?",
+      "pinyin": "me lo PUE-deh ess-kri-BIR, por fa-BOR",
+      "pt": "Können Sie mir das aufschreiben, bitte?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e01c-vuelta-c",
+      "es": "¿En el móvil o en un papel?",
+      "pinyin": "en el MO-bil o en un pa-PEL",
+      "pt": "👂 «Aufs Handy oder auf Papier?» — sie fragt zurück, und die ganze Antwort ist ein Wort."
+    },
+    {
+      "consulta": [
+        "reparo/escreve"
+      ],
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "promptAudioKey": "b04-p02",
+      "promptPt": "Sie wollen es nicht auf einem fremden Display sehen, Sie wollen es in der Hand halten. Ein Wort reicht. Sprechen Sie jetzt.",
+      "audioKey": "e01c-papel-e",
+      "es": "En un papel, por favor.",
+      "pinyin": "en un pa-PEL, por fa-BOR",
+      "pt": "Auf Papier, bitte."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b04-n02",
+      "bloco": "cena",
+      "tom": "protege",
+      "pt": "Der Flug ist bezahlt, der Ausweis liegt in der Schublade. Morgen früh schaut jemand am Schalter auf das Datum."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b04-n03",
+      "pt": "Punkt eins: das Dokument. Ausweis oder Pass, gültig bis nach der Rückkehr. Nachsehen — jetzt, nicht heute Abend."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b04-n04",
+      "pt": "Jedes Kind braucht ein eigenes Dokument, auch das Baby. Geprüft wird nicht in Spanien, sondern hier am Abflugschalter."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b04-n05",
+      "pt": "Ein neuer Ausweis dauert Wochen, kein Wochenende. Deshalb steht dieser Punkt heute auf der Liste, nicht am Freitag."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b04-n06",
+      "tom": "ganha",
+      "pt": "Punkt zwei: die Karte. Gesetzlich versichert? Drehen Sie Ihre Gesundheitskarte um: hinten ist die europäische."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b04-n07",
+      "pt": "Damit werden Sie in Spanien staatlich behandelt, zu denselben Bedingungen wie jemand, der dort wohnt."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b04-n07b",
+      "pt": "Privat versichert? Dann steht sie dort nicht — für Sie gilt allein, was in Ihrer Police steht."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b04-n08",
+      "tom": "protege",
+      "pt": "Sie gilt im öffentlichen Netz. In einer Privatpraxis gilt sie nicht — und ansehen kann man einer Praxis das nicht."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e08a-publico-c",
+      "bloco": "corpo",
+      "es": "¿Esto es público o privado?",
+      "pinyin": "ESS-to ess PU-bli-ko o pri-BA-do",
+      "pt": "👂 «Ist das hier öffentlich oder privat?» — sechs Wörter, und sie stehen zwischen Ihnen und einer Rechnung."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "promptAudioKey": "b04-p03",
+      "promptPt": "Eine helle Rezeption, alles geht schnell, jemand greift schon nach Ihrer Karte. Klären Sie zuerst, wo Sie hier gelandet sind. Sprechen Sie jetzt.",
+      "audioKey": "e08a-publico-c",
+      "es": "¿Esto es público o privado?",
+      "pinyin": "ESS-to ess PU-bli-ko o pri-BA-do",
+      "pt": "Ist das hier öffentlich oder privat?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b04-n09",
+      "pt": "Und was die Karte nicht zahlt: den Rückflug im Ambulanzflugzeug, die Bergung, die Begleitperson."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b04-n10",
+      "tom": "ganha",
+      "pt": "Punkt drei: dafür gibt es die Auslandsreisekrankenversicherung. Zehn bis zwanzig Euro. Nicht pro Tag — pro Jahr."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "b04-t01",
+      "pt": "Thomas hier, mit dem Buchstaben, der Sie anlügt. Das V. In privado hören Sie ein B, nie ein F: pri-BA-do."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "b04-t02",
+      "pt": "Und noch etwas: erstattet wird gegen Beleg. Den Beleg gibt es nur dort, an der Kasse. Hinterher nicht mehr."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e08a-factura-e",
+      "es": "¿Me puede dar la factura para el seguro?",
+      "pinyin": "me PUE-deh dar la fak-TU-ra PA-ra el sse-GU-ro",
+      "pt": "👂 «Können Sie mir den Beleg für die Versicherung geben?» — derselbe Satzanfang wie vorhin, anderes Ende."
+    },
+    {
+      "consulta": [
+        "compras/pagar"
+      ],
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "molde": "ME-PUEDE",
+      "encaixe": "la factura",
+      "encaixeGloss": "den Beleg",
+      "promptAudioKey": "b04-p04",
+      "promptPt": "In der Apotheke, alles ist bezahlt, er dreht sich schon zum nächsten Kunden um. Ohne Papier erstattet Ihnen zu Hause niemand etwas. Sprechen Sie jetzt.",
+      "audioKey": "e08a-factura-e",
+      "es": "¿Me puede dar la factura para el seguro?",
+      "pinyin": "me PUE-deh dar la fak-TU-ra PA-ra el sse-GU-ro",
+      "pt": "Können Sie mir den Beleg für die Versicherung geben?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b04-n11",
+      "tom": "ganha",
+      "pt": "Punkt vier: drei Buchungen, die heute billiger sind als morgen. Der Zug, der Mietwagen und das Zimmer."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b04-n12",
+      "pt": "Der Schnellzug zuerst: sechzig bis neunzig Tage vorher. Kurzfristig kostet dieselbe Fahrt das Zwei- bis Dreifache."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b04-n13",
+      "tom": "protege",
+      "pt": "Der Mietwagen: die Police entscheiden Sie zu Hause und drucken sie aus. Am Schalter wird nachverhandelt, mündlich."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b04-n14",
+      "pt": "Wer die Police dort ablehnt, dem werden mancherorts fünfhundert bis fünfzehnhundert Euro auf der Karte geblockt."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b04-n14b",
+      "pt": "Und geblockt wird auf einer Kreditkarte, die auf die fahrende Person lautet. Eine neue dauert Wochen."
+    },
+    {
+      "consulta": [
+        "taxi/locadora"
+      ],
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e07b-caucion-c",
+      "es": "¿Cuánto me bloquean en la tarjeta? ¿Cuándo me lo devuelven?",
+      "pinyin": "KUAN-to me blo-KE-an en la tar-CHE-ta? KUAN-do me lo de-BUEL-ben?",
+      "pt": "👂 «Wie viel wird auf der Karte geblockt? Wann bekomme ich es zurück?» — zwei Zahlen, und der Rest des Vertrags wird ruhiger."
+    },
+    {
+      "consulta": [
+        "taxi/locadora"
+      ],
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "promptAudioKey": "b04-p05",
+      "promptPt": "Der Vertrag liegt vor Ihnen, der Stift daneben, die Schlange hinter Ihnen wächst. Zwei Zahlen fehlen: die Höhe und der Termin. Sprechen Sie jetzt.",
+      "audioKey": "e07b-caucion-c",
+      "es": "¿Cuánto me bloquean en la tarjeta? ¿Cuándo me lo devuelven?",
+      "pinyin": "KUAN-to me blo-KE-an en la tar-CHE-ta? KUAN-do me lo de-BUEL-ben?",
+      "pt": "Wie viel wird auf der Karte geblockt? Wann bekomme ich es zurück?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e07b-escrito-e",
+      "es": "¿Me lo puede dar por escrito, por favor?",
+      "pinyin": "me lo PUE-deh dar por ess-KRI-to, por fa-BOR",
+      "pt": "👂 «Können Sie mir das schriftlich geben, bitte?» — der Satz, der mündlichen Druck beendet."
+    },
+    {
+      "consulta": [
+        "taxi/locadora",
+        "reparo/escreve"
+      ],
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "molde": "ME-PUEDE",
+      "encaixe": "dar por escrito",
+      "encaixeGloss": "schriftlich geben",
+      "promptAudioKey": "b04-p06",
+      "promptPt": "Er sagt, Ihre Deckung reiche nicht, und der Wagen bleibt vorerst stehen. Sie diskutieren nicht — Sie verlangen es auf Papier. Sprechen Sie jetzt.",
+      "audioKey": "e07b-escrito-e",
+      "es": "¿Me lo puede dar por escrito, por favor?",
+      "pinyin": "me lo PUE-deh dar por ess-KRI-to, por fa-BOR",
+      "pt": "Können Sie mir das schriftlich geben, bitte?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b04-n15",
+      "pt": "Und die dritte Buchung, das Zimmer, hat eine Zeile, die auf keinem Portal steht: die Kurtaxe."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b04-n16",
+      "bloco": "capsula",
+      "pt": "Auf den Balearen ein bis vier Euro pro Person und Nacht. Zu zweit, acht Nächte, bei zwei Euro: gut fünfunddreißig."
+    },
+    {
+      "consulta": [
+        "quarto/checkin"
+      ],
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e07a-tasa-e",
+      "es": "¿La tasa turística está incluida?",
+      "pinyin": "la TA-ssa tu-RISS-ti-ka ess-TA in-klu-I-da",
+      "pt": "👂 «Ist die Kurtaxe inbegriffen?» — die Frage gehört an den Anfang des Aufenthalts, nicht ans Ende."
+    },
+    {
+      "consulta": [
+        "quarto/checkin"
+      ],
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "promptAudioKey": "b04-p07",
+      "promptPt": "Check-in, der Schlüssel liegt schon auf dem Tresen, alles ist online bezahlt. Sie wollen wissen, ob am Ende noch eine Zeile dazukommt. Sprechen Sie jetzt.",
+      "audioKey": "e07a-tasa-e",
+      "es": "¿La tasa turística está incluida?",
+      "pinyin": "la TA-ssa tu-RISS-ti-ka ess-TA in-klu-I-da",
+      "pt": "Ist die Kurtaxe inbegriffen?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e07a-sepagaaqui-c",
+      "es": "No, esa se paga aquí. Y mejor en efectivo.",
+      "pinyin": "no, E-ssa sse PA-ga a-KI. i me-CHOR en e-fek-TI-bo",
+      "pt": "👂 «Nein, die wird hier bezahlt. Und am besten bar.» — keine Erfindung des Hauses: eine öffentliche Abgabe, die es einzieht.",
+      "receptivo": true,
+      "acao": "Wenn Sie «se paga aquí» hören: den Betrag beim Einchecken beiseitelegen, bar, getrennt vom übrigen Geld — und nicht diskutieren."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b04-n17",
+      "tom": "ganha",
+      "pt": "Hier ist Ihr Bargeld im Vorteil: die Abgabe wird oft genau so kassiert. Legen Sie sie beim Einchecken beiseite."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b04-n18",
+      "bloco": "permissao",
+      "pt": "Und was Sie hier nicht kaufen müssen: kein Roaming-Paket, keine SIM-Karte, keine Einreisegenehmigung. Nur vier Zeilen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b04-n19",
+      "bloco": "recap",
+      "pt": "Ein Baustein aus Teil drei hat heute dreimal gearbeitet: auf der Straße, in der Apotheke, am Mietwagenschalter."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b04-n20",
+      "pt": "Faustregel für die ganze Liste: was Wochen braucht, machen Sie heute. Was Geld spart, diese Woche."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Juli",
+      "audioKey": "b04-r01",
+      "pt": "Laut, einmal. Sie stehen an einer Rezeption und wollen wissen, wo Sie gelandet sind — öffentlich oder privat."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Carmen",
+      "audioKey": "e08a-publico-c",
+      "es": "¿Esto es público o privado?",
+      "pinyin": "ESS-to ess PU-bli-ko o pri-BA-do",
+      "pt": "Ist das hier öffentlich oder privat?"
+    },
+    {
+      "tipo": "recap",
+      "voz": "Juli",
+      "audioKey": "b04-r02",
+      "pt": "Teil vier war eine Liste, keine Lektion. Als Nächstes: Sie landen, niemand kontrolliert Sie. Jemand fragt trotzdem."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "Vor dem Abflug, im Detail (optional)",
+    "secoes": [
+      {
+        "titulo": "Warum Ihre Liste so kurz ist",
+        "corpo": "Reise-Checklisten für Spanien sind fast alle für Gäste von außerhalb der EU geschrieben. Deshalb stehen dort Dinge, die für Sie schlicht nicht existieren: eine Einreisegenehmigung, das Grenzsystem mit Foto und vier Fingerabdrücken, die Regel von neunzig Tagen in hundertachtzig, eine Mindestgültigkeit des Passes von drei Monaten, ein Roaming-Paket, eine spanische Prepaid-SIM. Innerhalb der EU wird geroamt wie zu Hause, und ein Schengen-Binnenflug hat keine Grenzkontrolle. Was übrig bleibt, ist nicht weniger wichtig — es ist nur billiger und schneller: ein gültiges Dokument, zwei Karten und drei Buchungen."
+      },
+      {
+        "titulo": "Die Karte und die Versicherung sind zwei verschiedene Produkte",
+        "corpo": "Wer gesetzlich versichert ist, trägt die Europäische Krankenversicherungskarte auf der Rückseite der Gesundheitskarte mit sich; sie bringt in die staatliche Versorgung, zu den Bedingungen, die auch für Menschen gelten, die dort wohnen. Sie hat ein Ablaufdatum, und Ersatz kommt nicht am selben Tag: nachsehen gehört auf diese Liste. Bei privater Versicherung steht auf der Rückseite nichts dergleichen — dort gilt allein, was in der eigenen Police steht, und das ist vor dem Abflug nachzulesen, nicht danach. Was die Karte nicht abdeckt, ist alles, was mit Nachhausekommen zu tun hat — Rücktransport, Bergung, Begleitperson — und die Privatpraxis. Die Auslandsreisekrankenversicherung kostet zehn bis zwanzig Euro im Jahr und deckt genau diese Lücke. Der Merksatz, und er ist die ganze Sektion: die Karte behandelt Sie, die Versicherung bringt Sie heim. Eine Versicherung ist übrigens keine Karte — das ist der Grund, warum diese Liste vier Zeilen hat und nicht drei. Und beide zahlen nur gegen Beleg: `¿Me puede dar la factura para el seguro?` · `Necesito una copia para el seguro.`",
+        "exemplos": [
+          {
+            "es": "¿Esto es público o privado?",
+            "pt": "ESS-to ess PU-bli-ko o pri-BA-do — ist das hier öffentlich oder privat?"
+          },
+          {
+            "es": "¿Me puede dar la factura para el seguro?",
+            "pt": "me PUE-deh dar la fak-TU-ra PA-ra el sse-GU-ro — den Beleg für die Versicherung, bitte."
+          }
+        ]
+      },
+      {
+        "titulo": "Die Lautschrift in diesem Kurs, und warum sie so aussieht",
+        "corpo": "Vier der sieben Buchstaben, bei denen Spanisch Sie anlügt, stecken schon in den Sätzen dieses Teils — deshalb ist die Umschrift so geschrieben, wie ein deutsches Auge sie richtig liest. `qu` ist immer ein K: `bloquean` wird blo-KE-an, `aquí` wird a-KI, nie akví. `j` ist das ch von Bach: `tarjeta` wird tar-CHE-ta, `mejor` wird me-CHOR, nie meyor. `v` ist ein B: `privado` wird pri-BA-do, `devuelven` wird de-BUEL-ben, `efectivo` wird e-fek-TI-bo. Das spanische `s` ist IMMER scharf — nie das summende s von `Sonne`, nie das sch von `Stein` —, und deshalb steht in dieser Umschrift überall ss: `seguro` wird sse-GU-ro, `se paga` wird sse PA-ga, `tasa` wird TA-ssa, `esa` wird E-ssa, und `está` wird ess-TA, damit das st nicht zu «eschtá» wird. Und noch etwas, das keine Buchstabenregel ist, sondern eine Silbenregel: das `e` am Wortende ist ein volles E, nie das gemurmelte e von `bitte`. Deshalb steht dort -eh: `puede` wird PUE-deh. Die Umschrift ist Gerüst fürs Auge — gesprochen wird nachgemacht, was Sie hören."
+      },
+      {
+        "titulo": "Ein Satz ohne Kanten: público o privado",
+        "corpo": "Im Deutschen bekommt jedes Wort, das mit einem Vokal beginnt, einen kleinen Knacklaut davor: ein ¦ Apfel. Im Spanischen gibt es den nicht — die Wörter hängen aneinander. `público o privado` ist deshalb kein Dreiklang aus drei Blöcken, sondern eine durchgehende Linie: PU-bli-ko-o-pri-BA-do, mit einem einzigen langen o in der Mitte. Wer die drei Wörter einzeln anschlägt, wird verstanden und klingt trotzdem nach Schalter. Das ist die Hand, die in Teil eins das Gleiten übt; hier ist der Satz zum Üben."
+      },
+      {
+        "titulo": "Der Mietwagenschalter: vier Schritte, in dieser Reihenfolge",
+        "corpo": "Null, und dieser Schritt hat als einziger eine Frist von Wochen: die Karte, auf der geblockt wird, muss eine Kreditkarte sein und auf die Person lauten, die fährt — eine Girocard oder die Karte der Begleitung reicht an vielen Schaltern nicht, und eine neue Karte kommt nicht bis Freitag. Erstens: die Versicherung zu Hause entscheiden, schriftlich, ausgedruckt mitnehmen. Zweitens, wenn am Schalter eine bessere Police angeboten wird: `No quiero seguro adicional, gracias. Ya tengo cobertura.` Drittens, wenn weiter darauf bestanden wird: `¿Me lo puede dar por escrito, por favor?` — der Druck ist mündlich, weil Mündliches keine Spur hinterlässt; die Bitte um Papier beendet ihn meistens von selbst. Viertens die zwei Zahlen: `¿Cuánto me bloquean en la tarjeta? ¿Cuándo me lo devuelven?` Wer die Police des Schalters ablehnt, dem werden bei manchen Anbietern fünfhundert bis fünfzehnhundert Euro geblockt — das ist zulässig, es soll nur niemanden überraschen. Und ein Schritt, der gar kein Satz ist: den Wagen vor der Abfahrt einmal im Video umrunden, samt Tacho und Tankanzeige. Die ausführliche Fassung steht in Teil sieben.",
+        "exemplos": [
+          {
+            "es": "¿Me lo puede dar por escrito, por favor?",
+            "pt": "me lo PUE-de dar por es-KRI-to — schriftlich, bitte."
+          },
+          {
+            "es": "¿Cuánto me bloquean en la tarjeta? ¿Cuándo me lo devuelven?",
+            "pt": "KUAN-to me blo-KE-an ... KUAN-do me lo de-BUEL-ben — wie viel, und ab wann wieder frei."
+          }
+        ]
+      },
+      {
+        "titulo": "Die Kurtaxe: regional, nicht national",
+        "corpo": "Auf den Balearen gelten bis Mitte 2026 ein bis vier Euro pro Person und Nacht nach Kategorie, plus zehn Prozent Mehrwertsteuer auf die Abgabe selbst; die für 2025 angekündigte Erhöhung ist nicht in Kraft getreten. Barcelona rechnet anders und teurer, mit einem kommunalen Aufschlag, der bis 2029 weitersteigt. Auf Gran Canaria hat Mogán im Februar 2025 die erste kommunale Tourismusabgabe Spaniens eingeführt, fünfzehn Cent pro Person und Tag; im Juli 2026 hat das Obergericht der Kanaren die Satzung gekippt, Revision ist möglich, der Status ist offen. In weiten Teilen des Landes gibt es die Abgabe gar nicht. Was überall gleich ist: sie steht fast nie im Portalpreis, und sie wird an der Rezeption kassiert — oft in bar."
+      },
+      {
+        "titulo": "Der Schnellzug, falls einer vorkommt",
+        "corpo": "Renfe und Iryo geben die billigsten Tarife typischerweise sechzig bis neunzig Tage vor der Fahrt frei, Ouigo öffnet den Verkauf bis zu neun Monate vorher. Die Preise steigen wie Flugtarife: kurzfristig das Zwei- bis Dreifache, und manchmal gibt es schlicht keinen Platz mehr. Zwei Dinge, die es in Deutschland so nicht gibt: spanische Hochgeschwindigkeitsbahnhöfe haben Gepäckdurchleuchtung und Metalldetektor, und der Zugang schließt vor der Abfahrt — Renfe empfiehlt dreißig Minuten Vorlauf. Ein verpasster Zugang ist ein verpasster Zug; nachträgliches Einsteigen gibt es nicht."
+      },
+      {
+        "titulo": "Was hier bewusst NICHT steht",
+        "corpo": "Zu Umweltzonen für Fahrzeuge mit ausländischem Kennzeichen steht in diesem Teil nichts. Die spanische Umweltplakette wird nur für in Spanien zugelassene Fahrzeuge ausgegeben, und wie sich ein ausländisches Fahrzeug stattdessen anmeldet, ist von Stadt zu Stadt verschieden — die Quellenlage im Projekt reicht dafür noch nicht. Wer mit dem eigenen Wagen anreist, findet den Stand in Teil sieben, sobald er belegt ist. Ein Mietwagen mit spanischem Kennzeichen ist von der Frage nicht betroffen."
+      }
+    ]
+  }
+}

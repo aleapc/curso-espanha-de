@@ -1,0 +1,252 @@
+{
+  "id": "b17",
+  "slot": "B17",
+  "nivel": "basico",
+  "numero": 17,
+  "parte": "17",
+  "titulo": "Apotheke, Schmerzen und Notfall",
+  "aguardaNarracao": true,
+  "_andaime": {
+    "_": "ANDAIME — não é parte pronta. A fala espanhola já está aqui e é definitiva (ativo de DESTINO, mesmos audioKey e mesmos mp3 do curso EN, custo de crédito zero). Tudo que é voz-guia está VAZIO de propósito: é o que o autor escreve, em ALEMÃO, e é a única coisa que este SKU paga.",
+    "funcao_do_slot": "Farmácia, dor e emergência",
+    "dono": "destino",
+    "o_que_falta": "narração (intro/recap/prompts de responde), `cena`, `moldura`, `permissao`, `frasePiso`, `clique`, `moldes`, `fichasCulturais`, `fatosDatados`, `aprofundar`, o campo `pt` (gloss em ALEMÃO) de cada step e o respelling de pronúncia para leitor alemão.",
+    "nao_traduzir": "a parte inglesa correspondente é ep-e08a.json. Ela serve de referência de ESTRUTURA, nunca de texto: `pinyin` de lá é respelling para leitor de inglês (types.ts) e `pt` é o gloss inglês — nenhum dos dois foi copiado, e copiá-los é o anti-padrão 8.",
+    "entra_em_vigor": "no instante em que este arquivo ganhar o campo `cena`, os portões de tom passam de aviso a erro para ele. Apagar `aguardaNarracao` sem escrever a narração não muda nada: quem decide é `cena`."
+  },
+  "steps": [
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e08a-cabeza-c",
+      "es": "¿Me puede recomendar algo para el dolor de cabeza?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e08a-esparausted-e",
+      "es": "¿Es para usted? ¿Toma alguna otra medicación?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e08a-estomago-e",
+      "es": "¿Me puede recomendar algo para el dolor de estómago?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e08a-quemaduras-c",
+      "es": "¿Me puede recomendar algo para las quemaduras del sol?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e08a-receta-e",
+      "es": "¿Esto necesita receta?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e08a-eldeseiscientos-c",
+      "es": "Este no. El de seiscientos sí.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e08a-penicilina-c",
+      "es": "Soy alérgica a la penicilina.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e08a-penicilina-e",
+      "es": "Soy alérgico a la penicilina.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e08a-constipado-e",
+      "es": "Estoy constipado.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e08a-guardia-c",
+      "es": "¿Hay una farmacia de guardia por aquí?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e08a-duele-e",
+      "es": "Me encuentro mal. Me duele aquí.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e08a-publico-c",
+      "es": "¿Esto es público o privado?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e08a-factura-e",
+      "es": "¿Me puede dar la factura para el seguro?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e08a-ultimo-c",
+      "es": "¿Quién es el último?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e08a-yodetrasdemi-e",
+      "es": "Yo. Detrás de mí ya no hay nadie.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e08a-ambulancia-e",
+      "es": "Necesito una ambulancia. Es una emergencia.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e08a-placas-c",
+      "es": "FARMACIA DE GUARDIA · URGENCIAS · SIN RECETA MÉDICA · OLA DE CALOR",
+      "pt": "",
+      "tts": "Farmacia de guardia. Urgencias. Sin receta médica. Ola de calor."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e08b-socorro-e",
+      "es": "¡Socorro! ¡Al ladrón!",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e08b-llame-c",
+      "es": "¡Llame a la policía!",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e08b-cartera-c",
+      "es": "Me han robado la cartera.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e08a-enelmomento-e",
+      "es": "¿La ha notado en el momento o después?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e08b-hasido-c",
+      "es": "Ha sido en el metro, hace diez minutos.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e08b-denuncia-e",
+      "es": "Quiero poner una denuncia.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e08a-algundocumento-c",
+      "es": "¿Lleva algún documento? Sin documento no puedo tramitarla.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e08b-ratificar-c",
+      "es": "Hice la denuncia por internet. Vengo a ratificarla.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e08b-copia-e",
+      "es": "Necesito una copia para el seguro.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e08b-ingles-c",
+      "es": "¿Hay alguien que hable inglés?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e08a-pidaelsate-e",
+      "es": "Ahora mismo no. Puede pedir el SATE, que es para turistas.",
+      "pt": "",
+      "tts": "Ahora mismo no. Puede pedir el sate, que es para turistas."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e08b-pasaporte-e",
+      "es": "He perdido el pasaporte. ¿Dónde está el consulado?",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "c02b-11",
+      "es": "Déjeme en paz.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "c02b-13",
+      "es": "Déjeme en paz.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e08b-placa-e",
+      "es": "Enséñeme su placa. Vamos a la comisaría.",
+      "pt": ""
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e08b-nopedido-e",
+      "es": "No he pedido esto y no lo voy a pagar.",
+      "pt": ""
+    }
+  ]
+}

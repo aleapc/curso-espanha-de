@@ -1,0 +1,108 @@
+{
+  "id": "q-c03",
+  "nivel": "intermediario",
+  "titulo": "Quiz — Regeln mit Preisschild",
+  "subtitulo": "Vier Straßen vom Strand, eine Dose Bier, ein Kartenlesegerät — und dann eine Bar, in der das Schild nicht auf Spanisch ist",
+  "introAudioKey": "qc03-i",
+  "introPt": "Quizzeit. Ende August in Barcelona. Unsere Reisende ist vom Strand hochgelaufen, T-Shirt noch in der Tasche, offene Bierdose in der Hand — und ein Beamter der Guàrdia Urbana hat sie schon aus zwanzig Metern Entfernung gesehen. Alles, was jetzt passiert, steckt in diesem Teil. Hör so oft du willst, dann antworte.",
+  "cenario": "Eine Touristin kommt vom Strand hoch und wird von einem Stadtpolizisten angehalten — oben ohne und mit Bier auf der Straße. Sie zahlt sofort per Karte und geht danach in eine Kiezbar, wo der Wirt sie auf Katalanisch begrüßt und ihr zwei Getränke später eine Frage zur Unabhängigkeit stellt.",
+  "dialogo": [
+    { "audioKey": "qc03-d1", "voz": "Emilio", "es": "Buenas tardes. Aquí no se puede ir sin camiseta.", "pinyin": "BUE-nass TAR-dess · a-KI no sse PUE-de ir ssin ka-mi-SSE-ta", "pt": "— Guten Tag. Hier darf man nicht ohne T-Shirt herumlaufen." },
+    { "audioKey": "qc03-d2", "voz": "Carmen", "es": "Perdón, no lo sabía. Ahora mismo me la pongo.", "pinyin": "per-DON, no lo ssa-BI-a · a-O-ra MISS-mo me la PON-go", "pt": "— Entschuldigung, das wusste ich nicht. Ich ziehe es sofort an." },
+    { "audioKey": "qc03-d3", "voz": "Emilio", "es": "Vale. Pero la cerveza en la calle tampoco. Eso sí es multa.", "pinyin": "BA-le · PE-ro la ther-BE-tha en la KA-je tam-PO-ko · E-sso ssi ess MUL-ta", "pt": "— In Ordnung. Aber das Bier auf der Straße geht auch nicht. Das hier ist ein Bußgeld." },
+    { "audioKey": "qc03-d4", "voz": "Carmen", "es": "¿De cuánto es la multa?", "pinyin": "de KUAN-to ess la MUL-ta", "pt": "— Wie hoch ist das Bußgeld?" },
+    { "audioKey": "qc03-d5", "voz": "Emilio", "es": "Ciento veinte euros. Y se paga aquí mismo, con tarjeta.", "pinyin": "THJEN-to BE-in-te E-U-ross · i sse PA-ga a-KI MISS-mo, kon tar-CHE-ta", "pt": "— Hundertzwanzig Euro. Und bezahlt wird gleich hier, mit Karte." },
+    { "audioKey": "qc03-d6", "voz": "Carmen", "es": "¿Me lo puede dar por escrito, por favor?", "pinyin": "me lo PUE-de dar por ess-KRI-to, por fa-BOR", "pt": "— Können Sie mir das bitte schriftlich geben?" },
+    { "audioKey": "qc03-d7", "voz": "Emilio", "es": "Sí, aquí tiene el recibo. Buenas tardes.", "pinyin": "ssi, a-KI TJE-ne el rre-THI-bo · BUE-nass TAR-dess", "pt": "— Ja, hier ist Ihre Quittung. Schönen Tag noch." },
+    { "audioKey": "qc03-d8", "voz": "Carmen", "es": "Bon dia.", "pinyin": "bon DI-a", "pt": "— (zwanzig Minuten später, beim Betreten einer kleinen Bar) Hallo." },
+    { "audioKey": "qc03-d9", "voz": "Emilio", "es": "¡Bon dia! ¿Qué os pongo?", "pinyin": "bon DI-a! ke oss PON-go", "pt": "— Hallo! Was darf ich euch bringen? (der Wirt — os ist die ihr-Form, vosotros)" },
+    { "audioKey": "qc03-d10", "voz": "Carmen", "es": "Dos cañas, por favor.", "pinyin": "doss KA-njass, por fa-BOR", "pt": "— Zwei kleine Bier vom Fass, bitte." },
+    { "audioKey": "qc03-d11", "voz": "Emilio", "es": "Sois ingleses, ¿no? ¿Y qué pensáis de todo el lío de la independencia?", "pinyin": "ssoiss in-GLE-ssess, no? · i ke pen-SSAISS de TO-do el LI-o de la in-de-pen-DEN-thja", "pt": "— Ihr seid Engländer, oder? Und was haltet ihr von dem ganzen Theater mit der Unabhängigkeit? (er tippt auf England und liegt daneben — das passiert dir öfter, als du denkst. Ein Wort reicht: «Alemanes.»)" },
+    { "audioKey": "qc03-d12", "voz": "Carmen", "es": "Uf. No conozco bien el tema, cuénteme.", "pinyin": "uf · no ko-NOTH-ko bjen el TE-ma, KUEN-te-me", "pt": "— Puh. Ich kenne mich mit dem Thema nicht gut aus — erzählen Sie." }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "Der Beamte hält sie wegen zwei verschiedener Sachen an. Welche?",
+      "opcoes": [
+        "Oben ohne auf der Straße, und Trinken auf der Straße",
+        "Schwimmen außerhalb der Flaggen, und Müll liegen lassen",
+        "Am Strand schlafen, und Rauchen auf einer Terrasse",
+        "Bei einem Straßenverkäufer kaufen, und Polizisten fotografieren"
+      ],
+      "correta": 0,
+      "explica": "Zwei Regeln, zwei verschiedene Quellen: Oben ohne im öffentlichen Raum ist die Zivilitätsverordnung von Barcelona (120–300 €, in Kraft seit Februar 2026); die offene Dose ist nationales Recht — Sicherheitsgesetz von 2015, 100–600 €, und bis zu 1.500 € in Barcelona in der falschen Zone. Und die zweite ist genau die, die dich als Deutsche oder Deutschen kalt erwischt, weil sie zu Hause völlig legal ist."
+    },
+    {
+      "pergunta": "Ihre erste Reaktion ist die, die dieser Teil einübt. Was sagt sie tatsächlich?",
+      "opcoes": [
+        "Es que en mi país se puede (bei uns darf man das aber)",
+        "Perdón, no lo sabía. Ahora mismo me la pongo (Entschuldigung, das wusste ich nicht — ich ziehe es sofort an)",
+        "No hablo español (ich spreche kein Spanisch)",
+        "¿Y usted quién es? (und wer sind Sie?)"
+      ],
+      "correta": 1,
+      "explica": "Bedauern plus sofortige Handlung: »no lo sabía« + »ahora mismo«, während das Shirt tatsächlich angezogen wird. Ein Beamter, der zusieht, wie das Problem behoben wird, geht meistens weiter. Ein Beamter, dem man die Rechtslage erklärt, nicht — und Antwort eins ist genau der Reflex, den du zu Hause gelernt hast."
+    },
+    {
+      "pergunta": "Er sagt, das Bußgeld sei »ciento veinte euros«. Wie viel ist das — und Achtung, hier kommt der Laut, den Spanien macht und Lateinamerika nicht.",
+      "opcoes": ["60 €", "100 €", "120 €", "150 €"],
+      "correta": 2,
+      "explica": "Ciento veinte = 120. Das th am Anfang von ciento ist die distinción: c vor e oder i wird zum englischen th aus »think«, Zunge locker zwischen die Zähne. Ein Engländer kriegt den Laut geschenkt, du hast ihn im Deutschen nicht — also gleich die Erlaubnis dazu: Wenn bei dir ein s rauskommt, verstehen dich hundert Prozent aller Spanier, und halb Lateinamerika macht es genauso. Wichtig ist das Hören, nicht das Sprechen: Genau dieser Laut trennt cincuenta (50) von sesenta (60) auf jeder Rechnung, die dir jemand vorliest."
+    },
+    {
+      "pergunta": "»Se paga aquí mismo, con tarjeta.« Warum ist das der aktuellste Satz im ganzen Teil?",
+      "opcoes": [
+        "Weil die spanische Polizei nur Bargeld nimmt",
+        "Weil Barcelonas Verordnung Nichtansässige jetzt zur sofortigen Zahlung verpflichtet und die Guàrdia Urbana Kartenlesegeräte dabeihat",
+        "Weil Touristen 50 % Rabatt bekommen, wenn sie sofort zahlen",
+        "Weil das Bußgeld verfällt, wenn man keine Karte dabeihat"
+      ],
+      "correta": 1,
+      "explica": "Die alte Volksweisheit — »die verfolgen einen Touristen dafür sowieso nie« — ist im Februar 2026 gestorben. Eingetrieben wurde vorher praktisch nichts, sobald du wieder zu Hause warst; deshalb verpflichtet die neue Verordnung Nichtansässige zur sofortigen Zahlung, und die Beamten tragen jetzt Terminals."
+    },
+    {
+      "pergunta": "Sie will es »por escrito«. Wozu, wenn sie ohnehin schon bezahlt hat?",
+      "opcoes": [
+        "Das schreibt das Gesetz vor Zahlung vor",
+        "Damit wird der Betrag reduziert",
+        "Die Quittung ist ihr einziger Beleg, dass sie bezahlt hat, falls dasselbe Bußgeld später noch mal auftaucht",
+        "Damit legt sie automatisch Widerspruch ein"
+      ],
+      "correta": 2,
+      "explica": "»¿Me lo puede dar por escrito, por favor?« ist derselbe Knopf, den du am Mietwagenschalter drückst. Alles, was du bezahlt oder zugesagt hast, willst du auf Papier — es kostet einen Satz und ist das Einzige, was du später vorzeigen kannst. Und wenn dazu firme aquí kommt: Das heißt unterschreiben, nicht Firma, und die Unterschrift bestätigt nur den Empfang."
+    },
+    {
+      "pergunta": "Sie geht in die Bar und sagt »Bon dia« statt »Buenos días«. Was passiert da?",
+      "opcoes": [
+        "Das ist Katalanisch — eine eigene Sprache, und eine Zwei-Sekunden-Höflichkeit, die den Service sichtbar verändert",
+        "Das ist Spanisch mit Barcelona-Akzent",
+        "Das ist in Katalonien Pflicht, und für Spanisch kann man ein Bußgeld bekommen",
+        "Das ist Baskisch"
+      ],
+      "correta": 0,
+      "explica": "Katalanisch ist eine eigenständige Sprache, kein Dialekt und kein Akzent — näher am Verhältnis Deutsch/Niederländisch als am Verhältnis Hochdeutsch/Bairisch. Verlangt wird es nie, alle wechseln sofort ins Spanische, sobald sie deinen Akzent hören. Aber »bon dia« beim Reinkommen und »adéu« beim Rausgehen kosten nichts und wirken jedes Mal."
+    },
+    {
+      "pergunta": "Der Wirt fragt »qué os pongo?« und später »qué pensáis?«. Was solltest du daran bemerken?",
+      "opcoes": [
+        "Das sind katalanische Wörter",
+        "Das ist vosotros — das Plural-Ihr, das es nur in Spanien gibt, und du bist ständig der Empfänger davon",
+        "Das sind förmliche usted-Formen",
+        "Das sind Grammatikfehler"
+      ],
+      "correta": 1,
+      "explica": "Als Paar oder Gruppe bist du immer das Ziel von vosotros und fast nie der Absender. Also ins Ohr, nicht in den Mund: »¿qué os pongo?«, »¿habéis reservado?«, »¿de dónde sois?« — erkenne diese drei, und du hast fast alles abgedeckt, was zwei Reisende je gefragt werden. Und hier hast du Glück: Wir haben »ihr«. Ein Engländer muss sich vosotros erst als fremdes Konzept erklären lassen; für dich ist es einfach die ihr-Form."
+    },
+    {
+      "pergunta": "Der Wirt fragt sie geradeheraus, was sie von der katalanischen Unabhängigkeit hält. Was ist das Risiko, und was ist der richtige Zug?",
+      "opcoes": [
+        "Rechtlich gefährlich — nicht antworten und gehen",
+        "Überhaupt kein rechtliches Risiko, aber echte soziale Kosten — das Wort zurückgeben mit »No conozco bien el tema, cuénteme«",
+        "Sag, dass du für die Unabhängigkeit bist, schließlich hat er dich auf Katalanisch begrüßt",
+        "Sag, dass du beide Seiten gleich gut findest"
+      ],
+      "correta": 1,
+      "explica": "Null rechtliches Risiko — darüber wird in Spanien jede Woche offen gestritten. Der Preis ist rein sozial. Rate seine Seite nicht daraus ab, dass er dich auf Katalanisch begrüßt hat (katalanischsprachige Katalanen liegen mehrheitlich gegen die Unabhängigkeit), hab keine Meinung, frag nach. Bei jemandem in deinem Alter heißt es »cuéntame« — tú ist in Spanien die Voreinstellung; »cuénteme« hebst du dir für den älteren Herrn, die Uniform und den Amtsschalter auf. Und sag nicht, du wolltest das Thema gern discutir: Das heißt streiten."
+    }
+  ]
+}

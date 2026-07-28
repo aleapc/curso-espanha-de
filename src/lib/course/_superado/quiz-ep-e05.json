@@ -1,0 +1,74 @@
+{
+  "id": "q-e05",
+  "nivel": "basico",
+  "titulo": "Quiz — Geld und das Kartengerät",
+  "subtitulo": "Eine Mittagsrechnung in Sevilla: ein Fünfziger, den keiner wechseln kann, ein Gerät, das deine Währung will, und ein Trinkgeld-Display, das dich beobachtet",
+  "introAudioKey": "qe05-i",
+  "introPt": "Quiz. Das Mittagessen in einer Bar in Sevilla ist vorbei, und das ganze Geldkapitel kommt auf einmal: der Schein, der zu groß ist, das Kartengerät, das freundlicherweise in Pfund abrechnen will, und der Trinkgeld-Bildschirm mit seiner großen freundlichen Zwanzig-Prozent-Taste. Die Frau in der Szene hat eine Karte in Pfund. Mit deiner Euro-Karte fällt diese Frage weg — das Prinzip bleibt aber auf jeder Reise dasselbe: Die Währung, die du lesen kannst, ist immer die teure. Hör so oft zu, wie du willst. Du musst nicht jedes Wort verstehen, nur die Züge. Dann beantworte die Fragen.",
+  "cenario": "Eine Touristin isst in einer Bar in Sevilla zu Mittag und zahlt: erst versucht sie es bar, dann lehnt sie die Währungsumrechnung ab, verweigert das vorgeschlagene Trinkgeld, rundet mit Münzen auf und verlangt am Ende die richtige Rechnung.",
+  "dialogo": [
+    { "audioKey": "qe05-d1", "voz": "Carmen", "es": "La cuenta, por favor.", "pinyin": "la KUEN-ta, por fa-BOR", "pt": "— Die Rechnung, bitte." },
+    { "audioKey": "qe05-d2", "voz": "Emilio", "es": "Ahora mismo. Son veintiocho euros con cuarenta.", "pinyin": "a-O-ra MIS-mo. son bein-ti-O-cho E-u-ros kon kua-REN-ta", "pt": "— Sofort. Das macht achtundzwanzig Euro vierzig. (der Kellner)" },
+    { "audioKey": "qe05-d3", "voz": "Carmen", "es": "¿Tiene cambio de cincuenta?", "pinyin": "TJE-ne KAM-bjo de thin-KUEN-ta", "pt": "— Haben Sie Wechselgeld für einen Fünfziger?" },
+    { "audioKey": "qe05-d4", "voz": "Emilio", "es": "Uy, de cincuenta no. Lo siento.", "pinyin": "ui, de thin-KUEN-ta no. lo SJEN-to", "pt": "— Uff, auf fünfzig nicht. Tut mir leid." },
+    { "audioKey": "qe05-d5", "voz": "Carmen", "es": "Vale. ¿Puedo pagar con tarjeta?", "pinyin": "BA-le. PUE-do pa-GAR kon tar-CHE-ta", "pt": "— Gut. Kann ich mit Karte zahlen?" },
+    { "audioKey": "qe05-d6", "voz": "Emilio", "es": "Claro. Aquí tiene el datáfono.", "pinyin": "KLA-ro. a-KI TJE-ne el da-TA-fo-no", "pt": "— Klar. Hier ist das Kartengerät." },
+    { "audioKey": "qe05-d7", "voz": "Emilio", "es": "¿Desea pagar en su moneda? En libras le sale más cómodo.", "pinyin": "de-SE-a pa-GAR en su mo-NE-da. en LI-bras le SA-le mas KO-mo-do", "pt": "— Möchten Sie in Ihrer Währung zahlen? In Pfund ist es bequemer für Sie. (und da ist sie)" },
+    { "audioKey": "qe05-d8", "voz": "Carmen", "es": "No, gracias. Cóbreme en euros, en moneda local. Sin conversión.", "pinyin": "no, GRA-thias. KO-bre-me en E-u-ros, en mo-NE-da lo-KAL. sin kon-ber-SJON", "pt": "— Nein danke. Rechnen Sie mir in Euro ab, in Landeswährung. Ohne Umrechnung." },
+    { "audioKey": "qe05-d9", "voz": "Emilio", "es": "Vale, vale. Sin conversión.", "pinyin": "BA-le, BA-le. sin kon-ber-SJON", "pt": "— Gut, gut. Ohne Umrechnung." },
+    { "audioKey": "qe05-d10", "voz": "Emilio", "es": "Ahora le pide propina: diez, quince o veinte por ciento.", "pinyin": "a-O-ra le PI-de pro-PI-na: djeth, KIN-the o BEIN-te por THJEN-to", "pt": "— Jetzt fragt es nach Trinkgeld: zehn, fünfzehn oder zwanzig Prozent." },
+    { "audioKey": "qe05-d11", "voz": "Carmen", "es": "Sin propina, gracias. Le dejo el cambio en la mesa.", "pinyin": "sin pro-PI-na, GRA-thias. le DE-cho el KAM-bjo en la ME-sa", "pt": "— Kein Trinkgeld, danke. Das Wechselgeld lasse ich auf dem Tisch. (sie drückt die Taste und rundet bar auf)" },
+    { "audioKey": "qe05-d12", "voz": "Carmen", "es": "¿Me da la factura, por favor? Es para el trabajo.", "pinyin": "me da la fak-TU-ra, por fa-BOR. es PA-ra el tra-BA-cho", "pt": "— Bekomme ich bitte die Rechnung? Sie ist für die Arbeit." },
+    { "audioKey": "qe05-d13", "voz": "Emilio", "es": "Enseguida. Muchas gracias, hasta luego.", "pinyin": "en-se-GI-da. MU-chas GRA-thias, AS-ta LUE-go", "pt": "— Kommt sofort. Vielen Dank, bis dann." }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "Sie versucht zuerst, bar zu zahlen. Welchen Schein hat sie in der Hand?",
+      "es": "Sie versucht zuerst, bar zu zahlen. Welchen Schein hat sie in der Hand?",
+      "opcoes": ["Fünfzehn Euro — 'quince'", "Fünfzig Euro — 'cincuenta'", "Sechzig Euro — 'sesenta'", "Fünf Euro — 'cinco'"],
+      "correta": 1,
+      "explica": "'cincuenta' — thin-KUEN-ta. Das th am Anfang ist das Einzige, was es von 'sesenta' (sechzig) trennt, und es steht auf jeder Bar-Rechnung in Spanien. Achte auf das th, nicht auf das s. Selbst sagen darfst du ruhig 'sin-KUEN-ta' — hören musst du den Unterschied.",
+      "pt": "'cincuenta' — thin-KUEN-ta. Das th am Anfang ist das Einzige, was es von 'sesenta' (sechzig) trennt, und es steht auf jeder Bar-Rechnung in Spanien. Achte auf das th, nicht auf das s. Selbst sagen darfst du ruhig 'sin-KUEN-ta' — hören musst du den Unterschied."
+    },
+    {
+      "pergunta": "Was antwortet der Kellner darauf?",
+      "es": "Was antwortet der Kellner darauf?",
+      "opcoes": ["Er kann ihn nicht wechseln — kein Wechselgeld für einen Fünfziger", "Er nimmt nur Bargeld", "Die Rechnung stimmt nicht", "Das Kartengerät ist kaputt"],
+      "correta": 0,
+      "explica": "'De cincuenta no. Lo siento.' Eine kleine Bar kann einen Fünfziger früh am Tag wirklich nicht wechseln — genau deshalb fragst du VORHER und nicht mit dem Schein in der ausgestreckten Hand.",
+      "pt": "'De cincuenta no. Lo siento.' Eine kleine Bar kann einen Fünfziger früh am Tag wirklich nicht wechseln — genau deshalb fragst du VORHER und nicht mit dem Schein in der ausgestreckten Hand."
+    },
+    {
+      "pergunta": "Das Kartengerät bietet an, in Pfund abzurechnen, 'weil es bequemer ist'. Was ist das in Wirklichkeit?",
+      "es": "Das Kartengerät bietet an, in Pfund abzurechnen, 'weil es bequemer ist'. Was ist das in Wirklichkeit?",
+      "opcoes": ["Ein Gefallen — der Kurs ist so oder so derselbe", "Währungsumrechnung mit einem Aufschlag von typisch 10 bis 13 Prozent", "Eine gesetzliche Pflicht bei ausländischen Karten", "Die Trinkgeld-Abfrage"],
+      "correta": 1,
+      "explica": "Dynamische Währungsumrechnung. Der Aufschlag liegt typisch bei 10 bis 13 Prozent und muss vor dem Bestätigen auf dem Display stehen. Merkregel: Die Option, die DEINE Währung zeigt, ist immer die falsche. Mit einer Euro-Karte kommt die Frage in Spanien gar nicht — mit einer Franken-Karte, einer Multiwährungs-App oder auf der nächsten Fernreise sehr wohl.",
+      "pt": "Dynamische Währungsumrechnung. Der Aufschlag liegt typisch bei 10 bis 13 Prozent und muss vor dem Bestätigen auf dem Display stehen. Merkregel: Die Option, die DEINE Währung zeigt, ist immer die falsche. Mit einer Euro-Karte kommt die Frage in Spanien gar nicht — mit einer Franken-Karte, einer Multiwährungs-App oder auf der nächsten Fernreise sehr wohl."
+    },
+    {
+      "pergunta": "Mit welchem Satz macht sie die Umrechnung endgültig zu?",
+      "es": "Mit welchem Satz macht sie die Umrechnung endgültig zu?",
+      "opcoes": ["¿Puedo pagar con tarjeta?", "¿Aceptan tarjeta o solo efectivo?", "Cóbreme en euros, en moneda local. Sin conversión.", "Quédese con el cambio."],
+      "correta": 2,
+      "explica": "Das ist die gepanzerte Stufe der Leiter. Stufe 1 ist 'En euros, por favor', gesagt bevor das Gerät bei dir ist; Stufe 2 ist 'Perdone, en euros. Sin conversión.'; und das hier ist Stufe 3, für den Fall, dass er darauf besteht. Ruhig, normale Lautstärke, Schlange hin oder her.",
+      "pt": "Das ist die gepanzerte Stufe der Leiter. Stufe 1 ist 'En euros, por favor', gesagt bevor das Gerät bei dir ist; Stufe 2 ist 'Perdone, en euros. Sin conversión.'; und das hier ist Stufe 3, für den Fall, dass er darauf besteht. Ruhig, normale Lautstärke, Schlange hin oder her."
+    },
+    {
+      "pergunta": "Das Display schlägt 10, 15 oder 20 Prozent Trinkgeld vor. Was macht sie tatsächlich?",
+      "es": "Das Display schlägt 10, 15 oder 20 Prozent Trinkgeld vor. Was macht sie tatsächlich?",
+      "opcoes": ["Sie drückt sicherheitshalber 20 Prozent", "Sie drückt 'Sin propina' und lässt die Münzen auf dem Tisch", "Sie weigert sich, die Rechnung zu zahlen", "Sie bittet darum, den Servicezuschlag zu streichen"],
+      "correta": 1,
+      "explica": "'Sin propina' — kein Trinkgeld — und dann rundet sie in Münzen auf. Genau DAS ist das spanische System: aufrunden, oder nichts lassen. Vorgeschlagene Trinkgelder auf einem Gerät sind freiwillig, und das Personal hat hier Gehalt und Tarifvertrag, also schadet Ablehnen niemandem.",
+      "pt": "'Sin propina' — kein Trinkgeld — und dann rundet sie in Münzen auf. Genau DAS ist das spanische System: aufrunden, oder nichts lassen. Vorgeschlagene Trinkgelder auf einem Gerät sind freiwillig, und das Personal hat hier Gehalt und Tarifvertrag, also schadet Ablehnen niemandem."
+    },
+    {
+      "pergunta": "Sie verlangt 'la factura' statt 'el tique'. Warum ist das wichtig?",
+      "es": "Sie verlangt 'la factura' statt 'el tique'. Warum ist das wichtig?",
+      "opcoes": ["Es ist das höflichere Wort für den Kassenbon", "Es ist die Rechnung mit ihren Daten — die, die Arbeitgeber oder Versicherung akzeptiert", "Es ist die Aufstellung der Rechnung vor dem Bezahlen", "Damit entfällt der Servicezuschlag"],
+      "correta": 1,
+      "explica": "'Un tique' ist der kleine Kassenzettel; 'la factura' trägt deinen Namen und deine Daten und ist das Dokument, das eine Reisekostenabrechnung oder eine Versicherung akzeptiert. Verlang sie direkt an der Kasse, solange der Vorgang noch auf ihrem Bildschirm steht.",
+      "pt": "'Un tique' ist der kleine Kassenzettel; 'la factura' trägt deinen Namen und deine Daten und ist das Dokument, das eine Reisekostenabrechnung oder eine Versicherung akzeptiert. Verlang sie direkt an der Kasse, solange der Vorgang noch auf ihrem Bildschirm steht."
+    }
+  ]
+}

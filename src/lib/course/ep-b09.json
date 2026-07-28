@@ -15,7 +15,7 @@
   "permissao": "Sie dürfen die U-Bahn nehmen, jeden Tag, auch um neun — sie bleibt das beste Verkehrsmittel der Stadt, und das Einzige, was sich ändert, ist der Ort, an dem der Rucksack hängt. Sie dürfen zwanzig Minuten früher am Zugang stehen und in Ruhe einen Kaffee trinken, statt zu rennen. Und Sie dürfen eine Zahl zweimal hören wollen: Nachfragen gehört hier zum Vorgang und ist kein Eingeständnis.",
   "permissaoAudioKey": "b09-n32",
 
-  "espelho": "Zwei Minuten vor der Abfahrt zum Bahnsteig zu laufen ist das, was dort auffällt: hier ist der Zugang dann schon zu, und der Zug fährt mit Ihrem Platz und ohne Sie.",
+  "espelho": "Zwei Minuten vor der Abfahrt zum Bahnsteig zu laufen ist das, was dort auffällt: der Zugang ist dann längst zu, und der Zug fährt mit Ihrem Platz und ohne Sie.",
 
   "fichasCulturais": [
     {
@@ -82,6 +82,15 @@
       "audioKeys": ["b09-n07", "b09-n08"]
     },
     {
+      "id": "madrid-contactless-torniquete",
+      "afirmacao": "Seit dem 1. Juni 2026 nimmt die Metro Madrid die kontaktlose Bankkarte oder das Handy direkt an der Sperre. Die Tarjeta Multi läuft auf keinen Namen und ist wiederaufladbar, lässt aber pro Durchgang nur eine Person durch; die T-casual in Barcelona gilt ausdrücklich für einen einzigen Reisenden.",
+      "fonte": "CRTM / Metro de Madrid (noticiado em 26/05/2026) e TMB/AMB, tarifas 2026 — docs/pesquisa-espanha.md §8.4. A linha de copy «buy the T-casual and share it» da mesma seção é INFERÊNCIA e contradiz o FATO «€13 (10 viagens, 1 pessoa)»; vale o FATO.",
+      "ano": 2026,
+      "revisarAte": "2026-12-31",
+      "evidencia": "FATO",
+      "risco": "alto"
+    },
+    {
       "id": "hurto-metro-geografia-y-hora",
       "afirmacao": "Im Nahverkehr Barcelonas konzentrieren sich die Fälle auf die Linien 1, 3 und 5 sowie auf die Zeitfenster 8:00–9:30 und 17:00–20:00; rund 90 Prozent der angezeigten Delikte in der Metro sind Diebstähle ohne Gewalt. Im ersten Halbjahr 2026 gingen sie im öffentlichen Nahverkehr um 40 Prozent zurück.",
       "fonte": "TMB e Mossos d'Esquadra, Pla Kanpai (dados do 1º semestre de 2026) — docs/pesquisa-espanha.md §7.4",
@@ -98,9 +107,9 @@
     "clipe_espanhol_novo": "UM, e ele é a razão de existir deste slot para este comprador. `b09-treintaycuatro-c` (Carmen, «Son treinta y cuatro con veinte.») foi conferido contra o andaime inteiro antes de ser criado: NÃO existe nenhuma frase espanhola gravada no acervo em que um número composto de 21 a 99 seja dito em voz alta num contexto de preço. Sem ela a armadilha do §3.3 item 4 da DERIVACAO (o aluno ouve `treinta y cuatro` e anota 43) não tem como ser DEMONSTRADA — só descrita, que é palestra. É a linha de orçamento do DERIVACAO §5 item 2 e ela é de um clipe, não de dez. B14 depende dela: `b14-n34` já diz «und die Zehner kommen weiter andersherum als zu Hause — wie am Schalter», e o «wie am Schalter» é este step. Se alguém remover este clipe, a linha de B14 fica apontando para o nada.",
     "armadilha_desta_parte": "⟨ll⟩, grudada a `billete` e a `Sevilla`, na voz do Thomas e DEPOIS de o aluno já ter produzido `Quería dos billetes para Sevilla` (moldes.json `_regras.padrao_de_ensino`, quinto tempo). NÃO é primeiro contato: B01 já planta a regra («Und ein ll ist genau umgekehrt: das ist das j von `ja`», em `Lleva`), e por isso a redação é neutra — não apresenta como novidade nem afirma que o aluno domina. É o melhor endereço de RECALL do curso para ela, porque `billete` é dita oito vezes nesta parte e nenhuma outra parte diz uma palavra com ⟨ll⟩ tantas vezes. B16 (`la llave`) continua livre para redisparar de novo: nada aqui a consome. O ⟨v⟩ entra de carona dentro da MESMA palavra — `Sevilla` lida à alemã sai «se-FIL-la» —, uma oração, não um bloco; a casa dele é B01 e B11 já o redisparou.",
     "as_outras_cinco": "⟨qu⟩ (`Quería`, `¿De qué vía sale?`, `¿Para qué tren?`), ⟨h⟩ (`Ahí hay que`, `¿Hay otro tren…?`, `hacer transbordo`), ⟨z⟩/⟨c⟩+e,i (`Cercanías`, `control de acceso`, `atención al cliente`), ⟨s⟩ intervocálico (`pasa`, `pasar`, `reservado`) e ⟨j⟩ (`la tarjeta`, `Buen viaje`) TODAS aparecem na fala espanhola desta parte e NENHUMA ganha clipe de áudio. São desarmadas só pelo respelling, que é o que impede o G4 de estourar — sete regras faladas numa parte é a tabela lida em voz alta que a DERIVACAO §1.1 proíbe. `Cercanías` é a mais cara das cinco (lida à alemã sai «tser-ka-NI-as», e é a palavra que decide qual trem é o seu); ela fica no respelling e no `aprofundar`, em texto.",
-    "respelling_para_leitor_alemao": "O campo `pinyin` é respelling para OLHO ALEMÃO e nunca vai ao TTS (INV-6). Convenção idêntica à de B11/B12/B14: ⟨v⟩→b · ⟨ll⟩ e ⟨y⟩→j de `ja` · ⟨j⟩ e ⟨g⟩+e,i→ch de `Bach` · ⟨qu⟩→k · ⟨h⟩ some · ⟨s⟩, ⟨z⟩ e ⟨c⟩+e,i→ss (nunca s simples, porque s intervocálico alemão é [z]) · ⟨ch⟩→tsch · -e final→-eh, contra o schwa · MAIÚSCULA marca a tônica. O alvo de ⟨z⟩/⟨c⟩ é [θ] e o `ss` grafa a realização em seseo, que é ACEITA (Canárias, 22% deste comprador); o que o `ss` impede é o [ts], que é o proibido. Decisão herdada de B12 e mantida por coerência de produto: mudar aqui e não lá produziria duas convenções no mesmo curso.",
-    "previas_cumpridas": "DUAS, e as duas com modelo nativo em `ouvir` IMEDIATAMENTE antes do `responde`, zero peça nomeada como trocável e a narração prometendo o turno seguinte em vez de alegar posse. (1) QUERIA em `e06b-billetes-c` (casa B12, três slots depois): `b09-n20` diz «Ein ganzer Satz, so wie er ist. Er bekommt später seinen eigenen Teil» — e NÃO diz que o aluno «já tem» a palavra da padaria, que é o erro real do par EN que o roster manda não repetir. (2) YA-ESTA em `b14-yapagado-c` e `b14-yareservado-e` (casa B14, cinco slots depois): dois dos quatro encaixes, produzidos, e `b09-n26` diz «Ihren Namen bekommen sie später im Kurs». Nenhuma linha nomeia o molde nem diz que a lista é fechada em quatro — a lista fechada é a feature de B14. HANDSHAKE CONFERIDO CONTRA O DISCO: `ep-b14.json` já está escrito e `b14-n35` diz «Zwei Wörter, die Sie am Fahrkartenschalter schon zweimal gesagt haben. Heute bekommen sie einen Namen». Este arquivo é o balcão a que aquela frase se refere; se os dois `responde` daqui saírem, B14 passa a mentir.",
-    "redisparos_cumpridos": "Os quatro que o roster promete, todos com encaixe NOVO em relação à casa: HAY em `¿Hay otro tren esta tarde?` (casa B08), PUEDO em `subir con esta maleta` e `cambiar el billete` (casa B06 — `pagar con tarjeta` entra como recall, não como encaixe novo), DONDE em `el control de acceso` (casa B08; `la salida` é o callback de abertura, que é recuperação e não encaixe novo), ME-PUEDE em `recargar la tarjeta` (casa B03). Os três primeiros vivem em partes ainda por escrever, e por isso o G9c só avisa hoje — a promessa está cumprida do lado de cá.",
+    "respelling_para_leitor_alemao": "O campo `pinyin` é respelling para OLHO ALEMÃO e nunca vai ao TTS (INV-6). Convenção idêntica à de B11/B12/B14: ⟨v⟩→b · ⟨ll⟩ e ⟨y⟩→j de `ja` · ⟨j⟩ e ⟨g⟩+e,i→ch de `Bach` · ⟨qu⟩→k · ⟨h⟩ some · ⟨s⟩, ⟨z⟩ e ⟨c⟩+e,i→ss (nunca s simples, porque o ⟨s⟩ alemão é [z] tanto entre vogais quanto no início de palavra — foi aqui que a primeira versão escorregou: `Sevilla` saiu `se-BI-ja` em sete lugares, inclusive na fala do Thomas, onde o TTS alemão teria dito «ze-BI-ja» dentro do clipe que ensina a ler a palavra; corrigido para `sse-BI-ja` na revisão) · ⟨ch⟩→tsch · -e final→-eh, contra o schwa · MAIÚSCULA marca a tônica. O alvo de ⟨z⟩/⟨c⟩ é [θ] e o `ss` grafa a realização em seseo, que é ACEITA (Canárias, 22% deste comprador); o que o `ss` impede é o [ts], que é o proibido. Decisão herdada de B12 e mantida por coerência de produto: mudar aqui e não lá produziria duas convenções no mesmo curso.",
+    "previas_cumpridas": "DUAS, e as duas com modelo nativo em `ouvir` IMEDIATAMENTE antes do `responde`, zero peça nomeada como trocável e a narração prometendo o turno seguinte em vez de alegar posse. (1) QUERIA em `e06b-billetes-c` (casa B12, três slots depois): `b09-n20` diz «Ein ganzer Satz, so wie er ist. Er bekommt später seinen eigenen Teil» — e NÃO diz que o aluno «já tem» a palavra da padaria, que é o erro real do par EN que o roster manda não repetir. (2) YA-ESTA em `b14-yapagado-c` e `b14-yareservado-e` (casa B14, cinco slots depois): dois dos quatro encaixes, produzidos, e `b09-n26` diz «Einen Namen bekommen die beiden später im Kurs» — casa exatamente com `b14-n35`, «Heute bekommen sie einen Namen». Nenhuma linha nomeia o molde nem diz que a lista é fechada em quatro — a lista fechada é a feature de B14. HANDSHAKE CONFERIDO CONTRA O DISCO: `ep-b14.json` já está escrito e `b14-n35` diz «Zwei Wörter, die Sie am Fahrkartenschalter schon zweimal gesagt haben. Heute bekommen sie einen Namen». Este arquivo é o balcão a que aquela frase se refere; se os dois `responde` daqui saírem, B14 passa a mentir.",
+    "redisparos_cumpridos": "Os quatro que o roster promete, todos com encaixe NOVO em relação à casa: HAY em `¿Hay otro tren esta tarde?` (casa B08), PUEDO em `subir con esta maleta` e `cambiar el billete` (casa B06 — `pagar con tarjeta` entra como recall, não como encaixe novo), DONDE em `el control de acceso` (casa B08; `la salida` é o callback de abertura, que é recuperação e não encaixe novo), ME-PUEDE em `recargar la tarjeta` (casa B03). CORRIGIDO NA REVISÃO — a versão anterior desta nota dizia que as três primeiras casas «vivem em partes ainda por escrever», e isso é FALSO desde antes da entrega: B03, B06 e B08 têm `cena`, estão em vigor e foram medidas em disco. Os encaixes daqui não colidem com nenhum delas: B08 ensina HAY com `un cajero`, `aseos`, `una parada de taxis`, `una tienda` e `un supermercado`, e DONDE com `la salida`, `los aseos`, `un cajero` e `una farmacia`; B06 ensina PUEDO com `dejar la maleta aquí`, `usar el baño`, `pagar con tarjeta`, `entrar con esto` e `sentarme aquí`; B03 ensina ME-PUEDE com `repetir`, `hablar más despacio`, `escribir`, `llamar un taxi`, `ayudar` e `enseñar en el mapa`. As quatro casas vêm antes de B09 e o G9d passa.",
     "ensinados_e_nao_declarados": "`¿Tengo que + [infinitivo]?` aparece com DOIS encaixes na frente do aluno (`validar el billete`, `hacer transbordo`), os dois produzidos. Continua FORA do roster porque o teto de 12 operacionais é lei e a tabela de casos de fronteira do PRODUTO.md dá a vaga a `Me he dejado`. Nenhum step declara `molde` para ele — de propósito: declarar inflaria o numerador do G9 sem que o molde exista no roster, e o próprio script barra molde não declarado.",
     "o_que_esta_parte_NAO_diz": "Dois avisos do par EN foram cortados inteiros e não substituídos, conforme DERIVACAO §3.2: a notação de preço `1.234,56` (idêntica em alemão) e o relógio de 24 horas (padrão na Alemanha). Não viraram «reconhecimento» nem uma linha de cortesia: viraram silêncio, e o tempo foi para a inversão dos numerais, que é o item que só existe neste par. Também não há GUIRI ALERT de `-o tax`: `Hospitál` já é alemão.",
     "pendencia_G14": "O portão voz × língua roda neste SKU (`audio.config.json._g14`) e esta parte sai com zero divergência. Juli e Thomas CITAM espanhol dentro da narração alemã — `Cercanías`, `billete`, `Sevilla`, `bi-JE-teh` — e isso é o trabalho da guia, nunca falar a língua. Carmen e Emilio não dizem uma palavra de alemão, inclusive no clipe novo."
@@ -114,7 +123,7 @@
       "bloco": "aquecimento",
       "gesto": 1,
       "tom": "ganha",
-      "pt": "Teil neun. Metronom an der Kante: trein-ta y cua-tro. Fünf gleiche Schläge, und keiner ist größer als der andere."
+      "pt": "Teil neun. Metronom an der Kante: trein-ta i cua-tro. Fünf gleiche Schläge, und keiner ist größer als der andere."
     },
     {
       "tipo": "responde",
@@ -296,7 +305,7 @@
       "tipo": "intro",
       "voz": "Juli",
       "audioKey": "b09-n12",
-      "pt": "Ob entwertet werden muss, hängt von der Bahn ab. Vier Wörter fragen ist billiger, als es zu raten."
+      "pt": "Ob entwertet werden muss, hängt von der Bahn ab. Fünf Wörter fragen ist billiger, als es zu raten."
     },
     {
       "tipo": "ouvir",
@@ -409,7 +418,7 @@
       "voz": "Carmen",
       "audioKey": "e06b-billetes-c",
       "es": "Quería dos billetes para Sevilla.",
-      "pinyin": "ke-RI-a doss bi-JE-tess PA-ra se-BI-ja",
+      "pinyin": "ke-RI-a doss bi-JE-tess PA-ra sse-BI-ja",
       "pt": "Ich hätte gern zwei Fahrkarten nach Sevilla."
     },
     {
@@ -427,7 +436,7 @@
       "promptPt": "Am Fernschalter, Sie sind zu zweit, und auf der Anzeige über Ihnen steht die Stadt mit dem Turm und der Hitze. Sagen Sie, was Sie wollen. Sprechen Sie jetzt.",
       "audioKey": "e06b-billetes-c",
       "es": "Quería dos billetes para Sevilla.",
-      "pinyin": "ke-RI-a doss bi-JE-tess PA-ra se-BI-ja",
+      "pinyin": "ke-RI-a doss bi-JE-tess PA-ra sse-BI-ja",
       "pt": "zwei davon, und wohin"
     },
     {
@@ -497,7 +506,7 @@
       "tipo": "intro",
       "voz": "Thomas",
       "audioKey": "b09-t03",
-      "pt": "Und im Ziel stecken beide: Sevilla ist se-BI-ja. Deutsch gelesen käme se-FIL-la heraus, und die gibt es nicht."
+      "pt": "Und im Ziel stecken beide: Sevilla ist sse-BI-ja. Deutsch gelesen käme se-FIL-la heraus, und die gibt es nicht."
     },
     {
       "tipo": "intro",
@@ -555,7 +564,7 @@
       "tipo": "intro",
       "voz": "Juli",
       "audioKey": "b09-n26",
-      "pt": "Zwei Sätze, die Ihnen zweimal Geld gespart haben. Ihren Namen bekommen sie später im Kurs."
+      "pt": "Zwei Sätze, die Ihnen zweimal Geld gespart haben. Einen Namen bekommen die beiden später im Kurs."
     },
     {
       "tipo": "intro",
@@ -679,7 +688,7 @@
       "receptivo": true,
       "acao": "Zahl und Buchstaben mitschreiben, dann auf der Anzeige gegenlesen.",
       "es": "Tren AVE con destino Sevilla, vía 8. Embarque por la puerta H.",
-      "pinyin": "tren A-beh kon dess-TI-no se-BI-ja, BI-a O-tscho. em-BAR-keh por la PUER-ta A-tscheh",
+      "pinyin": "tren A-beh kon dess-TI-no sse-BI-ja, BI-a O-tscho. em-BAR-keh por la PUER-ta A-tscheh",
       "pt": "👂 Ziel, Gleis, Tür. Drei Angaben in acht Sekunden, und die letzte ist ein Buchstabe.",
       "tts": "Tren AVE con destino Sevilla, vía ocho. Embarque por la puerta hache."
     },
@@ -793,7 +802,7 @@
       "voz": "Carmen",
       "audioKey": "e06b-d3",
       "es": "El AVE a Sevilla. ¿A qué hora sale?",
-      "pinyin": "el A-beh a se-BI-ja. a ke O-ra SSA-leh",
+      "pinyin": "el A-beh a sse-BI-ja. a ke O-ra SSA-leh",
       "pt": "Den AVE nach Sevilla. Wann fährt er?"
     },
     {
@@ -837,7 +846,7 @@
       "audioKey": "e06b-billetes-c",
       "molde": "QUERIA",
       "es": "Quería dos billetes para Sevilla.",
-      "pinyin": "ke-RI-a doss bi-JE-tess PA-ra se-BI-ja",
+      "pinyin": "ke-RI-a doss bi-JE-tess PA-ra sse-BI-ja",
       "pt": "Ich hätte gern zwei Fahrkarten nach Sevilla."
     },
     {
@@ -897,7 +906,7 @@
     "secoes": [
       {
         "titulo": "Metro, Cercanías, Renfe — und wo das Geld hängt",
-        "corpo": "Drei Systeme, drei Fahrscheine, und keiner gilt für den anderen. Die Metro bleibt in der Stadt; in Madrid ist der Papier-Einzelfahrschein abgeschafft und man kauft die rote Tarjeta Multi für 2,50 Euro, die man teilen und immer wieder aufladen kann; seit Juni 2026 gehen an den Sperren auch Karte und Handy direkt. Cercanías ist der Vorortzug — größere Wagen, seltener, und seit dem 31. Dezember 2025 nicht mehr gratis: die alten Aktionen sind ausgelaufen, und was bleibt, gilt nur in Asturien und Kantabrien und nur für Menschen mit Wohnsitz. Wer ein Video von 2024 gesehen hat, kommt mit einer falschen Erwartung an. Renfe fährt zwischen den Provinzen, mit AVE, Avlo und Avant, und wird gebucht wie ein Flug: 60 bis 90 Tage vorher sind die Preise am niedrigsten, am Vortag zwei- bis dreimal so hoch, und manchmal gibt es gar keinen Platz mehr. Der Flughafen ist überall der Sonderfall. In Madrid kostet er 3 Euro Aufschlag, egal ob Sie einen Einzelfahrschein oder einen Zehnerblock haben. In Barcelona deckt die T-casual für 13 Euro den Flughafen nicht ab: die L9 Sud ist eine eigene Zone und kostet 5,90 Euro pro Strecke. Die Faustregel ohne Tabelle: mehr als drei Fahrten am Tag, dann lohnt der Zehnerblock, den Sie zu zweit teilen dürfen — und für den Flughafen rechnen Sie immer extra.",
+        "corpo": "Drei Systeme, drei Fahrscheine, und keiner gilt für den anderen. Die Metro bleibt in der Stadt; in Madrid ist der Papier-Einzelfahrschein abgeschafft und man kauft die rote Tarjeta Multi für 2,50 Euro — sie läuft auf keinen Namen und lässt sich immer wieder aufladen, aber durch die Sperre kommt damit immer nur eine Person, nie zwei; seit Juni 2026 gehen an den Sperren auch Karte und Handy direkt. Cercanías ist der Vorortzug — größere Wagen, seltener, und seit dem 31. Dezember 2025 nicht mehr gratis: die alten Aktionen sind ausgelaufen, und kostenlos bleibt der Nahverkehr nur in Asturien und Kantabrien, und auch dort nur ab sechzehn Fahrten pro Viermonatszeitraum. Spanische Staatsangehörigkeit oder Wohnsitz verlangt eine andere Sache, nämlich der 10-Euro-Monatspass für junge Leute — der ist für Reisende ohnehin nicht zu haben. Wer ein Video von 2024 gesehen hat, kommt mit einer falschen Erwartung an. Renfe fährt zwischen den Provinzen, mit AVE, Avlo und Avant, und wird gebucht wie ein Flug: 60 bis 90 Tage vorher sind die Preise am niedrigsten, am Vortag zwei- bis dreimal so hoch, und manchmal gibt es gar keinen Platz mehr. Der Flughafen ist überall der Sonderfall. In Madrid kostet er 3 Euro Aufschlag, egal ob Sie einen Einzelfahrschein oder einen Zehnerblock haben. In Barcelona deckt die T-casual für 13 Euro den Flughafen nicht ab: die L9 Sud ist eine eigene Zone und kostet 5,90 Euro pro Strecke. Die Faustregel ohne Tabelle: mehr als drei Fahrten am Tag, dann lohnt der Zehnerblock — aber einer pro Person, denn die T-casual in Barcelona gilt ausdrücklich für einen einzigen Reisenden, und auch in Madrid kommt pro Durchgang nur einer durch. Für den Flughafen rechnen Sie immer extra.",
         "exemplos": [
           {
             "es": "¿Esto es Cercanías o metro?",
@@ -911,7 +920,7 @@
       },
       {
         "titulo": "Die Zahl kommt andersherum — und zwei Buchstaben auf dem Fahrschein",
-        "corpo": "Es gibt in dieser Folge genau zwei Stellen, an denen Ihre eigene Sprache Ihnen im Weg steht, und beide sind billig zu reparieren. Die erste ist die Reihenfolge in der Zahl. Deutsch stellt den kleinen Teil nach vorn — vier-und-dreißig —, Spanisch den großen: treinta y cuatro, dreißig-und-vier. Wer Silbe für Silbe überträgt, hört den Anfang, denkt an die vier und schreibt 43 auf, und merkt es an der Kasse oder am falschen Gleis. Die Regel für die ganze Reise passt in eine Zeile: was zuerst kommt, ist der große Teil, und das gilt für den Preis genauso wie für die Gleisnummer. Zum Üben reicht das Mitlesen auf der Anzeige — Sie hören die Zahl und sehen sie zwei Sekunden später gedruckt, und das ist die billigste Korrektur, die es gibt. Die zweite Stelle ist die Schrift. Ein doppeltes l ist das j aus «ja»: billete heißt bi-JE-teh, pantalla heißt pan-TA-ja, und die Stadt auf Ihrem Fahrschein heißt se-BI-ja — mit beiden Regeln in einem einzigen Wort, weil das v ein b ist. Deutsch gelesen käme se-FIL-la heraus, und der Mensch hinter der Scheibe hat davon noch nie gehört. Drei weitere Zeichen laufen in dieser Folge still mit und stehen in jeder Lautschrift dieser Seite: das qu ist ein einfaches k (quería = ke-RI-a, ¿de qué vía? = de ke BI-a), das h wird gar nicht gesprochen (¿hay otro tren? = ai O-tro tren), und das j ist das ch aus «Bach» (la tarjeta = la tar-CHE-ta, buen viaje = buen BJA-cheh).",
+        "corpo": "Es gibt in dieser Folge genau zwei Stellen, an denen Ihre eigene Sprache Ihnen im Weg steht, und beide sind billig zu reparieren. Die erste ist die Reihenfolge in der Zahl. Deutsch stellt den kleinen Teil nach vorn — vier-und-dreißig —, Spanisch den großen: treinta y cuatro, dreißig-und-vier. Wer Silbe für Silbe überträgt, hört den Anfang, denkt an die vier und schreibt 43 auf, und merkt es an der Kasse oder am falschen Gleis. Die Regel für die ganze Reise passt in eine Zeile: was zuerst kommt, ist der große Teil, und das gilt für den Preis genauso wie für die Gleisnummer. Zum Üben reicht das Mitlesen auf der Anzeige — Sie hören die Zahl und sehen sie zwei Sekunden später gedruckt, und das ist die billigste Korrektur, die es gibt. Die zweite Stelle ist die Schrift. Ein doppeltes l ist das j aus «ja»: billete heißt bi-JE-teh, pantalla heißt pan-TA-ja, und die Stadt auf Ihrem Fahrschein heißt sse-BI-ja — mit beiden Regeln in einem einzigen Wort, weil das v ein b ist. Deutsch gelesen käme se-FIL-la heraus, und der Mensch hinter der Scheibe hat davon noch nie gehört. Drei weitere Zeichen laufen in dieser Folge still mit und stehen in jeder Lautschrift dieser Seite: das qu ist ein einfaches k (quería = ke-RI-a, ¿de qué vía? = de ke BI-a), das h wird gar nicht gesprochen (¿hay otro tren? = ai O-tro tren), und das j ist das ch aus «Bach» (la tarjeta = la tar-CHE-ta, buen viaje = buen BJA-cheh).",
         "exemplos": [
           {
             "es": "Son treinta y cuatro con veinte.",

@@ -21,10 +21,10 @@
     "desconto": "Diesen Satz hat Ihnen niemand gegeben. Sie haben ihn dreimal selbst gebaut, aus einem einzigen Anfang.",
     "piso": "Sie steigen in Madrid für dreiunddreißig Euro aus, und Sie wussten es schon vor der Abfahrt. Die meisten Gäste erfahren den Betrag am Ziel."
   },
-  "cliqueAudioKey": "b07-n34",
+  "cliqueAudioKey": "b07-n35",
   "frasePiso": "Sie steigen in Madrid für dreiunddreißig Euro aus, und Sie wussten es schon vor der Abfahrt. Die meisten Gäste erfahren den Betrag am Ziel.",
   "permissao": "Sie dürfen sich hinten anstellen und einsteigen, ohne ein Wort zu sagen — Adresse zeigen reicht. Sie dürfen am Mietwagenschalter ablehnen und dabei freundlich bleiben; nichts daran ist unhöflich. Und Sie dürfen den Wagen in Ruhe filmen, bevor Sie losfahren — das nimmt dort niemand persönlich.",
-  "permissaoAudioKey": "b07-n31",
+  "permissaoAudioKey": "b07-n32",
   "espelho": "Was dort auffällt, ist die lange Verhandlung am Tresen: wer mündlich argumentiert, verliert Zeit und gewinnt nichts — der Satz, der etwas bewegt, ist der, der um Schriftliches bittet.",
   "fichasCulturais": [
     {
@@ -68,7 +68,8 @@
         "b07-n23",
         "b07-n24",
         "b07-n25",
-        "b07-n26"
+        "b07-n26",
+        "b07-n27"
       ]
     }
   ],
@@ -127,7 +128,7 @@
     },
     {
       "id": "locadora-caucao-500-1500",
-      "afirmacao": "Wer am Schalter die Versicherung des Hauses ablehnt, dem werden bei manchen Anbietern zwischen 500 und 1.500 Euro auf der Karte geblockt — und der Druck, sie doch zu nehmen, wird mündlich aufgebaut, nicht schriftlich.",
+      "afirmacao": "Wer am Schalter die Versicherung des Hauses ablehnt, dem werden bei manchen Anbietern zwischen 500 und 1.500 Euro auf der Karte geblockt — geblockt, nicht abgebucht — und der Druck, sie doch zu nehmen, wird mündlich aufgebaut, nicht schriftlich.",
       "fonte": "OCU e imprensa especializada 2025–2026: pressão por seguro «Premium» no balcão, com recusa de entrega do veículo em casos nomeados — docs/pesquisa-espanha.md §8.4. Os nomes das empresas ficam FORA do áudio de propósito. A estimativa jornalística de prejuízo médio (~€2.000) NÃO é usada: o próprio dossiê a marca como não pública em fonte primária.",
       "ano": 2026,
       "revisarAte": "2027-06-01",
@@ -136,7 +137,8 @@
       "audioKeys": [
         "b07-n24",
         "b07-n25",
-        "b07-n26"
+        "b07-n26",
+        "b07-n27"
       ]
     },
     {
@@ -148,9 +150,9 @@
       "evidencia": "FATO",
       "risco": "medio",
       "audioKeys": [
-        "b07-n28",
         "b07-n29",
-        "b07-n30"
+        "b07-n30",
+        "b07-n31"
       ]
     }
   ],
@@ -165,13 +167,15 @@
     "gesto": "Programa 4 (der Tipper, o flick) no primeiro step, e é a primeira parte do SKU a abrir com ele. Motivo: esta é a parte mais densa de ⟨r⟩ de ME VIRO — `maletero`, `libre`, `recibo`, `dirección`, `tarifa`, `abrir`, `seguro`, `cobertura` —, e o `r` é o item que a DERIVACAO §1.2 linha 8 manda SUBIR de peso neste par, porque o `r` alemão é uvular e não há âncora no padrão. B04 e B11 abriram com o 2, B05 e B12 com o 3, B14 com o 1.",
     "receptivo": "Dois pares ouvir→agir marcados 👂 + `acao`, os dois no balcão da locadora e os dois com retorno real: `No hace falta, hombre, si está en el contrato.` (o afago que não é uma concessão — a ação é pedir por escrito, e é a regra R-D desta parte, a troca que tem retorno) e `Lleva la C. Con esa hay centros donde no puedes entrar.` (a resposta que dá a letra da plaqueta — a ação é olhar a zona antes de dirigir).",
     "tres_cenas_que_esta_parte_NAO_repete": "B04 já decidiu o seguro e a caução em casa; B05 já fez o check-in do hotel e o formulário do RD 933/2021, inclusive no balcão da locadora. B07 fica com o que só acontece NO balcão e NO carro: recusar, exigir por escrito, `lleno a lleno`, gasolina × gasóleo e a plaqueta ambiental. O falso amigo `firma` não volta — ele é de B05 e sai uma vez só.",
-    "golpe_como_beat": "`slots.json` → B07 diz «golpe entra como beat, nunca como episódio», e é o que está aqui: o homem do saguão ocupa três clipes e a moldura é a solução (a reihe funciona sempre), não a ameaça. G1 declarado `ganha`; o título nomeia um preço, não um perigo. Saldo de `tom` medido: 5 `ganha` × 4 `protege`.",
+    "golpe_como_beat": "`slots.json` → B07 diz «golpe entra como beat, nunca como episódio», e é o que está aqui: o homem do saguão ocupa três clipes e a moldura é a solução (a reihe funciona sempre), não a ameaça. G1 declarado `ganha`; o título nomeia um preço, não um perigo. Saldo de `tom` medido: 6 `ganha` × 4 `protege`.",
+    "revisao_adversarial_2026-07-28": "QUATRO CORREÇÕES DE FIDELIDADE, todas do mesmo defeito: o áudio afirmava MAIS do que a fonte, e o campo `afirmacao` de `fatosDatados` — que o SCHEMA §4.12 define como «na língua do comprador, EXATAMENTE como vai ao ar» — já carregava a versão certa. (1) b07-n11 dizia «Außerhalb der M-30 gilt er nicht. Dann läuft die Uhr, und sie startet bei zweiundzwanzig Euro», sem a condição que o dossiê traz e que a própria afirmação declarava: a Tarifa 3 de €22 vale FORA da M-30 E A MENOS DE 9 KM (`pesquisa-espanha.md` §8.4). Passou a «Bis neun Kilometer dahinter startet die Uhr bei zweiundzwanzig Euro», e o mesmo remendo entrou na seção 2 do `aprofundar`. (2) b07-n29 dizia que toda cidade acima de 50.000 habitantes TEM uma ZBE; a fonte diz que é OBRIGADA a ter desde 01/jan/2026, que não é a mesma coisa — trocado para «muss … haben». (3) b07-n14 dizia «Barcelona drängt die Fahrdienste aus dem Stadtverkehr» no presente consumado; a lei está EM TRAMITAÇÃO (R4 do dossiê) e a regra editorial exige formulação robusta nos dois desfechos — entrou «gerade», que é o «is in the middle of phasing out» da regra. (4) A afirmação de `locadora-caucao-500-1500` prometia €500–1.500 no ar e o número NÃO ia ao ar em lugar nenhum: vivia só na ficha cultural e no `aprofundar`, que são texto de tela. Pior que a inconsistência de contrato: o aluno era mandado perguntar «¿Cuánto me bloquean?» sem nunca ouvir como é uma resposta normal, e portanto sem conseguir reconhecer uma anormal — e o par EN ARRIA o número («five hundred to fifteen hundred euros»), então era perda de conteúdo na derivação, não decisão. Entrou UM clipe de narração alemã novo (`b07-n27`, logo depois do `responde` da caução, com o par `geblockt ≠ abgebucht` que o par EN também tinha), e os clipes n27–n36 foram renumerados para n28–n37. CUSTO DE CRÉDITO ESPANHOL: ZERO — nenhum campo `es` foi tocado e os 43 clipes de voz-guia ainda não existem em disco, então renumerar é grátis hoje e caro depois da geração.",
     "consulta": "Seis `responde` marcados, dentro da faixa pedida. Cinco caem no tile `taxi` (destino, taxímetro, parar, locadora) e um em `apuro/perdi` — que é a folha que o molde desta parte alimenta, junto com `taxi/errado`. `taxi/estacionar` fica com B10 (`¿Puedo aparcar aquí?` e `¿Dónde puedo aparcar sin entrar?` estão no andaime dele), e por isso a plaqueta ambiental entra aqui só pelo lado receptivo.",
     "medido_antes_e_depois": "MEDIDO com o corpus de 2026-07-28, com quatorze partes de ME VIRO já reescritas (o SKU está sendo escrito em paralelo, então este número envelhece rápido — refaça a medição antes de citá-lo). G9 de ME VIRO: 85/152 (55,9%) sem esta parte, 90/164 (54,9%) com ela. B07 traz 16 `responde` e 2 `shadow`, que somam 12 alvos NOVOS, 5 deles gerados por molde (`abrir el maletero`, `el taxímetro` e as três instâncias de ME-HE-DEJADO). Os outros quatro alvos já existiam no corpus e por isso não entram no denominador: `¿Puedo pagar con tarjeta?` (B06, a casa), `¿Me lo puede dar por escrito?` e `¿Cuánto me bloquean en la tarjeta?` (B04) e `¿Me puede llamar un taxi?` (B03, a casa de ME-PUEDE) — nesta parte os quatro são recall puro, e é assim que a narração os trata. As sete frases não geradas são inventário legítimo e nomeado: `¿Está libre?`, `No, gracias. No me interesa.`, `A esta dirección, por favor.`, `¿Es tarifa fija, verdad?`, `Pare aquí, por favor. ¿Me da un recibo?`, `No quiero seguro adicional…` e `¿Es lleno a lleno?`. Nenhuma passa em P2 (alcance ≥3 partes diferentes) e o teto de 12 operacionais está cheio — declarar qualquer uma delas seria inflar o numerador do G9, que é exatamente o que a trava anti-fraude do roster proíbe.",
     "pendencias": [
       "G14 continua PENDENTE como portão de conteúdo: conferência humana obrigatória de que Juli e Thomas não dizem uma frase espanhola inteira e de que Carmen e Emilio não dizem uma palavra alemã. Nesta parte a guia CITA espanhol em b07-n18 e o Thomas em b07-t01/t02 — citar é o trabalho dela, falar não seria.",
-      "Os 42 clipes de narração alemã (39 `intro` + 3 `recap`) e os 16 prompts desta parte não existem em disco: `npm run audio:check` acusa até a geração.",
-      "`passageiro-de-taxi-sem-licenca` é o único fato desta parte cuja fonte é um aviso governamental de OUTRO país (UK FCDO) sobre norma espanhola. Está no áudio porque o dossiê o rotula FATO, mas a norma espanhola de origem não foi localizada — reconferir antes da próxima edição, e é o primeiro item a cair se o revisor não a encontrar.",
+      "Os 43 clipes de narração alemã (40 `intro` + 3 `recap`) e os 16 prompts desta parte não existem em disco: `npm run audio:check` acusa até a geração.",
+      "`passageiro-de-taxi-sem-licenca` é o único fato desta parte cuja fonte é um aviso governamental de OUTRO país (UK FCDO) sobre norma espanhola. Está no áudio porque o dossiê o rotula FATO, mas a norma espanhola de origem não foi localizada — reconferir antes da próxima edição, e é o primeiro item a cair se o revisor não a encontrar. RESSALVA QUE SÓ EXISTE NESTE PAR, e ela é da revisão: `pesquisa-espanha.md` §7.8(g) autoriza usar a lista da FCDO «como está» com a justificativa explícita de ser «fonte oficial do país do comprador» — e essa justificativa NÃO PORTA para o comprador alemão. Aqui a FCDO é o aviso de um terceiro país. O equivalente a procurar é o Auswärtiges Amt ou a norma espanhola de transporte; até lá o item viaja com licença emprestada.",
+      "CONCENTRAÇÃO DO COMPRADOR × ÂNCORA DA PARTE (achado da revisão, não corrigível sem pesquisa). A DERIVACAO §3.1 mede Baleares 42% · Canárias 22% · Cataluña 13%, e os dois únicos números de tarifa que existem no dossiê são de Madri e Barcelona — não há UMA linha sobre táxi em Palma, Ibiza ou Tenerife em `pesquisa-espanha.md` (medido). Consequência assumida: o título, a `frasePiso` e o fecho da parte estão ancorados num número de Madri para um comprador que majoritariamente desembarca em Son Sant Joan. O PROTOCOLO é agnóstico de cidade e é isso que salva a parte — `¿Es tarifa fija, verdad?` × `¿Me pone el taxímetro?`, com a cápsula dizendo que são dois sistemas e os dois são normais —, e nenhuma linha do áudio afirma que o preço fixo vale fora de Madri. Mas quem tiver a tarifa balear em fonte primária deve reabrir este slot: é a maior alavanca de derivação que sobrou nele.",
       "A ZBE para veículo de PLACA ESTRANGEIRA continua sendo pendência de pesquisa (DERIVACAO §4.1) e NÃO entrou. O que está no áudio vale para carro alugado, que tem placa espanhola e plaqueta da DGT. Quem escrever A06 ou reabrir B04 não pode presumir que este slot já cobriu o outro caso."
     ]
   },
@@ -373,7 +377,7 @@
       "tipo": "intro",
       "voz": "Juli",
       "audioKey": "b07-n11",
-      "pt": "Außerhalb der M-30 gilt er nicht. Dann läuft die Uhr, und sie startet bei zweiundzwanzig Euro."
+      "pt": "Außerhalb der M-30 gilt er nicht. Bis neun Kilometer dahinter startet die Uhr bei zweiundzwanzig Euro."
     },
     {
       "tipo": "intro",
@@ -392,7 +396,7 @@
       "voz": "Juli",
       "audioKey": "b07-n14",
       "tom": "protege",
-      "pt": "Planen Sie die Fahrt vom Flughafen nicht über eine App: Barcelona drängt die Fahrdienste aus dem Stadtverkehr."
+      "pt": "Planen Sie die Fahrt vom Flughafen nicht über eine App: Barcelona drängt die Fahrdienste gerade aus dem Stadtverkehr."
     },
     {
       "tipo": "intro",
@@ -676,6 +680,12 @@
       "pt": "wie viel — und ab wann wieder frei"
     },
     {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b07-n27",
+      "pt": "Bei manchen Anbietern sind das fünfhundert bis tausendfünfhundert Euro. Geblockt heißt eingefroren, nicht abgebucht."
+    },
+    {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "e07b-lleno-e",
@@ -707,13 +717,13 @@
     {
       "tipo": "intro",
       "voz": "Juli",
-      "audioKey": "b07-n27",
+      "audioKey": "b07-n28",
       "pt": "Fragen Sie das am Schalter und nicht an der Zapfsäule. Um Mitternacht klingen die beiden Wörter gleich."
     },
     {
       "tipo": "intro",
       "voz": "Juli",
-      "audioKey": "b07-n28",
+      "audioKey": "b07-n29",
       "bloco": "capsula",
       "tom": "protege",
       "pt": "Letzte Sache am Schalter, und sie klebt an der Windschutzscheibe: die Umweltplakette des Wagens."
@@ -741,19 +751,19 @@
     {
       "tipo": "intro",
       "voz": "Juli",
-      "audioKey": "b07-n29",
-      "pt": "Seit Januar 2026 hat jede Stadt mit mehr als fünfzigtausend Einwohnern so eine Zone. Kameras, keine Schranke."
-    },
-    {
-      "tipo": "intro",
-      "voz": "Juli",
       "audioKey": "b07-n30",
-      "pt": "Bis zu zweihundert Euro, die Hälfte bei sofortiger Zahlung — und die Vermietung reicht es Wochen später weiter."
+      "pt": "Seit Januar 2026 muss jede Stadt mit mehr als fünfzigtausend Einwohnern so eine Zone haben. Kameras, keine Schranke."
     },
     {
       "tipo": "intro",
       "voz": "Juli",
       "audioKey": "b07-n31",
+      "pt": "Bis zu zweihundert Euro, die Hälfte bei sofortiger Zahlung — und die Vermietung reicht es Wochen später weiter."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "b07-n32",
       "bloco": "permissao",
       "tom": "ganha",
       "pt": "Sie dürfen sich hinten anstellen und einsteigen, ohne ein Wort zu sagen. Adresse zeigen reicht."
@@ -761,33 +771,33 @@
     {
       "tipo": "intro",
       "voz": "Juli",
-      "audioKey": "b07-n32",
+      "audioKey": "b07-n33",
       "pt": "Sie dürfen am Schalter ablehnen und freundlich bleiben. Und Sie dürfen den Wagen filmen, bevor Sie losfahren."
     },
     {
       "tipo": "intro",
       "voz": "Juli",
-      "audioKey": "b07-n33",
+      "audioKey": "b07-n34",
       "bloco": "espelho",
       "pt": "Was dort auffällt, ist die lange Verhandlung am Tresen. Wer mündlich argumentiert, gewinnt nichts dazu."
     },
     {
       "tipo": "intro",
       "voz": "Juli",
-      "audioKey": "b07-n34",
+      "audioKey": "b07-n35",
       "bloco": "clique",
       "pt": "Zählen Sie die Orte: der Taxistand, die Rückbank, die Rezeption, der Mietwagenschalter."
     },
     {
       "tipo": "intro",
       "voz": "Juli",
-      "audioKey": "b07-n35",
+      "audioKey": "b07-n36",
       "pt": "Diesen Satz hat Ihnen niemand gegeben. Sie haben ihn dreimal selbst gebaut, aus einem einzigen Anfang."
     },
     {
       "tipo": "intro",
       "voz": "Juli",
-      "audioKey": "b07-n36",
+      "audioKey": "b07-n37",
       "bloco": "piso",
       "pt": "Sie steigen in Madrid für dreiunddreißig Euro aus, und Sie wussten es vorher. Die meisten erfahren es am Ziel."
     },
@@ -867,7 +877,7 @@
       },
       {
         "titulo": "Wann die Uhr läuft und wann nicht",
-        "corpo": "Madrid und Barcelona lösen dasselbe Problem verschieden, und wer das eine für das andere hält, ärgert sich am falschen Ort. In Madrid gilt zwischen dem Flughafen Barajas und jeder Adresse innerhalb der M-30 ein Festpreis von dreiunddreißig Euro — vierundzwanzig Stunden am Tag, an allen Tagen, ohne zulässige Aufschläge für Gepäck, Nachtstunden oder Feiertage. Das Taxameter bleibt dann aus, und das ist kein Versäumnis, sondern die Regel. Fährt das Ziel aus der M-30 heraus, greift stattdessen die dritte Tarifstufe mit zweiundzwanzig Euro Grundbetrag, und ab da läuft die Uhr. In Barcelona gibt es keinen Festpreis ab Flughafen, sondern eine Untergrenze: einundzwanzig Euro für jede Fahrt ab dem Terminal, in denen der Flughafenzuschlag von vier Euro sechzig schon steckt. Zum Kreuzfahrtkai gilt ein eigener fester Betrag. Beides sind kommunale Tarife, beide werden jährlich angehoben — deshalb ist der nützlichste Satz nicht die Zahl, sondern die Frage davor, und die passt in vier Wörter.",
+        "corpo": "Madrid und Barcelona lösen dasselbe Problem verschieden, und wer das eine für das andere hält, ärgert sich am falschen Ort. In Madrid gilt zwischen dem Flughafen Barajas und jeder Adresse innerhalb der M-30 ein Festpreis von dreiunddreißig Euro — vierundzwanzig Stunden am Tag, an allen Tagen, ohne zulässige Aufschläge für Gepäck, Nachtstunden oder Feiertage. Das Taxameter bleibt dann aus, und das ist kein Versäumnis, sondern die Regel. Fährt das Ziel bis zu neun Kilometer aus der M-30 heraus, greift stattdessen die dritte Tarifstufe mit zweiundzwanzig Euro Grundbetrag, und ab da läuft die Uhr. In Barcelona gibt es keinen Festpreis ab Flughafen, sondern eine Untergrenze: einundzwanzig Euro für jede Fahrt ab dem Terminal, in denen der Flughafenzuschlag von vier Euro sechzig schon steckt. Zum Kreuzfahrtkai gilt ein eigener fester Betrag. Beides sind kommunale Tarife, beide werden jährlich angehoben — deshalb ist der nützlichste Satz nicht die Zahl, sondern die Frage davor, und die passt in vier Wörter.",
         "exemplos": [
           {
             "es": "¿Es tarifa fija, verdad?",

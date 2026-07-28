@@ -33,7 +33,7 @@ export const outline: ModuloOutline[] = [
       { id: 'b14', titulo: 'Die Rechnung und die sechs Wörter', pronta: true },
       { id: 'b15', titulo: 'Nicht anfassen — und der Fünfziger geht nicht', pronta: true },
       { id: 'b16', titulo: 'Ein Stockwerk höher, zur ruhigen Seite', pronta: true },
-      { id: 'b17', titulo: 'Apotheke, Schmerzen und Notfall', pronta: false },
+      { id: 'b17', titulo: 'Erst die Apotheke — und die Karte ist schon dabei', pronta: true },
       { id: 'b18', titulo: 'Zwölf Uhr raus, acht Uhr Flug — und die Jacke ist noch im Taxi', pronta: true },
     ]
   },

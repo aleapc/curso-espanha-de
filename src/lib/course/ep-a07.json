@@ -5,120 +5,799 @@
   "numero": 35,
   "parte": "35",
   "titulo": "Zeichen: willkommen, unangenehm und Zeit zu gehen",
-  "aguardaNarracao": true,
-  "_andaime": {
-    "_": "ANDAIME — não é parte pronta. A fala espanhola já está aqui e é definitiva (ativo de DESTINO, mesmos audioKey e mesmos mp3 do curso EN, custo de crédito zero). Tudo que é voz-guia está VAZIO de propósito: é o que o autor escreve, em ALEMÃO, e é a única coisa que este SKU paga.",
-    "funcao_do_slot": "Sinais: bem-vindo, incômodo e hora de ir",
-    "dono": "destino",
-    "o_que_falta": "narração (intro/recap/prompts de responde), `cena`, `moldura`, `permissao`, `frasePiso`, `clique`, `moldes`, `fichasCulturais`, `fatosDatados`, `aprofundar`, o campo `pt` (gloss em ALEMÃO) de cada step e o respelling de pronúncia para leitor alemão.",
-    "nao_traduzir": "a parte inglesa correspondente é ep-a07.json. Ela serve de referência de ESTRUTURA, nunca de texto: `pinyin` de lá é respelling para leitor de inglês (types.ts) e `pt` é o gloss inglês — nenhum dos dois foi copiado, e copiá-los é o anti-padrão 8.",
-    "entra_em_vigor": "no instante em que este arquivo ganhar o campo `cena`, os portões de tom passam de aviso a erro para ele. Apagar `aguardaNarracao` sem escrever a narração não muda nada: quem decide é `cena`."
+  "subtitulo": "Die Begrüßung, die entscheidet, wer sich zuerst bewegt; die Hand auf dem Arm, die heißt, dass der Abend gut läuft; die zwei Sekunden Stille, an denen Sie eine Kante gefunden haben; und der Abschied, der vom Zimmer bis auf die Straße weiterläuft, weil er so gemeint ist",
+  "moldura": "ganha",
+
+  "cena": "Halb zwölf nachts, die Teller sind vor einer Stunde abgeräumt, Sie haben schon zweimal gesagt, Sie müssten los, und der Mann neben Ihnen hat gerade eine Hand auf Ihren Arm gelegt und noch eine Geschichte angefangen.",
+
+  "decisao": "ob Sie bleiben, wenn der Raum Bleiben meint, und gehen, wenn er Gehen meint — die Stunde, die ein Tisch erst öffnet, nachdem das Essen weg ist, gegen den Abend, der um zehn endet und bei dem alle sehr höflich sind",
+  "emJogo": "tempo",
+
+  "moldes": [],
+
+  "frasePiso": "Sie werden wissen, wann der Raum Sie halten will und wann er fertig ist, und bei beidem richtig liegen. Die meisten Gäste gehen um zehn nach Hause und finden nie heraus, dass die gute Stunde nach den Tellern kommt.",
+
+  "permissao": "Sie dürfen überall, mit jedem, die Hand ausstrecken statt der Wange, und niemand in Spanien ist beleidigt — nie. Sie dürfen über jemanden reden, der noch spricht: eine Lücke kommt nicht, und darauf zu warten ist, wie ein Gast einen ganzen Abend schweigt. Sie dürfen nach den Tellern bleiben, denn der Tisch gehört Ihnen, bis jemand aufsteht. Und Sie dürfen an einem lauten Tisch zehn Minuten gar nichts sagen — keiner zählt Ihre Beiträge. Das Grüßen beim Reinkommen bringen Sie ohnehin schon mit.",
+  "permissaoAudioKey": "a07-n49",
+
+  "espelho": "Einen halben Schritt zurückzugehen, wenn jemand näher kommt, um mit Ihnen zu reden, ist das, was dort auffällt. Achtzig Zentimeter freie Luft sind an dem Tisch kein Respekt — sie lesen sich als jemand, der woanders hin will.",
+
+  "fichasCulturais": [
+    {
+      "sinal": "Sie kommt durch den Raum, legt den Kopf schräg und geht auf Ihre rechte Wange zu, bevor einer von beiden ein Wort gesagt hat.",
+      "suaLeitura": "Das muss ich jetzt machen, ich erwische die falsche Seite, und alle sehen mir dabei zu.",
+      "oQueEAli": "Die zwei Küsse sind privat, nicht geschäftlich: erst rechte Wange, dann linke, und die Lippen landen auf nichts. Wer zuerst eine Hand ausstreckt, hat es für beide entschieden, und der andere nimmt einfach die Hand.",
+      "oQueVoceFaz": "Vorlehnen, rechte Wange zuerst, zwei Wörter währenddessen — oder selbst zuerst die Hand ausstrecken, und das ist dann die Version.",
+      "oQueMelhora": "Die ersten drei Sekunden hören auf, eine Verhandlung zu sein, und Sie reden den Rest des Abends, statt auf die Schultern der Leute zu schauen.",
+      "ondeNaoVale": "Nicht über einen Tresen, einen Schreibtisch oder eine Kasse. Wer Ihnen etwas verkauft, Sie bedient oder eincheckt, bietet es nicht an, und dort ist die Hand das ganze Protokoll.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["a07-n13", "a07-n14", "a07-n15", "a07-n16", "a07-gusto-c"]
+    },
+    {
+      "sinal": "Er steht näher, als sich normal anfühlt, hat kein einziges Mal Ihren Blick losgelassen, und eine Hand landet mitten im Satz auf Ihrem Arm.",
+      "suaLeitura": "Das ist viel Mensch auf kurze Distanz, ich sollte ihm ein bisschen mehr Raum geben.",
+      "oQueEAli": "Der Arm ist das Thermometer des Gesprächs. Er kommt hoch, wenn die Sache gut läuft, und macht die Arbeit, die zu Hause ein Nicken und ein «mm-hm» machen.",
+      "oQueVoceFaz": "Genau da bleiben, wo Sie sind, die Augen oben halten und weiterreden.",
+      "oQueMelhora": "Sie werden als anwesend gelesen statt als höflich, das Gespräch behält seine Temperatur, und Sie bekommen die zweite Hälfte davon — die, die sich lohnt.",
+      "ondeNaoVale": "Nicht am Bankschalter, beim Arzt oder bei jemandem in Uniform. Die halten etwa den Abstand, den Ihrer zu Hause hält, und Nähe wäre dort für sie so fremd wie für Sie.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["a07-n17", "a07-n18", "a07-n19", "a07-n20", "a07-n21"]
+    },
+    {
+      "sinal": "Der Tisch wird für etwa zwei Sekunden still, und jemand fängt ein ganz anderes Thema an, ohne Sie dabei anzusehen.",
+      "suaLeitura": "Ich habe sie vor den Kopf gestoßen, und ich muss erklären, wie ich es gemeint habe, bevor es schlimmer wird.",
+      "oQueEAli": "Diese Pause ist der Raum, der eine Linie zieht und sie gleich wieder übertapeziert. Das neue Thema ist die Reparatur, von jemand anderem angeboten, gerade damit keiner benennen muss, was passiert ist.",
+      "oQueVoceFaz": "Nehmen Sie sofort das neue Thema, mit Interesse, und lassen Sie das alte genau da liegen, wo es hinfiel.",
+      "oQueMelhora": "Der Abend läuft bei der Temperatur weiter, die er hatte, und Sie werden der Gast, der es gemerkt hat — was mehr wert ist als die Geschichte, in der Sie gerade waren.",
+      "ondeNaoVale": "Nicht zwischen ihnen. Untereinander gehen sie dasselbe Thema eine Stunde lang wieder durch, laut. Die zwei Sekunden gelten dem, wer es gesagt hat, nicht dem, was gesagt wurde.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["a07-n27", "a07-n28", "a07-n29", "a07-n30", "a07-ya-c"]
+    },
+    {
+      "sinal": "Sie legen jemandem den Donnerstag hin, und zurück kommt etwas Warmes, Zustimmendes, in dem nirgends ein Wochentag steckt.",
+      "suaLeitura": "Das ist also ein Ja. Er meldet sich.",
+      "oQueEAli": "«Ya te diré» und «ya veremos» sind die höfliche Form von Nein. Es gibt sie, damit keiner jemandem ein glattes Nein ins Gesicht sagen muss, und alle am Tisch hören sie richtig.",
+      "oQueVoceFaz": "Sagen Sie «vale, otro día» und wechseln Sie selbst das Thema, bevor er es muss. Sie hören gern Klartext — hier ist das Nachhaken der Fehler, denn es zwingt das Nein heraus, das man Ihnen gerade erspart.",
+      "oQueMelhora": "Sie behalten den Menschen, und die Einladung, die er wirklich meint, kommt später in der Woche trotzdem.",
+      "ondeNaoVale": "Nicht aus einem Laden oder einem Büro, wo «ya le digo algo» eine echte, tatsächlich offene Antwort sein kann. Hier geht es um einen Plan zwischen Menschen, nicht um einen Kostenvoranschlag.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["a07-n32", "a07-yatedire-e", "a07-yaveremos-c", "a07-n33", "a07-otrodia-c"]
+    },
+    {
+      "sinal": "Mitternacht, alles ist abgeräumt, keine Rechnung ist gekommen, und in dem Moment, in dem Sie aufstehen, fragen drei Leute, ob Sie schon gehen.",
+      "suaLeitura": "Der Abend war vor einer halben Stunde zu Ende, und sie sind zu gut erzogen, um es zu sagen.",
+      "oQueEAli": "Abräumen ist nicht Schließen. Das Ende geht mit dem Körper, nicht mit einem Satz: der Gastgeber steht auf, sagt «bueno, pues nada» und fängt an, Teller zu bewegen — und selbst dann läuft der Abschied durchs Zimmer, den Flur und die Straße weiter.",
+      "oQueVoceFaz": "Setzen Sie sich einmal wieder hin, bleiben Sie noch eine halbe Stunde und gehen Sie, wenn ein anderer auf den Beinen ist.",
+      "oQueMelhora": "Sie bekommen die Stunde, die sich erst nach dem Essen öffnet — die Stunde, in der Sie aufhören, der Gast zu sein, und der werden, den sie wieder einladen.",
+      "ondeNaoVale": "Nicht im Restaurant in der letzten Sitzung, wo Stühle auf den Tischen genau das heißen, wonach es aussieht — und nicht unter der Woche in einem Haus, wo morgens Schule ist.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["a07-n38", "a07-n39", "a07-yatevas-e", "a07-n43", "a07-puesnada-e"]
+    }
+  ],
+
+  "fatosDatados": [
+    {
+      "id": "dos-besos-protocolo",
+      "afirmacao": "Zwei Küsse, erst die rechte Wange, sind die private und nicht die geschäftliche Begrüßung — und wer zuerst eine Hand ausstreckt, entscheidet, welche der beiden passiert.",
+      "fonte": "NÃO consta de docs/pesquisa-espanha.md: a pesquisa não trata de saudação, distância nem toque. Convenção bem atestada por consenso de fontes secundárias e guias 2025–2026; sem fonte primária conferida. ⚠️ NÃO existe estudo observacional europeu de distância e toque que inclua a Espanha. Por isso o áudio diz o comportamento e a dispensa (a mão resolve), e nunca «estudos mostram» nem um número de centímetros.",
+      "ano": 2026,
+      "revisarAte": "2029-01-01",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": ["a07-n13", "a07-n14", "a07-n15", "a07-n16"]
+    },
+    {
+      "id": "guiri-nao-e-insulto",
+      "afirmacao": "«Guiri» ist das gewöhnliche Wort für einen nordeuropäischen Gast. Es neckt, wird meist ohne Feindseligkeit und oft liebevoll gebraucht, und es ist nicht als Beleidigung gegen Sie gerichtet.",
+      "fonte": "docs/pesquisa-espanha.md §7.8, linha «'Guiri' is not a slur» — gíria corrente, normalmente sem hostilidade, às vezes afetuosa. Consenso de fontes secundárias; sem levantamento lexicográfico de atitude.",
+      "ano": 2026,
+      "revisarAte": "2029-01-01",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": ["a07-n36", "a07-guiri-e", "a07-n37"]
+    }
+  ],
+
+  "_notas": {
+    "_": "Parte ESCRITA (o andaime saiu). LEIO A SALA / M3: relação com o molde é auditiva, e por lei M3 NÃO planta molde nenhum (`moldes: []`, PRODUTO §5.1). A fala espanhola continua ativo de DESTINO — nenhum campo `es` foi tocado, os 15 audioKey são os do curso EN e os mp3 em disco estão intactos. O que este SKU paga aqui é a narração alemã: Juli (guia) + Thomas (a voz de alerta), mais os 8 prompts de responde.",
+    "clipe_espanhol_novo": "NENHUM, e nenhuma dependência cross-part. Os 15 audioKey espanhóis (a06-celebra-c, e01b-15, e01c-02 e os doze a07-*) já existem em mp3, herdados do par EN pelas mesmas chaves. Esta parte não cria uma única frase espanhola nova — é o SKU no seu regime mais barato, exatamente o que a DERIVACAO §4.2 previa para A07 (PEQUENA/MÉDIA).",
+    "densidade_M3": "8 responde nesta parte (callback + Buenas + Mucho gusto + Oye una cosa + Hablo un poco + Vale otro día + Me quedo un rato + Un placer no recap). O piso de M3 é ≥4 por parte e média ≥5 (G3); só A01, o ear module, pode ter zero. 7 pares receptivos 👂 (Encantado, Ya ya bueno, Ya te diré, Ya veremos, Mira los guiris, ¿Ya te vas?, Bueno pues nada) carregam a habilidade primária do módulo, que é RECONHECER (T3).",
+    "espelho": "Bloco `espelho` presente em campo próprio e em dois steps (a07-n51, a07-n52), como o G7 exige de toda parte de LEIO A SALA. É o eixo `distância` que a `slots.json` nomeia para A07 («o não disfarçado; volume, toque, distância»): recuar meio passo lê-se como querer ir embora.",
+    "recalibragem_deste_par": "O que é próprio do comprador alemão, e não uma tradução do par EN, está distribuído em três lugares, não num bloco de povo: (1) o Grüßen beim Reinkommen já é hábito de casa (norma alemã forte, DERIVACAO §3.2), então «Buenas» entra como RECONHECIMENTO, não revelação — dito em a07-n10 e na permissão; (2) a saudação física parte do aperto de mão, e a mão é «der ganze Ausweg» (a07-n16), o que desarma quem defaulta para handshake; (3) o «Klartext»: quem valoriza sinal explícito ouve `ya te diré` como um talvez real e crava data — e cravar força o nein que estavam poupando (a07-n33, ficha 4). A moldura da parte inteira é a da DERIVACAO: aqui pouco se diz em voz alta, e ler o implícito é a habilidade mais difícil do curso (a07-n06/n07/n08).",
+    "G6_sem_adjetivo_de_povo": "Zero gentílico + cópula. A narração fala de comportamento e de «zu Hause», nunca de «die Spanier sind» nem «typisch spanisch» (o regex alemão de scripts/lib/g6-gentilico.mjs verifica). O comprador é endereçado por «Sie» e por «Gast», o anfitrião por comportamento.",
+    "respelling_para_leitor_alemao": "O campo `pinyin` é respelling para OLHO ALEMÃO, mesmo esquema fixo de B11, onde as armadilhas ortográficas morrem sem custar áudio: ⟨v⟩→b (`vale`→BA-leh, `vas`→bass, `veremos`→be-RE-moss) · ⟨j⟩ e ⟨y⟩→j de ja (`ya`→ja, `oye`→O-jeh) · ⟨qu⟩→k (`quedo`→KE-do, `qué`→ke) · ⟨h⟩ some (`hoy`→oi, `hablo`→A-blo) · ⟨s⟩, ⟨z⟩ e ⟨c⟩+e,i→ss (`gusto`→GUSS-to, `placer`→pla-SSER, `celebra`→sse-LE-bra, `cosa`→KO-ssa) · ⟨ch⟩→tsch (`mucho`→MU-tscho) · ⟨ñ⟩→nj (`español`→ess-pa-NJOL) · -e final→-eh (`vale`→BA-leh) · MAIÚSCULA marca a tônica. Nenhuma armadilha vira palestra: A07 não é dona de nenhuma das sete regras (elas moram em B08/B12/B13/B16), aqui elas só passam pelo respelling.",
+    "tratamento": "Juli e Thomas tratam o aluno por SIE, como em B01/B04/B11/B12. Bônus editorial próprio deste par e desta parte: a guia siezt o aluno enquanto lhe mostra que ao balcão e à mesa espanhóis se duzt — a assimetria que I02 recalibra fica encenada na própria voz-guia.",
+    "pendencia_G14": "Juli e Thomas CITAM espanhol dentro da narração alemã (é o trabalho da guia: nomear «Buenas», «ya te diré», «vale, otro día») e nunca o falam; Carmen e Emilio não dizem uma palavra de alemão. Enquanto a checagem voz × língua não existir no script, INV-5 é conferência humana obrigatória nesta entrega."
   },
+
   "steps": [
     {
-      "tipo": "ouvir",
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n01",
+      "bloco": "aquecimento",
+      "gesto": 4,
+      "tom": "ganha",
+      "pt": "Teil fünfunddreißig. Aufwärmen: der Schnipser. Die Zunge einmal antippen, dann weg. O-tro. Ra-to. Pla-cer."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n02",
+      "pt": "Pe-ro, nie perrro. Der Finger schnippt einmal vom Bein und stoppt tot. Noch drei, laut."
+    },
+    {
+      "tipo": "responde",
       "voz": "Carmen",
+      "promptVoz": "Juli",
+      "bloco": "callback",
+      "promptAudioKey": "a07-p01",
+      "promptPt": "Die Straße von gestern Nacht, die Kapelle längst weg, und die Frau neben Ihnen hat sich keinen Zentimeter bewegt. Fragen Sie sie, was heute gefeiert wird. Sprechen Sie jetzt.",
       "audioKey": "a06-celebra-c",
       "es": "¿Qué se celebra hoy?",
-      "pt": ""
+      "pinyin": "ke sse sse-LE-bra oi",
+      "pt": "vier Wörter, an den, der am nächsten steht"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n03",
+      "bloco": "cena",
+      "pt": "Das war draußen auf der Straße. Heute Abend ist das andere Ende davon, einen Meter vor Ihrem Gesicht."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n04",
+      "pt": "Halb zwölf, die Teller sind vor einer Stunde gegangen, und Sie haben schon zweimal gesagt, Sie müssten los."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n05",
+      "pt": "Keiner ist aufgestanden. Der Mann neben Ihnen hat eine Hand auf Ihrem Arm und hat noch eine Geschichte angefangen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n06",
+      "pt": "Hier wird wenig gesagt. Die Zeichen stecken im Körper: im Arm, in zwei Sekunden Stille, darin, wer zuerst aufsteht."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n07",
+      "pt": "Sie kennen Zeichen, die man ausspricht. Das Ungesagte zu lesen ist das Schwerste an diesem Kurs."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n08",
+      "pt": "Drei kommen heute, keins mit einem Wort darin: bleib, lass nach, und jetzt darfst du gehen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n09",
+      "pt": "Das erste schicken Sie selbst, an der Tür, laut, bevor drinnen jemand aufgeschaut hat."
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "e01b-15",
       "es": "Buenas.",
-      "pt": ""
+      "pinyin": "BWE-nass",
+      "pt": "Ein Wort, zu jeder Tageszeit. Laden, Bar, Aufzug, Wartezimmer — das ist der Eintritt.",
+      "tts": "Buenas."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n10",
+      "pt": "Das Grüßen beim Reinkommen bringen Sie mit — beim Bäcker sagen Sie «Guten Tag». Hier ist es nur nicht optional."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "consulta": ["chegar/entrar"],
+      "promptAudioKey": "a07-p02",
+      "promptPt": "Sie haben die Tür einer kleinen Bar aufgeschoben, in der vier Leute sitzen, und jeder hat zu Ihnen hochgesehen. Ein Wort, von der Tür aus. Sprechen Sie jetzt.",
+      "audioKey": "e01b-15",
+      "es": "Buenas.",
+      "pinyin": "BWE-nass",
+      "pt": "bevor sonst etwas passiert"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n11",
+      "pt": "Schweigen in der Tür liest sich hier als Kälte. Ein Wort kauft Ihnen den Raum für die nächste Stunde."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n12",
+      "pt": "Dann die Begrüßung selbst, und die bringt Gäste von zu Hause kurz aus dem Tritt."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n13",
+      "pt": "Zwei Küsse. Erst die rechte Wange, dann die linke, und die Lippen landen auf gar nichts."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n14",
+      "pt": "Das ist privat, nicht geschäftlich. Am Tresen, am Schalter, an der Kasse macht das niemand."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n15",
+      "pt": "Und die Hand entscheidet. Wer eine ausstreckt, hat gewählt, und der andere nimmt sie."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n16",
+      "pt": "Strecken Sie Ihre aus, und niemand in Spanien ist beleidigt. Nie. Das ist der ganze Ausweg."
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "a07-gusto-c",
       "es": "Mucho gusto.",
-      "pt": ""
+      "pinyin": "MU-tscho GUSS-to",
+      "pt": "Freut mich. — zwei Wörter, die zu beiden Versionen passen und nie die Form wechseln.",
+      "tts": "Mucho gusto."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "consulta": ["chegar/entrar", "simpatia/puxar-conversa"],
+      "promptAudioKey": "a07-p03",
+      "promptPt": "Ein Freund eines Freundes ist in die Wohnung gekommen, quer durch den Raum auf Sie zu, und lehnt sich schon vor. Zwei Wörter, während es passiert. Sprechen Sie jetzt.",
+      "audioKey": "a07-gusto-c",
+      "es": "Mucho gusto.",
+      "pinyin": "MU-tscho GUSS-to",
+      "pt": "zwei Wörter, egal wie es ausgeht"
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "a07-encantado-e",
+      "receptivo": true,
+      "acao": "Nach Gehör nehmen. Ihres ist schon gesagt und passt auf jeden.",
       "es": "Encantado. ¿Qué tal?",
-      "pt": ""
+      "pinyin": "en-kan-TA-do. ke tal",
+      "pt": "👂 «Sehr erfreut. Wie geht's?» — was zurückkommt.",
+      "tts": "Encantado. ¿Qué tal?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n17",
+      "pt": "Jetzt das, was gar keine Regel ist. Es ist ein Abstand, und er ist kürzer als der, den Sie halten."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n18",
+      "pt": "Am Tisch ist die Lücke kleiner, die Augen bleiben auf Ihnen, und eine Hand landet mitten im Satz auf dem Arm."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n19",
+      "pt": "Diese Hand ist das Willkommen. Sie kommt, sobald das Gespräch gut läuft, und nie davor."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n20",
+      "pt": "Gehen Sie einen halben Schritt zurück, und die Temperatur kippt, ohne dass einer sagen kann, warum."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n21",
+      "pt": "Die Körperhandlung heute ist also keine. Bleiben Sie stehen, Augen hoch, und lassen Sie den Arm zu."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "a07-t01",
+      "pt": "Thomas hier. Auf einem Grillfest lehnte sich eine Frau vor, und ich hielt ihr die Hand hin wie ein Bankberater."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "a07-t02",
+      "pt": "Sie nahm sie, schüttelte sie, keiner störte sich daran. Was alle sahen, war der halbe Meter, den ich danach zurückwich."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n22",
+      "pt": "Die Lautstärke geht genauso. Vier, die gleichzeitig reden, sind kein Streit. Das ist Interesse."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n23",
+      "pt": "Niemand hält Ihnen eine Lücke frei, denn eine Lücke heißt, das Thema ist gestorben."
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "a07-oye-e",
       "es": "Oye, una cosa.",
-      "pt": ""
+      "pinyin": "O-jeh, U-na KO-ssa",
+      "pt": "Hör mal — eine Sache. Drei Wörter, die das Wort ergreifen, ohne dass jemand unterbrochen wird.",
+      "tts": "Oye, una cosa."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n24",
+      "pt": "Sagen Sie es in normalem Tempo, quer über den, der gerade redet, und der Tisch dreht sich zu Ihnen."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "consulta": ["simpatia/puxar-conversa"],
+      "promptAudioKey": "a07-p04",
+      "promptPt": "Fünf um einen Tisch, alle gleichzeitig, seit sechs Minuten keine Pause, und Sie haben etwas beizutragen. Über ihn drüber. Sprechen Sie jetzt.",
+      "audioKey": "a07-oye-e",
+      "es": "Oye, una cosa.",
+      "pinyin": "O-jeh, U-na KO-ssa",
+      "pt": "drei Wörter, und der Tisch dreht sich"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n25",
+      "pt": "Und wenn das Ganze ohne Sie weiterläuft, gibt es einen Satz, der Ihnen seit Woche eins gehört."
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "e01c-02",
       "es": "Hablo un poco de español.",
-      "pt": ""
+      "pinyin": "A-blo un PO-ko de ess-pa-NJOL",
+      "pt": "Der Satz, der einen Tisch dort hält, wo er war, sobald jemand für Sie umgeschaltet hat.",
+      "tts": "Hablo un poco de español."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "consulta": ["reparo/ingles"],
+      "promptAudioKey": "a07-p05",
+      "promptPt": "Sie kommen an den Tisch, und die ganze Runde schaltet mitten im Satz auf Englisch, rein aus Freundlichkeit. Geben Sie es ihnen zurück. Sprechen Sie jetzt.",
+      "audioKey": "e01c-02",
+      "es": "Hablo un poco de español.",
+      "pinyin": "A-blo un PO-ko de ess-pa-NJOL",
+      "pt": "und der Tisch kommt zurück"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n26",
+      "pt": "Das ist keine Korrektur. Es sagt, Sie arbeiten lieber daran, und die meisten machen mit."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n27",
+      "tom": "protege",
+      "pt": "Jetzt das zweite Zeichen, und es dauert etwa zwei Sekunden. Der Tisch wird auf einmal still."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n28",
+      "pt": "Jemand fängt ein ganz anderes Thema an und sieht Sie dabei nicht an."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n29",
+      "pt": "Das ist der Raum, der Ihnen die Kante zeigt. Kein Ärger, und schon vorbei."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n30",
+      "pt": "Sie nehmen das neue Thema, sofort, und lassen das alte liegen, wo es hinfiel."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n31",
+      "pt": "Eine Erklärung reißt es wieder auf. Die zwei Sekunden schließen es, und das ist allen lieber."
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "a07-ya-c",
+      "receptivo": true,
+      "acao": "Mitziehen, nicht erklären. Dasselbe wie die zwei Sekunden.",
       "es": "Ya, ya. Bueno.",
-      "pt": ""
+      "pinyin": "ja, ja. BWE-no",
+      "pt": "👂 Flach, kurz, Blick woanders — die zwei Sekunden in Worten. Ziehen Sie mit.",
+      "tts": "Ya, ya. Bueno."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n32",
+      "pt": "Dieselbe Flachheit steckt in einer Antwort, die wie ein Ja klingt und keins ist."
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "a07-yatedire-e",
+      "receptivo": true,
+      "acao": "Als Nein hören. Kein Datum nachschieben.",
       "es": "Ya te diré.",
-      "pt": ""
+      "pinyin": "ja te di-RE",
+      "pt": "👂 «Ich sag dir Bescheid.» Keiner sagt Bescheid. Ein Nein mit offener Tür.",
+      "tts": "Ya te diré."
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "a07-yaveremos-c",
+      "receptivo": true,
+      "acao": "Auch ein Nein. Nicht nachhaken.",
       "es": "Ya veremos.",
-      "pt": ""
+      "pinyin": "ja be-RE-moss",
+      "pt": "👂 «Mal sehen.» Dieselbe Antwort im anderen Mantel. Kein Plan.",
+      "tts": "Ya veremos."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n33",
+      "pt": "Sie hören gern Klartext, also nehmen Sie das für ein Vielleicht. Haken Sie nach, und Sie zwingen das Nein heraus."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n34",
+      "pt": "Kein Datum. Sie sagen selbst «vale, otro día» und wechseln das Thema, bevor er muss."
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "a07-otrodia-c",
       "es": "Vale, otro día.",
-      "pt": ""
+      "pinyin": "BA-leh, O-tro DI-a",
+      "pt": "Okay, ein andermal. Drei Wörter, die jemanden vom Haken lassen, ohne dass einer das Gesicht verliert.",
+      "tts": "Vale, otro día."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "consulta": ["simpatia/convite"],
+      "promptAudioKey": "a07-p06",
+      "promptPt": "Sie haben ihm jetzt zweimal den Donnerstag hingelegt, und zurück kommt etwas Warmes, Zustimmendes, das nichts festmacht. Lassen Sie ihn vom Haken. Sprechen Sie jetzt.",
+      "audioKey": "a07-otrodia-c",
+      "es": "Vale, otro día.",
+      "pinyin": "BA-leh, O-tro DI-a",
+      "pt": "und keiner muss es aussprechen"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n35",
+      "tom": "ganha",
+      "pt": "Sagen Sie das, und die Einladung, die er wirklich meint, kommt trotzdem. Drücken Sie weiter, und sie hört leise auf."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n36",
+      "pt": "Ein Wort werden Sie über sich aufschnappen, und es landet ganz anders, als es klingt."
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "a07-guiri-e",
+      "receptivo": true,
+      "acao": "Nicht reagieren. Es ist nicht gegen Sie.",
       "es": "Mira, los guiris.",
-      "pt": ""
+      "pinyin": "MI-ra, loss GI-riss",
+      "pt": "👂 «Guck, die Guiris.» Nordeuropäischer Gast. Neckend, selten böse, kein Schuss auf Sie.",
+      "tts": "Mira, los guiris."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n37",
+      "pt": "Es benennt eine Kategorie, keine Person, und meist steckt kein Spott darin, oft das Gegenteil."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n38",
+      "pt": "Letztes Zeichen, und das lesen Gäste von zu Hause jedes Mal vier Stunden zu früh."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n39",
+      "pt": "Die Teller weg heißt es nicht. Keine Rechnung, die kommt, heißt es auch nicht — das ist die Regel."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n40",
+      "pt": "Eine stille Minute heißt es nicht. Jemand zwei Minuten am Telefon heißt es nicht."
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "a07-yatevas-e",
+      "receptivo": true,
+      "acao": "Sich wieder setzen. Es ist eine Bitte.",
       "es": "¿Ya te vas?",
-      "pt": ""
+      "pinyin": "ja te bass",
+      "pt": "👂 «Schon weg?» Um Mitternacht gefragt, zu jemandem, der zwei Stunden zu früh aufsteht.",
+      "tts": "¿Ya te vas?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n41",
+      "pt": "Auch keine Floskel. Der Tisch bittet Sie, sich wieder zu setzen."
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "a07-quedo-c",
       "es": "No, no, me quedo un rato.",
-      "pt": ""
+      "pinyin": "no, no, me KE-do un RRA-to",
+      "pt": "Nein, nein — ich bleib noch. Die Antwort, die den Stuhl hält, und den Abend.",
+      "tts": "No, no, me quedo un rato."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "promptAudioKey": "a07-p07",
+      "promptPt": "Halb eins im Innenhof, Sie sind aus reiner Gewohnheit aufgestanden, und drei haben sich zu Ihnen umgedreht. Setzen Sie sich und sagen Sie es. Sprechen Sie jetzt.",
+      "audioKey": "a07-quedo-c",
+      "es": "No, no, me quedo un rato.",
+      "pinyin": "no, no, me KE-do un RRA-to",
+      "pt": "und der Stuhl gehört wieder Ihnen"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n42",
+      "pt": "Was heißt es dann? Nur eins, und es geht mit dem Körper, nicht mit einem Satz."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n43",
+      "pt": "Der Gastgeber steht auf und fängt an, Teller zu tragen. Das ist das Ende, und das einzige."
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "a07-puesnada-e",
+      "receptivo": true,
+      "acao": "Jetzt aufstehen. Das ist das Zeichen.",
       "es": "Bueno, pues nada.",
-      "pt": ""
+      "pinyin": "BWE-no, pwess NA-da",
+      "pt": "👂 «Na gut, dann mal.» Im Stehen gesagt, Hände auf dem Tisch. Der lange Abschied fängt hier an.",
+      "tts": "Bueno, pues nada."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n44",
+      "pt": "Gute zehn Minuten, weil Gehen etwas ist, das man zusammen tut, und keiner es hetzt."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n45",
+      "pt": "Sie sagen es im Zimmer, noch einmal im Flur, am Aufzug und noch von der Straße."
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "a07-placer-c",
       "es": "Un placer.",
-      "pt": ""
+      "pinyin": "un pla-SSER",
+      "pt": "Ein Vergnügen. Zwei Wörter an der Tür, die Hand ausgestreckt oder die Wange schon hin.",
+      "tts": "Un placer."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n46",
+      "bloco": "capsula",
+      "pt": "Zurück zur Tür. Wer die Hand ausstreckt, hat gewählt, und beide Versionen sind gewöhnlich."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n47",
+      "pt": "Die Küsse sind für Menschen, nie für Tresen. Wer Ihnen etwas verkauft, bietet sie nicht an."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n48",
+      "pt": "Und der Arm ist das Thermometer. Sobald er kommt, läuft das Gespräch schon eine Weile gut."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n49",
+      "bloco": "permissao",
+      "tom": "ganha",
+      "pt": "Sie dürfen überall in Spanien die Hand ausstrecken, und keiner ist beleidigt. Nicht einmal, nie."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n50",
+      "pt": "Sie dürfen über den reden, der noch spricht, nach den Tellern bleiben und zehn Minuten gar nichts sagen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n51",
+      "bloco": "espelho",
+      "pt": "Und einen halben Schritt zurückzugehen, wenn jemand näher kommt, ist das, was dort auffällt."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n52",
+      "pt": "Achtzig Zentimeter freie Luft sind an dem Tisch kein Respekt. Sie lesen sich als: woanders hin wollen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n53",
+      "bloco": "piso",
+      "tom": "ganha",
+      "pt": "Sie werden wissen, wann Sie bleiben und wann Sie gehen, und bei beidem richtig liegen. Die meisten gehen um zehn."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-s00",
+      "pt": "Nachsprechen. Laut, mit ihnen. Die zwei, die einen Abend öffnen und schließen:"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Carmen",
+      "audioKey": "a07-gusto-c",
+      "es": "Mucho gusto.",
+      "pinyin": "MU-tscho GUSS-to",
+      "pt": "Freut mich."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Emilio",
+      "audioKey": "a07-oye-e",
+      "es": "Oye, una cosa.",
+      "pinyin": "O-jeh, U-na KO-ssa",
+      "pt": "Hör mal — eine Sache."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Juli",
+      "audioKey": "a07-rend",
+      "bloco": "recap",
+      "pt": "Noch einmal laut, an einer Tür, an der wir noch nicht standen, und diesmal gehen Sie."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "consulta": ["chegar/sair", "simpatia/agradecer"],
+      "promptAudioKey": "a07-p08",
+      "promptPt": "Die Tür der Wohnung, Jacken an, und die Frau, deren Küche es war, hält Ihnen beide Hände hin. Zwei Wörter. Sprechen Sie jetzt.",
+      "audioKey": "a07-placer-c",
+      "es": "Un placer.",
+      "pinyin": "un pla-SSER",
+      "pt": "zwei Wörter, an der Tür"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a07-n54",
+      "pt": "Das ist der Raum. Bleiben, drüberreden, die zwei Sekunden vorbeilassen und zuletzt gehen. Hasta luego."
     }
-  ]
+  ],
+
+  "aprofundar": {
+    "titulo": "Die Begrüßung, der Arm, die zwei Sekunden und der lange Abschied (optionale Lektüre)",
+    "secoes": [
+      {
+        "titulo": "Zwei Küsse, eine Hand, und warum keins von beidem eine Regel ist",
+        "corpo": "Die Form ist einfach und lohnt sich, im Kopf zu haben, bevor Sie sie brauchen: zwei Küsse, rechte Wange an rechte Wange zuerst, dann die linke, Wangen berühren sich oder fast, und die Lippen landen auf nichts. Es ist die private Begrüßung — Freunde, Familie, der Freund eines Freundes, jemandes Wohnung, eine Vorstellung am Tisch — und sie läuft zwischen Frauen und zwischen einer Frau und einem Mann. Zwei Männer, die nicht verwandt sind, geben sich die Hand, oder die Hand-plus-Schulter-Version, wenn sie sich gut kennen. Was sie nicht ist: geschäftlich. Niemand hinter einem Tresen, einem Schreibtisch, einer Kasse oder an der Rezeption bietet sie an, und wenn Sie dort darauf zugehen, haben Sie schlicht den Raum falsch gelesen. Das Stück, das das alles handhabbar macht, ist, dass die Hand entscheidet. Wer zuerst eine Hand ausstreckt, hat für beide gewählt, und der andere nimmt die Hand ohne Zucken — was gerade dann beruhigt, wenn Ihr eigener Reflex ohnehin der Händedruck ist. Der Ausweg ist also vollständig, und Sie dürfen ihn nehmen, wann immer Sie wollen: strecken Sie die Hand aus, und niemand in Spanien ist beleidigt, nie. Eine ehrliche Anmerkung dazu, woher das kommt. Das ist die Beschreibung einer gut belegten Gewohnheit, kein gemessener Befund — die beste europäische Beobachtungsstudie zu Begrüßungsdistanz und Berührung schließt Spanien gar nicht ein, wer Ihnen also sagt, Studien zeigten exakt so und so viele Zentimeter, erfindet die Genauigkeit. Was Sie hier haben, ist das Verhalten und der Ausweg, und mehr brauchen Sie an einer Tür nicht.",
+        "exemplos": [
+          {
+            "es": "Mucho gusto.",
+            "pt": "MU-tscho GUSS-to — freut mich. Passt zur Hand und zu den Wangen und wechselt nie die Form"
+          },
+          {
+            "es": "Encantado. / Encantada.",
+            "pt": "en-kan-TA-do — 👂 das, was zurückkommt. Erkennen reicht; Sie müssen es nicht produzieren"
+          }
+        ]
+      },
+      {
+        "titulo": "Näher, lauter und über die Lücke drüber",
+        "corpo": "Drei Dinge an einem spanischen Tisch klingen in einem deutschen Ohr nach etwas, das sie nicht sind. Der Abstand ist kürzer, die Lautstärke höher, und man redet übereinander. Keins der drei ist Aggression, und das dritte kostet Gäste am meisten, weil die Gewohnheit von zu Hause ist, auf eine Lücke zu warten, die nie aufgeht. Eine Lücke in diesem Gespräch heißt nicht «Sie sind dran» — sie heißt, das Thema ist gestorben, und gleich wechselt es jemand. Der Weg hinein ist, in normaler Lautstärke über die Lücke drüberzugehen, und dafür gibt es kleine Anfänge: «oye», «oye, una cosa», «pues yo…», «mira». Sie sind nicht unhöflich und nicht clever; sie sind die gewöhnliche Mechanik, das Wort zu nehmen. Die Hand auf dem Arm gehört zur selben Familie. Sie kommt, wenn das Gespräch gut läuft, ist ein Zeichen von Beteiligung und nicht von Intimität, und das Nützlichste, was Sie damit tun können, ist gar nichts: da bleiben, wo Sie sind. Zurückzutreten ist eine Antwort, ob Sie es so meinen oder nicht, und es wird als anderswohin-wollen gelesen. Und zur Lautstärke, eine Erlaubnis, die eine Wiederholung wert ist: etwas lauter zu reden, als es Ihnen höflich vorkommt, ist das, was Sie hörbar macht, und die Stimme in einer lauten Bar zu senken ist das, was auffällt.",
+        "exemplos": [
+          {
+            "es": "Oye, una cosa.",
+            "pt": "O-jeh, U-na KO-ssa — hör mal, eine Sache. Das Wort ergriffen, ohne Lücke"
+          },
+          {
+            "es": "Pues yo creo que…",
+            "pt": "pwess jo KRE-o ke — 👂 also ich finde… Der andere übliche Weg hinein, über jemanden drüber"
+          }
+        ]
+      },
+      {
+        "titulo": "Die zwei Sekunden und das Nein, das nie gesagt wird",
+        "corpo": "Jeder Raum hat irgendwo eine Kante, und dieser Raum sagt Ihnen, dass Sie sie gefunden haben, mit zwei Sekunden Stille, gefolgt von jemandem, der ein anderes Thema anfängt und Sie dabei nicht ansieht. Es ist kein Ärger, keine Strafe, und es ist vorbei, bis Sie es bemerkt haben — das neue Thema ist die Reparatur, und sie wurde von jemand anderem angeboten, damit keiner sagen muss, was passiert ist. Der richtige Zug ist deshalb der billigste, der zu haben ist: das neue Thema mit Interesse nehmen und das alte liegen lassen. Eine Erklärung reißt genau die Sache wieder auf, von der man Sie gerade freigelassen hat, und nun muss die ganze Runde das Gespräch führen, das keiner wollte — und der Reflex, es «kurz klarzustellen», ist zu Hause eine Tugend und hier der Fehler. Das flache «ya, ya» mit dem Blick woanders ist die gesprochene Version derselben zwei Sekunden. Der nahe Verwandte davon ist die Absage, die nicht als solche formuliert wird. «Ya te diré» — ich sag dir Bescheid — und «ya veremos» — mal sehen — sind höfliche Neins, und «es complicado» ist ein drittes. Keins ist ein Plan, und auf ein Datum zu drängen macht aus einem bequemen Nein ein unbequemes, das nun jemand Ihnen ins Gesicht sagen muss. «Vale, otro día» lässt sie frei, hält die Freundschaft heil und hält Sie auf der Liste für die Einladung, die sie wirklich meinen. Die eine Stelle, an der man mit dieser Lesart vorsichtig sein muss, ist geschäftlich: «ya le digo algo» aus einer Werkstatt oder einem Büro kann eine echt offene Antwort sein, und dort ist Nachfragen fair.",
+        "exemplos": [
+          {
+            "es": "Ya te diré. / Ya veremos.",
+            "pt": "ja te di-RE — 👂 ich sag dir Bescheid / mal sehen. Beides ist Nein, freundlich gesagt"
+          },
+          {
+            "es": "Vale, otro día.",
+            "pt": "BA-leh, O-tro DI-a — okay, ein andermal. Die Antwort, die alle behält"
+          }
+        ]
+      },
+      {
+        "titulo": "«Guiri», und worauf das Wort eigentlich zeigt",
+        "corpo": "Sie werden es hören, wahrscheinlich in der dritten Person und wahrscheinlich nicht an Sie gerichtet: «guiri», das gewöhnliche Slangwort für einen nordeuropäischen Gast. Es neckt und ist meist warm gemeint; es ist keine Beleidigung, und es ist kein Wort, das Ihnen jemand als Angriff ins Gesicht sagt. Worauf es zeigt, ist nicht Ihre Nationalität, sondern ein Satz sichtbarer Gewohnheiten — das Bier um elf Uhr vormittags, das Hemd aus zwei Straßen vom Sand, Socken in Sandalen, der Sonnenbrand, das Portemonnaie auf dem Tisch. Was der nützliche Teil ist: es beschreibt Verhalten, und Verhalten lässt sich anpassen, ein Pass nicht. Zwei Dinge folgen daraus. Erstens ist es zu hören eine Information und keine Feindseligkeit, und darauf wie auf eine Beleidigung zu reagieren ist selbst das Guiri-hafteste, was im Moment zu haben ist. Zweitens tut dasselbe Wort für sie eine Arbeit, die kein deutsches Wort ganz tut, irgendwo zwischen «Tourist» und «Urlauber», und es wird über die ganze Kategorie mit einer gewissen Zuneigung benutzt — der Guiri ist schließlich auch der, der die Terrasse bezahlt. Ob Sie einen Witz daraus über sich selbst machen, ist eine eigene Fertigkeit, und die hat ihren eigenen Teil.",
+        "exemplos": [
+          {
+            "es": "Mira, los guiris.",
+            "pt": "MI-ra, loss GI-riss — 👂 guck, die Guiris. Aufgeschnappt, nicht gezielt"
+          },
+          {
+            "es": "Somos guiris, ya lo sabemos.",
+            "pt": "SO-moss GI-riss — 👂 wir sind Guiris, wir wissen es. Die Form, die es mit einem Lachen annimmt"
+          }
+        ]
+      },
+      {
+        "titulo": "Gehen: das Zeichen, das es anstößt, und die zwanzig Minuten danach",
+        "corpo": "Die Lesart von zu Hause für «der Abend ist vorbei» ist aus Dingen gebaut, die hier nichts bedeuten. Die abgeräumten Teller heißen, das Essen ist fertig, nicht der Abend — die Stunde nach den Tellern ist die «sobremesa», und in vielen Häusern ist sie die beste des Abends. Dass die Rechnung nicht kommt, heißt, der Tisch gehört noch Ihnen, denn sie ungefragt zu bringen liest sich, als würfe man einen Gast hinaus; wer von zu Hause die Rechnung als Schlusszeichen kennt, wartet hier auf ein Zeichen, das nicht kommen wird. Eine stille Minute heißt, jemand denkt nach. Was es tatsächlich beendet, ist körperlich und unverkennbar, sobald man weiß, worauf man achten muss: der Gastgeber kommt auf die Beine, sagt etwas wie «bueno, pues nada» und fängt an, Teller oder Gläser zu bewegen. Davor bekommt Aufstehen ein «¿ya te vas?», was keine Floskel ist — es ist eine Einladung, sich wieder zu setzen, und «no, no, me quedo un rato» ist die ganze Antwort. Danach ist das Gehen selbst ein Vorgang und kein Moment: Verabschiedungen im Zimmer, mehr im Flur, mehr an der Tür und eine letzte von der Straße, und es läuft tatsächlich gute zehn Minuten. Das ist kein Höflichkeitstheater, dem man entkommen müsste; es ist der Teil, in dem die Einladung, wiederzukommen, gemacht wird. Der Weg, es in die andere Richtung falsch zu machen, ist, die Ankündigung zu machen und dann sitzen zu bleiben, was sich liest, als wolle man überredet werden. Kündigen Sie es auf den Beinen an, die Jacke in der Hand, und meinen Sie es — und lassen Sie dann die zwanzig Minuten geschehen.",
+        "exemplos": [
+          {
+            "es": "¿Ya te vas?",
+            "pt": "ja te bass — 👂 schon weg? Eine Einladung, sich wieder zu setzen, keine Frage"
+          },
+          {
+            "es": "Bueno, pues nada.",
+            "pt": "BWE-no, pwess NA-da — 👂 na gut, dann mal. Im Stehen gesagt. Das ist das echte Zeichen"
+          }
+        ]
+      }
+    ]
+  }
 }

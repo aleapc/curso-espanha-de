@@ -5,141 +5,746 @@
   "numero": 23,
   "parte": "23",
   "titulo": "Die Fragen, die sie stellen",
-  "aguardaNarracao": true,
-  "_andaime": {
-    "_": "ANDAIME — não é parte pronta. A fala espanhola já está aqui e é definitiva (ativo de DESTINO, mesmos audioKey e mesmos mp3 do curso EN, custo de crédito zero). Tudo que é voz-guia está VAZIO de propósito: é o que o autor escreve, em ALEMÃO, e é a única coisa que este SKU paga.",
-    "funcao_do_slot": "As perguntas que eles fazem",
-    "dono": "destino",
-    "o_que_falta": "narração (intro/recap/prompts de responde), `cena`, `moldura`, `permissao`, `frasePiso`, `clique`, `moldes`, `fichasCulturais`, `fatosDatados`, `aprofundar`, o campo `pt` (gloss em ALEMÃO) de cada step e o respelling de pronúncia para leitor alemão.",
-    "nao_traduzir": "a parte inglesa correspondente é ep-i05.json. Ela serve de referência de ESTRUTURA, nunca de texto: `pinyin` de lá é respelling para leitor de inglês (types.ts) e `pt` é o gloss inglês — nenhum dos dois foi copiado, e copiá-los é o anti-padrão 8.",
-    "entra_em_vigor": "no instante em que este arquivo ganhar o campo `cena`, os portões de tom passam de aviso a erro para ele. Apagar `aguardaNarracao` sem escrever a narração não muda nada: quem decide é `cena`."
+  "subtitulo": "Die Eröffnung, die an jedem Tresen kommt — woher, zum ersten Mal, wie viele Tage, wie gefällt es Ihnen, was haben Sie gegessen — und die kurzen Antworten, die sie zurückgeben statt sie zu beenden",
+  "moldura": "ganha",
+
+  "cena": "Zweite Runde an einem Tresen in einer Stadt, in der Sie heute Morgen angekommen sind, der Mann auf dem Hocker hat sich halb umgedreht, und er hat Sie gerade per du gefragt, woher Sie kommen.",
+
+  "decisao": "ob die fünf Fragen ein Gespräch werden oder stehen bleiben — der Tisch, der antwortet und eine zurückgibt, geht mit dem Gericht, das nicht auf der Karte steht, der Bar ohne Schild, einer Einladung zum Sonntagstisch und, in einem kleinen Laden, ab und zu einer Runde, die nie auf die Rechnung kommt; der Tisch, der nur nickt, wird bedient und in Ruhe gelassen. Für einen Gast, der wiederkommt und manchmal eine Wohnung dort hat, ist das der Unterschied zwischen zwölf Tagen als Stammgast und zwölf Tagen als Kunde.",
+  "emJogo": "ambos",
+
+  "moldes": ["PREFERENCIA"],
+
+  "clique": {
+    "contagem": ["der Tresen", "die Terrasse", "der Marktstand", "das Taxi", "die Rezeption"],
+    "desconto": "Diese Sätze hat Ihnen keiner gegeben. Sie haben sie gebaut, aus zwei Anfängen und zwei Wörtern zurück.",
+    "piso": "Sie beantworten alle fünf Fragen, die Ihnen ein Fremder am Tresen stellt, und geben eine zurück. Die meisten Gäste beantworten die erste und nicken die anderen vier ab."
   },
+  "cliqueAudioKey": "i05-n30",
+
+  "frasePiso": "Sie beantworten alle fünf Fragen, die Ihnen ein Fremder am Tresen stellt, und geben eine zurück. Die meisten Gäste beantworten die erste und nicken die anderen vier ab.",
+
+  "permissao": "Sie müssen «estáis», «habéis» oder «sois» nie selbst sagen — Sie hören sie den ganzen Tag und bauen nie eine, und auf den Kanaren tut «ustedes» denselben Dienst. Drei Wörter sind eine ganze Antwort, und das Naheliegende zu mögen ist eine echte Antwort: keiner benotet Ihren Geschmack. Und wenn ein Fremder Sie duzt, dürfen Sie es sofort mit einem «¿y tú?» zurückgeben — das ist nicht zu vertraulich, das ist hier der warme Normalton. Sie dürfen die Frage auch verlieren und zweimal nachfragen, ohne dass es das Gespräch kostet.",
+  "permissaoAudioKey": "i05-n27",
+
+  "espelho": "Das eigene Spanisch kleinreden — «nein, nein, furchtbar» — ist der Teil, der dort auffällt: er reicht den Ball leer zurück, und wer die Tür offen gehalten hat, macht sie höflich wieder zu.",
+
+  "fichasCulturais": [
+    {
+      "sinal": "Jemand, den Sie vor neunzig Sekunden getroffen haben, fragt woher Sie sind, ob es das erste Mal ist, wie viele Tage Sie haben, wie es Ihnen gefällt und was Sie gegessen haben — eins direkt nach dem anderen.",
+      "suaLeitura": "Ich werde ausgefragt oder gemustert, und gleich versucht mir jemand eine Bootstour zu verkaufen.",
+      "oQueEAli": "Das ist die übliche Eröffnung für jeden, der gerade reingekommen ist, und so wird aus einem Fremden am Tresen jemand, der da ist. Die Fragen sind der Empfang, nicht die Überprüfung.",
+      "oQueVoceFaz": "Jede in drei, vier Wörtern beantworten und nach den ersten zwei eine kurze Frage zurückgeben.",
+      "oQueMelhora": "Sie hören auf, der Tisch zu sein, mit dem keiner spricht, und die Antworten kommen mit Orten darin zurück.",
+      "ondeNaoVale": "Nicht am Tresen mit elf Leuten hinter Ihnen, und nicht in der Bank, beim Arzt oder an einer Kontrolle der Guardia Civil — dort fragt keiner etwas, das nicht auf einem Formular steht, und die Stille ist keine Kälte.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["i05-n20", "i05-n21", "i05-n22"]
+    },
+    {
+      "sinal": "Die Fragen kommen alle per du — «¿de dónde eres?», «¿y tú?» — und der Mann Mitte zwanzig neben Ihnen wartet auf eine Antwort im selben Ton.",
+      "suaLeitura": "Er ist mir zu vertraulich, und ich bleibe lieber höflich auf Abstand, so wie zu Hause bei einem Fremden.",
+      "oQueEAli": "Am Tresen ist das Du hier die Grundeinstellung, und die Fragen kommen in genau dem Ton. Beim Sie zu bleiben ist nicht förmlicher Respekt — es liest sich als bewusster Abstand, und der Abstand kommt zurück.",
+      "oQueVoceFaz": "Im selben Ton antworten und mit «¿y tú?» zurückgeben. Die Maschine haben Sie schon; hier steht sie nur anders.",
+      "oQueMelhora": "Aus der Eröffnung wird ein Gespräch statt eines Verhörs, und der zweite Abend fühlt sich anders an als der erste.",
+      "ondeNaoVale": "Nicht bei der Guardia Civil, in der Bank, beim Arzt, im Amt und bei sichtlich älteren Menschen in formellem Umfeld — dort ist das Sie das Richtige, und ein Kurs, der Ihnen das wegnimmt, hat Ihnen etwas genommen.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["i05-n23", "i05-n24", "i05-n26"]
+    },
+    {
+      "sinal": "Sie stellen ihm eine Frage zurück — ob es etwas gibt, das sie nur hier machen — und er hält inne und denkt richtig darüber nach, bevor er antwortet.",
+      "suaLeitura": "Ich habe einen Fremden zur Arbeit gezwungen und nehme jetzt einen Nachmittag in Anspruch, der mir nicht angeboten wurde.",
+      "oQueEAli": "Gefragt zu werden, was an der eigenen Stadt wissenswert ist, ist eine Aufgabe, die man gern übernimmt, und hier wird sie laut erledigt, am Tresen, während der Rest der Bar mithört und ihn korrigiert.",
+      "oQueVoceFaz": "Einmal fragen, dann aufhören zu reden und ihn in seinem Tempo antworten lassen. Den Namen, den er sagt, aufschreiben.",
+      "oQueMelhora": "Sie gehen mit einem Gericht und einer Straße, die keine Suche gefunden hätte, und oft sagt er dem Wirt, was Sie als Nächstes trinken.",
+      "ondeNaoVale": "Nicht bei jemandem, der um halb drei eine Schlange abarbeitet — dort ist dieselbe Frage eine Störung, und zurück kommt das Nächstliegende auf der Liste.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["i05-n16", "i05-n17", "i05-n18"]
+    }
+  ],
+
+  "fatosDatados": [
+    {
+      "id": "vosotros-receptivo-e-ustedes-no-sul",
+      "afirmacao": "«Vosotros» ist im größten Teil Spaniens das gewöhnliche «ihr», und ein Besucher ist fast immer auf der Empfangsseite davon, statt es zu produzieren; auf den Kanaren und in weiten Teilen der westlichen Andalusien übernimmt «ustedes» dieselbe Rolle im Informellen.",
+      "fonte": "docs/pesquisa-espanha.md §4.2, apoiada em RAE/ASALE, Nueva gramática básica §10.6.2 e Moreno Fernández (CVC); a nuance regional está marcada na própria pesquisa como síntese secundária",
+      "ano": 2026,
+      "revisarAte": "2029-01-01",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": ["i05-cuantosdias-e", "i05-n27"]
+    }
+  ],
+
+  "_notas": {
+    "_": "Parte ESCRITA (o andaime saiu) — a primeira de APROVEITO neste SKU. A fala espanhola continua sendo ativo de DESTINO: nenhum campo `es` foi alterado, os 18 audioKey do curso EN e os mp3 em disco estão intactos, e os 18 estão todos em uso (nenhum clipe gravado fica órfão). O que este SKU paga aqui é a narração alemã — Juli + dois clipes de Thomas + os prompts.",
+    "clipe_espanhol_novo": "NENHUM. Todos os audioKey espanhóis desta parte já existem em mp3, herdados do par EN pelas mesmas chaves. A gag `vino`×`fino` do ⟨v⟩ entra aqui SÓ como RECALL (a segunda cobrança, DERIVACAO §1.4 e nota de PREFERENCIA), na voz do Thomas, apontando para Teil eins (B01, onde a gag mora — o MESMO alvo que B11 e B17 já usam nas suas cobranças) — NÃO se toca o clipe `fino` (que é propriedade de B01 e não está sintetizado) nem se reapresenta o bloco. O aluno já ouviu a piada em B01 (e de novo em B11); aqui ela volta curta, depois de ele já ter produzido `Prefiero el vino tinto`.",
+    "voz_das_chaves_ambiguas": "DERIVACAO §0.1 aponta `i05-esquina-e`, `i05-pulpo-c` e `i05-tipico-e` como declaradas ora Carmen ora Emilio no par EN, com UM mp3 cada. Decisão tomada e aplicada de forma consistente em TODA aparição neste arquivo (ouvir, responde, shadow): `i05-esquina-e` = Emilio, `i05-pulpo-c` = Carmen, `i05-tipico-e` = Emilio — a voz do `ouvir` do andaime. O mp3 é o mesmo; o que se corrige é o rótulo, e ele agora é único por chave dentro da parte.",
+    "molde_casa_e_redisparos": "CASA de PREFERENCIA (o BRINDE do roster — a inversão de `gustar` é nativa do alemão, `Mir gefällt das`). A âncora entra em CINCO palavras — «funktioniert wie gefallen» — e a proibição do jargão continua inteira: `me gusta` é bloco congelado com a coisa depois, a palavra «verbo» não aparece, a inversão do sujeito nunca se explica (kill-switch PRODUTO §5.1; INV-7). Os quatro tempos NOMEIAM «der Baustein» (G15). Redisparos cumpridos aqui, com encaixe novo: HAY (`¿Hay algo típico de aquí?`) e SOY-ESTOY (`Soy de Londres, ¿y tú?`).",
+    "recalibragem_sie_du": "O CORAÇÃO da cena, específico deste par (DERIVACAO §2.1 e §3.4 item 1): as perguntas chegam TODAS no `tú` (`¿de dónde eres?`, `¿y tú?`, `¿qué te parece?`), e o instinto alemão é recuar para o `Sie` — ser formal onde o balcão é caloroso. A máquina Sie/du o aluno já roda desde criança; aqui ela só está mal calibrada. A ficha 2 é esse beat, e a permissão dá a licença explícita de devolver `¿y tú?` no mesmo tom. ONDE NÃO VALE está na própria ficha: Guardia Civil, banco, médico, funcionário público, pessoa claramente mais velha em contexto formal.",
+    "respelling_para_leitor_alemao": "O campo `pinyin` é respelling para OLHO ALEMÃO no mesmo esquema fixo de B11: ⟨v⟩→b (`vino`→BI-no) · ⟨j⟩ e ⟨g⟩+e,i→ch de Bach · ⟨ll⟩ e ⟨y⟩→j de ja · ⟨qu⟩→k (`esquina`→ess-KI-na) · ⟨h⟩ some (`hay`→ai) · ⟨s⟩, ⟨z⟩ e ⟨c⟩+e,i→ss, nunca s simples (`plaza`→PLA-ssa, `Londres`→LON-dress) · ⟨ch⟩→tsch (`mucho`→MU-tscho) · -e final→-eh · MAIÚSCULA marca a tônica. O alvo de ⟨z⟩/⟨c⟩ é [θ]; [s] é aceito (Canárias, seseo), o proibido é [ts].",
+    "previa_potencial": "Nenhuma prévia é cumprida aqui: I05 é a CASA de PREFERENCIA e o primeiro slot do módulo. HAY e SOY-ESTOY já têm casa (B08, B13) e chegam como redisparo, não como prévia.",
+    "pendencia_G14": "O portão voz × língua roda neste SKU e esta parte sai com zero divergência. INV-5 continua exigindo conferência humana: Juli e Thomas CITAM espanhol dentro da narração alemã (é o trabalho da guia) e nunca o falam; Carmen e Emilio não dizem uma palavra de alemão."
+  },
+
   "steps": [
     {
-      "tipo": "ouvir",
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n01",
+      "bloco": "aquecimento",
+      "gesto": 4,
+      "tom": "ganha",
+      "pt": "Aufwärmen: der Tipper. Ein Antippen, kein Rollen. Pre-fie-ro, pa-re-ce, pri-me-ra."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n02",
+      "pt": "Die Zunge tippt einmal ans Dach und ist weg. Drei mehr, und lassen Sie die Hand mittippen."
+    },
+    {
+      "tipo": "responde",
       "voz": "Emilio",
+      "promptVoz": "Juli",
+      "bloco": "callback",
+      "promptAudioKey": "i05-p01",
+      "promptPt": "Ende einer langen Nacht, Sie sind zu viert, und er tippt schon eine einzige Summe ins Gerät. Kommen Sie ihm zuvor. Sprechen Sie jetzt.",
       "audioKey": "e03c-separado-e",
       "es": "Pagamos por separado, por favor.",
-      "pt": ""
+      "pinyin": "pa-GA-moss por sse-pa-RA-do, por fa-BOR",
+      "pt": "jeder zahlt das Seine"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n03",
+      "bloco": "cena",
+      "pt": "Zweite Runde, ein Tresen in einer Stadt, in der Sie heute Morgen angekommen sind. Der Mann daneben dreht sich halb um."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n04",
+      "pt": "Er verkauft nichts. Er stellt Ihnen gleich fünf Fragen, und er stellt sie schnell."
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "i05-dedonde-e",
+      "receptivo": true,
+      "acao": "Zuhören. Die erste kommt überall, jedes Mal.",
       "es": "¿De dónde eres?",
-      "pt": ""
+      "pinyin": "deh DON-deh E-ress",
+      "pt": "👂 «Woher kommst du?» — und zwar per du, vom ersten Satz an.",
+      "tts": "¿De dónde eres?"
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "i05-primeravez-c",
+      "receptivo": true,
+      "acao": "Nicht als Prüfung gemeint — mit echtem Interesse gefragt.",
       "es": "¿Es la primera vez?",
-      "pt": ""
+      "pinyin": "ess la pri-ME-ra bess",
+      "pt": "👂 «Ist es das erste Mal?»",
+      "tts": "¿Es la primera vez?"
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "i05-cuantosdias-e",
+      "receptivo": true,
+      "acao": "«estáis» heißt: er meint Sie beide. Nur hören, nie bauen.",
       "es": "¿Cuántos días estáis?",
-      "pt": ""
+      "pinyin": "KWAN-toss DI-ass ess-TAISS",
+      "pt": "👂 «Wie viele Tage seid ihr da?»",
+      "tts": "¿Cuántos días estáis?"
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "i05-queteparece-c",
+      "receptivo": true,
+      "acao": "Die Frage, die den Abend entscheidet.",
       "es": "¿Qué te parece Madrid?",
-      "pt": ""
+      "pinyin": "ke te pa-RE-sseh ma-DRID",
+      "pt": "👂 «Wie gefällt dir Madrid?»",
+      "tts": "¿Qué te parece Madrid?"
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "i05-quehabeis-e",
+      "receptivo": true,
+      "acao": "Kein Smalltalk — er will den Namen des Gerichts.",
       "es": "¿Y qué habéis comido?",
-      "pt": ""
+      "pinyin": "i ke a-BE-iss ko-MI-do",
+      "pt": "👂 «Und was habt ihr gegessen?»",
+      "tts": "¿Y qué habéis comido?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n05",
+      "pt": "Fünf in dreißig Sekunden. Ein Wort pro Frage, und er dreht sich zurück zum Fernseher."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n06",
+      "tom": "ganha",
+      "pt": "Drei Wörter pro Frage und etwas zurückgereicht, und der Abend nimmt eine andere Form an."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n07",
+      "bloco": "molde",
+      "pt": "Der Baustein, der das macht, ist zwei Wörter lang, und dann das, was Ihnen gefällt."
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "i05-barrio-e",
+      "molde": "PREFERENCIA",
       "es": "Me gusta mucho este barrio.",
-      "pt": ""
+      "pinyin": "me GUSS-ta MU-tscho ESS-teh BA-rrjo",
+      "pt": "Mir gefällt dieses Viertel sehr. Funktioniert wie «gefallen»: die Sache kommt danach.",
+      "tts": "Me gusta mucho este barrio."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n08",
+      "pt": "«Me gusta», und dann die Sache. Vorne bewegt sich nichts. Nur das Ende wechselt."
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "i05-plaza-c",
+      "molde": "PREFERENCIA",
       "es": "Me gusta mucho esta plaza.",
-      "pt": ""
+      "pinyin": "me GUSS-ta MU-tscho ESS-ta PLA-ssa",
+      "pt": "Dieselben zwei Wörter, mit etwas anderem am Ende.",
+      "tts": "Me gusta mucho esta plaza."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n09",
+      "pt": "Das kleine Wort vor der Sache ist mitgegangen — este, esta. Nach Gehör, nie nach Regel."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "molde": "PREFERENCIA",
+      "encaixe": "este barrio",
+      "encaixeGloss": "dieses Viertel",
+      "consulta": ["simpatia/elogiar-lugar", "simpatia/puxar-conversa"],
+      "promptAudioKey": "i05-p02",
+      "promptPt": "Der Mann auf dem Hocker will wissen, wie Sie die Gassen finden, durch die Sie seit dem Frühstück laufen. Sprechen Sie jetzt.",
+      "audioKey": "i05-barrio-e",
+      "es": "Me gusta mucho este barrio.",
+      "pinyin": "me GUSS-ta MU-tscho ESS-teh BA-rrjo",
+      "pt": "was Sie davon halten"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "molde": "PREFERENCIA",
+      "encaixe": "esta plaza",
+      "encaixeGloss": "dieser Platz",
+      "promptAudioKey": "i05-p03",
+      "promptPt": "Zwei Städte weiter, eine Terrasse übers Pflaster vor einer Kirche, und der Kellner hält an und fragt, wie es Ihnen hier gefällt. Sprechen Sie jetzt.",
+      "audioKey": "i05-plaza-c",
+      "es": "Me gusta mucho esta plaza.",
+      "pinyin": "me GUSS-ta MU-tscho ESS-ta PLA-ssa",
+      "pt": "über den Ort, an dem Sie sitzen"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n10",
+      "pt": "Ein zweiter Anfang, für wenn zwei Dinge vor Ihnen stehen und Sie eines davon wollen."
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "i05-tinto-e",
+      "molde": "PREFERENCIA",
       "es": "Prefiero el vino tinto.",
-      "pt": ""
+      "pinyin": "pre-FJE-ro el BI-no TIN-to",
+      "pt": "Ich nehme lieber den roten.",
+      "tts": "Prefiero el vino tinto."
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "i05-fuera-c",
+      "molde": "PREFERENCIA",
       "es": "Prefiero sentarme fuera.",
-      "pt": ""
+      "pinyin": "pre-FJE-ro ssen-TAR-meh FWE-ra",
+      "pt": "Ich sitze lieber draußen. — derselbe Anfang, mit einem Tun am Ende.",
+      "tts": "Prefiero sentarme fuera."
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "i05-andar-e",
+      "molde": "PREFERENCIA",
       "es": "Prefiero andar.",
-      "pt": ""
+      "pinyin": "pre-FJE-ro an-DAR",
+      "pt": "Ich gehe lieber zu Fuß. — zwei Wörter, eine ganze Antwort.",
+      "tts": "Prefiero andar."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n11",
+      "pt": "«Prefiero», und dann die Sache oder das Tun. Keiner bittet Sie, es zu erklären."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "molde": "PREFERENCIA",
+      "encaixe": "el vino tinto",
+      "encaixeGloss": "der rote",
+      "promptAudioKey": "i05-p04",
+      "promptPt": "Ein Marktstand am Ende des Vormittags, zwei offene Flaschen auf dem Brett, und die Frau dahinter hat in jeder Hand ein Glas und wartet auf Sie. Sprechen Sie jetzt.",
+      "audioKey": "i05-tinto-e",
+      "es": "Prefiero el vino tinto.",
+      "pinyin": "pre-FJE-ro el BI-no TIN-to",
+      "pt": "welche von beiden"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "i05-t01",
+      "pt": "Das kennen Sie aus Teil eins: «vino», und das v ist die teure Stelle."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "i05-t02",
+      "pt": "Bleibt das v ein weiches b, kommt der Wein. Ein f, und der Sherry ist wieder da."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "molde": "PREFERENCIA",
+      "encaixe": "sentarme fuera",
+      "encaixeGloss": "draußen sitzen",
+      "consulta": ["mesa/mesa"],
+      "promptAudioKey": "i05-p05",
+      "promptPt": "Die Restauranttür, halb zehn, und das Mädchen mit den Karten zeigt mit einer Hand in den dunklen Raum und mit der anderen auf den Bürgersteig. Sprechen Sie jetzt.",
+      "audioKey": "i05-fuera-c",
+      "es": "Prefiero sentarme fuera.",
+      "pinyin": "pre-FJE-ro ssen-TAR-meh FWE-ra",
+      "pt": "wohin Sie möchten"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n12",
+      "pt": "Noch einer, für wenn Sie an zweien von etwas waren und einer besser war."
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "i05-esquina-e",
+      "molde": "PREFERENCIA",
       "es": "Me gusta más el de la esquina.",
-      "pt": ""
+      "pinyin": "me GUSS-ta mass el de la ess-KI-na",
+      "pt": "Der an der Ecke gefällt mir besser. — zwei Bars, eine kurze Antwort.",
+      "tts": "Me gusta más el de la esquina."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "molde": "PREFERENCIA",
+      "encaixe": "el de la esquina",
+      "encaixeGloss": "der an der Ecke",
+      "consulta": ["simpatia/puxar-conversa"],
+      "promptAudioKey": "i05-p06",
+      "promptPt": "Im Taxi zurück hat der Fahrer beide Bars genannt, in denen Sie heute Abend waren, und will wissen, in welche Sie wieder gingen. Sprechen Sie jetzt.",
+      "audioKey": "i05-esquina-e",
+      "es": "Me gusta más el de la esquina.",
+      "pinyin": "me GUSS-ta mass el de la ess-KI-na",
+      "pt": "in welche von beiden"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n13",
+      "pt": "Jetzt die Hälfte, die es in Gang hält. Jede Antwort heute Abend endet mit zwei Wörtern."
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "i05-ytu-c",
+      "receptivo": true,
+      "acao": "Anhängen, und die Frage ist wieder seine.",
       "es": "¿Y tú?",
-      "pt": ""
+      "pinyin": "i tu",
+      "pt": "👂 «Und du?» — zwei Wörter, per du, und der Ball ist zurück.",
+      "tts": "¿Y tú?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n14",
+      "pt": "Sagen Sie Ihres, reichen Sie es sofort zurück, und Sie werden nicht mehr ausgefragt."
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "i05-londres-e",
+      "molde": "SOY-ESTOY",
       "es": "Soy de Londres, ¿y tú?",
-      "pt": ""
+      "pinyin": "ssoi de LON-dress, i tu",
+      "pt": "Woher zu Hause ist — «Soy de» und Ihre Stadt —, dann ist er wieder dran.",
+      "tts": "Soy de Londres, ¿y tú?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "molde": "SOY-ESTOY",
+      "encaixe": "de Londres",
+      "encaixeGloss": "aus London",
+      "consulta": ["simpatia/puxar-conversa", "chegar/tu-usted"],
+      "promptAudioKey": "i05-p07",
+      "promptPt": "Erste der fünf Fragen, dreißig Sekunden alt, und er wartet auf Sie. Sagen Sie, wo Sie herkommen, und geben Sie sie sofort zurück. Sprechen Sie jetzt.",
+      "audioKey": "i05-londres-e",
+      "es": "Soy de Londres, ¿y tú?",
+      "pinyin": "ssoi de LON-dress, i tu",
+      "pt": "und dann ist er dran"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n15",
+      "pt": "Zwei der fünf wollen eine Zahl oder ein Ja. Beide Antworten sind drei Wörter lang."
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "i05-primera-c",
       "es": "Sí, es la primera vez.",
-      "pt": ""
+      "pinyin": "ssi, ess la pri-ME-ra bess",
+      "pt": "Ja, das erste Mal. Dann Punkt, und er ist dran.",
+      "tts": "Sí, es la primera vez."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "promptAudioKey": "i05-p08",
+      "promptPt": "Er hat gefragt, ob Sie schon einmal hier waren — waren Sie nicht. Drei Wörter, dann ist er dran. Sprechen Sie jetzt.",
+      "audioKey": "i05-primera-c",
+      "es": "Sí, es la primera vez.",
+      "pinyin": "ssi, ess la pri-ME-ra bess",
+      "pt": "drei Wörter, dann Punkt"
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "i05-diezdias-e",
       "es": "Diez días. ¿Y tú, eres de aquí?",
-      "pt": ""
+      "pinyin": "djess DI-ass. i tu, E-ress de a-KI",
+      "pt": "Zehn Tage — und gleich zurück an ihn.",
+      "tts": "Diez días. ¿Y tú, eres de aquí?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "promptAudioKey": "i05-p09",
+      "promptPt": "Er will wissen, wie lange Sie da sind. Geben Sie die Zahl, und finden Sie heraus, ob das seine Stadt ist. Sprechen Sie jetzt.",
+      "audioKey": "i05-diezdias-e",
+      "es": "Diez días. ¿Y tú, eres de aquí?",
+      "pinyin": "djess DI-ass. i tu, E-ress de a-KI",
+      "pt": "die Zahl, dann seine"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n16",
+      "pt": "Und es gibt eine sechste Frage. Die ist Ihre, und die zahlt den Abend."
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "i05-tipico-e",
+      "molde": "HAY",
       "es": "¿Hay algo típico de aquí?",
-      "pt": ""
+      "pinyin": "ai AL-go TI-pi-ko de a-KI",
+      "pt": "«Gibt es etwas, das es nur hier gibt?» — jetzt hat er eine Aufgabe.",
+      "tts": "¿Hay algo típico de aquí?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "molde": "HAY",
+      "encaixe": "algo típico de aquí",
+      "encaixeGloss": "etwas nur von hier",
+      "consulta": ["simpatia/puxar-conversa"],
+      "promptAudioKey": "i05-p10",
+      "promptPt": "Er hat Ihnen erzählt, wo er geboren ist und warum die Brücke gesperrt ist. Geben Sie ihm die Frage, auf die er den ganzen Abend gewartet hat. Sprechen Sie jetzt.",
+      "audioKey": "i05-tipico-e",
+      "es": "¿Hay algo típico de aquí?",
+      "pinyin": "ai AL-go TI-pi-ko de a-KI",
+      "pt": "die eine Frage, die Ihre ist"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n17",
+      "pt": "Er denkt richtig nach, und der Rest der Bar fängt an, ihn zu korrigieren. Lassen Sie sie."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n18",
+      "tom": "ganha",
+      "pt": "Daraus kommt das Gericht ohne Karte, die Bar ohne Schild und der Sonntagstisch."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n19",
+      "pt": "Die letzte der fünf ist das Essen, und die wollen sie am liebsten beantwortet haben."
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "i05-pulpo-c",
+      "molde": "PREFERENCIA",
       "es": "Me gusta mucho el pulpo.",
-      "pt": ""
+      "pinyin": "me GUSS-ta MU-tscho el PUL-po",
+      "pt": "Die Antwort, die aus einer Karte ein Gespräch macht.",
+      "tts": "Me gusta mucho el pulpo."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "molde": "PREFERENCIA",
+      "encaixe": "el pulpo",
+      "encaixeGloss": "der Oktopus",
+      "consulta": ["simpatia/elogiar-comida", "simpatia/puxar-conversa"],
+      "promptAudioKey": "i05-p11",
+      "promptPt": "Morgens, die Rezeption, und die Frau, die gestern Ihren Tisch durchgab, will wissen, was Sie hatten. Eines kam zweimal, weil Sie es immer wieder bestellen. Sprechen Sie jetzt.",
+      "audioKey": "i05-pulpo-c",
+      "es": "Me gusta mucho el pulpo.",
+      "pinyin": "me GUSS-ta MU-tscho el PUL-po",
+      "pt": "das eine, zu dem Sie zurückkehren"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n20",
+      "bloco": "capsula",
+      "pt": "Zurück zu den fünf Fragen. Kein Verhör, und keiner ist neugierig auf Sie."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n21",
+      "pt": "Es ist der übliche Empfang für jemanden, der gerade reingekommen ist, und in einer Minute vorbei."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n22",
+      "pt": "Nicht am Tresen mit elf Leuten hinter Ihnen. Da fragt keiner etwas, und das ist in Ordnung."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n23",
+      "pt": "Eine Sache noch, und die ist Ihre: die Fragen kommen per du. «¿De dónde eres?», «¿y tú?»."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n24",
+      "pt": "Zu Hause siezt ein Fremder Sie. Hier ist das Du am Tresen der warme Normalton, kein Zuviel."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n25",
+      "tom": "protege",
+      "pt": "Beim Duzen zurückzuweichen und beim Sie zu bleiben liest sich als Abstand, nicht als Respekt."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n26",
+      "pt": "Beim Arzt, in der Bank, bei der Guardia Civil bleibt das Sie richtig. Am Tresen nicht."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n27",
+      "bloco": "permissao",
+      "pt": "«estáis» und «habéis» müssen Sie nie selbst sagen. Auf den Kanaren tut «ustedes» denselben Dienst."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n28",
+      "tom": "ganha",
+      "pt": "Drei Wörter sind eine ganze Antwort. Und ein «¿y tú?» zurück ist genau richtig, nie zu vertraulich."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n29",
+      "bloco": "espelho",
+      "pt": "Das eigene Spanisch kleinreden — «nein, nein, furchtbar» — reicht den Ball leer zurück, und die offene Tür geht zu."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n30",
+      "bloco": "clique",
+      "tom": "ganha",
+      "pt": "Zählen Sie die Orte. Der Tresen. Die Terrasse. Der Marktstand. Das Taxi. Die Rezeption."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n31",
+      "pt": "Die Sätze hat Ihnen keiner gegeben. Sie haben sie gebaut, aus zwei Anfängen und zwei Wörtern zurück."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n32",
+      "bloco": "piso",
+      "pt": "Sie beantworten alle fünf und geben eine zurück. Die meisten beantworten die erste und nicken den Rest ab."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-s00",
+      "pt": "Nachsprechen. Laut, mit ihnen, ein Antippen der Zunge. Die zwei, die täglich drankommen:"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Emilio",
+      "audioKey": "i05-barrio-e",
+      "molde": "PREFERENCIA",
+      "es": "Me gusta mucho este barrio.",
+      "pinyin": "me GUSS-ta MU-tscho ESS-teh BA-rrjo",
+      "pt": "Mir gefällt dieses Viertel sehr."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Emilio",
+      "audioKey": "i05-tinto-e",
+      "molde": "PREFERENCIA",
+      "es": "Prefiero el vino tinto.",
+      "pinyin": "pre-FJE-ro el BI-no TIN-to",
+      "pt": "Ich nehme lieber den roten."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Juli",
+      "audioKey": "i05-rend",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "Noch einmal laut, irgendwo, wo wir noch nicht standen, und keiner hat Sie etwas gefragt."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "molde": "PREFERENCIA",
+      "encaixe": "andar",
+      "encaixeGloss": "zu Fuß gehen",
+      "promptAudioKey": "i05-p12",
+      "promptPt": "Halb zehn morgens, der Bahnhofsvorplatz, und ein Fahrer hat eine Tür für einen Ort geöffnet, der fünfzehn Minuten entfernt ist. Sprechen Sie jetzt.",
+      "audioKey": "i05-andar-e",
+      "es": "Prefiero andar.",
+      "pinyin": "pre-FJE-ro an-DAR",
+      "pt": "zwei Wörter, und es ist eine Antwort"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i05-n33",
+      "pt": "Das war's. Sie haben gefragt, kurz geantwortet, und eine zurückgegeben. Hasta luego."
     }
-  ]
+  ],
+
+  "aprofundar": {
+    "titulo": "Die fünf Fragen, und die zwei Anfänge, die sie beantworten (optionale Lektüre)",
+    "secoes": [
+      {
+        "titulo": "Me gusta und prefiero — funktioniert wie gefallen",
+        "corpo": "Beide werden ganz gelernt, mit der Sache, die Ihnen gefällt, hinten dran, und an keinem müssen Sie am Tresen etwas ausrechnen. «Me gusta mucho este barrio» — mir gefällt dieses Viertel sehr. «Prefiero el vino tinto» — ich nehme lieber den roten. Der Bau ist der, den Sie schon aus dem Deutschen kennen: die Sache gefällt Ihnen, nicht Sie mögen die Sache, genau wie bei «gefallen» und «schmecken» — der Mensch steht im Dativ, die Sache ist das Subjekt. Deshalb kostet dieser Baustein Sie keine Lernzeit, nur die spanische Hülle. «Mucho» ist optional und dreht nur die Lautstärke hoch; «me gusta este barrio» ist eine vollständige, ganz gewöhnliche Antwort. Eine Sache lohnt sich zu wissen, und sie ist der Grund, warum jedes aufgenommene Beispiel genau eine Sache nennt: mit zwei oder mehr Dingen hinten dran wächst dem Anfang ein -n — «me gustan las croquetas». Das umgehen Sie die ganzen zwei Wochen, indem Sie eine Sache nennen, was gesellschaftlich ohnehin die bessere Antwort ist, weil eine einzelne genannte Sache das ist, was der andere aufgreifen und weiterspinnen kann. Das kleine Wort vor der Sache geht mit ihr mit — este barrio, esta plaza, el vino, la plaza —, und das nehmen Sie nach Gehör. Andersherum wird es als Akzent gehört, nicht als Fehler, und der Satz kommt so oder so heil an. Eine Warnung, die nichts kostet: «me gusta» über einen Menschen liest sich als Interessenerklärung, nicht als Freundlichkeit. Heben Sie es für Straßen, Plätze, Teller und Wein auf.",
+        "exemplos": [
+          {
+            "es": "Me gusta mucho esta ciudad.",
+            "pt": "me GUSS-ta MU-tscho ESS-ta ssju-DAD — mir gefällt diese Stadt sehr"
+          },
+          {
+            "es": "Prefiero andar, gracias.",
+            "pt": "pre-FJE-ro an-DAR, GRA-ssjass — ich gehe lieber zu Fuß, danke (eine ganze Antwort auf ein angebotenes Taxi)"
+          }
+        ]
+      },
+      {
+        "titulo": "Die fünf Fragen, in der Reihenfolge, in der sie kommen",
+        "corpo": "Sie kommen mehr oder weniger in dieser Reihenfolge, und sie sind in einer Bar in Bilbao dieselben wie in einer Bäckerei in Cádiz. «¿De dónde eres?» — woher kommst du. «¿Es la primera vez?» — zum ersten Mal hier. «¿Cuántos días estáis?» oder «¿Cuánto tiempo estáis?» — wie lange habt ihr. «¿Qué te parece Madrid?» — wörtlich «wie erscheint dir Madrid», und die ehrliche kurze Antwort ist die gute. «¿Y qué habéis comido?» — und was habt ihr gegessen, was kein Füllsel ist: was Sie gegessen haben, gilt als Beweis, ob Sie es richtig angehen. Zwei weitere hören Sie im selben Slot: «¿Estáis de vacaciones?» (macht ihr Urlaub) und «¿Y qué tal?» (und wie läuft's), was eher eine offene Tür als eine Frage mit Antwort ist. Die Antworten, die funktionieren, sind drei, vier Wörter lang, und jede endet mit etwas Zurückgereichtem: «¿y tú?» tut es jedes Mal, und «¿eres de aquí?» — bist du von hier — ist die, die Ihnen eine Lebensgeschichte einbringt. Eine kurze Antwort kostet nichts an Höflichkeit. Eine lange kostet echt, weil der andere steht, ein Glas hält und einen Zug erwartet.",
+        "exemplos": [
+          {
+            "es": "¿Y tú, eres de aquí?",
+            "pt": "i tu, E-ress de a-KI — und du, bist du von hier? (die, die alles öffnet)"
+          },
+          {
+            "es": "¿Estáis de vacaciones?",
+            "pt": "ess-TAISS de ba-ka-SSJO-ness — 👂 macht ihr Urlaub? (an Sie beide)"
+          }
+        ]
+      },
+      {
+        "titulo": "Vosotros: den ganzen Tag im Ohr, nie im Mund",
+        "corpo": "Spanien hat ein «ihr», das Lateinamerika nicht hat, und deshalb klingt die Hälfte der Fragen hier, als steckte ein Wort darin, dem Sie nie begegnet sind. «Vosotros» bekommen Sie immer dann, wenn jemand Ihren Tisch statt Sie anspricht: «¿qué vais a tomar?» (was nehmt ihr), «¿habéis reservado?» (habt ihr reserviert), «¿de dónde sois?» (woher seid ihr), «pasad», «sentaos» (kommt rein, setzt euch). Sie sind fast immer auf der Empfangsseite davon — um eines zu produzieren, müssten Sie zwei spanischen Menschen eine Anweisung geben, was diese Reise nicht enthält. Also lebt es im Ohr und nicht im Mund, und wenn Sie je wirklich eines brauchen, tut «ustedes» den Dienst und markiert Sie als Ausländer, der Sie sind. Zwei geografische Hinweise. Auf den Kanaren und in weiten Teilen der westlichen Andalusien wird «ustedes» auch informell benutzt — hören Sie in einer Woche Sevilla nie «estáis», ist nichts schiefgegangen und keiner ist förmlich zu Ihnen. Und das -s am Ende dieser Formen dünnt im Süden oft zu einem Hauch aus — «estáih», «habéih» —, dieselbe Erosion, die der Hörteil des Kurses direkt angeht.",
+        "exemplos": [
+          {
+            "es": "¿Habéis reservado?",
+            "pt": "a-BE-iss rre-sser-BA-do — 👂 habt ihr reserviert? (an der Restauranttür)"
+          },
+          {
+            "es": "¿De dónde sois?",
+            "pt": "de DON-deh ssoiss — 👂 woher seid ihr beide?"
+          }
+        ]
+      },
+      {
+        "titulo": "Du oder Sie — die Maschine haben Sie schon, sie zeigt nur woandershin",
+        "corpo": "Alles, was Sie in diesem Teil produzieren, ist gleich, wer auch immer Ihnen gegenübersteht — «me gusta», «prefiero», «soy de Berlín», «¿hay algo típico de aquí?» tragen keine einzige Entscheidung über die Person in sich. Was wechselt, ist, was Sie hören. Ein Mann in Ihrem Alter auf dem Nachbarhocker sagt «¿de dónde eres?»; ein älterer Kellner in einem förmlicheren Raum sagt «¿de dónde es usted?», und Sie antworten beiden gleich. Die Grundeinstellung in Bar, Laden, Restaurant und Taxi ist «tú», und das ist das Gegenteil von dem, was der Reflex aus Deutschland vorschlägt: dort ist das Sie die Voreinstellung gegenüber jedem fremden Erwachsenen, hier ist es markiert. Überall zum Sie zu greifen ist nicht höflicher — es setzt Abstand, und der Abstand kommt zurück; im schlimmsten Fall bekommen Sie ein fröhliches «no me trates de usted, que me haces mayor». Heben Sie das Sie für drei Stellen auf: Polizei und Ämter, sichtlich ältere Menschen und einen förmlichen Schalter. Duzt jemand Sie, duzen Sie zurück. Geben Sie einem Siebzigjährigen Ihre Frage mit «¿y tú?» zurück, bricht nichts — schlimmstenfalls findet er es freundlich. Und weil beides zur selben Maschine gehört, kostet der Wechsel keine Lernzeit, nur eine Entscheidung.",
+        "exemplos": [
+          {
+            "es": "¿De dónde es usted?",
+            "pt": "de DON-deh ess uss-TED — 👂 die Sie-Fassung der ersten Frage"
+          },
+          {
+            "es": "¿Y usted?",
+            "pt": "i uss-TED — 👂 und Sie? (was Sie von einem älteren Fremden zurückhören)"
+          }
+        ]
+      }
+    ]
+  }
 }

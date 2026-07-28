@@ -5,141 +5,674 @@
   "numero": 20,
   "parte": "20",
   "titulo": "Die richtige Reihenfolge am Tresen",
-  "aguardaNarracao": true,
-  "_andaime": {
-    "_": "ANDAIME — não é parte pronta. A fala espanhola já está aqui e é definitiva (ativo de DESTINO, mesmos audioKey e mesmos mp3 do curso EN, custo de crédito zero). Tudo que é voz-guia está VAZIO de propósito: é o que o autor escreve, em ALEMÃO, e é a única coisa que este SKU paga.",
-    "funcao_do_slot": "A ordem certa no balcão",
-    "dono": "destino",
-    "o_que_falta": "narração (intro/recap/prompts de responde), `cena`, `moldura`, `permissao`, `frasePiso`, `clique`, `moldes`, `fichasCulturais`, `fatosDatados`, `aprofundar`, o campo `pt` (gloss em ALEMÃO) de cada step e o respelling de pronúncia para leitor alemão.",
-    "nao_traduzir": "a parte inglesa correspondente é ep-i02.json. Ela serve de referência de ESTRUTURA, nunca de texto: `pinyin` de lá é respelling para leitor de inglês (types.ts) e `pt` é o gloss inglês — nenhum dos dois foi copiado, e copiá-los é o anti-padrão 8.",
-    "entra_em_vigor": "no instante em que este arquivo ganhar o campo `cena`, os portões de tom passam de aviso a erro para ele. Apagar `aguardaNarracao` sem escrever a narração não muda nada: quem decide é `cena`."
+  "subtitulo": "Wohin mit dem Körper, wie kurz der Satz wird, die zwei Wörter, die einen Kellner quer durch den Raum holen — und der Satz, der Ihnen den Tisch lässt, so lange Sie wollen",
+  "moldura": "ganha",
+
+  "cena": "Halb zehn abends, der Tresen drei Reihen tief und ohne eine Warteschlange darin, das Geld schon in Ihrer Hand, und das Paar, das nach Ihnen kam, ist beim zweiten Glas.",
+
+  "decisao": "Ob Sie überhaupt in der Reihenfolge sind: ein Körper am Tresen, ein gehaltener Blick und ein kurzer Satz bringen die Runde in etwa neun Sekunden — sich zurückzuhalten für eine Reihe, die keiner führt, lässt zwei Runden an Ihnen vorbeigehen, das Geld noch in der Hand.",
+  "emJogo": "tempo",
+
+  "clique": {
+    "contagem": ["der Tresen", "die Terrasse", "die Marktbar", "der Restauranttisch"],
+    "desconto": "Diese Sätze hat Ihnen keiner gegeben. Sie kamen mit dem Baustein aus Teil elf herein, und er hat viermal bezahlt, bevor Sie sich überhaupt gesetzt hatten.",
+    "piso": "Sie kommen an einem drei Reihen tiefen Tresen in die Reihenfolge, ohne ein einziges «Entschuldigung» davor. Die meisten Gäste werden zwei Wochen lang zuletzt bedient und fahren nach Hause und denken, es lag an ihnen."
   },
+  "cliqueAudioKey": "i02-n34",
+
+  "frasePiso": "Sie kommen an einem drei Reihen tiefen Tresen in die Reihenfolge, ohne ein einziges «Entschuldigung» davor. Die meisten Gäste werden zwei Wochen lang zuletzt bedient und fahren nach Hause und denken, es lag an ihnen.",
+
+  "permissao": "«Ponme una caña» ist nicht unhöflich — so klingt der ganze Raum, und das Vorgeplänkel, das Sie zu Hause davorsetzen würden, ist das Einzige, was auffällt. Sie dürfen lauter bestellen, als es höflich wirkt, quer durch den Raum «¡Perdone!» rufen und seinen Blick nehmen, sobald er Sie erreicht. Und am Tresen wird geduzt: die Frage ist «¿me pones?», nicht «¿me pone?». Nichts davon kostet Sie bei irgendwem etwas.",
+  "permissaoAudioKey": "i02-n31",
+
+  "espelho": "Zwölf Tage lang beim Sie zu bleiben ist das, was dort auffällt: bei einem Kellner Mitte zwanzig liest es sich als bewusster Abstand, nicht als Respekt — und er antwortet in derselben Münze.",
+
+  "fichasCulturais": [
+    {
+      "sinal": "Am Tresen steht keine Schlange. Die Leute stehen in keiner erkennbaren Ordnung daran, und er bedient sie sichtlich in einer Ordnung, die es gibt.",
+      "suaLeitura": "Hier gibt es eine Schlange, die ich nicht sehe, also halte ich mich besser zurück, bis ich offensichtlich dran bin.",
+      "oQueEAli": "Er führt die Reihenfolge im Kopf, nach Gesicht, und frischt sie jedes Mal auf, wenn jemandes Blick hochkommt. Zurücktreten nimmt Sie heraus — ein Gesicht, das nicht am Tresen ist, kann er nicht mitzählen.",
+      "oQueVoceFaz": "Zwei Schritte hinein, eine Hand oder einen Unterarm auf den Tresen, und den Blick hoch, sobald seiner die Reihe entlangläuft.",
+      "oQueMelhora": "Sie werden beim ersten Durchgang bedient statt beim vierten, und die Runde kommt, während die Leute neben Ihnen noch überlegen.",
+      "ondeNaoVale": "Nicht in der Apotheke, der Bäckerei oder am Fischstand — dort wird die Reihenfolge laut gehalten, man fragt beim Hereinkommen «¿Quién es el último?», und nach vorn zu gehen setzt Sie ans Ende einer Schlange, die Sie nicht bemerkt haben.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["i02-n28", "i02-n29", "i02-n30"]
+    },
+    {
+      "sinal": "Sie sagen «¿me pone?» zu einem Kellner Mitte zwanzig, und zurück kommt eine korrekte, knappe Antwort ohne ein überflüssiges Wort.",
+      "suaLeitura": "Ich war höflich, genau wie zu Hause. Der Mann ist einfach unfreundlich.",
+      "oQueEAli": "In Bar, Laden und an der Theke ist «tú» hier die Grundeinstellung. «Usted» ist nicht falsch, es ist markiert: es setzt Abstand, und der Abstand kommt zurück. Niemand korrigiert Sie, also kommen Sie nie ins Zweifeln.",
+      "oQueVoceFaz": "An der Theke die Du-Form nehmen — «¿me pones?» — und eine Stufe lauter werden. Die kurze, direkte Bestellung stimmt schon; die bringen Sie von zu Hause mit.",
+      "oQueMelhora": "Sie werden schneller bedient und wärmer behandelt, und der zweite Abend in derselben Bar fühlt sich anders an als der erste.",
+      "ondeNaoVale": "Nicht bei der Guardia Civil, in der Bank, beim Arzt, im Amt und bei sichtlich älteren Menschen in formellem Umfeld — dort ist «usted» das Richtige, und ein Kurs, der Ihnen das wegnimmt, hat Ihnen etwas genommen.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["i02-n25", "i02-n26", "i02-n27"]
+    },
+    {
+      "sinal": "Jemand zwei Tische weiter sagt «¡Oiga!» quer durch den Raum, in ganz normaler Lautstärke, und kein einziger Mensch dreht sich um.",
+      "suaLeitura": "Das war unhöflich, alle haben es gehört, und ich könnte das nie.",
+      "oQueEAli": "Rufen ist einfach, wie man einen Mann erreicht, der drei Räume bedient. Eine gehobene Hand und ein Wort, an ihn gerichtet und an niemanden sonst — und der Raum ist ohnehin lauter.",
+      "oQueVoceFaz": "Seinen Blick fangen, die Hand auf Schulterhöhe heben und es einmal sagen, in der Lautstärke, die der Raum schon hat. Dann aufhören.",
+      "oQueMelhora": "Sie werden beim ersten Versuch beantwortet, statt zehn Minuten auf einen Rücken zu winken und zu entscheiden, man übersehe Sie.",
+      "ondeNaoVale": "Nicht im ruhigen Speisesaal mit Stoffdecken, wo dieselbe Geste mit erhobener Hand und ganz ohne Wort läuft. Und nirgends mit Fingerschnippen, Pfiff oder hochgehaltenem Schein — das landet in jeder Preisklasse gleich.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["i02-n15", "i02-n16", "i02-n18"]
+    },
+    {
+      "sinal": "Die Teller sind vor fünfundzwanzig Minuten abgeräumt worden, es ist voll, und niemand ist mit irgendetwas an Ihren Tisch gekommen.",
+      "suaLeitura": "Wir sind vergessen worden, oder sie sind verärgert, dass wir so lange sitzen.",
+      "oQueEAli": "Eine Rechnung ungefragt hinzulegen ist, wie ein Haus einem Tisch sagt zu gehen — also macht es keiner. Bis Sie das Wort sagen, gehört der Tisch Ihnen, und er bleibt Ihrer, auch nachdem Sie bezahlt haben.",
+      "oQueVoceFaz": "Von Ihrem Platz aus einen Blick fangen, die Hand ein wenig heben und laut danach fragen, in der Stimme, in der Sie bestellt haben.",
+      "oQueMelhora": "Sie bekommen eine Stunde Tisch, aus der Sie niemand je gedrängt hätte, und gehen in der Minute, die Sie gewählt haben.",
+      "ondeNaoVale": "Nicht am Frühstückstresen, wo er laut zusammenzählt, während Sie noch trinken, und Sie im Stehen zahlen — da gibt es nichts zu erfragen und wird Ihnen nichts vorenthalten.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["i02-n20", "i02-n21", "i02-n22"]
+    }
+  ],
+
+  "_notas": {
+    "_": "Parte ESCRITA (o andaime saiu). A fala espanhola continua ativo de DESTINO: nenhum `es` foi alterado, os 18 audioKey do curso EN e os mp3 em disco estão intactos. O que este SKU paga aqui é a narração alemã — voz-guia Juli, mais dois clipes de Thomas na confissão da recalibragem, mais os prompts dos `responde`.",
+    "clipe_espanhol_novo": "NENHUM. Os 18 audioKey espanhóis herdados do par EN cobrem a parte inteira; cada `responde` e cada `shadow` reusa um deles como modelo nativo. I02 é redisparo de ME-PONE, não casa — não planta molde, troca os encaixes (`_regras.m2` do roster).",
+    "molde": "ME-PONE redispara aqui com encaixes NOVOS que B11 não abriu: `un pincho de tortilla`, `dos claras`, `lo mismo que él`. A variante ultracurta `Ponme una caña` sobe de nota de rodapé a ITEM declarado (roster `porque_o_numero_1` e DERIVACAO §2.1): não é grosseria, é a forma normal do balcão, e o pedido curto e direto o alemão já traz de casa (`Ein Bier, bitte`). NÃO se declara ME-PONE na raiz `moldes[]` — a casa é B11; declará-lo aqui acionaria o G16 pedindo `clique` de casa e mentiria sobre onde o molde nasce.",
+    "recalibragem": "O eixo da parte é a fricção Sie/du (DERIVACAO §2.1 e §3.4 item 2). O alemão pergunta `Sie` por default; o balcão espanhol responde `tú`. `Perdone, ¿nos cobras?` está gravado com `tú` (`cobras`, não `cobra`) num pedido de conta que o alemão trataria por `Sie` — a fórmula de chamar atenção (`Perdone`) e a forma de tratamento não andam juntas, e ouvir isso desarma quem calcula registro no meio da frase. A ficha 2 e o `espelho` carregam a recalibragem; a permissão a nomeia em voz alta.",
+    "tratamento": "Juli e Thomas tratam o aluno por SIE, como B01/B11/B12 já fazem — duas formas de tratamento no mesmo curso é defeito visível. O bônus editorial do par: a guia siezt o aluno enquanto lhe ensina que ao balcão se duzt, e a assimetria fica encenada em vez de explicada.",
+    "respelling_para_leitor_alemao": "O campo `pinyin` é respelling para OLHO ALEMÃO e segue o esquema fixo do SKU: ⟨v⟩→b (favor→fa-BOR) · ⟨j⟩→ch de Bach (junto→CHUN-to) · ⟨ll⟩/⟨y⟩→j de ja (tortilla→tor-TI-ja, voy→boi) · ⟨qu⟩→k (quién→kjen) · ⟨h⟩ some (hora→O-ra) · ⟨s⟩,⟨z⟩,⟨c⟩+e,i→ss (claras→KLA-rass, gracias→GRA-ssjass, cebolla→sse-BO-ja) · ⟨ch⟩→tsch (pincho→PIN-tscho) · ⟨ñ⟩→nj (caña→KA-nja) · -e final→-eh (perdone→per-DO-neh) · MAIÚSCULA marca a tônica. Nunca vai ao TTS.",
+    "pendencia_G14": "A guia CITA espanhol dentro da narração alemã (é o trabalho dela) e nunca o fala; Carmen e Emilio não dizem uma palavra de alemão. INV-5 é conferência humana obrigatória enquanto o G14 do script não for definitivo."
+  },
+
   "steps": [
     {
-      "tipo": "ouvir",
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n01",
+      "bloco": "aquecimento",
+      "gesto": 2,
+      "tom": "ganha",
+      "pt": "Teil zwanzig. Aufwärmen mit der flachen Hand: PON-meh, per-DO-neh, OI-ga. Halten Sie den letzten Vokal, sonst ist er weg."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n02",
+      "pt": "Drei Sätze, die Sie heute Abend im Stehen sagen. Hand aufs Bein, ein Halt pro Wort. Noch zweimal."
+    },
+    {
+      "tipo": "responde",
       "voz": "Emilio",
+      "promptVoz": "Juli",
+      "bloco": "callback",
+      "promptAudioKey": "i02-p01",
+      "promptPt": "Zehn nach acht, das Lokal ist hell und halb leer, und der Mann in der Tür hat ein Geschirrtuch über der Schulter. Fragen Sie ihn, ab wann es Essen gibt. Sprechen Sie jetzt.",
       "audioKey": "c01a-15",
       "es": "¿A qué hora abre la cocina?",
-      "pt": ""
+      "pinyin": "a keh O-ra A-breh la ko-SSI-na",
+      "pt": "ab wann die Küche offen ist"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n03",
+      "bloco": "cena",
+      "pt": "Halb zehn abends. Der Tresen ist drei Reihen tief, und nirgendwo darin steht eine Schlange."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n04",
+      "pt": "Sie stehen seit elf Minuten höflich hinten, das Geld schon in der Hand. Das Paar nach Ihnen ist beim zweiten Glas."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n05",
+      "pt": "Nichts ist schiefgelaufen. Er führt die Reihenfolge im Kopf, nach Gesicht — und zählen kann er nur, wer am Tresen steht."
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "i02-quetepongo-e",
+      "receptivo": true,
+      "acao": "Sofort antworten, in einem Satz.",
       "es": "¿Qué te pongo?",
-      "pt": ""
+      "pinyin": "keh teh PON-go",
+      "pt": "👂 «Was mach ich dir?» — so wird der Tresen weitergereicht, und das wartet nicht.",
+      "tts": "¿Qué te pongo?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n06",
+      "pt": "Zwei Schritte hinein. Eine Hand aufs Holz, und den Blick hoch, wo seiner die Reihe entlangläuft. Den Körper zuerst."
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "e01b-15",
       "es": "Buenas.",
-      "pt": ""
+      "pinyin": "BWE-nass",
+      "pt": "Das eine Wort beim Hereinkommen. Es deckt Morgen, Nachmittag und Mitternacht ab.",
+      "tts": "Buenas."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "promptAudioKey": "i02-p02",
+      "promptPt": "Sie drücken die Tür einer kleinen Bar auf, und elf Köpfe sind schon drin. Machen Sie das, was Sie vor allem anderen machen. Sprechen Sie jetzt.",
+      "audioKey": "e01b-15",
+      "es": "Buenas.",
+      "pinyin": "BWE-nass",
+      "pt": "ein Wort, beim Hereinkommen"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n07",
+      "pt": "Dann der Satz, und es ist der, der Ihnen seit dem Tresen in Teil elf gehört. Der Baustein «¿me pones…?»."
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "i02-pincho-e",
       "es": "¿Me pones una caña y un pincho de tortilla?",
-      "pt": ""
+      "pinyin": "me PO-ness U-na KA-nja i un PIN-tscho de tor-TI-ja",
+      "pt": "Ein kleines Fassbier und ein Stück Kartoffelomelett — ein Satz, zwei Dinge.",
+      "tts": "¿Me pones una caña y un pincho de tortilla?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n08",
+      "bloco": "molde",
+      "pt": "Zwei Dinge an einem Satz, und die Naht dazwischen ist ein einziger Buchstabe. Y. Und."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "molde": "ME-PONE",
+      "encaixe": "un pincho de tortilla",
+      "encaixeGloss": "ein Stück Kartoffelomelett",
+      "consulta": ["chegar/balcao", "mesa/comida"],
+      "promptAudioKey": "i02-p03",
+      "promptPt": "Sie stehen am Tresen, die Hand auf dem Holz, sein Blick ist bei Ihnen gelandet. Sie wollen das kurze kalte Glas und das gelbe Ding unter der Glasglocke daneben. Sprechen Sie jetzt.",
+      "audioKey": "i02-pincho-e",
+      "es": "¿Me pones una caña y un pincho de tortilla?",
+      "pinyin": "me PO-ness U-na KA-nja i un PIN-tscho de tor-TI-ja",
+      "pt": "das Glas, und das Ding unter der Glocke"
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "i02-concebolla-c",
+      "receptivo": true,
+      "acao": "Eine Seite wählen — eine neutrale Antwort gibt es nicht.",
       "es": "¿La tortilla con cebolla o sin cebolla?",
-      "pt": ""
+      "pinyin": "la tor-TI-ja kon sse-BO-ja o ssin sse-BO-ja",
+      "pt": "👂 «Das Omelett mit oder ohne Zwiebel?» — das ganze Land hat eine Seite. Wählen Sie eine.",
+      "tts": "¿La tortilla con cebolla o sin cebolla?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n09",
+      "pt": "Er kommt mit zwei Wörtern zurück, während er noch zapft. Zwei Wörter wollen sie auch zurück."
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "e05b-sc2-e",
+      "receptivo": true,
+      "acao": "Antworten, nicht lächeln.",
       "es": "¿Algo más?",
-      "pt": ""
+      "pinyin": "AL-go mass",
+      "pt": "👂 «Noch etwas?» — über die Schulter gefragt, und es will eine Antwort.",
+      "tts": "¿Algo más?"
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "i02-nadamas-c",
       "es": "Nada más, gracias.",
-      "pt": ""
+      "pinyin": "NA-da mass, GRA-ssjass",
+      "pt": "Drei Wörter, und der Austausch ist zu. Er dreht sich zur Kasse.",
+      "tts": "Nada más, gracias."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "promptAudioKey": "i02-p04",
+      "promptPt": "Das Bier steht vor Ihnen, der Teller kommt, und er hat Sie über die Schulter etwas gefragt, ohne stehen zu bleiben. Machen Sie zu. Sprechen Sie jetzt.",
+      "audioKey": "i02-nadamas-c",
+      "es": "Nada más, gracias.",
+      "pinyin": "NA-da mass, GRA-ssjass",
+      "pt": "zumachen, drei Wörter"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n10",
+      "pt": "Draußen in der Sonne geht derselbe Satz mit Ihnen, nur kommt der Kellner dort zu Ihnen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n11",
+      "pt": "Das lange kalte hat Limonade drin, und im August trinken das erwachsene Menschen den ganzen Tag."
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "i02-dosclaras-c",
       "es": "¿Me pones dos claras, por favor?",
-      "pt": ""
+      "pinyin": "me PO-ness doss KLA-rass, por fa-BOR",
+      "pt": "Zwei Radler, bitte. Bier mit Limonade, und Sie sind zu zweit.",
+      "tts": "¿Me pones dos claras, por favor?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "molde": "ME-PONE",
+      "encaixe": "dos claras",
+      "encaixeGloss": "zwei Radler",
+      "consulta": ["mesa/bebida"],
+      "promptAudioKey": "i02-p05",
+      "promptPt": "Draußen in der Sonne, zu zweit, und für Bier pur ist es zu heiß — Sie wollen die leichtere Version, die im August alle trinken. Für beide. Sprechen Sie jetzt.",
+      "audioKey": "i02-dosclaras-c",
+      "es": "¿Me pones dos claras, por favor?",
+      "pinyin": "me PO-ness doss KLA-rass, por fa-BOR",
+      "pt": "das lange kalte, und macht es ein Paar"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n12",
+      "pt": "Es gibt einen kürzeren im Raum, und Sie hören ihn heute Abend öfter als Ihren eigenen."
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "c01b-06",
       "es": "Ponme una caña, por favor.",
-      "pt": ""
+      "pinyin": "PON-me U-na KA-nja, por fa-BOR",
+      "pt": "Der Anfang aus zwei Silben. «Mach mir ein kleines Bier, bitte.»",
+      "tts": "Ponme una caña, por favor."
     },
     {
-      "tipo": "ouvir",
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n13",
+      "pt": "Ponme. «Mach mir.» Für ein deutsches Ohr klingt das schroff, und es ist nichts dergleichen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n14",
+      "pt": "Die Höflichkeit sitzt in Ihrem Ton und im «por favor» am Ende, nie im Anlauf davor."
+    },
+    {
+      "tipo": "responde",
       "voz": "Emilio",
+      "promptVoz": "Juli",
+      "molde": "ME-PONE",
+      "encaixe": "una caña",
+      "encaixeGloss": "ein kleines Fassbier",
+      "consulta": ["chegar/balcao", "chegar/tu-usted", "mesa/bebida"],
+      "promptAudioKey": "i02-p06",
+      "promptPt": "Die Marktbar hinter den Fischständen, halb zwölf am Vormittag, und an der ganzen Reihe hält jede Hand dasselbe kurze kalte Glas. Bestellen Sie es, wie sie es bestellen — die kurze Form. Sprechen Sie jetzt.",
       "audioKey": "c01b-08",
       "es": "Ponme una caña, por favor.",
-      "pt": ""
+      "pinyin": "PON-me U-na KA-nja, por fa-BOR",
+      "pt": "der kurze Weg hinein"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "i02-t01",
+      "pt": "Thomas. Zwei Abende in derselben Bar habe ich «¿me pone?» gesagt, das höfliche Sie, wie zu Hause."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "i02-t02",
+      "pt": "Knapp bedient, kühl behandelt, und ich dachte, der Mann sei unfreundlich. Am dritten Abend duzte ich. Alles wurde wärmer."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n15",
+      "bloco": "capsula",
+      "pt": "Im Sitzen ändert sich die Form des Raums. Er bedient drei Räume und schaut nicht zu Ihnen."
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "i02-oiga-e",
       "es": "¡Oiga, por favor!",
-      "pt": ""
+      "pinyin": "OI-ga, por fa-BOR",
+      "pt": "«Hören Sie — bitte!» Quer durch den Raum, an einen Mann, in der Lautstärke, die der Raum schon hat.",
+      "tts": "¡Oiga, por favor!"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n16",
+      "pt": "Hand auf etwa Schulterhöhe, ein Wort, und dann hören Sie auf. Er kommt."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "consulta": ["chegar/balcao", "mesa/mesa"],
+      "promptAudioKey": "i02-p07",
+      "promptPt": "Ein Tisch am anderen Ende eines langen Speisesaals, er bedient die andere Hälfte, und er hat in zehn Minuten kein einziges Mal herübergesehen. Sprechen Sie jetzt.",
+      "audioKey": "i02-oiga-e",
+      "es": "¡Oiga, por favor!",
+      "pinyin": "OI-ga, por fa-BOR",
+      "pt": "quer durch den Raum, einmal"
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "i02-voy-c",
+      "receptivo": true,
+      "acao": "Aufhören zu rufen — er hat Sie gehört.",
       "es": "¡Voy!",
-      "pt": ""
+      "pinyin": "boi",
+      "pt": "👂 «Komme!» — er kommt noch nicht. Es heißt: gehört, Sie können aufhören zu rufen.",
+      "tts": "¡Voy!"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n17",
+      "tom": "protege",
+      "pt": "Eine Version davon landet in jeder Preisklasse schlecht, also nennen wir sie einmal und lassen sie fallen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n18",
+      "pt": "Fingerschnippen. Ein Pfiff. Ein Schein in der Luft. Keins der drei, nirgends, nie."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n19",
+      "tom": "ganha",
+      "pt": "Die Hand und das Wort sind das ganze Werkzeug, und sie laufen am Tresen wie an der Stoffdecke."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n20",
+      "tom": "ganha",
+      "pt": "Jetzt das Beste am Abend, und es ist gratis. Die Teller sind vor fünfundzwanzig Minuten gegangen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n21",
+      "pt": "Keiner war bei Ihnen. Eine Rechnung ungefragt hinzulegen ist, wie ein Haus einem Tisch sagt zu gehen."
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "e03c-noscobras-e",
       "es": "¿Nos cobras?",
-      "pt": ""
+      "pinyin": "noss KO-brass",
+      "pt": "Die lokal klingende Hälfte, aus Teil vierzehn. «Nimmst du unsere ab?» — und das ist die Du-Form.",
+      "tts": "¿Nos cobras?"
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "i02-perdonecobras-c",
       "es": "Perdone, ¿nos cobras?",
-      "pt": ""
+      "pinyin": "per-DO-neh, noss KO-brass",
+      "pt": "Derselbe Satz mit dem Ruf davor, damit er Sie über zwei Tische erreicht. «Perdone» siezt, «cobras» duzt — beides zugleich, und das ist normal.",
+      "tts": "Perdone, ¿nos cobras?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "consulta": ["mesa/conta", "pagar/pedir"],
+      "promptAudioKey": "i02-p08",
+      "promptPt": "Der Restauranttisch, fünfundzwanzig Minuten nachdem die Teller gingen, und um elf fährt ein Zug. Nichts kommt, bis Sie es sagen. Sprechen Sie jetzt.",
+      "audioKey": "i02-perdonecobras-c",
+      "es": "Perdone, ¿nos cobras?",
+      "pinyin": "per-DO-neh, noss KO-brass",
+      "pt": "das Wort, das es in Gang setzt"
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "i02-todojuntooseparado-e",
+      "receptivo": true,
+      "acao": "Jetzt entscheiden — einmal gedruckt, ist es eine Rechnung.",
       "es": "¿Todo junto o por separado?",
-      "pt": ""
+      "pinyin": "TO-do CHUN-to o por sse-pa-RA-do",
+      "pt": "👂 «Alles zusammen oder getrennt?» — jetzt antworten, nicht danach.",
+      "tts": "¿Todo junto o por separado?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n22",
+      "pt": "Und er bleibt Ihrer, nachdem Sie bezahlt haben. Die Minuten an Ihrem Tisch zählt keiner außer Ihnen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n23",
+      "pt": "Noch eins beim Hinausgehen, und es ist das Kürzeste, was Sie den ganzen Abend sagen."
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "e01b-12",
       "es": "Vale, gracias. Hasta luego.",
-      "pt": ""
+      "pinyin": "BA-leh, GRA-ssjass. AS-ta LWE-go",
+      "pt": "Der ganze Abgang, in den Raum gesagt statt an eine Person darin.",
+      "tts": "Vale, gracias. Hasta luego."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "promptAudioKey": "i02-p09",
+      "promptPt": "Sie haben bezahlt, sind zwei Schritte von der Tür, und drin sind sechs Leute, die Ihnen gar nichts serviert haben. Sagen Sie es in den Raum. Sprechen Sie jetzt.",
+      "audioKey": "e01b-12",
+      "es": "Vale, gracias. Hasta luego.",
+      "pinyin": "BA-leh, GRA-ssjass. AS-ta LWE-go",
+      "pt": "in den Raum, beim Hinausgehen"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n28",
+      "bloco": "capsula",
+      "pt": "Zurück zur Schlange, die es nicht gab. Er übersieht niemanden — er zählt Körper am Tresen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n29",
+      "pt": "Treten Sie zurück, sind Sie nicht in der Zählung. Zwei Schritte und ein Blick bringen Sie in einer Sekunde hinein."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n30",
+      "pt": "Nicht in der Apotheke oder der Bäckerei. Dort wird die Reihe laut gehalten, und man fragt beim Hereinkommen."
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "e08a-ultimo-c",
+      "receptivo": true,
+      "acao": "Sich den merken, der antwortet, und danach dran sein.",
       "es": "¿Quién es el último?",
-      "pt": ""
+      "pinyin": "kjen ess el UL-ti-mo",
+      "pt": "👂 «Wer ist der Letzte?» — der Tresen, an dem die Reihe gesprochen wird, nicht beobachtet. Ihrer kommt in Teil siebzehn.",
+      "tts": "¿Quién es el último?"
     },
     {
-      "tipo": "ouvir",
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n25",
+      "bloco": "capsula",
+      "pt": "Eine Sache noch, und die ist Ihre, nicht seine. Am Tresen wird geduzt. «¿me pones?» ist die Du-Form."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n26",
+      "pt": "Die Sie-Form gibt es auch, und Sie haben sie gehört. Am Tresen liest sie sich als Abstand, nicht als Respekt."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n27",
+      "pt": "Beim Arzt, in der Bank und bei der Guardia Civil bleibt sie richtig. An der Theke nicht."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n31",
+      "bloco": "permissao",
+      "pt": "«Ponme una caña» ist nicht unhöflich — so klingt der ganze Raum. Sie dürfen lauter bestellen, als es höflich wirkt, und quer rufen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n32",
+      "bloco": "espelho",
+      "pt": "Um ein Bier in fünf Nebensätzen zu bitten ist dort das Auffällige. Es kommt nicht als Höflichkeit an, es kommt als Nebel."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n34",
+      "bloco": "clique",
+      "tom": "ganha",
+      "pt": "Zählen Sie die Orte. Der Tresen. Die Terrasse. Die Marktbar. Der Restauranttisch."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n35",
+      "pt": "Diese Sätze hat Ihnen keiner gegeben. Sie kamen mit dem Baustein aus Teil elf herein, und er hat viermal bezahlt."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n36",
+      "bloco": "piso",
+      "pt": "Sie kommen an einem drei Reihen tiefen Tresen in die Reihenfolge, ohne ein «Entschuldigung» davor. Die meisten werden zwei Wochen lang zuletzt bedient."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-s00",
+      "pt": "Nachsprechen. Laut, mit ihnen, ein Halt pro Wort und nichts Weiches davor."
+    },
+    {
+      "tipo": "shadow",
       "voz": "Emilio",
+      "audioKey": "i02-pincho-e",
+      "molde": "ME-PONE",
+      "es": "¿Me pones una caña y un pincho de tortilla?",
+      "pinyin": "me PO-ness U-na KA-nja i un PIN-tscho de tor-TI-ja",
+      "pt": "Ein kleines Fassbier und ein Stück Kartoffelomelett."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Emilio",
+      "audioKey": "c01b-06",
+      "molde": "ME-PONE",
+      "es": "Ponme una caña, por favor.",
+      "pinyin": "PON-me U-na KA-nja, por fa-BOR",
+      "pt": "Mach mir ein kleines Bier, bitte."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Juli",
+      "audioKey": "i02-rend",
+      "bloco": "recap",
+      "pt": "Noch einmal laut, an einem Tresen, an dem wir noch nicht standen, wo nichts einen Namen hat, den Sie kennen."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "molde": "ME-PONE",
+      "encaixe": "lo mismo que él",
+      "encaixeGloss": "dasselbe wie er",
+      "consulta": ["chegar/balcao", "reparo/apontar", "mesa/comida"],
+      "promptAudioKey": "i02-p10",
+      "promptPt": "Ein Tresen im Norden, ein Blech kleiner Dinge hinter Glas, und der Mann neben Ihnen isst genau das, was Sie wollen. Benennen können Sie nichts davon. Zeigen Sie mit dem Kinn und bestellen Sie. Sprechen Sie jetzt.",
       "audioKey": "i02-lomismo-e",
       "es": "¿Me pones lo mismo que él?",
-      "pt": ""
+      "pinyin": "me PO-ness lo MISS-mo keh el",
+      "pt": "mit dem Kinn zeigen und bestellen"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "i02-n37",
+      "pt": "Das war's. Sie sind in der Reihenfolge, Sie wurden gehört, und der Tisch blieb Ihrer. Hasta luego."
     }
-  ]
+  ],
+
+  "aprofundar": {
+    "titulo": "Bedient werden, und das Vorgeplänkel, das es verhindert (optionale Lektüre)",
+    "secoes": [
+      {
+        "titulo": "Ponme, me pones, me pone — drei Türen, und warum die Maschine schon läuft",
+        "corpo": "Alle drei holen dasselbe Bier. «¿Me pones…?» ist der Baustein vom Tresen aus Teil elf und das Sicherste in Ihrem Mund: klingt wie eine Bitte, geht mit jedem, und niemand ist je dafür schräg angesehen worden. «Ponme…» ist die kurze Form, die Sie um sich herum hören — sie lässt die Frage weg und stellt das Verb nach vorn, weshalb sie auf Deutsch schroff aussieht und im Raum kein bisschen schroff klingt; die Höflichkeit trägt das «por favor» am Ende und Ihr Ton. «¿Me pone…?» ist die Sie-Form, die Sie bei jemandem Älteren oder in einem feineren Lokal nehmen. Und genau hier ist der Punkt dieses Kurses: den Schalter zwischen «pones» und «pone» legen Sie zu Hause dutzendmal am Tag um, ohne nachzudenken — nur steht er dort auf einer anderen Grundeinstellung. In Deutschland ist das Sie die Voreinstellung gegenüber jedem fremden Erwachsenen, Kellner eingeschlossen. In Spanien ist an der Theke «tú» die Voreinstellung, und «usted» gegenüber einem Kellner Mitte zwanzig liest sich als bewusster Abstand. Sie müssen nichts Neues lernen, nur die Voreinstellung umstellen: an der Theke duzen, bei Guardia Civil, Bank, Arzt und Amt siezen.",
+        "exemplos": [
+          {
+            "es": "¿Me pones un cortado?",
+            "pt": "me PO-ness un kor-TA-do — einen kleinen Kaffee mit einem Schuss Milch, bitte"
+          },
+          {
+            "es": "Perdone, ¿me pone otra?",
+            "pt": "per-DO-neh, me PO-neh O-tra — dasselbe im feineren Lokal (Sie-Form, dieselbe Bestellung)"
+          }
+        ]
+      },
+      {
+        "titulo": "Die Reihenfolge, die keine Schlange ist — und die Tresen, an denen sie eine ist",
+        "corpo": "An einem vollen Tresen gibt es keine Schlange und es gibt eine Reihenfolge, und beides passt bestens zusammen. Der Wirt hält eine grobe Abfolge von Gesichtern im Kopf, aufgefrischt jedes Mal, wenn er die Reihe entlanggeht und jemandes Blick hochkommt. Was das für einen Gast bricht, ist nicht Unhöflichkeit, es ist Geometrie: ein Gesicht anderthalb Meter hinter dem Tresen, halb abgewandt, kann er nicht mitzählen. Zwei Schritte und eine Hand aufs Holz bringen Sie hinein. Bestellen Sie zu zweit, bestellt einer — ein Grüppchen, das sich gegenübersteht, liest sich als Tisch, der sich noch nicht entschieden hat. Und es gibt eine echte Ausnahme, und genau deshalb lohnt sie als Gewohnheit statt als Regel: in Apotheke, Bäckerei, Metzgerei, am Fischstand und überall mit Nummernautomat wird die Reihe laut gehalten. Man kommt herein, sagt «¿Quién es el último?», merkt sich, wer antwortet, und geht danach. Dieser Satz bekommt in Teil siebzehn seinen eigenen Auftritt.",
+        "exemplos": [
+          {
+            "es": "¿Quién es el último?",
+            "pt": "kjen ess el UL-ti-mo — 👂 wer ist der Letzte? — die gesprochene Reihe, in Apotheke oder Bäckerei"
+          },
+          {
+            "es": "¿Qué te pongo?",
+            "pt": "keh teh PON-go — 👂 was mach ich dir? — Ihre anderthalb Sekunden, die weitergereicht werden"
+          }
+        ]
+      },
+      {
+        "titulo": "Einen Kellner quer durch den Raum erreichen — und der Tisch, der Ihrer bleibt",
+        "corpo": "Zwei Wörter machen alles. «¡Perdone!» ist das höfliche Allzweckwort und geht in jeder Entfernung und jeder Preisklasse. «¡Oiga!» heißt wörtlich «Hören Sie» und ist das, was trägt; übersetzt klingt es scharf und ist in einem vollen Raum ganz gewöhnlich. Beide gehen mit einer Hand auf Schulterhöhe, einmal gesagt, in der Lautstärke, die der Raum ohnehin hat. Dann hören Sie auf und lassen ihn zu Ende tragen, was er trägt. Was nicht funktioniert, in keiner Bar und keinem Restaurant, in keiner Preisklasse: Fingerschnippen, Pfeifen, «¡chico!» rufen oder einen Schein in die Luft halten. Und eine Sache noch, die dazugehört: niemand kommt vorbei und fragt, wie es Ihnen schmeckt. Diese Stille ist keine Vernachlässigung — es ist derselbe Instinkt, der die Rechnung von Ihrem Tisch fernhält. Ihr Tisch wird als Ihrer behandelt, und Sie darin zu stören wäre das Unhöfliche.",
+        "exemplos": [
+          {
+            "es": "¡Perdone!",
+            "pt": "per-DO-neh — Entschuldigung (der Allzweckruf, jede Entfernung, jedes Lokal)"
+          },
+          {
+            "es": "Perdone, ¿nos cobras?",
+            "pt": "per-DO-neh, noss KO-brass — Entschuldigung, nimmst du unsere ab? (der lokal klingende Weg, nach der Rechnung zu fragen)"
+          }
+        ]
+      }
+    ]
+  }
 }

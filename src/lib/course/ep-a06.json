@@ -4,122 +4,759 @@
   "nivel": "avancado",
   "numero": 34,
   "parte": "34",
-  "titulo": "Ihr Kalender",
-  "aguardaNarracao": true,
-  "_andaime": {
-    "_": "ANDAIME — não é parte pronta. A fala espanhola já está aqui e é definitiva (ativo de DESTINO, mesmos audioKey e mesmos mp3 do curso EN, custo de crédito zero). Tudo que é voz-guia está VAZIO de propósito: é o que o autor escreve, em ALEMÃO, e é a única coisa que este SKU paga.",
-    "funcao_do_slot": "O calendário deles",
-    "dono": "destino",
-    "o_que_falta": "narração (intro/recap/prompts de responde), `cena`, `moldura`, `permissao`, `frasePiso`, `clique`, `moldes`, `fichasCulturais`, `fatosDatados`, `aprofundar`, o campo `pt` (gloss em ALEMÃO) de cada step e o respelling de pronúncia para leitor alemão.",
-    "nao_traduzir": "a parte inglesa correspondente é ep-a06.json. Ela serve de referência de ESTRUTURA, nunca de texto: `pinyin` de lá é respelling para leitor de inglês (types.ts) e `pt` é o gloss inglês — nenhum dos dois foi copiado, e copiá-los é o anti-padrão 8.",
-    "entra_em_vigor": "no instante em que este arquivo ganhar o campo `cena`, os portões de tom passam de aviso a erro para ele. Apagar `aguardaNarracao` sem escrever a narração não muda nada: quem decide é `cena`."
+  "titulo": "August, der Heilige und die Woche, die der Straße gehört",
+  "subtitulo": "Der Monat, in dem das Viertel sich leert; der Samstag, der Ihren Sonntag füttert; die zwei Tage, die nur einer Stadt gehören; und der Nachmittag, an dem eine Kapelle die Straße nimmt, auf der Sie gerade gingen.",
+  "moldura": "ganha",
+
+  "cena": "Viertel nach vier, Dienstag im August, fünfundzwanzig Minuten Fußweg hinter Ihnen, ein Rollladen unten, und die Frau aus der Bar nebenan sieht Ihnen zu, wie Sie den Zettel an der Scheibe lesen.",
+
+  "decisao": "ob die Woche um ihren Kalender geplant wird oder um Ihren — der Samstagseinkauf gegen einen Sonntag, den Sie zu einem geschlossenen Gitter laufen, und die fünfundzwanzig Minuten im August, die ein Anruf von zwanzig Sekunden zu nichts macht.",
+  "emJogo": "tempo",
+
+  "moldes": [],
+
+  "frasePiso": "Sie planen eine spanische Woche um ihren Kalender — den Samstagseinkauf, den geschlossenen Dienstag, die Straße, die einem Heiligen gehört. Die meisten finden das Tür für Tür heraus, eine geschlossene nach der anderen.",
+
+  "permissao": "August ist kein schlechter Monat für Spanien. Er ist ein schlechter Monat, sich auf eine einzige Adresse zu verlassen, und vorher anzurufen ist die ganze Lösung. Und Sie dürfen mitten in ein fremdes Fest laufen und dabeistehen: die Straße ist der Saal, keiner hat ein Ticket gekauft, und die Leute um Sie sind Nachbarn, kein Publikum. Und Sie dürfen einen Sonntag mit einem langen Mittagessen und einem Museum verbringen, denn beide sind den ganzen Tag offen.",
+  "permissaoAudioKey": "a06-n28",
+
+  "espelho": "Zu fragen, warum ein Laden den ganzen August zu hat, ist der Teil, der dort auffällt. Es klingt wie «warum arbeitet zwischen den Jahren niemand» zu Hause — die Antwort ist kein Grund, sie ist der Kalender.",
+
+  "_autoria": {
+    "_": "PARTE ESCRITA (o andaime saiu). LEIO A SALA, dono destino: A06 não ensina molde nenhum (moldes: []), a relação com o roster é auditiva. A fala espanhola é a do andaime — mesmos `es`, mesmos `audioKey`, mesmos mp3 do curso EN, todos conferidos no manifest. Nenhum `es` foi tocado e nenhum clipe espanhol NOVO foi criado: o custo de crédito espanhol desta parte é ZERO. Tudo que é voz-guia (Juli, Thomas) é alemão, escrito aqui, e é a única coisa que este SKU paga.",
+    "o_que_muda_do_par_EN": "A06 é MÉDIA (DERIVACAO-DE §4.2). O que entra e o par EN não tem: (1) o comprador é O turista de agosto — as férias escolares alemãs são escalonadas por estado e Baviera/Baden-Württemberg vão do começo de agosto a meados de setembro, então o Urlaub se sobrepõe ao mês em que o Familienladen fecha (fatoDatado `ferias-escolares-agosto`, §3.1). (2) O calor de agosto entra como razão de a rua fechar às quatro e de o jantar começar às nove (n08b + aprofundar §1, pesquisa §8.5). (3) O fechamento dominical é RECONHECIMENTO, não instrução (n14b) — o alemão já tem loja fechada no domingo em casa; o que é novo é a sortimento por tipo de loja (DERIVACAO §3.2). (4) As Canárias são re-enquadradas pelo MAPA DELE, não pelo britânico: Baleares 42% = maio–outubro, Canárias 22% = novembro–fevereiro (n26/n27, fatoDatado reescrito). O GUIRI ALERT do par EN (George, domingo do supermercado) porta como confissão do Thomas, que é o equivalente do George neste SKU (audio.config).",
+    "respelling": "O campo `pinyin` é respelling para OLHO ALEMÃO e nunca vai ao TTS (INV-6). Mesma convenção das outras partes, e é onde as sete armadilhas morrem sem custar áudio: ⟨v⟩→b · ⟨j⟩/⟨g⟩+e,i→ch · ⟨ll⟩/⟨y⟩→j · ⟨qu⟩→k · ⟨h⟩→nada · ⟨ch⟩→tsch · ⟨s⟩, ⟨z⟩ e ⟨c⟩+e,i→ss (impede o [z] alemão e o [ts] proibido) · tônica em MAIÚSCULA. Alvo de ⟨z⟩/⟨c⟩ é [θ], mas o alemão não tem letra para ele e [s] é aceito (Canárias = 22% deste comprador); o `ss` só bloqueia o [ts].",
+    "sem_regra_de_leitura_propria": "A06 NÃO planta regra de leitura como lição: as sete armadilhas são propriedade das casas do Básico (⟨h⟩ em B08, ⟨z⟩/⟨c⟩ em B01/B14, ⟨s⟩ em B02) e A06 não é casa de molde nenhum. As armadilhas que a fala desta parte carrega (⟨h⟩ em `hoy`/`hay`, ⟨c⟩+e,i em `cerramos`/`celebra`/`cocina`, ⟨s⟩ em `pasar`/`pase`) são desarmadas só pelo respelling, sem clipe de aviso — regra de leitura em parte avançada e sem casa seria a palestra que o G4 mede.",
+    "pendencia_G14": "Juli e Thomas CITAM espanhol dentro da narração alemã (é o trabalho da guia — `Cerrado por vacaciones`, `¿Están abiertos hoy?`) e nunca o FALAM; Carmen e Emilio não dizem uma palavra de alemão. INV-5 exige conferência humana enquanto o G14 for a metade que existe."
   },
-  "steps": [
+
+  "fichasCulturais": [
     {
-      "tipo": "ouvir",
-      "voz": "Carmen",
-      "audioKey": "e01c-08",
-      "es": "¿Me lo escribe, por favor?",
-      "pt": ""
+      "sinal": "Eine halbe Straße hat am Dienstag im August die Rollläden unten, an jedem klebt ein handgeschriebener Zettel, und die Bars auf derselben Straße sind voll.",
+      "suaLeitura": "Diese Ecke ist pleite, oder ich habe mir den einen toten Teil der Stadt zum Wohnen ausgesucht.",
+      "oQueEAli": "Ein Laden, der einer Familie gehört, macht den Monat zu, und alle darin fahren an die Küste oder ins Dorf. «Cerrado por vacaciones» meint den ganzen Monat, nicht den Nachmittag — und die Öffnungszeiten auf der Karte wissen es oft nicht.",
+      "oQueVoceFaz": "Rufen Sie an, bevor Sie loslaufen. Eine Frage — ob heute offen ist — und dann weiter auf Englisch.",
+      "oQueMelhora": "Sie bekommen den August, den die Leute bekommen, die hier wohnen: leerere Straßen, ein Tisch um neun, und jede Bar, jedes Restaurant und Museum in Betrieb.",
+      "ondeNaoVale": "Nicht die Ketten, die Kaufhäuser, die Restaurants oder die Museen, und kein Laden in einer Straße, die von Gästen lebt — die machen nicht zu, und eine ganze Reihe geschlossener Rollläden ist selbst das Zeichen, in welcher Art Straße Sie stehen.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["a06-n06", "a06-n07", "a06-n07b", "a06-n08", "b10-horario-e"]
     },
     {
-      "tipo": "ouvir",
+      "sinal": "Sonntagmittag: die Restaurants sind voll, vor der Bäckerei steht eine Schlange bis auf die Straße, und der Supermarkt vier Türen weiter hat das Gitter unten.",
+      "suaLeitura": "Es ist ein Feiertag, von dem mir keiner gesagt hat, und die ganze Stadt ist deshalb zu.",
+      "oQueEAli": "Der Sonntag sortiert danach, was der Laden verkauft, nicht nach der Uhr. Essen, das Sie draußen essen, ist offen; Essen, das Sie heimtragen, nicht. Erklärte Touristenzonen handeln sonntags, Ihre Wohnstraße nicht.",
+      "oQueVoceFaz": "Machen Sie den Großeinkauf am Samstag. Dann ist der Sonntag ein Mittagessen, ein Spaziergang und was eine Tür offen hat, also fast alles.",
+      "oQueMelhora": "Sie verbringen den Sonntag wie die Nachbarn, statt eine Küche voll Einkäufe durch eine Straße zu tragen, die nicht aufmachen wird.",
+      "ondeNaoVale": "Nicht in der Mitte von Madrid oder Barcelona, wo die erklärte Zone sieben Tage handelt — vier Straßen weiter, auf der Straße Ihrer Wohnung, kommt die Regel zurück.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["a06-n13", "a06-n14", "a06-n14b", "a06-domingo-c", "a06-n16"]
+    },
+    {
+      "sinal": "Die Bank, das Rathaus und die Post sind an einem gewöhnlichen Mittwoch zu, und die Stadt zwanzig Minuten weiter arbeitet ganz normal.",
+      "suaLeitura": "Etwas ist passiert, oder es ist ein Streik, von dem ich wissen müsste.",
+      "oQueEAli": "Bezahlte Feiertage sind auf vierzehn im Jahr gedeckelt: zwölf gehören dem Land und der Region, zwei wählt das Rathaus — meist den Stadtpatron. Die zwei gelten für diese Gemeinde und sonst nirgends.",
+      "oQueVoceFaz": "Fragen Sie am Empfang beim Ankommen, welche Tage die Woche örtlich sind, und legen Sie Bank und Erledigungen darum herum.",
+      "oQueMelhora": "Sie erfahren es am Vorabend statt an der Tür, und der Tag wird etwas, wohin man geht, statt etwas, das die Bank geschlossen hat.",
+      "ondeNaoVale": "Nicht für die Bars, die Restaurants und die Terrassen. Ein örtlicher Feiertag ist ihr bester Handelstag des Jahres, und jede ist offen, oft ab dem Frühstück.",
+      "evidencia": "FATO",
+      "audioKeys": ["a06-n17", "a06-n18", "a06-n19", "a06-patrona-c"]
+    },
+    {
+      "sinal": "Eine Blaskapelle und ein paar hundert Leute kommen die Straße herauf, die Sie wollten, es gibt keine Absperrung, kein Ticket und keine Bühne, und alle um Sie herum sind stehen geblieben.",
+      "suaLeitura": "Ich bin in etwas Privates geraten, das nicht meins ist, und sollte aus dem Weg gehen.",
+      "oQueEAli": "Die Straße ist der Saal. Die Route steht vorher fest, sie schließt, während der Zug vorbeigeht, und die Zuschauer sind die Nachbarn — es gibt kein Drinnen, auf dessen falscher Seite man wäre.",
+      "oQueVoceFaz": "Stehen bleiben, vorbeilassen, die Person neben Ihnen nach dem Tag fragen, und dahinter kreuzen statt hindurch.",
+      "oQueMelhora": "Sie bekommen den einen Nachmittag, für den Ihnen keiner ein Ticket verkauft hat, und die Frage bringt jemanden zum Erzählen, der hier seit seinem sechsten Jahr mitläuft.",
+      "ondeNaoVale": "Nicht auf dem Weg zu Bahnhof oder Flughafen. Eine Route, die das Zentrum drei Stunden sperrt, sperrt Ihr Taxi mit, und das ist der Morgen, um früh oder unter die Erde zu gehen.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["a06-n21", "a06-n22", "a06-patron-e", "a06-n24"]
+    }
+  ],
+
+  "fatosDatados": [
+    {
+      "id": "agosto-cierre-familiar",
+      "afirmacao": "Ein Laden, der einer Familie gehört, macht den ganzen August zu; auf dem Rollladen steht «Cerrado por vacaciones», und die online gelisteten Öffnungszeiten wissen davon oft nichts.",
+      "fonte": "docs/pesquisa-espanha.md §7.1 (consenso de fontes de comércio 2025–2026) e §6.3 (a placa). Sem fonte primária estatística — o INE não publica fechamento por mês.",
+      "ano": 2026,
+      "revisarAte": "2027-07-01",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": ["a06-n06", "a06-n07", "a06-n08"]
+    },
+    {
+      "id": "ferias-escolares-agosto",
+      "afirmacao": "Die Sommerferien sind je nach Bundesland gestaffelt und enden 2026 zwischen Ende Juni und Anfang August; in Bayern und Baden-Württemberg laufen sie bis Mitte September — der Sommerurlaub überschneidet sich also mit dem Monat, in dem die Familienläden zumachen.",
+      "fonte": "Kultusministerkonferenz (Hamburger Abkommen, 1964), Ferienkalender 2026; enquadramento em docs/DERIVACAO-DE.md §3.1. Datas mudam a cada ano — reconferir contra o calendário publicado.",
+      "ano": 2026,
+      "revisarAte": "2027-04-01",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": ["a06-n05b"]
+    },
+    {
+      "id": "asuncion-15-agosto",
+      "afirmacao": "Der fünfzehnte August ist im ganzen Land ein Feiertag und liegt mitten in dem Monat, für den ohnehin schon vieles geschlossen ist.",
+      "fonte": "docs/pesquisa-espanha.md §7.1 (Asunción, 15/ago, feriado nacional); calendário laboral nacional publicado anualmente no BOE.",
+      "ano": 2026,
+      "revisarAte": "2027-01-31",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": ["a06-rend"]
+    },
+    {
+      "id": "domingo-comercio",
+      "afirmacao": "Supermärkte und die meisten Läden sind sonntags zu, während Bars, Restaurants und Attraktionen offen sind; erklärte Touristenzonen handeln sonntags, ein Wohnviertel nicht.",
+      "fonte": "docs/pesquisa-espanha.md §7.1 — abertura dominical em zonas turísticas declaradas, comércio de bairro fechado. Consenso de fontes de comércio 2025–2026; regime de horários é competência autonômica e varia por comunidade.",
+      "ano": 2026,
+      "revisarAte": "2027-06-01",
+      "evidencia": "CONSENSO",
+      "risco": "medio",
+      "audioKeys": ["a06-n13", "a06-n14", "a06-n16"]
+    },
+    {
+      "id": "siesta-comercial",
+      "afirmacao": "Der kleine Laden schließt über Mittag, etwa halb zwei bis fünf, und öffnet wieder bis acht oder halb neun — während Kaufhäuser, große Supermarktketten, Restaurants und Museen gar nicht schließen.",
+      "fonte": "docs/pesquisa-espanha.md §7.1 — 'siesta comercial ≠ siesta', FATO qualitativo por consenso de fontes de comércio 2025–2026.",
+      "ano": 2026,
+      "revisarAte": "2027-06-01",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": ["a06-n11", "a06-n12", "a06-cincoymedia-e"]
+    },
+    {
+      "id": "dos-fiestas-locales",
+      "afirmacao": "Bezahlte Feiertage sind auf vierzehn im Jahr gedeckelt, und zwei davon setzt das Rathaus — ein geschlossener Mittwoch in einer Stadt ist zwanzig Minuten weiter ein gewöhnlicher Mittwoch.",
+      "fonte": "Estatuto de los Trabajadores, Real Decreto Legislativo 2/2015, art. 37.2 — máximo de catorze festas laborais por ano, das quais duas serão locais. Fonte primária; NÃO consta de docs/pesquisa-espanha.md, que não cobre o calendário laboral.",
+      "ano": 2026,
+      "revisarAte": "2028-01-01",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": ["a06-n18", "a06-n19"]
+    },
+    {
+      "id": "procesion-calle-cortada",
+      "afirmacao": "Eine Prozession zum Stadtpatron oder eine Karwochen-Route nimmt die Straße selbst: die Route steht vorher fest, die Straße schließt, während der Zug vorbeizieht, und das Zentrum kann für Stunden für den Verkehr gesperrt sein.",
+      "fonte": "Consenso de fontes secundárias locais (itinerários publicados pelos ayuntamientos e pela imprensa local a cada ano). NÃO consta de docs/pesquisa-espanha.md. Sem fonte primária única: o itinerário é municipal e muda todo ano.",
+      "ano": 2026,
+      "revisarAte": "2027-03-01",
+      "evidencia": "CONSENSO",
+      "risco": "medio",
+      "audioKeys": ["a06-n22", "a06-n24", "a06-detras-c"]
+    },
+    {
+      "id": "archipelagos-temporada-invertida",
+      "afirmacao": "Die Kanaren laufen das Jahr rückwärts — November bis Februar ist ihre Saison —, während die Balearen von Mai bis Oktober voll sind.",
+      "fonte": "docs/pesquisa-espanha.md §8.6 (INE/Frontur, sazonalidade dos arquipélagos) e docs/DERIVACAO-DE.md §3.1 (destino do comprador alemão: Baleares 42%, Canárias 22%, fonte Turespaña, ficha executiva Alemanha).",
+      "ano": 2026,
+      "revisarAte": "2027-04-01",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": ["a06-n26", "a06-n27"]
+    }
+  ],
+
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n01",
+      "bloco": "aquecimento",
+      "gesto": 1,
+      "tom": "ganha",
+      "pt": "Aufwärmen: gleiche Schläge, der starke in der Mitte. a-GOS-to. do-MIN-go. a-BJER-to. Hand aufs Bein, zweimal, laut."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "bloco": "callback",
+      "promptAudioKey": "a06-p00",
+      "promptPt": "Die Frau aus der Bar nebenan sagt Ihnen im Tempo, wann der Laden wieder aufmacht, und es rauscht an Ihnen vorbei. Sprechen Sie jetzt.",
+      "audioKey": "e01c-08",
+      "es": "¿Me lo escribe, por favor?",
+      "pinyin": "me lo ess-KRI-beh, por fa-BOR",
+      "pt": "bringen Sie es aufs Papier",
+      "tts": "¿Me lo escribe, por favor?"
+    },
+    {
+      "tipo": "responde",
       "voz": "Emilio",
+      "promptVoz": "Juli",
+      "promptAudioKey": "a06-p01",
+      "promptPt": "Eine Tür um acht, nur Getränke, und eine einzige Zahl entscheidet den ganzen Abend. Fragen Sie ihn danach. Sprechen Sie jetzt.",
       "audioKey": "c01a-15",
       "es": "¿A qué hora abre la cocina?",
-      "pt": ""
+      "pinyin": "a ke O-ra A-breh la ko-SSI-na",
+      "pt": "eine Zahl, und der Abend plant sich selbst",
+      "tts": "¿A qué hora abre la cocina?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n03",
+      "bloco": "cena",
+      "pt": "Das war ihre Uhr in einem Tag. Jetzt die andere — ihre Uhr über ein ganzes Jahr."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n04",
+      "pt": "Viertel nach vier, Dienstag im August. Fünfundzwanzig Minuten Fußweg hinter Ihnen, und ein Rollladen ist unten."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n05",
+      "pt": "An der Scheibe klebt ein handgeschriebener Zettel, und die Frau aus der Bar nebenan sieht Ihnen beim Lesen zu."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n05b",
+      "tom": "ganha",
+      "pt": "Wer im Sommer herkommt, ist oft im August da — genau der Monat, in dem der Familienladen zumacht."
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "b10-horario-e",
+      "receptivo": true,
+      "acao": "Den dritten Zettel lesen und weitergehen — das ist der Monat, nicht der Nachmittag.",
       "es": "HORARIO · HORARIO DE VERANO · CERRADO POR VACACIONES",
-      "pt": "",
+      "pinyin": "o-RA-rjo · o-RA-rjo de be-RA-no · sse-RRA-do por ba-ka-SSJO-ness",
+      "pt": "👂 Öffnungszeiten · Sommeröffnungszeiten · wegen Urlaub geschlossen — die drei Zettel, die Sie zwei Wochen lang lesen.",
       "tts": "Horario. Horario de verano. Cerrado por vacaciones."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n06",
+      "pt": "Cerrado por vacaciones. Nicht pleite, nicht für den Nachmittag — für den Monat, und der Monat ist August."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n07",
+      "pt": "Ein Familienladen macht ihn ganz zu und fährt an die Küste. Die Straße dahinter leert sich."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n07b",
+      "pt": "Ketten, Kaufhäuser, Restaurants und Museen tun das nie. Es sind die kleinen Läden."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n08",
+      "tom": "protege",
+      "pt": "Und die Öffnungszeiten auf der Karte wissen es oft nicht. Das kostet die fünfundzwanzig Minuten, nicht der Rollladen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n08b",
+      "tom": "protege",
+      "pt": "Dazu ist vier Uhr nachmittags im August keine Gehzeit — die Hitze schließt die Straße mit. Der Abend beginnt deshalb um neun."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n09",
+      "tom": "ganha",
+      "pt": "Die ganze Lösung ist zwanzig Sekunden lang und ein Anruf. Vier Wörter davon sind Spanisch."
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "a06-abiertos-c",
+      "receptivo": true,
+      "acao": "Diese vier Wörter sagen, dann auf Englisch weiter.",
       "es": "¿Están abiertos hoy?",
-      "pt": ""
+      "pinyin": "ess-TAN a-BJER-toss oi",
+      "pt": "👂 «Haben Sie heute offen?» — vier Wörter, und der ganze Monat hört auf, geraten zu sein.",
+      "tts": "¿Están abiertos hoy?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n10",
+      "pt": "Sie sagen die, dann weiter auf Englisch. Sie sind nur da, damit überhaupt jemand richtig rangeht."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "promptAudioKey": "a06-p02",
+      "consulta": ["chegar/entrar", "compras/balcao"],
+      "promptPt": "Dienstagmorgen, die Nummer des kleinen Ladens auf dem Display, und ein Fußweg quer durch die Stadt, wenn keiner vorher die Wahrheit sagt. Sprechen Sie jetzt.",
+      "audioKey": "a06-abiertos-c",
+      "es": "¿Están abiertos hoy?",
+      "pinyin": "ess-TAN a-BJER-toss oi",
+      "pt": "vor dem Losgehen, nie danach"
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "a06-hoysi-e",
+      "receptivo": true,
+      "acao": "Zuhören: die Antwort kommt als Monat, nicht als Uhrzeit.",
       "es": "Hoy sí, pero cerramos todo agosto.",
-      "pt": ""
+      "pinyin": "oi ssi, PE-ro sse-RRA-moss TO-do a-GOS-to",
+      "pt": "👂 «Heute ja — aber wir schließen den ganzen August.» — die Antwort kommt als Monat.",
+      "tts": "Hoy sí, pero cerramos todo agosto."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n11",
+      "pt": "Jetzt der andere Rollladen — der jeden Nachmittag runtergeht und gegen fünf wieder hoch."
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "a06-tarde-c",
+      "receptivo": true,
+      "acao": "Die zweite Zahl auf dem Zettel abholen.",
       "es": "¿A qué hora abren por la tarde?",
-      "pt": ""
+      "pinyin": "a ke O-ra A-bren por la TAR-deh",
+      "pt": "👂 «Wann machen Sie nachmittags auf?» — die zweite Hälfte vom Tag eines kleinen Ladens.",
+      "tts": "¿A qué hora abren por la tarde?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n12",
+      "pt": "Der kleine Laden, die Apotheke, der Schuster. Das Kaufhaus und das Museum machen gar nicht zu."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "promptAudioKey": "a06-p03",
+      "consulta": ["compras/balcao"],
+      "promptPt": "Zwanzig nach eins, der Mann hinter dem Tresen greift schon nach seinen Schlüsseln, und Sie brauchen ihn später noch einmal. Sprechen Sie jetzt.",
+      "audioKey": "a06-tarde-c",
+      "es": "¿A qué hora abren por la tarde?",
+      "pinyin": "a ke O-ra A-bren por la TAR-deh",
+      "pt": "die zweite Hälfte seines Tages"
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "a06-cincoymedia-e",
+      "receptivo": true,
+      "acao": "Merken: darum stehen zwei Zeitspannen auf dem Zettel, nicht eine.",
       "es": "A las cinco y media.",
-      "pt": ""
+      "pinyin": "a lass SSIN-ko i ME-dja",
+      "pt": "👂 «Um halb sechs.» — darum hat der Zettel an der Tür zwei Spannen, nicht eine.",
+      "tts": "A las cinco y media."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n13",
+      "pt": "Der Sonntag sortiert wieder anders, und er sortiert danach, was der Laden verkauft, nicht nach der Uhr."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n14",
+      "pt": "Essen, das Sie draußen essen, ist offen. Essen, das Sie heimtragen, nicht. Der Supermarkt hat das Gitter unten."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n14b",
+      "tom": "ganha",
+      "pt": "Sonntags geschlossene Läden kennen Sie von zu Hause. Neu ist nur die Sortierung: gegessen wird, mitgenommen nicht."
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "a06-super-e",
+      "receptivo": true,
+      "acao": "Fragen — der Anfang gehört Ihnen seit Teil acht, nur die letzten Wörter sind von heute.",
       "es": "¿Hay algún supermercado abierto por aquí?",
-      "pt": ""
+      "pinyin": "ai al-GUN ssu-per-mer-KA-do a-BJER-to por a-KI",
+      "pt": "👂 «Gibt es hier einen offenen Supermarkt?» — der Anfang gehört Ihnen seit Teil acht.",
+      "tts": "¿Hay algún supermercado abierto por aquí?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n15",
+      "pt": "Nur die letzten Wörter sind von heute. Den Anfang sagen Sie seit der ersten Woche."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "promptAudioKey": "a06-p04",
+      "consulta": ["compras/balcao"],
+      "promptPt": "Sonntag, eine gemietete Küche mit nichts drin, und ein Mann mit Hund, der seit vierzig Jahren in dieser Straße wohnt. Sprechen Sie jetzt.",
+      "audioKey": "a06-super-e",
+      "es": "¿Hay algún supermercado abierto por aquí?",
+      "pinyin": "ai al-GUN ssu-per-mer-KA-do a-BJER-to por a-KI",
+      "pt": "irgendwo, und er weiß, wo"
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "a06-domingo-c",
+      "receptivo": true,
+      "acao": "Zuhören: darum ist der Großeinkauf am Samstag.",
       "es": "Hoy es domingo. Hasta mañana, nada.",
-      "pt": ""
+      "pinyin": "oi ess do-MIN-go. ASS-ta ma-NJA-na, NA-da",
+      "pt": "👂 «Heute ist Sonntag. Bis morgen nichts.» — darum ist der Großeinkauf am Samstag.",
+      "tts": "Hoy es domingo. Hasta mañana, nada."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "a06-g01",
+      "pt": "GUIRI ALERT. Thomas hier. Erster Sonntag, Ferienwohnung, vier Leute, und ich hatte den Großeinkauf auf Sonntag gelegt."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "a06-g02",
+      "pt": "Vierzig Minuten zu Fuß an drei geschlossenen Supermärkten vorbei. Heim mit Chips und einer Flasche von der Tankstelle."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Thomas",
+      "audioKey": "a06-g03",
+      "pt": "Die Bäckerei an meiner eigenen Ecke hatte die ganze Zeit eine Schlange bis auf die Straße. Samstag, Leute. Samstag."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n16",
+      "tom": "ganha",
+      "pt": "Der Großeinkauf ist also Samstag, der Sonntag ein langes Mittagessen, ein Spaziergang, ein Museum. Alle drei sind offen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n16b",
+      "pt": "In der Mitte von Madrid oder Barcelona handeln die Läden sieben Tage. Vier Straßen weiter kommt die Regel zurück."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n17",
+      "pt": "Jetzt der Tag, der in einer Stadt zu ist und in der nächsten, zwanzig Minuten weiter, ganz gewöhnlich."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n18",
+      "pt": "Höchstens vierzehn bezahlte Feiertage im Jahr. Zwölf gehören dem Land und der Region. Zwei gehören der Stadt."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n19",
+      "pt": "Die zwei wählt das Rathaus, meist den Stadtpatron. Die Bank macht zu. Die Bars nicht."
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "a06-fiesta-e",
+      "receptivo": true,
+      "acao": "Am Vorabend fragen, nicht mittendrin.",
       "es": "¿Mañana es fiesta?",
-      "pt": ""
+      "pinyin": "ma-NJA-na ess FJES-ta",
+      "pt": "👂 «Ist morgen ein Feiertag?» — drei Wörter, am Abend davor gefragt.",
+      "tts": "¿Mañana es fiesta?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n20",
+      "pt": "Fragen Sie es am Empfang beim Ankommen, und Sie erfahren es am Vorabend statt an der verschlossenen Tür."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "promptAudioKey": "a06-p05",
+      "consulta": ["quarto/pedir"],
+      "promptPt": "Empfang, halb zehn abends, und Bank und Post stehen beide für morgen früh auf Ihrer Liste. Sprechen Sie jetzt.",
+      "audioKey": "a06-fiesta-e",
+      "es": "¿Mañana es fiesta?",
+      "pinyin": "ma-NJA-na ess FJES-ta",
+      "pt": "am Abend davor, nicht mittendrin"
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "a06-patrona-c",
+      "receptivo": true,
+      "acao": "Zuhören: alles zu, außer der Straße selbst.",
       "es": "Sí, es la patrona. Está todo cerrado.",
-      "pt": ""
+      "pinyin": "ssi, ess la pa-TRO-na. ess-TA TO-do sse-RRA-do",
+      "pt": "👂 «Ja, es ist die Stadtpatronin. Alles ist zu.» — alles außer der Straße selbst.",
+      "tts": "Sí, es la patrona. Está todo cerrado."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n21",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "Und das ist die gute Hälfte. Die Stadt, die die Bank schließt, ist die, die die Straße füllt."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n22",
+      "pt": "Eine Blaskapelle, ein paar hundert Leute, keine Absperrung, kein Ticket, keine Bühne. Die Nachbarn sind das Ganze."
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "a06-celebra-c",
+      "receptivo": true,
+      "acao": "Die Person neben Ihnen fragen — das ist der beste Gesprächsanfang des Moduls.",
       "es": "¿Qué se celebra hoy?",
-      "pt": ""
+      "pinyin": "ke sse sse-LE-bra oi",
+      "pt": "👂 «Was wird heute gefeiert?» — vier Wörter an die Person neben Ihnen.",
+      "tts": "¿Qué se celebra hoy?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n23",
+      "pt": "Fragen Sie jemanden, der hier seit seinem sechsten Jahr mitläuft, und Sie bekommen alles erzählt."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "promptAudioKey": "a06-p06",
+      "consulta": ["simpatia/puxar-conversa"],
+      "promptPt": "Die Kapelle ist vorbei, die Frau neben Ihnen hat sich nicht bewegt, und sie steht hier, seit lange bevor Sie geboren wurden. Fragen Sie sie nach dem Tag. Sprechen Sie jetzt.",
+      "audioKey": "a06-celebra-c",
+      "es": "¿Qué se celebra hoy?",
+      "pinyin": "ke sse sse-LE-bra oi",
+      "pt": "und sie erzählt Ihnen alles"
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "a06-patron-e",
+      "receptivo": true,
+      "acao": "Zuhören: jedes Jahr, und immer diese Straße.",
       "es": "Es la patrona del barrio. Sale todos los años.",
-      "pt": ""
+      "pinyin": "ess la pa-TRO-na del BA-rrjo. SSA-leh TO-doss loss A-njoss",
+      "pt": "👂 «Es ist die Schutzpatronin des Viertels. Sie geht jedes Jahr hinaus.» — jedes Jahr, und immer diese Straße.",
+      "tts": "Es la patrona del barrio. Sale todos los años."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n24",
+      "tom": "protege",
+      "pt": "Ein praktischer Punkt, der einzige. Eine Route, die das Zentrum drei Stunden sperrt, sperrt Ihr Taxi mit."
     },
     {
       "tipo": "ouvir",
       "voz": "Emilio",
       "audioKey": "a06-pasar-e",
+      "receptivo": true,
+      "acao": "Die nächste Person in Uniform fragen.",
       "es": "¿Por dónde puedo pasar?",
-      "pt": ""
+      "pinyin": "por DON-deh PUE-do pa-SSAR",
+      "pt": "👂 «Wo komme ich durch?» — die nächste Person in Uniform gefragt.",
+      "tts": "¿Por dónde puedo pasar?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Juli",
+      "promptAudioKey": "a06-p07",
+      "consulta": ["taxi/destino"],
+      "promptPt": "Halb acht, ein Zug um neun, und in der Straße, die Sie brauchen, stehen zweitausend Leute. Fragen Sie den Beamten an der Ecke. Sprechen Sie jetzt.",
+      "audioKey": "a06-pasar-e",
+      "es": "¿Por dónde puedo pasar?",
+      "pinyin": "por DON-deh PUE-do pa-SSAR",
+      "pt": "drum herum, nie hindurch"
     },
     {
       "tipo": "ouvir",
       "voz": "Carmen",
       "audioKey": "a06-detras-c",
+      "receptivo": true,
+      "acao": "Dahinter kreuzen, nie zwischen Kapelle und Spitze.",
       "es": "Por detrás, cuando pase la banda.",
-      "pt": ""
+      "pinyin": "por de-TRASS, KUAN-do PA-sseh la BAN-da",
+      "pt": "👂 «Hintenherum, wenn die Kapelle durch ist.» — dahinter, nie zwischen Kapelle und Spitze.",
+      "tts": "Por detrás, cuando pase la banda."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n25",
+      "tom": "ganha",
+      "pt": "Das ist das ganze Kleingedruckte. Der Rest des Nachmittags ist der beste, den Sie hier bekommen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n26",
+      "pt": "Noch eine Drehung ihres Jahres, und die läuft rückwärts. Die Kanaren sind ab November am besten."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n27",
+      "pt": "Die Inseln vor Afrika sind die Winterinseln. Die Balearen laufen von Mai bis Oktober."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n28",
+      "bloco": "permissao",
+      "tom": "ganha",
+      "pt": "August ist kein schlechter Monat für Spanien. Er ist ein schlechter Monat, sich auf eine einzige Adresse zu verlassen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n29",
+      "pt": "Und Sie dürfen mitten in ein fremdes Fest laufen und dabeistehen. Die Straße ist der Saal, keiner hat ein Ticket gekauft."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n30",
+      "bloco": "espelho",
+      "pt": "Zu fragen, warum ein Laden den ganzen August zu hat, ist der Teil, der dort auffällt."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n31",
+      "pt": "Es klingt wie «warum arbeitet zwischen den Jahren niemand» zu Hause. Die Antwort ist kein Grund, sie ist der Kalender."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n32",
+      "bloco": "piso",
+      "tom": "ganha",
+      "pt": "Sie planen eine spanische Woche um ihren Kalender. Die meisten finden ihn Tür für Tür heraus, eine geschlossene nach der anderen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-s00",
+      "pt": "Nachsprechen. Laut, mit ihnen, ein Schlag pro Wort. Die zwei, die Ihnen den Weg sparen:"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Carmen",
+      "audioKey": "a06-abiertos-c",
+      "es": "¿Están abiertos hoy?",
+      "pinyin": "ess-TAN a-BJER-toss oi",
+      "pt": "Haben Sie heute offen?"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Emilio",
+      "audioKey": "a06-fiesta-e",
+      "es": "¿Mañana es fiesta?",
+      "pinyin": "ma-NJA-na ess FJES-ta",
+      "pt": "Ist morgen ein Feiertag?"
+    },
+    {
+      "tipo": "recap",
+      "voz": "Juli",
+      "audioKey": "a06-rend",
+      "bloco": "recap",
+      "pt": "Einmal noch laut. Es ist der vierzehnte August, der Tag vor dem großen, und Sie haben einen Laden im Kopf."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Juli",
+      "promptAudioKey": "a06-p08",
+      "promptPt": "Die Nummer klingelt, morgen ist der Fünfzehnte und das halbe Land hat frei, und Sie sind eine halbe Stunde Fußweg davon entfernt. Sprechen Sie jetzt.",
+      "audioKey": "a06-abiertos-c",
+      "es": "¿Están abiertos hoy?",
+      "pinyin": "ess-TAN a-BJER-toss oi",
+      "pt": "zwanzig Sekunden, nicht fünfundzwanzig Minuten"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Juli",
+      "audioKey": "a06-n33",
+      "pt": "Das war ihr Jahr. Der Monat, der Sonntag, die zwei eigenen Tage, und die Straße, die einem Heiligen gehört. Hasta luego."
     }
-  ]
+  ],
+
+  "aprofundar": {
+    "titulo": "Der Monat, der Sonntag und die zwei Tage, die nur ihnen gehören (freiwillige Lektüre)",
+    "secoes": [
+      {
+        "titulo": "August, und der Zettel am Rollladen",
+        "corpo": "Das Erste, was man über den August verstehen muss: er ist kein langsamer Monat, er ist ein abwesender, und nur für eine bestimmte Art Betrieb — den Laden mit einer Familie darin. Sie machen zu, kleben einen handgeschriebenen Zettel an die Scheibe — CERRADO POR VACACIONES — und sind im September wieder da. Nichts daran ist ein Zeichen von Ärger, und die Nachbarn wissen genau, wer weg ist und wohin. Was es Sie kostet, ist nicht die Schließung, sondern die Liste: die Öffnungszeiten im Netz sind sehr oft die vom März, und ein Urlaub über einen ganzen Monat wird selten irgendwo eingetragen. Daher die Regel, die mehr wert ist als jeder Satz in diesem Teil — im August anrufen, bevor man losgeht. Was nicht zumacht, und das ist die Hälfte, die nie gesagt wird: die Kaufhäuser, die großen Supermarktketten, die Restaurants, die Bars, die Museen und alles, was in einer Straße steht, die von Gästen lebt. Mitten im Monat sitzt der fünfzehnte, la Asunción, ein Feiertag im ganzen Land: legen Sie den Großeinkauf auf den vierzehnten, und der fünfzehnte hört auf, wichtig zu sein. Und dieser Monat hat eine deutsche Besonderheit. Wer aus Bayern oder Baden-Württemberg kommt, hat Ferien bis Mitte September — also die volle Überschneidung mit dem geschlossenen Laden — und im Süden und im Landesinneren ist der frühe Nachmittag im August ohnehin keine Gehzeit: zwei Uhr in Sevilla im August ist ein Taxi, kein Spaziergang, und der heruntergelassene Rollladen um vier ist zum Teil der Grund, warum der Abend erst um neun anfängt.",
+        "exemplos": [
+          {
+            "es": "CERRADO POR VACACIONES",
+            "pt": "sse-RRA-do por ba-ka-SSJO-ness — 👂 wegen Urlaub geschlossen. Es meint den Monat, nicht den Nachmittag"
+          },
+          {
+            "es": "¿Están abiertos hoy?",
+            "pt": "ess-TAN a-BJER-toss oi — Haben Sie heute offen? Die vier Wörter, die den fünfundzwanzig Minuten Fußweg zuvorkommen"
+          }
+        ]
+      },
+      {
+        "titulo": "Zwei Zeitspannen auf dem Zettel, nicht eine",
+        "corpo": "Der Tag eines kleinen Ladens hat ein Loch in der Mitte. Grob: auf gegen zehn, unten um halb zwei oder zwei, wieder hoch um halb fünf oder fünf, und dann Betrieb bis acht oder halb neun — darum stehen auf dem horario-Zettel an der Tür zwei Spannen und nicht eine, und darum steht man um drei vor einer verschlossenen Apotheke, wenn man nur die erste liest. Das ist geschäftlich, nicht biologisch: fast niemand schläft. Das Land ist beim Mittagessen, und das ist die große Mahlzeit und nimmt sich eine gute anderthalb Stunden. Was das Loch ganz ignoriert: El Corte Inglés und die anderen Kaufhäuser, Mercadona, Lidl, Carrefour, Zara und die Ketten überhaupt, jedes Restaurant (es ist ihre Stoßzeit) und die Museen. Die praktische Form eines Nachmittags ist also, dass die Erledigung vor halb zwei oder nach fünf geht, und die Mitte dem Essen und allem gehört, was ein Dach und eine Klimaanlage hat. Noch ein Zettel, den man auf einen Blick kennen sollte: HORARIO DE VERANO, Sommeröffnungszeiten, ein anderer und meist kürzerer Fahrplan, über den normalen geklebt. Kleben zwei Zettel auf der Scheibe, gilt der saisonale.",
+        "exemplos": [
+          {
+            "es": "¿A qué hora abren por la tarde?",
+            "pt": "a ke O-ra A-bren por la TAR-deh — Wann machen Sie nachmittags auf?"
+          },
+          {
+            "es": "HORARIO DE VERANO",
+            "pt": "o-RA-rjo de be-RA-no — 👂 Sommeröffnungszeiten. Ein zweiter Zettel über dem ersten"
+          }
+        ]
+      },
+      {
+        "titulo": "Vierzehn Tage, und die zwei, die einer Stadt gehören",
+        "corpo": "Das spanische Arbeitsrecht deckelt die bezahlten Feiertage auf vierzehn im Jahr und sagt ausdrücklich, dass zwei davon örtlich sind. Dieser eine Satz erklärt fast alles Seltsame, das Ihnen in einem hiesigen Kalender begegnet. Neun oder so sind national, ein paar mehr setzt die Region, und dann wählt das Rathaus des Ortes, in dem Sie gerade stehen, zwei — fast immer den Stadtpatron oder den des Viertels. Die Folge für einen Gast ist die, vor der niemand warnt: ein Mittwoch kann in einer Stadt komplett zu und in der Stadt zwanzig Minuten weiter ein normaler Arbeitstag sein, und kein nationaler Kalender, den Sie nachschlagen, zeigt es. Was tatsächlich schließt, ist die amtliche Schicht — Banken, Rathäuser, Postämter, viele Apotheken, die meisten kleinen Läden, manche Museen. Was nicht schließt, ist die Gastronomie: ein örtlicher Feiertag ist einer der besten Handelstage des Jahres für die Bars und die Restaurants, und sie öffnen früh dafür. Der Zug ist trivial und der ganze Sinn dieses Teils: fragen Sie am Empfang, bei der Ankunft, welche Tage die Woche örtlich sind, und legen Sie Bank und Papierkram auf beide Seiten davon. Die Karwoche folgt derselben Logik mit einem beweglichen Datum, weil sie an Ostern hängt und jedes Jahr wandert — das Nützliche daran ist, dass in vielen Städten der Kalender weniger durcheinander ist als der Stadtplan.",
+        "exemplos": [
+          {
+            "es": "¿Mañana es fiesta?",
+            "pt": "ma-NJA-na ess FJES-ta — Ist morgen ein Feiertag? Drei Wörter, am Abend davor gefragt"
+          },
+          {
+            "es": "Es fiesta local.",
+            "pt": "ess FJES-ta lo-KAL — 👂 Es ist ein örtlicher Feiertag. Hier, und nicht in der nächsten Stadt"
+          }
+        ]
+      },
+      {
+        "titulo": "In einer fremden Straße stehen",
+        "corpo": "Eine Prozession — ein Stadtpatron, der hinausgeht, eine Karwochen-Bruderschaft, ein Viertelfest mit Kapelle — nimmt die Straße als Saal. Es gibt kein Tor, kein Ticket, keine Bestuhlung und kein Drinnen: die Route wird vorher vom Rathaus und der Lokalpresse veröffentlicht, die Straße schließt, während der Zug vorbeigeht, und die Menge besteht aus den Leuten, die dort wohnen. Drei kleine Regeln decken Sie ganz ab. Stehen bleiben, während er vorbeigeht, statt vorne quer hindurchzugehen. Dahinter kreuzen, nicht hindurch. Und wenn Sie wissen wollen, was es ist, fragen Sie die Person neben Ihnen, denn gefragt zu werden ist ein kleines Vergnügen für jemanden, der seit seiner Kindheit mitläuft. Der eine praktische Punkt zum Einplanen: eine Route durchs Zentrum kann es stundenlang für den Verkehr sperren, Taxis eingeschlossen, also geht eine Fahrt zum Bahnhof oder Flughafen an einem Festnachmittag früh oder unter die Erde. Und schließlich das andere Ende des Jahres, das den meisten von uns vertauscht vorliegt: die Kanaren laufen eine umgekehrte Saison, November bis Februar ist ihre beste und vollste Strecke, während die Balearen von Mai bis Oktober zu haben sind. Die Kanaren im August und die Balearen im Januar zu buchen ist der häufigste Weg, die falsche Insel zur falschen Zeit zu erwischen.",
+        "exemplos": [
+          {
+            "es": "¿Qué se celebra hoy?",
+            "pt": "ke sse sse-LE-bra oi — Was wird heute gefeiert? Der beste Gesprächsanfang des Moduls"
+          },
+          {
+            "es": "¿Por dónde puedo pasar?",
+            "pt": "por DON-deh PUE-do pa-SSAR — Wo komme ich durch?"
+          }
+        ]
+      }
+    ]
+  }
 }

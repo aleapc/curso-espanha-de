@@ -743,7 +743,7 @@
       "origem": "A03"
     },
     {
-      "id": "a03-departe-c",
+      "id": "a03-departe-c~2",
       "folhas": [
         "simpatia/puxar-conversa"
       ],
@@ -858,7 +858,7 @@
       "origem": "A04"
     },
     {
-      "id": "c03b-18",
+      "id": "c03b-18~2",
       "folhas": [
         "simpatia/puxar-conversa"
       ],
@@ -875,7 +875,7 @@
       "origem": "A05"
     },
     {
-      "id": "c03b-05",
+      "id": "c03b-05~2",
       "folhas": [
         "chegar/entrar"
       ],
@@ -921,7 +921,7 @@
       "origem": "A05"
     },
     {
-      "id": "c03b-06",
+      "id": "c03b-06~2",
       "folhas": [
         "simpatia/agradecer"
       ],
@@ -944,7 +944,7 @@
       "origem": "A05"
     },
     {
-      "id": "c03b-09",
+      "id": "c03b-09~2",
       "folhas": [
         "chegar/sair"
       ],
@@ -1329,7 +1329,7 @@
       "origem": "A08"
     },
     {
-      "id": "a08-anoquiene-e",
+      "id": "a08-anoquiene-e~2",
       "folhas": [
         "simpatia/convite"
       ],
@@ -1449,7 +1449,7 @@
       "origem": "B01"
     },
     {
-      "id": "e01a-05",
+      "id": "e01a-05~2",
       "folhas": [
         "simpatia/agradecer"
       ],
@@ -1517,7 +1517,7 @@
       "origem": "B02"
     },
     {
-      "id": "e01a-13",
+      "id": "e01a-13~2",
       "folhas": [
         "chegar/tu-usted",
         "chegar/balcao"
@@ -1670,7 +1670,7 @@
       "origem": "B03"
     },
     {
-      "id": "e01c-escribir-c",
+      "id": "e01c-escribir-c~2",
       "folhas": [
         "reparo/escreve"
       ],
@@ -1694,7 +1694,7 @@
       "molde": "ME-PUEDE"
     },
     {
-      "id": "e01c-papel-e",
+      "id": "e01c-papel-e~2",
       "folhas": [
         "reparo/escreve"
       ],
@@ -1800,7 +1800,7 @@
       "origem": "B04"
     },
     {
-      "id": "e07a-tasa-e",
+      "id": "e07a-tasa-e~2",
       "folhas": [
         "quarto/checkin",
         "pagar/dinheiro"
@@ -1941,7 +1941,7 @@
       "origem": "B05"
     },
     {
-      "id": "e01c-repetir-c",
+      "id": "e01c-repetir-c~2",
       "folhas": [
         "reparo/devagar",
         "quarto/checkin"
@@ -2299,7 +2299,7 @@
       "origem": "B08"
     },
     {
-      "id": "e01c-08",
+      "id": "e01c-08~2",
       "folhas": [
         "reparo/escreve"
       ],
@@ -2513,7 +2513,7 @@
       "molde": "HAY"
     },
     {
-      "id": "b08-cajero-c",
+      "id": "b08-cajero-c~2",
       "folhas": [
         "pagar/dinheiro"
       ],
@@ -2579,7 +2579,7 @@
       "molde": "DONDE"
     },
     {
-      "id": "b08-cajero-c",
+      "id": "b08-cajero-c~3",
       "folhas": [
         "chegar/balcao"
       ],
@@ -2597,7 +2597,7 @@
       "molde": "HAY"
     },
     {
-      "id": "e03a-cana-e",
+      "id": "e03a-cana-e~2",
       "folhas": [
         "chegar/balcao",
         "mesa/bebida",
@@ -2873,7 +2873,7 @@
       "molde": "ME-PONE"
     },
     {
-      "id": "e03a-cana-e",
+      "id": "e03a-cana-e~3",
       "folhas": [
         "chegar/balcao"
       ],
@@ -3160,7 +3160,7 @@
       "molde": "SIN-CON-PARA"
     },
     {
-      "id": "e03b-parallevar-e",
+      "id": "e03b-parallevar-e~2",
       "folhas": [
         "compras/balcao"
       ],
@@ -3750,7 +3750,7 @@
       "origem": "B15"
     },
     {
-      "id": "b14-yapagado-c",
+      "id": "b14-yapagado-c~2",
       "folhas": [
         "quarto/checkin"
       ],
@@ -4131,7 +4131,7 @@
       "origem": "B18"
     },
     {
-      "id": "b18-hasta-e",
+      "id": "b18-hasta-e~2",
       "folhas": [
         "simpatia/agradecer"
       ],
@@ -4148,7 +4148,7 @@
       "origem": "B18"
     },
     {
-      "id": "e03a-comidas-e",
+      "id": "e03a-comidas-e~2",
       "folhas": [
         "mesa/comida"
       ],
@@ -4538,24 +4538,6 @@
       "molde": "ELECCION"
     },
     {
-      "id": "e03a-otra-c",
-      "folhas": [
-        "mesa/bebida"
-      ],
-      "titulo": "noch eins vom selben",
-      "troca": [
-        {
-          "quem": "voce",
-          "es": "Otra, por favor.",
-          "en": "noch eins vom selben",
-          "audioKey": "e03a-otra-c",
-          "pron": "O-tra, por fa-BOR"
-        }
-      ],
-      "origem": "I04",
-      "molde": "OTRA"
-    },
-    {
       "id": "i04-mejor-c",
       "folhas": [
         "mesa/comida"
@@ -4656,7 +4638,7 @@
       "origem": "I04"
     },
     {
-      "id": "i05-barrio-e",
+      "id": "i05-barrio-e~2",
       "folhas": [
         "simpatia/elogiar-lugar",
         "simpatia/puxar-conversa"
@@ -4711,7 +4693,7 @@
       "molde": "PREFERENCIA"
     },
     {
-      "id": "i05-londres-e",
+      "id": "i05-londres-e~2",
       "folhas": [
         "simpatia/puxar-conversa",
         "chegar/tu-usted"
@@ -4730,7 +4712,7 @@
       "molde": "SOY-ESTOY"
     },
     {
-      "id": "i05-tipico-e",
+      "id": "i05-tipico-e~2",
       "folhas": [
         "simpatia/puxar-conversa"
       ],
@@ -4868,7 +4850,7 @@
       "origem": "I06"
     },
     {
-      "id": "e01c-escribir-c",
+      "id": "e01c-escribir-c~3",
       "folhas": [
         "reparo/escreve"
       ],
@@ -4885,7 +4867,7 @@
       "origem": "I06"
     },
     {
-      "id": "e03c-cuenta-c",
+      "id": "e03c-cuenta-c~2",
       "folhas": [
         "mesa/conta"
       ],
@@ -5272,7 +5254,7 @@
       "origem": "I10"
     },
     {
-      "id": "c02a-08",
+      "id": "c02a-08~2",
       "folhas": [
         "pagar/gorjeta"
       ],

@@ -67,7 +67,7 @@ const norm = (t) =>
 const erros = [];
 const cards = [];
 
-for (const f of readdirSync(dir).filter((x) => /^ep-.*\.json$/.test(x))) {
+for (const f of readdirSync(dir).filter((x) => /^ep-.*\.json$/.test(x)).sort()) {
   const ep = JSON.parse(readFileSync(join(dir, f), 'utf8'));
   if (ep.dissolveEm) continue; // vai ser apagado; não entra no índice
   const steps = ep.steps || [];
@@ -122,6 +122,44 @@ for (const f of readdirSync(dir).filter((x) => /^ep-.*\.json$/.test(x))) {
       molde: s.molde || undefined
     });
   }
+}
+
+// ── IDENTIDADE ÚNICA DOS CARDS ────────────────────────────────────────────────
+// O id do card É o audioKey do step que o gerou (acima). No inglês isso é único;
+// no ALEMÃO não — a derivação reusa o MESMO clipe espanhol (mesmo audioKey) em
+// episódios diferentes, e mais de um desses steps é marcado para consulta.
+// Resultado: cards DISTINTOS (mesma frase espanhola, moldura alemã diferente,
+// folhas diferentes) com id IGUAL. A tela usa `{#each cards as card (card.id)}` —
+// chave duplicada faz o Svelte 5 abortar o bloco NA HIDRATAÇÃO: a folha renderiza
+// no servidor e sai VAZIA no cliente. Foi assim que o alemão foi ao ar com TODAS
+// as folhas colididas quebradas, passando build e cobertura verdes.
+//
+// (1) descarta a duplicata LITERAL (mesmo id e mesmo conteúdo — um card marcado
+// duas vezes); (2) desambigua as colisões restantes (mesmo audioKey, conteúdo
+// diferente) com sufixo `~N` estável (a ordem dos arquivos é ordenada acima).
+const assinatura = new Set();
+const usosDeId = new Map();
+const cardsUnicos = [];
+for (const c of cards) {
+  const sig = JSON.stringify([c.id, c.titulo, c.troca, c.folhas]);
+  if (assinatura.has(sig)) continue; // duplicata literal: mesmo card marcado 2×
+  assinatura.add(sig);
+  const base = c.id;
+  const n = (usosDeId.get(base) ?? 0) + 1;
+  usosDeId.set(base, n);
+  if (n > 1) c.id = `${base}~${n}`;
+  cardsUnicos.push(c);
+}
+cards.length = 0;
+cards.push(...cardsUnicos);
+
+// GUARDA: id de card É chave de hidratação da tela — tem que ser único. Se algum
+// dia colidir apesar da desambiguação, o build PARA aqui (via `erros`), não no
+// bolso do usuário em Madrid. Portão contra o defeito que o justifica.
+const idsVistos = new Set();
+for (const c of cards) {
+  if (idsVistos.has(c.id)) erros.push(`id de card duplicado após desambiguação: ${c.id}`);
+  idsVistos.add(c.id);
 }
 
 // ── cobertura ───────────────────────────────────────────────────────────────

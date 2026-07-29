@@ -13,8 +13,8 @@ import type { ModuloOutline } from '../types';
 export const outline: ModuloOutline[] = [
   {
     nivel: 'basico',
-    nome: 'Ich komme klar',
-    descricao: 'Das Spanisch, mit dem der Tag läuft: ankommen, bestellen, bezahlen, sich bewegen und Hilfe bekommen.',
+    nome: 'Get by',
+    descricao: 'The Spanish that gets the day done: arriving, ordering, paying, moving, and getting help.',
     cor: 'terracota',
     licoes: [
       { id: 'b01', titulo: 'Sie bestellen Wein und bekommen Sherry', pronta: true },
@@ -39,8 +39,8 @@ export const outline: ModuloOutline[] = [
   },
   {
     nivel: 'intermediario',
-    nome: 'Ich genieße',
-    descricao: 'Da essen, wo sie essen, wann sie essen, zu dem Preis, den sie zahlen.',
+    nome: 'Get the good stuff',
+    descricao: 'Eat where they eat, when they eat, at the price they pay.',
     cor: 'oliva',
     licoes: [
       { id: 'i01', titulo: 'Ihre Uhr', pronta: true },
@@ -57,8 +57,8 @@ export const outline: ModuloOutline[] = [
   },
   {
     nivel: 'avancado',
-    nome: 'Ich lese den Raum',
-    descricao: 'Der Humor, der Stolz, der alte Streit — und was ihr Schweigen bedeutet.',
+    nome: 'Read the room',
+    descricao: 'The humour, the pride, the old argument, and what their silence means.',
     cor: 'indigo',
     licoes: [
       { id: 'a01', titulo: 'Wie sie reden, wenn sie nicht mit Ihnen reden', pronta: true },
@@ -72,3 +72,6 @@ export const outline: ModuloOutline[] = [
     ]
   },
 ];
+
+// Gerado de static/img/ — a home só pede imagem que existe.
+export const COM_IMAGEM = new Set(["a01","a02","a03","a04","a05","a06","a07","a08","b01","b02","b03","b04","b05","b06","b07","b08","b09","b10","b11","b12","b13","b14","b15","b16","b17","b18","c01","c02","c03","e01","e02","e03","e04","e05","e06","e07","e08","i01","i02","i03","i04","i05","i06","i07","i08","i09","i10"]);

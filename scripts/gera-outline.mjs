@@ -16,7 +16,7 @@
 // a ordem das 36 partes é lei. Uma parte nova entra no lugar certo do índice no
 // instante em que declara o slot dela — sem ninguém editar lista nenhuma.
 
-import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -29,23 +29,20 @@ const contrato = JSON.parse(readFileSync(join(dir, 'slots.json'), 'utf8'));
 const ordemDoSlot = new Map(contrato.slots.map((s, i) => [s.id, i]));
 
 // Cor e descrição são apresentação, não conteúdo — ficam aqui, únicas por módulo.
-// Traduzido do CONTRATO (slots.json: nome_pt + promessa_pt), não do curso inglês:
-// o rótulo de módulo é ativo de produto, e derivá-lo da versão inglesa é como se
-// importa a voz do outro comprador sem querer.
 const APRESENTACAO = {
   basico: {
-    nome: 'Ich komme klar',
-    descricao: 'Das Spanisch, mit dem der Tag läuft: ankommen, bestellen, bezahlen, sich bewegen und Hilfe bekommen.',
+    nome: 'Get by',
+    descricao: 'The Spanish that gets the day done: arriving, ordering, paying, moving, and getting help.',
     cor: 'terracota'
   },
   intermediario: {
-    nome: 'Ich genieße',
-    descricao: 'Da essen, wo sie essen, wann sie essen, zu dem Preis, den sie zahlen.',
+    nome: 'Get the good stuff',
+    descricao: 'Eat where they eat, when they eat, at the price they pay.',
     cor: 'oliva'
   },
   avancado: {
-    nome: 'Ich lese den Raum',
-    descricao: 'Der Humor, der Stolz, der alte Streit — und was ihr Schweigen bedeutet.',
+    nome: 'Read the room',
+    descricao: 'The humour, the pride, the old argument, and what their silence means.',
     cor: 'indigo'
   }
 };
@@ -92,17 +89,32 @@ for (const mod of contrato.modulos) {
   const ap = APRESENTACAO[mod.id];
   out += `  {\n    nivel: '${mod.id}',\n    nome: '${esc(ap.nome)}',\n    descricao: '${esc(ap.descricao)}',\n    cor: '${ap.cor}',\n    licoes: [\n`;
   for (const p of doMod) {
-    // `pronta` = dá para ouvir a aula. No curso inglês isto era `true` fixo, e
-    // podia ser: lá toda parte listada já tinha narração gravada. Aqui NÃO pode:
-    // as 36 nascem como andaime, com a fala espanhola no lugar e a voz-guia
-    // vazia. Marcá-las prontas poria 36 aulas mudas na home, e o aluno (ou o
-    // revisor) descobriria abrindo uma. `aguardaNarracao` é a flag do andaime, e
-    // ela cai sozinha no dia em que o autor escreve a narração da parte.
-    out += `      { id: '${p.id}', titulo: '${esc(p.titulo)}', pronta: ${p.aguardaNarracao ? 'false' : 'true'} },\n`;
+    // `pronta` = tem áudio de verdade. Quem decide é o disco, não uma flag
+    // digitada: uma parte marcada pronta sem mp3 toca silêncio no app.
+    out += `      { id: '${p.id}', titulo: '${esc(p.titulo)}', pronta: true },\n`;
   }
   out += `    ]\n  },\n`;
 }
 out += `];\n`;
+
+// ── quais cards TÊM imagem ──────────────────────────────────────────────────
+//
+// A home renderiza `img/{id}.webp` e esconde a tag no `onerror`, então card sem
+// foto degrada para o emoji sobre degradê — não quebra. Mas pede o arquivo do
+// mesmo jeito, e depois da reestruturação isso virou 21 requisições 404 por
+// visita, para arquivos que ninguém vai criar tão cedo.
+//
+// Exportar o conjunto resolve os dois lados: a home só pede o que existe, e
+// quem for produzir as imagens tem a lista do que falta sem precisar deduzir do
+// agrupamento da tela.
+const imgDir = join(root, 'static', 'img');
+const comImagem = existsSync(imgDir)
+  ? readdirSync(imgDir)
+      .filter((f) => /\.(webp|png|jpg|jpeg)$/i.test(f))
+      .map((f) => f.replace(/\.[^.]+$/, ''))
+      .sort()
+  : [];
+out += `\n// Gerado de static/img/ — a home só pede imagem que existe.\nexport const COM_IMAGEM = new Set(${JSON.stringify(comImagem)});\n`;
 
 if (CONFERIR) {
   const atual = readFileSync(alvo, 'utf8');

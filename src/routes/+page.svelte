@@ -1,6 +1,7 @@
 <script lang="ts">
   import { base } from '$app/paths';
   import { niveis } from '$lib/course';
+  import { COM_IMAGEM } from '$lib/course/outline.gen';
   import { examDoNivel, quizDoEpisodio } from '$lib/course/quiz-nav';
   import { store, isDone, PROFILES } from '$lib/state.svelte';
   import { encodeSync, importSync, whatsappUrl } from '$lib/sync';
@@ -66,6 +67,17 @@
   </p>
 </section>
 
+<!-- Entrada do modo consulta. Fica no rodapé da janela e no alcance do polegar,
+     porque é a metade do produto que se usa de pé, com uma mão, no minuto em que
+     o valor acontece — e a home inteira é rolagem de sofá. Flutua (fixed) e não
+     empurra nada: o `pb-20` do <main> já reservava essa faixa. -->
+<a
+  href="{base}/kit/"
+  class="fixed bottom-[max(1rem,env(safe-area-inset-bottom))] right-4 z-20 inline-flex items-center gap-2 rounded-full bg-carvao px-4 py-2.5 text-sm font-bold text-white shadow-lg transition active:scale-95"
+>
+  🧭 Der Spickzettel · nachschlagen
+</a>
+
 <a
   href="https://translate.google.com"
   target="_blank"
@@ -111,13 +123,15 @@
           <!-- imagem-herói (foto se houver; senão emoji grande sobre degradê) -->
           <div class="relative h-28" style="background: {grad[nivel.cor]}">
             <div class="absolute inset-0 grid place-items-center text-5xl opacity-90">{ep.emoji}</div>
-            <img
-              src="{base}/img/{ep.id}.webp"
-              alt=""
-              loading="lazy"
-              class="absolute inset-0 h-full w-full object-cover"
-              onerror={(e) => ((e.currentTarget as HTMLImageElement).style.display = 'none')}
-            />
+            {#if COM_IMAGEM.has(ep.id)}
+              <img
+                src="{base}/img/{ep.id}.webp"
+                alt=""
+                loading="lazy"
+                class="absolute inset-0 h-full w-full object-cover"
+                onerror={(e) => ((e.currentTarget as HTMLImageElement).style.display = 'none')}
+              />
+            {/if}
             <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/15 to-transparent"></div>
             <div class="absolute inset-x-2.5 bottom-2 text-white">
               <div class="text-[10px] font-bold uppercase tracking-wide opacity-90">

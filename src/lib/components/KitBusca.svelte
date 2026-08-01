@@ -9,6 +9,10 @@
   // E ela NÃO é a entrada primária (PRODUTO.md §6) — é a saída de emergência de
   // quem já sabe a palavra. Por isso é uma linha discreta, não um campo herói.
 
+  // `direcao`: 'cima' (padrão, tela do /kit — o polegar no rodapé) ou 'baixo'
+  // (âncora no header, onde o teclado nasce embaixo, não em cima).
+  let { direcao = 'cima' }: { direcao?: 'cima' | 'baixo' } = $props();
+
   let termo = $state('');
   const achados = $derived(buscar(termo));
   const procurando = $derived(termo.trim().length >= 2);
@@ -26,7 +30,9 @@
     <!-- Resultados ABRINDO PARA CIMA: o teclado ocupa a metade de baixo, e uma
          lista que abrisse para baixo nasceria embaixo dele. -->
     <div
-      class="absolute bottom-full left-0 right-0 mb-2 max-h-[46dvh] overflow-y-auto overscroll-contain rounded-2xl bg-white shadow-lg ring-1 ring-black/15"
+      class="absolute left-0 right-0 max-h-[46dvh] overflow-y-auto overscroll-contain rounded-2xl bg-white shadow-lg ring-1 ring-black/15 {direcao === 'baixo'
+        ? 'top-full mt-2'
+        : 'bottom-full mb-2'}"
     >
       {#if achados.length}
         <ul>
@@ -50,7 +56,7 @@
         </ul>
       {:else}
         <p class="px-4 py-3 text-sm text-carvao/70">
-          Nichts unter diesem Wort. Versuch den Ort, an dem du gerade stehst — die zwölf da oben.
+          Nothing under that word. Try the place you are standing in — the twelve above.
         </p>
       {/if}
     </div>
@@ -65,8 +71,8 @@
       autocapitalize="off"
       autocorrect="off"
       spellcheck="false"
-      placeholder="Wort eingeben — Bier, Ticket, Taxameter…"
-      aria-label="Im Spickzettel suchen"
+      placeholder="type a word — beer, ticket, meter…"
+      aria-label="Search the kit"
       class="h-12 min-w-0 flex-1 bg-transparent text-[1.05rem] outline-none placeholder:text-carvao/45"
     />
     {#if termo}
@@ -74,7 +80,7 @@
         type="button"
         class="-mr-1 px-2 py-2 text-lg text-carvao/60"
         onclick={() => (termo = '')}
-        aria-label="Suche löschen">✕</button
+        aria-label="Clear search">✕</button
       >
     {/if}
   </div>

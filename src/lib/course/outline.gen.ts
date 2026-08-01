@@ -13,7 +13,7 @@ import type { ModuloOutline } from '../types';
 export const outline: ModuloOutline[] = [
   {
     nivel: 'basico',
-    nome: 'Get by',
+    nome: 'Grundstufe · Ich komme klar',
     descricao: 'The Spanish that gets the day done: arriving, ordering, paying, moving, and getting help.',
     cor: 'terracota',
     licoes: [
@@ -39,7 +39,7 @@ export const outline: ModuloOutline[] = [
   },
   {
     nivel: 'intermediario',
-    nome: 'Get the good stuff',
+    nome: 'Mittelstufe · Ich genieße',
     descricao: 'Eat where they eat, when they eat, at the price they pay.',
     cor: 'oliva',
     licoes: [
@@ -57,7 +57,7 @@ export const outline: ModuloOutline[] = [
   },
   {
     nivel: 'avancado',
-    nome: 'Read the room',
+    nome: 'Oberstufe · Ich lese den Raum',
     descricao: 'The humour, the pride, the old argument, and what their silence means.',
     cor: 'indigo',
     licoes: [

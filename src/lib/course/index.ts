@@ -31,7 +31,42 @@ export type { ModuloOutline };
 // inglês: os grupos de lá ("Sounds, rhythm and the repair kit", "Before you fly")
 // são recortes da estrutura antiga de 24 partes, que este curso não tem.
 // Se um dia a home ganhar agrupamento, ele é escrito aqui, em alemão, à mão.
-const EP_META: Record<string, { nome: string; emoji: string }> = {};
+const EP_META: Record<string, { nome: string; emoji: string }> = {
+  'b-suoni': { nome: 'Laute und erste Wörter', emoji: '🗣️' },
+  'b-frontiera': { nome: 'Vor der Abreise und die Grenze', emoji: '✈️' },
+  'b-arrivo': { nome: 'Die Ankunft', emoji: '🧳' },
+  'b-muoversi': { nome: 'Sich in der Stadt bewegen', emoji: '🚇' },
+  'b-tavola': { nome: 'Bar und Tisch', emoji: '🍽️' },
+  'b-comprare': { nome: 'Einkaufen', emoji: '🛍️' },
+  'b-stanza': { nome: 'Das Zimmer', emoji: '🏨' },
+  'b-storto': { nome: 'Wenn es schiefgeht', emoji: '🆘' },
+  'i-ritmo': { nome: 'Ihr Rhythmus', emoji: '🕘' },
+  'i-tavola': { nome: 'Zu Tisch mit ihnen', emoji: '🍷' },
+  'i-conversa': { nome: 'Ins Gespräch einsteigen', emoji: '💬' },
+  'a-segnali': { nome: 'Die Zeichen lesen', emoji: '👂' },
+  'a-vengono': { nome: 'Woher sie kommen', emoji: '🏛️' },
+  'a-congedo': { nome: 'Der Abschied', emoji: '👋' }
+};
+
+// Agrupamento das partes de slot (b01…a08) nos episódios da jornada. O inglês
+// agrupava pelo id legado (e01a→e01); as partes de slot não têm essa forma, então
+// o mapa abaixo é explícito. Isso põe os 4 cursos na mesma estrutura de jornada.
+const SLOT_EPISODIO: Record<string, string> = {
+  b01: 'b-suoni', b02: 'b-suoni', b03: 'b-suoni',
+  b04: 'b-frontiera', b05: 'b-frontiera',
+  b06: 'b-arrivo', b07: 'b-arrivo',
+  b08: 'b-muoversi', b09: 'b-muoversi', b10: 'b-muoversi',
+  b11: 'b-tavola', b12: 'b-tavola', b13: 'b-tavola', b14: 'b-tavola',
+  b15: 'b-comprare',
+  b16: 'b-stanza',
+  b17: 'b-storto', b18: 'b-storto',
+  i01: 'i-ritmo', i02: 'i-ritmo', i04: 'i-ritmo',
+  i03: 'i-tavola', i07: 'i-tavola', i08: 'i-tavola', i10: 'i-tavola',
+  i05: 'i-conversa', i06: 'i-conversa', i09: 'i-conversa',
+  a01: 'a-segnali', a02: 'a-segnali', a07: 'a-segnali',
+  a03: 'a-vengono', a04: 'a-vengono', a05: 'a-vengono', a06: 'a-vengono',
+  a08: 'a-congedo'
+};
 
 export interface ParteCard {
   id: string;
@@ -62,7 +97,7 @@ export const niveis: NivelCards[] = outline.map((mod) => {
     // aulas sem nenhuma relação apareceram como um card só e a segunda sumiu da
     // tela sem erro em lugar nenhum.
     const legado = /^[a-z]\d{2}[a-z]$/.test(l.id);
-    const epId = legado ? l.id.slice(0, -1) : l.id;
+    const epId = SLOT_EPISODIO[l.id] ?? (legado ? l.id.slice(0, -1) : l.id);
     if (!groups[epId]) {
       const meta = EP_META[epId] ?? { nome: l.titulo, emoji: '🎧' };
       groups[epId] = { id: epId, nome: meta.nome, emoji: meta.emoji, partes: [] };

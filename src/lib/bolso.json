@@ -1,0 +1,42 @@
+{
+  "marca": "¡Dime!",
+  "cabecalho": "Spanien auf einen Blick",
+  "titulo": "Die Reisetasche",
+  "subtitulo": "Das Wichtigste bleibt im Flugmodus verfügbar.",
+  "rotulos": {
+    "cambio": "Währungsrechner",
+    "valorEm": "Betrag in",
+    "dataCotacao": "Kursdatum",
+    "avisoCotacao": "Nur als Anhaltspunkt. Prüfen Sie den Kurs Ihrer Karte oder Bank, bevor Sie zahlen.",
+    "tomadas": "Steckdosen & Strom",
+    "emergencia": "Notfall",
+    "ligar": "Anrufen",
+    "saberUtil": "Gut zu wissen"
+  },
+  "mesmaMoeda": "Spanien zahlt in Euro — genau wie zu Hause. Nichts umzurechnen, keine Umrechnungsgebühr an der Kasse.",
+  "moedas": {
+    "EUR": { "flag": "🇪🇺", "locale": "de-DE" }
+  },
+  "cambio": {
+    "date": "2026-08-05",
+    "rates": {}
+  },
+  "emergencia": [
+    { "numero": "112", "oQue": "Alles: Polizei, Feuerwehr, Rettungsdienst. Mehrsprachig — Sie können auf Englisch sprechen." },
+    { "numero": "091", "oQue": "Policía Nacional — Anzeige nach Diebstahl, Ausweisverlust." },
+    { "numero": "062", "oQue": "Guardia Civil — Landstraßen, ländliche Gebiete, Küste." },
+    { "numero": "092", "oQue": "Policía Local — städtische Angelegenheiten; auch wenn ein Lokal das offizielle Beschwerdeformular verweigert." },
+    { "numero": "061", "oQue": "Medizinischer Notruf — existiert in mehreren, aber nicht in allen Regionen. Im Zweifel 112." }
+  ],
+  "saberUtil": [
+    { "emoji": "💧", "texto": "Leitungswasser ist im Lokal per Gesetz kostenlos (Ley 7/2022): «Agua del grifo, por favor.»" },
+    { "emoji": "🕘", "texto": "Abendessen beginnt typischerweise ab 21:00 Uhr; die Küche öffnet gegen 20:00–20:30 — wer um 19:00 sucht, landet im Touristenlokal." },
+    { "emoji": "💶", "texto": "Theke, Tisch und Terrasse dürfen unterschiedlich viel kosten — der Aufschlag muss aber ausgeschildert sein, und der Preis gilt inklusive Steuer." },
+    { "emoji": "📄", "texto": "«La hoja de reclamaciones, por favor.» — das amtliche Beschwerdeformular muss jedes Lokal sofort und gratis herausgeben; die Weigerung ist selbst ein Verstoß." },
+    { "emoji": "🏧", "texto": "Heben Sie selten und größere Beträge am Geldautomaten einer Straßenbank ab, nicht am freistehenden Automaten in Foyer oder Flughafen — dort kommt ein Aufschlag obendrauf." },
+    { "emoji": "🪙", "texto": "In Bar und Restaurant heißt Trinkgeld aufrunden — das ist das ganze System; der einzige Fall mit echter Erwartung ist der Stadtführer. Schlägt das Kartenterminal einen Prozentsatz vor, ist das freiwillig: «Sin propina» drücken." },
+    { "emoji": "💊", "texto": "Nachts und sonntags gibt es immer eine «farmacia de guardia» — der aktuelle Turnus hängt an der Tür jeder geschlossenen Apotheke." },
+    { "emoji": "🏥", "texto": "Die EHIC gilt nur im öffentlichen Gesundheitsnetz, nicht in der Privatklinik: «¿Esto es público o privado?» Rücktransport nach Hause deckt sie nie ab." },
+    { "emoji": "👕", "texto": "Badekleidung und freier Oberkörper abseits des Strandes regelt jede Stadt selbst, nicht Spanien: in Barcelona 120–300 € (Zivilitätsverordnung, in Kraft seit Feb. 2026), in Palma 100–200 € in der ganzen Stadt außer Strand und Strandpromenade. T-Shirt in den Rucksack." }
+  ]
+}

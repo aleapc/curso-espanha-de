@@ -2,7 +2,27 @@
 // Persiste em localStorage com namespace `ce-` pra não colidir com os outros
 // PWAs que vivem no mesmo domínio (aleapc.github.io).
 
-const KEY = 'de-state';
+import { curso } from './curso.config';
+
+// A CHAVE LEVA O SKU, e isso conserta um vazamento de dados que estava no ar.
+// Os cursos servem todos de aleapc.github.io/<curso>/ — mesma ORIGEM, e
+// localStorage é por origem, não por caminho. Com a chave igual em todos os
+// cursos da mesma língua-guia, quem fazia França lia e sobrescrevia o
+// progresso de quem fazia Espanha. O comentário acima já avisava do domínio
+// compartilhado, mas só protegia contra OUTROS PWAs, não contra os irmãos.
+const KEY = `${curso.sku}:state`;
+const LEGADO = 'de-state-state';
+
+// A chave legada só é adotada pelo SKU original desta língua-guia. Adotá-la
+// nos outros daria ao aluno de francês o progresso dele em espanhol.
+if (typeof localStorage !== 'undefined' && curso.sku === 'curso-espanha-de-state') {
+  try {
+    const velho = localStorage.getItem(LEGADO);
+    if (velho && !localStorage.getItem(KEY)) localStorage.setItem(KEY, velho);
+  } catch {
+    /* storage indisponível: seguir sem migrar */
+  }
+}
 
 export type Profile = 'ale' | 'dea';
 

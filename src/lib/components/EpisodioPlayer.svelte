@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { curso } from '$lib/curso.config';
   import { base } from '$app/paths';
   import { onMount, onDestroy } from 'svelte';
   import type { Episode, Step } from '$lib/types';
@@ -21,13 +22,13 @@
 
   // Modo: estudo (controle passo a passo) ou carro (áudio-livro contínuo, mãos livres)
   let modo = $state<'estudo' | 'carro'>(
-    typeof localStorage !== 'undefined' && localStorage.getItem('de-modo') === 'carro'
+    typeof localStorage !== 'undefined' && localStorage.getItem(`${curso.sku}:modo`) === 'carro'
       ? 'carro'
       : 'estudo'
   );
   function setModo(m: 'estudo' | 'carro') {
     modo = m;
-    if (typeof localStorage !== 'undefined') localStorage.setItem('de-modo', m);
+    if (typeof localStorage !== 'undefined') localStorage.setItem(`${curso.sku}:modo`, m);
   }
 
   // Velocidade da pausa pra responder (persistida)
@@ -37,11 +38,11 @@
     { nome: 'lang', f: 1.5 }
   ];
   let fator = $state(
-    typeof localStorage !== 'undefined' ? Number(localStorage.getItem('de-pausa')) || 1 : 1
+    typeof localStorage !== 'undefined' ? Number(localStorage.getItem(`${curso.sku}:pausa`)) || 1 : 1
   );
   function setFator(f: number) {
     fator = f;
-    if (typeof localStorage !== 'undefined') localStorage.setItem('de-pausa', String(f));
+    if (typeof localStorage !== 'undefined') localStorage.setItem(`${curso.sku}:pausa`, String(f));
   }
 
   const step = $derived(steps[index]);
@@ -365,8 +366,8 @@
       try {
         navigator.mediaSession.metadata = new MediaMetadata({
           title: `${episodio.titulo} (Ep. ${episodio.numero}${episodio.parte ? ' · ' + episodio.parte : ''})`,
-          artist: 'Dime Spanish',
-          album: 'Dime Spanish'
+          artist: '¡Dime! Spanish',
+          album: '¡Dime! Spanish'
         });
         navigator.mediaSession.setActionHandler('play', () => botaoCentral());
         navigator.mediaSession.setActionHandler('pause', () => pausar());

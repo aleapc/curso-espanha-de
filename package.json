@@ -24,9 +24,12 @@
     "consulta": "node scripts/build-consulta.mjs",
     "consulta:cobertura": "node scripts/build-consulta.mjs --cobertura",
     "transito": "node scripts/confere-transito.mjs",
-    "prebuild": "npm run outline:conferir && npm run estrutura:estrito && npm run audio:check && npm run tom && npm run voz && npm run arte",
+    "prebuild": "npm run outline:conferir && npm run estrutura:estrito && npm run audio:check && npm run tom && npm run casca && npm run voz && npm run arte",
     "arte": "node scripts/valida-arte.mjs",
-    "voz": "node scripts/valida-voz.mjs"
+    "voz": "node scripts/valida-voz.mjs",
+    "arte:estrito": "node scripts/valida-arte.mjs --estrito",
+    "publicar": "npm run prebuild && npm run arte:estrito",
+    "casca": "node scripts/valida-casca.mjs"
   },
   "_prebuild": {
     "_": "NÃO HÁ `prebuild` NESTE SKU, E ISSO É DELIBERADO. O curso-espanha (EN) tem um: `outline:conferir && estrutura:estrito && audio:check && tom`, e lá ele faz sentido porque as 36 partes estão escritas. Aqui o curso NASCEU VAZIO — 36 andaimes com a fala espanhola no lugar e a voz-guia por escrever. Ligar o portão hoje deixaria a build vermelha durante a obra inteira, e equipe que convive com vermelho aprende a ignorar vermelho, que é como se perde um portão para sempre. Os quatro comandos existem e rodam à mão; o que não existe é o gatilho automático.",
